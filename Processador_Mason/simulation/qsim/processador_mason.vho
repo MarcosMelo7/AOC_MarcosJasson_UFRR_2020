@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
 
--- DATE "05/09/2021 14:53:14"
+-- DATE "05/11/2021 18:03:18"
 
 -- 
 -- Device: Altera 5CGXFC7C7F23C8 Package FBGA484
@@ -179,72 +179,66 @@ SIGNAL \out_out_mul_2X1_memAdress_ula[5]~output_o\ : std_logic;
 SIGNAL \out_out_mul_2X1_memAdress_ula[6]~output_o\ : std_logic;
 SIGNAL \out_out_mul_2X1_memAdress_ula[7]~output_o\ : std_logic;
 SIGNAL \clock~input_o\ : std_logic;
-SIGNAL \port_map_memoriaInst|Mux5~0_combout\ : std_logic;
-SIGNAL \port_map_memoriaInst|Mux5~1_combout\ : std_logic;
 SIGNAL \port_map_addPC|Add0~2\ : std_logic;
+SIGNAL \port_map_addPC|Add0~5_sumout\ : std_logic;
+SIGNAL \port_map_multiplexador_2X1_8bits_jump|portOUT[1]~2_combout\ : std_logic;
 SIGNAL \port_map_addPC|Add0~6\ : std_logic;
 SIGNAL \port_map_addPC|Add0~9_sumout\ : std_logic;
 SIGNAL \port_map_multiplexador_2X1_8bits_jump|portOUT[2]~3_combout\ : std_logic;
 SIGNAL \port_map_addPC|Add0~10\ : std_logic;
+SIGNAL \port_map_addPC|Add0~13_sumout\ : std_logic;
+SIGNAL \port_map_multiplexador_2X1_8bits_jump|portOUT[3]~4_combout\ : std_logic;
 SIGNAL \port_map_addPC|Add0~14\ : std_logic;
 SIGNAL \port_map_addPC|Add0~17_sumout\ : std_logic;
 SIGNAL \port_map_multiplexador_2X1_8bits_jump|portOUT[4]~5_combout\ : std_logic;
 SIGNAL \port_map_addPC|Add0~18\ : std_logic;
+SIGNAL \port_map_addPC|Add0~21_sumout\ : std_logic;
+SIGNAL \port_map_multiplexador_2X1_8bits_jump|portOUT[5]~6_combout\ : std_logic;
 SIGNAL \port_map_addPC|Add0~22\ : std_logic;
 SIGNAL \port_map_addPC|Add0~25_sumout\ : std_logic;
 SIGNAL \port_map_multiplexador_2X1_8bits_jump|portOUT[6]~7_combout\ : std_logic;
-SIGNAL \port_map_addPC|Add0~26\ : std_logic;
-SIGNAL \port_map_addPC|Add0~29_sumout\ : std_logic;
-SIGNAL \port_map_multiplexador_2X1_8bits_jump|portOUT[7]~8_combout\ : std_logic;
-SIGNAL \port_map_memoriaInst|Mux6~0_combout\ : std_logic;
 SIGNAL \port_map_memoriaInst|Mux6~1_combout\ : std_logic;
-SIGNAL \port_map_addPC|Add0~5_sumout\ : std_logic;
-SIGNAL \port_map_multiplexador_2X1_8bits_jump|portOUT[1]~2_combout\ : std_logic;
-SIGNAL \port_map_memoriaInst|Mux3~1_combout\ : std_logic;
+SIGNAL \port_map_memoriaInst|Mux3~0_combout\ : std_logic;
 SIGNAL \port_map_memoriaInst|Mux2~0_combout\ : std_logic;
 SIGNAL \port_map_memoriaInst|Mux1~0_combout\ : std_logic;
-SIGNAL \port_map_memoriaInst|Mux1~1_combout\ : std_logic;
 SIGNAL \port_map_memoriaInst|Mux0~0_combout\ : std_logic;
+SIGNAL \port_map_memoriaInst|Mux0~1_combout\ : std_logic;
 SIGNAL \port_map_controle|Mux5~0_combout\ : std_logic;
 SIGNAL \port_map_controle|Mux4~0_combout\ : std_logic;
 SIGNAL \port_map_controle|Mux7~0_combout\ : std_logic;
+SIGNAL \port_map_memoriaInst|Mux4~0_combout\ : std_logic;
 SIGNAL \port_map_controle|Mux8~0_combout\ : std_logic;
-SIGNAL \port_map_registradores|registrador~60_combout\ : std_logic;
+SIGNAL \port_map_registradores|registrador~73_combout\ : std_logic;
 SIGNAL \port_map_registradores|registrador~24_q\ : std_logic;
-SIGNAL \port_map_registradores|registrador~61_combout\ : std_logic;
-SIGNAL \port_map_registradores|registrador~32_q\ : std_logic;
-SIGNAL \port_map_registradores|registrador~62_combout\ : std_logic;
-SIGNAL \port_map_registradores|registrador~40_q\ : std_logic;
+SIGNAL \port_map_memoriaInst|Mux5~0_combout\ : std_logic;
+SIGNAL \port_map_memoriaInst|Mux5~1_combout\ : std_logic;
+SIGNAL \port_map_registradores|registrador~65_combout\ : std_logic;
 SIGNAL \port_map_registradores|registrador~48_combout\ : std_logic;
-SIGNAL \port_map_registradores|registrador~23_q\ : std_logic;
-SIGNAL \port_map_registradores|registrador~31_q\ : std_logic;
-SIGNAL \port_map_registradores|registrador~39_q\ : std_logic;
-SIGNAL \port_map_registradores|registrador~55_combout\ : std_logic;
+SIGNAL \port_map_registradores|registrador~74_combout\ : std_logic;
+SIGNAL \port_map_registradores|registrador~15_q\ : std_logic;
+SIGNAL \port_map_registradores|registrador~61_combout\ : std_logic;
+SIGNAL \port_map_registradores|registrador~63_combout\ : std_logic;
 SIGNAL \port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ : std_logic;
-SIGNAL \port_map_registradores|registrador~22_q\ : std_logic;
-SIGNAL \port_map_registradores|registrador~30_q\ : std_logic;
-SIGNAL \port_map_registradores|registrador~38_q\ : std_logic;
-SIGNAL \port_map_registradores|registrador~54_combout\ : std_logic;
+SIGNAL \port_map_registradores|registrador~47_combout\ : std_logic;
+SIGNAL \port_map_memoriaInst|Mux6~0_combout\ : std_logic;
+SIGNAL \port_map_registradores|registrador~14_q\ : std_logic;
+SIGNAL \port_map_registradores|registrador~58_combout\ : std_logic;
+SIGNAL \port_map_registradores|registrador~60_combout\ : std_logic;
 SIGNAL \port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ : std_logic;
-SIGNAL \port_map_registradores|registrador~21_q\ : std_logic;
-SIGNAL \port_map_registradores|registrador~29_q\ : std_logic;
-SIGNAL \port_map_registradores|registrador~37_q\ : std_logic;
-SIGNAL \port_map_registradores|registrador~53_combout\ : std_logic;
+SIGNAL \port_map_registradores|registrador~46_combout\ : std_logic;
+SIGNAL \port_map_registradores|registrador~13_q\ : std_logic;
+SIGNAL \port_map_registradores|registrador~55_combout\ : std_logic;
+SIGNAL \port_map_registradores|registrador~57_combout\ : std_logic;
 SIGNAL \port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ : std_logic;
-SIGNAL \port_map_registradores|registrador~20_q\ : std_logic;
-SIGNAL \port_map_registradores|registrador~28_q\ : std_logic;
-SIGNAL \port_map_registradores|registrador~36_q\ : std_logic;
+SIGNAL \port_map_registradores|registrador~45_combout\ : std_logic;
+SIGNAL \port_map_registradores|registrador~12_q\ : std_logic;
 SIGNAL \port_map_registradores|registrador~44_combout\ : std_logic;
-SIGNAL \port_map_memoriaInst|Mux6~2_combout\ : std_logic;
-SIGNAL \port_map_registradores|registrador~19_q\ : std_logic;
-SIGNAL \port_map_registradores|registrador~27_q\ : std_logic;
-SIGNAL \port_map_registradores|registrador~35_q\ : std_logic;
+SIGNAL \port_map_registradores|registrador~52_combout\ : std_logic;
+SIGNAL \port_map_registradores|registrador~54_combout\ : std_logic;
+SIGNAL \port_map_registradores|registrador~11_q\ : std_logic;
 SIGNAL \port_map_registradores|registrador~43_combout\ : std_logic;
 SIGNAL \port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ : std_logic;
-SIGNAL \port_map_memoriaInst|Mux7~0_combout\ : std_logic;
-SIGNAL \port_map_memoriaInst|Mux7~1_combout\ : std_logic;
-SIGNAL \port_map_memoriaInst|Mux7~2_combout\ : std_logic;
-SIGNAL \port_map_memoriaInst|Mux7~4_combout\ : std_logic;
+SIGNAL \port_map_memoriaInst|Mux6~3_combout\ : std_logic;
 SIGNAL \port_map_ual|portMap_subtrair|Add0~34_cout\ : std_logic;
 SIGNAL \port_map_ual|portMap_subtrair|Add0~1_sumout\ : std_logic;
 SIGNAL \port_map_ual|portMap_adicionador|Add0~1_sumout\ : std_logic;
@@ -254,11 +248,10 @@ SIGNAL \port_map_ual|Mux10~1_combout\ : std_logic;
 SIGNAL \port_map_ual|Mux10~2_combout\ : std_logic;
 SIGNAL \port_map_controle|Mux6~0_combout\ : std_logic;
 SIGNAL \port_map_controle|Mux3~0_combout\ : std_logic;
+SIGNAL \port_map_memoriaInst|Mux6~2_wirecell_combout\ : std_logic;
 SIGNAL \port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a0~portbdataout\ : std_logic;
 SIGNAL \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[0]~0_combout\ : std_logic;
-SIGNAL \port_map_memoriaInst|Mux4~0_combout\ : std_logic;
-SIGNAL \port_map_registradores|registrador~59_combout\ : std_logic;
-SIGNAL \port_map_registradores|registrador~11_q\ : std_logic;
+SIGNAL \port_map_registradores|registrador~19_q\ : std_logic;
 SIGNAL \port_map_registradores|registrador~51_combout\ : std_logic;
 SIGNAL \port_map_ual|portMap_adicionador|Add0~2\ : std_logic;
 SIGNAL \port_map_ual|portMap_adicionador|Add0~5_sumout\ : std_logic;
@@ -276,8 +269,8 @@ SIGNAL \port_map_ual|Mux9~2_combout\ : std_logic;
 SIGNAL \port_map_ual|Mux9~3_combout\ : std_logic;
 SIGNAL \port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a1~portbdataout\ : std_logic;
 SIGNAL \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[1]~1_combout\ : std_logic;
-SIGNAL \port_map_registradores|registrador~12_q\ : std_logic;
-SIGNAL \port_map_registradores|registrador~52_combout\ : std_logic;
+SIGNAL \port_map_registradores|registrador~20_q\ : std_logic;
+SIGNAL \port_map_registradores|registrador~53_combout\ : std_logic;
 SIGNAL \port_map_ual|portMap_subtrair|Add0~6\ : std_logic;
 SIGNAL \port_map_ual|portMap_subtrair|Add0~9_sumout\ : std_logic;
 SIGNAL \port_map_ual|portMap_adicionador|Add0~6\ : std_logic;
@@ -300,14 +293,13 @@ SIGNAL \port_map_ual|Mux8~1_combout\ : std_logic;
 SIGNAL \port_map_ual|Mux8~2_combout\ : std_logic;
 SIGNAL \port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a2~portbdataout\ : std_logic;
 SIGNAL \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[2]~2_combout\ : std_logic;
-SIGNAL \port_map_registradores|registrador~13_q\ : std_logic;
-SIGNAL \port_map_registradores|registrador~45_combout\ : std_logic;
+SIGNAL \port_map_registradores|registrador~21_q\ : std_logic;
+SIGNAL \port_map_registradores|registrador~56_combout\ : std_logic;
 SIGNAL \port_map_ual|portMap_subtrair|Add0~10\ : std_logic;
 SIGNAL \port_map_ual|portMap_subtrair|Add0~13_sumout\ : std_logic;
 SIGNAL \port_map_ual|portMap_adicionador|Add0~10\ : std_logic;
 SIGNAL \port_map_ual|portMap_adicionador|Add0~13_sumout\ : std_logic;
 SIGNAL \port_map_ual|Mux7~0_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|process_0~2_combout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|Add0~10\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|Add0~13_sumout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|Add1~6\ : std_logic;
@@ -315,21 +307,24 @@ SIGNAL \port_map_ual|portMap_multiplexador|Add1~9_sumout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|Add2~6\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|Add2~9_sumout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|produto~1_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|Add3~2\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|Add3~5_sumout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|process_0~2_combout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|Add4~2\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|Add4~5_sumout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|produto~2_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|Add3~2\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|Add3~5_sumout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|Add5~1_sumout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|Add6~22_cout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|Add6~1_sumout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|Add5~1_sumout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|portOUT[3]~13_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|process_0~1_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|portOUT[3]~2_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|portOUT[3]~3_combout\ : std_logic;
 SIGNAL \port_map_ual|Mux7~1_combout\ : std_logic;
 SIGNAL \port_map_ual|Mux7~2_combout\ : std_logic;
 SIGNAL \port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a3~portbdataout\ : std_logic;
 SIGNAL \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[3]~3_combout\ : std_logic;
-SIGNAL \port_map_registradores|registrador~14_q\ : std_logic;
-SIGNAL \port_map_registradores|registrador~46_combout\ : std_logic;
+SIGNAL \port_map_registradores|registrador~22_q\ : std_logic;
+SIGNAL \port_map_registradores|registrador~59_combout\ : std_logic;
 SIGNAL \port_map_ual|portMap_subtrair|Add0~14\ : std_logic;
 SIGNAL \port_map_ual|portMap_subtrair|Add0~17_sumout\ : std_logic;
 SIGNAL \port_map_ual|portMap_adicionador|Add0~14\ : std_logic;
@@ -349,7 +344,6 @@ SIGNAL \port_map_ual|portMap_multiplexador|Add4~9_sumout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|produto~4_combout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|Add5~2\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|Add5~5_sumout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|process_0~1_combout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|process_0~4_combout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|Add6~2\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|Add6~5_sumout\ : std_logic;
@@ -357,19 +351,18 @@ SIGNAL \port_map_ual|portMap_multiplexador|produto~5_combout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|Add8~18_cout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|Add8~1_sumout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|Add7~1_sumout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|portOUT[4]~9_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|portOUT[4]~12_combout\ : std_logic;
 SIGNAL \port_map_ual|Mux6~1_combout\ : std_logic;
 SIGNAL \port_map_ual|Mux6~2_combout\ : std_logic;
 SIGNAL \port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a4~portbdataout\ : std_logic;
 SIGNAL \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[4]~4_combout\ : std_logic;
-SIGNAL \port_map_registradores|registrador~15_q\ : std_logic;
-SIGNAL \port_map_registradores|registrador~47_combout\ : std_logic;
+SIGNAL \port_map_registradores|registrador~23_q\ : std_logic;
+SIGNAL \port_map_registradores|registrador~62_combout\ : std_logic;
 SIGNAL \port_map_ual|portMap_subtrair|Add0~18\ : std_logic;
 SIGNAL \port_map_ual|portMap_subtrair|Add0~21_sumout\ : std_logic;
 SIGNAL \port_map_ual|portMap_adicionador|Add0~18\ : std_logic;
 SIGNAL \port_map_ual|portMap_adicionador|Add0~21_sumout\ : std_logic;
 SIGNAL \port_map_ual|Mux5~0_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|process_0~6_combout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|process_0~3_combout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|process_0~5_combout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|Add0~18\ : std_logic;
@@ -395,17 +388,23 @@ SIGNAL \port_map_ual|portMap_multiplexador|produto~9_combout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|Add7~2\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|Add7~5_sumout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|Add9~1_sumout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|portOUT[5]~2_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|process_0~6_combout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|Add10~14_cout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|Add10~1_sumout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|portOUT[5]~3_combout\ : std_logic;
-SIGNAL \port_map_ual|Mux5~1_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|portOUT[5]~4_combout\ : std_logic;
 SIGNAL \port_map_ual|Mux5~2_combout\ : std_logic;
+SIGNAL \port_map_ual|Mux5~1_combout\ : std_logic;
 SIGNAL \port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a5~portbdataout\ : std_logic;
 SIGNAL \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[5]~5_combout\ : std_logic;
 SIGNAL \port_map_registradores|registrador~16_q\ : std_logic;
-SIGNAL \port_map_registradores|registrador~56_combout\ : std_logic;
+SIGNAL \port_map_registradores|registrador~64_combout\ : std_logic;
+SIGNAL \port_map_registradores|registrador~66_combout\ : std_logic;
 SIGNAL \port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ : std_logic;
+SIGNAL \port_map_registradores|registrador~17_q\ : std_logic;
+SIGNAL \port_map_registradores|registrador~67_combout\ : std_logic;
+SIGNAL \port_map_registradores|registrador~68_combout\ : std_logic;
+SIGNAL \port_map_registradores|registrador~69_combout\ : std_logic;
+SIGNAL \port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|process_0~7_combout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|process_0~8_combout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|Add0~22\ : std_logic;
@@ -435,31 +434,27 @@ SIGNAL \port_map_ual|portMap_multiplexador|Add10~5_sumout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|produto~14_combout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|Add9~2\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|Add9~5_sumout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|Add11~1_sumout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|portOUT[6]~5_combout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|Add12~10_cout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|Add12~1_sumout\ : std_logic;
-SIGNAL \port_map_registradores|registrador~25_q\ : std_logic;
-SIGNAL \port_map_registradores|registrador~33_q\ : std_logic;
-SIGNAL \port_map_registradores|registrador~41_q\ : std_logic;
-SIGNAL \port_map_registradores|registrador~57_combout\ : std_logic;
-SIGNAL \port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ : std_logic;
-SIGNAL \port_map_ual|Mux4~4_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|portOUT[6]~6_combout\ : std_logic;
+SIGNAL \port_map_ual|Mux1~0_combout\ : std_logic;
 SIGNAL \port_map_ual|portMap_adicionador|Add0~22\ : std_logic;
 SIGNAL \port_map_ual|portMap_adicionador|Add0~25_sumout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|Add11~1_sumout\ : std_logic;
-SIGNAL \port_map_ual|Mux4~0_combout\ : std_logic;
 SIGNAL \port_map_ual|portMap_subtrair|Add0~22\ : std_logic;
 SIGNAL \port_map_ual|portMap_subtrair|Add0~25_sumout\ : std_logic;
-SIGNAL \port_map_ual|Mux4~1_combout\ : std_logic;
+SIGNAL \port_map_ual|Mux4~0_combout\ : std_logic;
 SIGNAL \port_map_ual|Mux4~2_combout\ : std_logic;
-SIGNAL \port_map_ual|Mux4~3_combout\ : std_logic;
+SIGNAL \port_map_ual|Mux4~1_combout\ : std_logic;
 SIGNAL \port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a6~portbdataout\ : std_logic;
 SIGNAL \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[6]~6_combout\ : std_logic;
-SIGNAL \port_map_registradores|registrador~17_q\ : std_logic;
+SIGNAL \port_map_registradores|registrador~25_q\ : std_logic;
 SIGNAL \port_map_registradores|registrador~49_combout\ : std_logic;
-SIGNAL \port_map_registradores|registrador~26_q\ : std_logic;
-SIGNAL \port_map_registradores|registrador~34_q\ : std_logic;
-SIGNAL \port_map_registradores|registrador~42_q\ : std_logic;
-SIGNAL \port_map_registradores|registrador~58_combout\ : std_logic;
+SIGNAL \port_map_registradores|registrador~18_q\ : std_logic;
+SIGNAL \port_map_registradores|registrador~70_combout\ : std_logic;
+SIGNAL \port_map_registradores|registrador~71_combout\ : std_logic;
+SIGNAL \port_map_registradores|registrador~72_combout\ : std_logic;
 SIGNAL \port_map_multiplexador_2X1_8bits_br_ula|portOUT[7]~7_combout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|process_0~9_combout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|Add0~26\ : std_logic;
@@ -496,10 +491,9 @@ SIGNAL \port_map_ual|portMap_multiplexador|Add11~2\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|Add11~5_sumout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|Add14~6_cout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|Add14~1_sumout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|portOUT[7]~4_combout\ : std_logic;
-SIGNAL \port_map_ual|Mux1~0_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|portOUT[7]~7_combout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|Add13~1_sumout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|portOUT[7]~5_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|portOUT[7]~8_combout\ : std_logic;
 SIGNAL \port_map_ual|portMap_adicionador|Add0~26\ : std_logic;
 SIGNAL \port_map_ual|portMap_adicionador|Add0~29_sumout\ : std_logic;
 SIGNAL \port_map_ual|portMap_subtrair|Add0~26\ : std_logic;
@@ -509,7 +503,7 @@ SIGNAL \port_map_ual|Mux3~2_combout\ : std_logic;
 SIGNAL \port_map_ual|Mux3~1_combout\ : std_logic;
 SIGNAL \port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a7~portbdataout\ : std_logic;
 SIGNAL \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[7]~7_combout\ : std_logic;
-SIGNAL \port_map_registradores|registrador~18_q\ : std_logic;
+SIGNAL \port_map_registradores|registrador~26_q\ : std_logic;
 SIGNAL \port_map_registradores|registrador~50_combout\ : std_logic;
 SIGNAL \port_map_ual|Equal0~0_combout\ : std_logic;
 SIGNAL \port_map_ual|Equal0~1_combout\ : std_logic;
@@ -520,14 +514,11 @@ SIGNAL \port_map_ual|in_tempZero~combout\ : std_logic;
 SIGNAL \port_map_ual|Mux12~0_combout\ : std_logic;
 SIGNAL \port_map_ual|Mux13~0_combout\ : std_logic;
 SIGNAL \port_map_ual|zero~combout\ : std_logic;
-SIGNAL \port_map_multiplexador_2X1_8bits_jump|portOUT[3]~0_combout\ : std_logic;
-SIGNAL \port_map_addPC|Add0~21_sumout\ : std_logic;
-SIGNAL \port_map_multiplexador_2X1_8bits_jump|portOUT[5]~6_combout\ : std_logic;
-SIGNAL \port_map_memoriaInst|Mux3~0_combout\ : std_logic;
-SIGNAL \port_map_memoriaInst|Mux4~1_combout\ : std_logic;
-SIGNAL \port_map_addPC|Add0~13_sumout\ : std_logic;
-SIGNAL \port_map_multiplexador_2X1_8bits_jump|portOUT[3]~4_combout\ : std_logic;
-SIGNAL \port_map_memoriaInst|Mux7~3_combout\ : std_logic;
+SIGNAL \port_map_multiplexador_2X1_8bits_jump|portOUT[2]~0_combout\ : std_logic;
+SIGNAL \port_map_addPC|Add0~26\ : std_logic;
+SIGNAL \port_map_addPC|Add0~29_sumout\ : std_logic;
+SIGNAL \port_map_multiplexador_2X1_8bits_jump|portOUT[7]~8_combout\ : std_logic;
+SIGNAL \port_map_memoriaInst|Mux6~2_combout\ : std_logic;
 SIGNAL \port_map_addPC|Add0~1_sumout\ : std_logic;
 SIGNAL \port_map_multiplexador_2X1_8bits_jump|portOUT[0]~1_combout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|Add1~26\ : std_logic;
@@ -641,7 +632,7 @@ SIGNAL \port_map_ual|portMap_multiplexador|Add14~18\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|Add14~26\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|Add14~22\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|Add14~9_sumout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|portOUT[13]~6_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|portOUT[13]~9_combout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|Add13~2\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|Add13~5_sumout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|Add13~6\ : std_logic;
@@ -660,10 +651,10 @@ SIGNAL \port_map_ual|portMap_multiplexador|Add13~14\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|Add13~21_sumout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|Add12~18\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|Add12~13_sumout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|portOUT[14]~7_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|portOUT[14]~10_combout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|Add11~22\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|Add11~9_sumout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|portOUT[14]~8_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|portOUT[14]~11_combout\ : std_logic;
 SIGNAL \port_map_ual|process_0~2_combout\ : std_logic;
 SIGNAL \port_map_ual|process_0~3_combout\ : std_logic;
 SIGNAL \port_map_ual|process_0~4_combout\ : std_logic;
@@ -683,6 +674,18 @@ SIGNAL \port_map_ual|process_0~8_combout\ : std_logic;
 SIGNAL \port_map_ual|process_0~9_combout\ : std_logic;
 SIGNAL \port_map_ual|overflow~combout\ : std_logic;
 SIGNAL \port_map_pc|portOUT\ : std_logic_vector(7 DOWNTO 0);
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add7~29_sumout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add12~33_sumout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add7~25_sumout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add8~29_sumout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add6~29_sumout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add4~33_sumout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add3~29_sumout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add5~25_sumout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add10~29_sumout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add9~25_sumout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add12~29_sumout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add12~25_sumout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add10~25_sumout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add8~25_sumout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add7~21_sumout\ : std_logic;
@@ -747,7 +750,6 @@ SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add7~13_sumout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add9~9_sumout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add14~1_sumout\ : std_logic;
 SIGNAL \port_map_ual|portMap_subtrair|ALT_INV_Add0~25_sumout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add11~1_sumout\ : std_logic;
 SIGNAL \port_map_ual|portMap_adicionador|ALT_INV_Add0~25_sumout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add12~1_sumout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add9~5_sumout\ : std_logic;
@@ -761,6 +763,7 @@ SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add1~21_sumout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add3~17_sumout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add5~13_sumout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add7~9_sumout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add11~1_sumout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add10~1_sumout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add7~5_sumout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add8~5_sumout\ : std_logic;
@@ -809,179 +812,13 @@ SIGNAL \port_map_ual|portMap_adicionador|ALT_INV_Add0~5_sumout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add0~1_sumout\ : std_logic;
 SIGNAL \port_map_ual|portMap_adicionador|ALT_INV_Add0~1_sumout\ : std_logic;
 SIGNAL \port_map_ual|portMap_subtrair|ALT_INV_Add0~1_sumout\ : std_logic;
-SIGNAL \port_map_registradores|ALT_INV_registrador~58_combout\ : std_logic;
-SIGNAL \port_map_registradores|ALT_INV_registrador~57_combout\ : std_logic;
-SIGNAL \port_map_registradores|ALT_INV_registrador~56_combout\ : std_logic;
-SIGNAL \port_map_registradores|ALT_INV_registrador~55_combout\ : std_logic;
-SIGNAL \port_map_registradores|ALT_INV_registrador~54_combout\ : std_logic;
-SIGNAL \port_map_registradores|ALT_INV_registrador~53_combout\ : std_logic;
-SIGNAL \port_map_registradores|ALT_INV_registrador~52_combout\ : std_logic;
-SIGNAL \port_map_registradores|ALT_INV_registrador~51_combout\ : std_logic;
-SIGNAL \port_map_registradores|ALT_INV_registrador~50_combout\ : std_logic;
-SIGNAL \port_map_registradores|ALT_INV_registrador~42_q\ : std_logic;
-SIGNAL \port_map_registradores|ALT_INV_registrador~34_q\ : std_logic;
-SIGNAL \port_map_registradores|ALT_INV_registrador~26_q\ : std_logic;
-SIGNAL \port_map_registradores|ALT_INV_registrador~18_q\ : std_logic;
-SIGNAL \port_map_registradores|ALT_INV_registrador~49_combout\ : std_logic;
-SIGNAL \port_map_registradores|ALT_INV_registrador~41_q\ : std_logic;
-SIGNAL \port_map_registradores|ALT_INV_registrador~33_q\ : std_logic;
-SIGNAL \port_map_registradores|ALT_INV_registrador~25_q\ : std_logic;
-SIGNAL \port_map_registradores|ALT_INV_registrador~17_q\ : std_logic;
-SIGNAL \port_map_registradores|ALT_INV_registrador~48_combout\ : std_logic;
-SIGNAL \port_map_registradores|ALT_INV_registrador~40_q\ : std_logic;
-SIGNAL \port_map_registradores|ALT_INV_registrador~32_q\ : std_logic;
-SIGNAL \port_map_registradores|ALT_INV_registrador~24_q\ : std_logic;
-SIGNAL \port_map_registradores|ALT_INV_registrador~16_q\ : std_logic;
-SIGNAL \port_map_registradores|ALT_INV_registrador~47_combout\ : std_logic;
-SIGNAL \port_map_registradores|ALT_INV_registrador~39_q\ : std_logic;
-SIGNAL \port_map_registradores|ALT_INV_registrador~31_q\ : std_logic;
-SIGNAL \port_map_registradores|ALT_INV_registrador~23_q\ : std_logic;
-SIGNAL \port_map_registradores|ALT_INV_registrador~15_q\ : std_logic;
-SIGNAL \port_map_registradores|ALT_INV_registrador~46_combout\ : std_logic;
-SIGNAL \port_map_registradores|ALT_INV_registrador~38_q\ : std_logic;
-SIGNAL \port_map_registradores|ALT_INV_registrador~30_q\ : std_logic;
-SIGNAL \port_map_registradores|ALT_INV_registrador~22_q\ : std_logic;
-SIGNAL \port_map_registradores|ALT_INV_registrador~14_q\ : std_logic;
-SIGNAL \port_map_registradores|ALT_INV_registrador~45_combout\ : std_logic;
-SIGNAL \port_map_registradores|ALT_INV_registrador~37_q\ : std_logic;
-SIGNAL \port_map_registradores|ALT_INV_registrador~29_q\ : std_logic;
-SIGNAL \port_map_registradores|ALT_INV_registrador~21_q\ : std_logic;
-SIGNAL \port_map_registradores|ALT_INV_registrador~13_q\ : std_logic;
-SIGNAL \port_map_registradores|ALT_INV_registrador~44_combout\ : std_logic;
-SIGNAL \port_map_registradores|ALT_INV_registrador~36_q\ : std_logic;
-SIGNAL \port_map_registradores|ALT_INV_registrador~28_q\ : std_logic;
-SIGNAL \port_map_registradores|ALT_INV_registrador~20_q\ : std_logic;
-SIGNAL \port_map_registradores|ALT_INV_registrador~12_q\ : std_logic;
-SIGNAL \port_map_registradores|ALT_INV_registrador~43_combout\ : std_logic;
-SIGNAL \port_map_registradores|ALT_INV_registrador~35_q\ : std_logic;
-SIGNAL \port_map_registradores|ALT_INV_registrador~27_q\ : std_logic;
-SIGNAL \port_map_registradores|ALT_INV_registrador~19_q\ : std_logic;
-SIGNAL \port_map_registradores|ALT_INV_registrador~11_q\ : std_logic;
-SIGNAL \port_map_memoriaInst|ALT_INV_Mux1~1_combout\ : std_logic;
-SIGNAL \port_map_memoriaInst|ALT_INV_Mux1~0_combout\ : std_logic;
-SIGNAL \port_map_memoriaInst|ALT_INV_Mux2~0_combout\ : std_logic;
-SIGNAL \port_map_memoriaInst|ALT_INV_Mux3~1_combout\ : std_logic;
-SIGNAL \port_map_memoriaInst|ALT_INV_Mux4~1_combout\ : std_logic;
-SIGNAL \port_map_memoriaInst|ALT_INV_Mux4~0_combout\ : std_logic;
-SIGNAL \port_map_memoriaInst|ALT_INV_Mux5~1_combout\ : std_logic;
-SIGNAL \port_map_memoriaInst|ALT_INV_Mux3~0_combout\ : std_logic;
-SIGNAL \port_map_memoriaInst|ALT_INV_Mux5~0_combout\ : std_logic;
-SIGNAL \port_map_memoriaInst|ALT_INV_Mux6~1_combout\ : std_logic;
-SIGNAL \port_map_memoriaInst|ALT_INV_Mux6~0_combout\ : std_logic;
-SIGNAL \port_map_memoriaInst|ALT_INV_Mux7~3_combout\ : std_logic;
-SIGNAL \port_map_memoriaInst|ALT_INV_Mux7~2_combout\ : std_logic;
-SIGNAL \port_map_memoriaInst|ALT_INV_Mux7~1_combout\ : std_logic;
-SIGNAL \port_map_memoriaInst|ALT_INV_Mux7~0_combout\ : std_logic;
-SIGNAL \port_map_pc|ALT_INV_portOUT\ : std_logic_vector(7 DOWNTO 0);
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_portOUT[3]~13_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_portOUT[4]~9_combout\ : std_logic;
-SIGNAL \port_map_ual|ALT_INV_Mux4~4_combout\ : std_logic;
-SIGNAL \port_map_ual|ALT_INV_Mux3~2_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add14~33_sumout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add14~29_sumout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add13~29_sumout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add13~25_sumout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add11~29_sumout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add11~25_sumout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add11~21_sumout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add11~17_sumout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add11~13_sumout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add9~29_sumout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add10~33_sumout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add8~33_sumout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add6~33_sumout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add5~29_sumout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add7~29_sumout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add12~33_sumout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add7~25_sumout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add8~29_sumout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add6~29_sumout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add4~33_sumout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add3~29_sumout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add5~25_sumout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add10~29_sumout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add9~25_sumout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add12~29_sumout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add12~25_sumout\ : std_logic;
-SIGNAL \port_map_ual|ALT_INV_process_0~4_combout\ : std_logic;
-SIGNAL \port_map_ual|ALT_INV_process_0~3_combout\ : std_logic;
-SIGNAL \port_map_ual|ALT_INV_process_0~2_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~40_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~39_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~38_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~37_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~36_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~35_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~34_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~33_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~32_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~31_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~30_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~29_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~28_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~27_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~26_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_portOUT[14]~8_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_portOUT[14]~7_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~25_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~24_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~23_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~22_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~21_combout\ : std_logic;
-SIGNAL \port_map_ual|ALT_INV_process_0~1_combout\ : std_logic;
-SIGNAL \port_map_ual|ALT_INV_process_0~0_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_portOUT[13]~6_combout\ : std_logic;
-SIGNAL \port_map_memoriaInst|ALT_INV_Mux6~2_combout\ : std_logic;
-SIGNAL \port_map_memoriaInst|ALT_INV_Mux7~4_combout\ : std_logic;
-SIGNAL \port_map_controle|ALT_INV_Mux8~0_combout\ : std_logic;
-SIGNAL \port_map_multiplexador_2X1_8bits_jump|ALT_INV_portOUT[3]~0_combout\ : std_logic;
-SIGNAL \port_map_controle|ALT_INV_Mux3~0_combout\ : std_logic;
-SIGNAL \port_map_ual|ALT_INV_Mux3~0_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_portOUT[7]~5_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~20_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~19_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~18_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~17_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~16_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~15_combout\ : std_logic;
-SIGNAL \port_map_ual|ALT_INV_Mux1~0_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_portOUT[7]~4_combout\ : std_logic;
-SIGNAL \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[7]~7_combout\ : std_logic;
-SIGNAL \port_map_ual|ALT_INV_Mux4~3_combout\ : std_logic;
-SIGNAL \port_map_ual|ALT_INV_Mux4~2_combout\ : std_logic;
-SIGNAL \port_map_ual|ALT_INV_Mux4~1_combout\ : std_logic;
-SIGNAL \port_map_ual|ALT_INV_Mux4~0_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_process_0~9_combout\ : std_logic;
-SIGNAL \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[6]~6_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~14_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~13_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~12_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~11_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~10_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_process_0~8_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_process_0~7_combout\ : std_logic;
-SIGNAL \port_map_ual|ALT_INV_Mux5~1_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_portOUT[5]~3_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~9_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~8_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~7_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~6_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_portOUT[5]~2_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_process_0~6_combout\ : std_logic;
-SIGNAL \port_map_ual|ALT_INV_Mux5~0_combout\ : std_logic;
-SIGNAL \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[5]~5_combout\ : std_logic;
-SIGNAL \port_map_ual|ALT_INV_Mux6~2_combout\ : std_logic;
-SIGNAL \port_map_ual|ALT_INV_Mux6~1_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_process_0~5_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~5_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~4_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~3_combout\ : std_logic;
-SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_process_0~4_combout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_process_0~3_combout\ : std_logic;
 SIGNAL \port_map_ual|ALT_INV_Mux6~0_combout\ : std_logic;
 SIGNAL \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[4]~4_combout\ : std_logic;
 SIGNAL \port_map_ual|ALT_INV_Mux7~2_combout\ : std_logic;
 SIGNAL \port_map_ual|ALT_INV_Mux7~1_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_portOUT[3]~3_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_portOUT[3]~2_combout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~2_combout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~1_combout\ : std_logic;
 SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_process_0~2_combout\ : std_logic;
@@ -1001,17 +838,92 @@ SIGNAL \port_map_ual|ALT_INV_Mux9~2_combout\ : std_logic;
 SIGNAL \port_map_ual|ALT_INV_Mux9~1_combout\ : std_logic;
 SIGNAL \port_map_ual|ALT_INV_Mux9~0_combout\ : std_logic;
 SIGNAL \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[1]~1_combout\ : std_logic;
+SIGNAL \port_map_controle|ALT_INV_Mux4~0_combout\ : std_logic;
 SIGNAL \port_map_ual|ALT_INV_Mux10~2_combout\ : std_logic;
 SIGNAL \port_map_ual|ALT_INV_Mux10~1_combout\ : std_logic;
 SIGNAL \port_map_ual|ALT_INV_Mux10~0_combout\ : std_logic;
 SIGNAL \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[0]~0_combout\ : std_logic;
 SIGNAL \port_map_controle|ALT_INV_Mux7~0_combout\ : std_logic;
 SIGNAL \port_map_controle|ALT_INV_Mux5~0_combout\ : std_logic;
-SIGNAL \port_map_controle|ALT_INV_Mux4~0_combout\ : std_logic;
+SIGNAL \port_map_registradores|ALT_INV_registrador~72_combout\ : std_logic;
+SIGNAL \port_map_registradores|ALT_INV_registrador~71_combout\ : std_logic;
+SIGNAL \port_map_registradores|ALT_INV_registrador~70_combout\ : std_logic;
+SIGNAL \port_map_registradores|ALT_INV_registrador~69_combout\ : std_logic;
+SIGNAL \port_map_registradores|ALT_INV_registrador~68_combout\ : std_logic;
+SIGNAL \port_map_registradores|ALT_INV_registrador~67_combout\ : std_logic;
+SIGNAL \port_map_registradores|ALT_INV_registrador~66_combout\ : std_logic;
+SIGNAL \port_map_registradores|ALT_INV_registrador~65_combout\ : std_logic;
+SIGNAL \port_map_registradores|ALT_INV_registrador~64_combout\ : std_logic;
+SIGNAL \port_map_registradores|ALT_INV_registrador~63_combout\ : std_logic;
+SIGNAL \port_map_registradores|ALT_INV_registrador~62_combout\ : std_logic;
+SIGNAL \port_map_registradores|ALT_INV_registrador~61_combout\ : std_logic;
+SIGNAL \port_map_registradores|ALT_INV_registrador~60_combout\ : std_logic;
+SIGNAL \port_map_registradores|ALT_INV_registrador~59_combout\ : std_logic;
+SIGNAL \port_map_registradores|ALT_INV_registrador~58_combout\ : std_logic;
+SIGNAL \port_map_registradores|ALT_INV_registrador~57_combout\ : std_logic;
+SIGNAL \port_map_registradores|ALT_INV_registrador~56_combout\ : std_logic;
+SIGNAL \port_map_registradores|ALT_INV_registrador~55_combout\ : std_logic;
+SIGNAL \port_map_registradores|ALT_INV_registrador~54_combout\ : std_logic;
+SIGNAL \port_map_registradores|ALT_INV_registrador~53_combout\ : std_logic;
+SIGNAL \port_map_registradores|ALT_INV_registrador~52_combout\ : std_logic;
+SIGNAL \port_map_registradores|ALT_INV_registrador~51_combout\ : std_logic;
+SIGNAL \port_map_registradores|ALT_INV_registrador~50_combout\ : std_logic;
+SIGNAL \port_map_registradores|ALT_INV_registrador~18_q\ : std_logic;
+SIGNAL \port_map_registradores|ALT_INV_registrador~26_q\ : std_logic;
+SIGNAL \port_map_registradores|ALT_INV_registrador~49_combout\ : std_logic;
+SIGNAL \port_map_registradores|ALT_INV_registrador~17_q\ : std_logic;
+SIGNAL \port_map_registradores|ALT_INV_registrador~25_q\ : std_logic;
+SIGNAL \port_map_registradores|ALT_INV_registrador~48_combout\ : std_logic;
+SIGNAL \port_map_registradores|ALT_INV_registrador~16_q\ : std_logic;
+SIGNAL \port_map_registradores|ALT_INV_registrador~24_q\ : std_logic;
+SIGNAL \port_map_registradores|ALT_INV_registrador~47_combout\ : std_logic;
+SIGNAL \port_map_registradores|ALT_INV_registrador~15_q\ : std_logic;
+SIGNAL \port_map_registradores|ALT_INV_registrador~23_q\ : std_logic;
+SIGNAL \port_map_registradores|ALT_INV_registrador~46_combout\ : std_logic;
+SIGNAL \port_map_registradores|ALT_INV_registrador~14_q\ : std_logic;
+SIGNAL \port_map_registradores|ALT_INV_registrador~22_q\ : std_logic;
+SIGNAL \port_map_registradores|ALT_INV_registrador~45_combout\ : std_logic;
+SIGNAL \port_map_registradores|ALT_INV_registrador~13_q\ : std_logic;
+SIGNAL \port_map_registradores|ALT_INV_registrador~21_q\ : std_logic;
+SIGNAL \port_map_registradores|ALT_INV_registrador~44_combout\ : std_logic;
+SIGNAL \port_map_registradores|ALT_INV_registrador~12_q\ : std_logic;
+SIGNAL \port_map_registradores|ALT_INV_registrador~20_q\ : std_logic;
+SIGNAL \port_map_registradores|ALT_INV_registrador~43_combout\ : std_logic;
+SIGNAL \port_map_registradores|ALT_INV_registrador~11_q\ : std_logic;
+SIGNAL \port_map_registradores|ALT_INV_registrador~19_q\ : std_logic;
+SIGNAL \port_map_memoriaInst|ALT_INV_Mux0~1_combout\ : std_logic;
+SIGNAL \port_map_memoriaInst|ALT_INV_Mux4~0_combout\ : std_logic;
+SIGNAL \port_map_memoriaInst|ALT_INV_Mux0~0_combout\ : std_logic;
+SIGNAL \port_map_memoriaInst|ALT_INV_Mux5~1_combout\ : std_logic;
+SIGNAL \port_map_memoriaInst|ALT_INV_Mux5~0_combout\ : std_logic;
+SIGNAL \port_map_memoriaInst|ALT_INV_Mux6~2_combout\ : std_logic;
+SIGNAL \port_map_memoriaInst|ALT_INV_Mux6~1_combout\ : std_logic;
+SIGNAL \port_map_memoriaInst|ALT_INV_Mux6~0_combout\ : std_logic;
+SIGNAL \port_map_pc|ALT_INV_portOUT\ : std_logic_vector(7 DOWNTO 0);
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_portOUT[4]~12_combout\ : std_logic;
+SIGNAL \port_map_ual|ALT_INV_Mux5~2_combout\ : std_logic;
+SIGNAL \port_map_ual|ALT_INV_Mux4~2_combout\ : std_logic;
+SIGNAL \port_map_ual|ALT_INV_Mux3~2_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add14~33_sumout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add14~29_sumout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add13~29_sumout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add13~25_sumout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add11~29_sumout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add11~25_sumout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add11~21_sumout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add11~17_sumout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add11~13_sumout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add9~29_sumout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add10~33_sumout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add8~33_sumout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add6~33_sumout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_Add5~29_sumout\ : std_logic;
 SIGNAL \port_map_ual|ALT_INV_in_tempZero~combout\ : std_logic;
 SIGNAL \port_map_ual|ALT_INV_zero~combout\ : std_logic;
 SIGNAL \port_map_ual|ALT_INV_overflow~combout\ : std_logic;
-SIGNAL \port_map_memoriaInst|ALT_INV_Mux0~0_combout\ : std_logic;
+SIGNAL \port_map_memoriaInst|ALT_INV_Mux3~0_combout\ : std_logic;
+SIGNAL \port_map_memoriaInst|ALT_INV_Mux2~0_combout\ : std_logic;
+SIGNAL \port_map_memoriaInst|ALT_INV_Mux1~0_combout\ : std_logic;
 SIGNAL \port_map_ual|ALT_INV_Mux11~0_combout\ : std_logic;
 SIGNAL \port_map_ual|ALT_INV_Equal0~3_combout\ : std_logic;
 SIGNAL \port_map_ual|ALT_INV_Equal0~2_combout\ : std_logic;
@@ -1030,6 +942,76 @@ SIGNAL \port_map_ual|ALT_INV_process_0~8_combout\ : std_logic;
 SIGNAL \port_map_ual|ALT_INV_process_0~7_combout\ : std_logic;
 SIGNAL \port_map_ual|ALT_INV_process_0~6_combout\ : std_logic;
 SIGNAL \port_map_ual|ALT_INV_process_0~5_combout\ : std_logic;
+SIGNAL \port_map_ual|ALT_INV_process_0~4_combout\ : std_logic;
+SIGNAL \port_map_ual|ALT_INV_process_0~3_combout\ : std_logic;
+SIGNAL \port_map_ual|ALT_INV_process_0~2_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~40_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~39_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~38_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~37_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~36_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~35_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~34_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~33_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~32_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~31_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~30_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~29_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~28_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~27_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~26_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_portOUT[14]~11_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_portOUT[14]~10_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~25_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~24_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~23_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~22_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~21_combout\ : std_logic;
+SIGNAL \port_map_ual|ALT_INV_process_0~1_combout\ : std_logic;
+SIGNAL \port_map_ual|ALT_INV_process_0~0_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_portOUT[13]~9_combout\ : std_logic;
+SIGNAL \port_map_memoriaInst|ALT_INV_Mux6~3_combout\ : std_logic;
+SIGNAL \port_map_controle|ALT_INV_Mux8~0_combout\ : std_logic;
+SIGNAL \port_map_multiplexador_2X1_8bits_jump|ALT_INV_portOUT[2]~0_combout\ : std_logic;
+SIGNAL \port_map_controle|ALT_INV_Mux3~0_combout\ : std_logic;
+SIGNAL \port_map_ual|ALT_INV_Mux3~0_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_portOUT[7]~8_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~20_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~19_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~18_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~17_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~16_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~15_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_process_0~9_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_portOUT[7]~7_combout\ : std_logic;
+SIGNAL \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[7]~7_combout\ : std_logic;
+SIGNAL \port_map_ual|ALT_INV_Mux4~0_combout\ : std_logic;
+SIGNAL \port_map_ual|ALT_INV_Mux1~0_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_portOUT[6]~6_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~14_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~13_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~12_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~11_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~10_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_process_0~8_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_process_0~7_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_portOUT[6]~5_combout\ : std_logic;
+SIGNAL \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[6]~6_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_portOUT[5]~4_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~9_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~8_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~7_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~6_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_process_0~6_combout\ : std_logic;
+SIGNAL \port_map_ual|ALT_INV_Mux5~0_combout\ : std_logic;
+SIGNAL \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[5]~5_combout\ : std_logic;
+SIGNAL \port_map_ual|ALT_INV_Mux6~2_combout\ : std_logic;
+SIGNAL \port_map_ual|ALT_INV_Mux6~1_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_process_0~5_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~5_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~4_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_produto~3_combout\ : std_logic;
+SIGNAL \port_map_ual|portMap_multiplexador|ALT_INV_process_0~4_combout\ : std_logic;
 
 BEGIN
 
@@ -1052,67 +1034,79 @@ ww_devpor <= devpor;
 
 \port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a0_PORTADATAIN_bus\(0) <= \port_map_ual|Mux10~2_combout\;
 
-\port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a0_PORTAADDR_bus\ <= (\port_map_memoriaInst|Mux6~1_combout\ & \port_map_memoriaInst|Mux7~3_combout\);
+\port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a0_PORTAADDR_bus\ <= (\port_map_memoriaInst|Mux5~1_combout\ & \port_map_memoriaInst|Mux6~2_wirecell_combout\);
 
-\port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a0_PORTBADDR_bus\ <= (\port_map_memoriaInst|Mux6~1_combout\ & \port_map_memoriaInst|Mux7~3_combout\);
+\port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a0_PORTBADDR_bus\ <= (\port_map_memoriaInst|Mux5~1_combout\ & \port_map_memoriaInst|Mux6~2_wirecell_combout\);
 
 \port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a0~portbdataout\ <= \port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(0);
 
 \port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a1_PORTADATAIN_bus\(0) <= \port_map_ual|Mux9~3_combout\;
 
-\port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a1_PORTAADDR_bus\ <= (\port_map_memoriaInst|Mux6~1_combout\ & \port_map_memoriaInst|Mux7~3_combout\);
+\port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a1_PORTAADDR_bus\ <= (\port_map_memoriaInst|Mux5~1_combout\ & \port_map_memoriaInst|Mux6~2_wirecell_combout\);
 
-\port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a1_PORTBADDR_bus\ <= (\port_map_memoriaInst|Mux6~1_combout\ & \port_map_memoriaInst|Mux7~3_combout\);
+\port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a1_PORTBADDR_bus\ <= (\port_map_memoriaInst|Mux5~1_combout\ & \port_map_memoriaInst|Mux6~2_wirecell_combout\);
 
 \port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a1~portbdataout\ <= \port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a1_PORTBDATAOUT_bus\(0);
 
 \port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a2_PORTADATAIN_bus\(0) <= \port_map_ual|Mux8~2_combout\;
 
-\port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a2_PORTAADDR_bus\ <= (\port_map_memoriaInst|Mux6~1_combout\ & \port_map_memoriaInst|Mux7~3_combout\);
+\port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a2_PORTAADDR_bus\ <= (\port_map_memoriaInst|Mux5~1_combout\ & \port_map_memoriaInst|Mux6~2_wirecell_combout\);
 
-\port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a2_PORTBADDR_bus\ <= (\port_map_memoriaInst|Mux6~1_combout\ & \port_map_memoriaInst|Mux7~3_combout\);
+\port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a2_PORTBADDR_bus\ <= (\port_map_memoriaInst|Mux5~1_combout\ & \port_map_memoriaInst|Mux6~2_wirecell_combout\);
 
 \port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a2~portbdataout\ <= \port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a2_PORTBDATAOUT_bus\(0);
 
 \port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a3_PORTADATAIN_bus\(0) <= \port_map_ual|Mux7~2_combout\;
 
-\port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a3_PORTAADDR_bus\ <= (\port_map_memoriaInst|Mux6~1_combout\ & \port_map_memoriaInst|Mux7~3_combout\);
+\port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a3_PORTAADDR_bus\ <= (\port_map_memoriaInst|Mux5~1_combout\ & \port_map_memoriaInst|Mux6~2_wirecell_combout\);
 
-\port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a3_PORTBADDR_bus\ <= (\port_map_memoriaInst|Mux6~1_combout\ & \port_map_memoriaInst|Mux7~3_combout\);
+\port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a3_PORTBADDR_bus\ <= (\port_map_memoriaInst|Mux5~1_combout\ & \port_map_memoriaInst|Mux6~2_wirecell_combout\);
 
 \port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a3~portbdataout\ <= \port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a3_PORTBDATAOUT_bus\(0);
 
 \port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a4_PORTADATAIN_bus\(0) <= \port_map_ual|Mux6~2_combout\;
 
-\port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a4_PORTAADDR_bus\ <= (\port_map_memoriaInst|Mux6~1_combout\ & \port_map_memoriaInst|Mux7~3_combout\);
+\port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a4_PORTAADDR_bus\ <= (\port_map_memoriaInst|Mux5~1_combout\ & \port_map_memoriaInst|Mux6~2_wirecell_combout\);
 
-\port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a4_PORTBADDR_bus\ <= (\port_map_memoriaInst|Mux6~1_combout\ & \port_map_memoriaInst|Mux7~3_combout\);
+\port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a4_PORTBADDR_bus\ <= (\port_map_memoriaInst|Mux5~1_combout\ & \port_map_memoriaInst|Mux6~2_wirecell_combout\);
 
 \port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a4~portbdataout\ <= \port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a4_PORTBDATAOUT_bus\(0);
 
-\port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a5_PORTADATAIN_bus\(0) <= \port_map_ual|Mux5~2_combout\;
+\port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a5_PORTADATAIN_bus\(0) <= \port_map_ual|Mux5~1_combout\;
 
-\port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a5_PORTAADDR_bus\ <= (\port_map_memoriaInst|Mux6~1_combout\ & \port_map_memoriaInst|Mux7~3_combout\);
+\port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a5_PORTAADDR_bus\ <= (\port_map_memoriaInst|Mux5~1_combout\ & \port_map_memoriaInst|Mux6~2_wirecell_combout\);
 
-\port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a5_PORTBADDR_bus\ <= (\port_map_memoriaInst|Mux6~1_combout\ & \port_map_memoriaInst|Mux7~3_combout\);
+\port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a5_PORTBADDR_bus\ <= (\port_map_memoriaInst|Mux5~1_combout\ & \port_map_memoriaInst|Mux6~2_wirecell_combout\);
 
 \port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a5~portbdataout\ <= \port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a5_PORTBDATAOUT_bus\(0);
 
-\port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a6_PORTADATAIN_bus\(0) <= \port_map_ual|Mux4~3_combout\;
+\port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a6_PORTADATAIN_bus\(0) <= \port_map_ual|Mux4~1_combout\;
 
-\port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a6_PORTAADDR_bus\ <= (\port_map_memoriaInst|Mux6~1_combout\ & \port_map_memoriaInst|Mux7~3_combout\);
+\port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a6_PORTAADDR_bus\ <= (\port_map_memoriaInst|Mux5~1_combout\ & \port_map_memoriaInst|Mux6~2_wirecell_combout\);
 
-\port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a6_PORTBADDR_bus\ <= (\port_map_memoriaInst|Mux6~1_combout\ & \port_map_memoriaInst|Mux7~3_combout\);
+\port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a6_PORTBADDR_bus\ <= (\port_map_memoriaInst|Mux5~1_combout\ & \port_map_memoriaInst|Mux6~2_wirecell_combout\);
 
 \port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a6~portbdataout\ <= \port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a6_PORTBDATAOUT_bus\(0);
 
 \port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a7_PORTADATAIN_bus\(0) <= \port_map_ual|Mux3~1_combout\;
 
-\port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a7_PORTAADDR_bus\ <= (\port_map_memoriaInst|Mux6~1_combout\ & \port_map_memoriaInst|Mux7~3_combout\);
+\port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a7_PORTAADDR_bus\ <= (\port_map_memoriaInst|Mux5~1_combout\ & \port_map_memoriaInst|Mux6~2_wirecell_combout\);
 
-\port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a7_PORTBADDR_bus\ <= (\port_map_memoriaInst|Mux6~1_combout\ & \port_map_memoriaInst|Mux7~3_combout\);
+\port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a7_PORTBADDR_bus\ <= (\port_map_memoriaInst|Mux5~1_combout\ & \port_map_memoriaInst|Mux6~2_wirecell_combout\);
 
 \port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a7~portbdataout\ <= \port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a7_PORTBDATAOUT_bus\(0);
+\port_map_ual|portMap_multiplexador|ALT_INV_Add7~29_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add7~29_sumout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_Add12~33_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add12~33_sumout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_Add7~25_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add7~25_sumout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_Add8~29_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add8~29_sumout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_Add6~29_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add6~29_sumout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_Add4~33_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add4~33_sumout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_Add3~29_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add3~29_sumout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_Add5~25_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add5~25_sumout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_Add10~29_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add10~29_sumout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_Add9~25_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add9~25_sumout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_Add12~29_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add12~29_sumout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_Add12~25_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add12~25_sumout\;
 \port_map_ual|portMap_multiplexador|ALT_INV_Add10~25_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add10~25_sumout\;
 \port_map_ual|portMap_multiplexador|ALT_INV_Add8~25_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add8~25_sumout\;
 \port_map_ual|portMap_multiplexador|ALT_INV_Add7~21_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add7~21_sumout\;
@@ -1177,7 +1171,6 @@ ww_devpor <= devpor;
 \port_map_ual|portMap_multiplexador|ALT_INV_Add9~9_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add9~9_sumout\;
 \port_map_ual|portMap_multiplexador|ALT_INV_Add14~1_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add14~1_sumout\;
 \port_map_ual|portMap_subtrair|ALT_INV_Add0~25_sumout\ <= NOT \port_map_ual|portMap_subtrair|Add0~25_sumout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_Add11~1_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add11~1_sumout\;
 \port_map_ual|portMap_adicionador|ALT_INV_Add0~25_sumout\ <= NOT \port_map_ual|portMap_adicionador|Add0~25_sumout\;
 \port_map_ual|portMap_multiplexador|ALT_INV_Add12~1_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add12~1_sumout\;
 \port_map_ual|portMap_multiplexador|ALT_INV_Add9~5_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add9~5_sumout\;
@@ -1191,6 +1184,7 @@ ww_devpor <= devpor;
 \port_map_ual|portMap_multiplexador|ALT_INV_Add3~17_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add3~17_sumout\;
 \port_map_ual|portMap_multiplexador|ALT_INV_Add5~13_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add5~13_sumout\;
 \port_map_ual|portMap_multiplexador|ALT_INV_Add7~9_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add7~9_sumout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_Add11~1_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add11~1_sumout\;
 \port_map_ual|portMap_multiplexador|ALT_INV_Add10~1_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add10~1_sumout\;
 \port_map_ual|portMap_multiplexador|ALT_INV_Add7~5_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add7~5_sumout\;
 \port_map_ual|portMap_multiplexador|ALT_INV_Add8~5_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add8~5_sumout\;
@@ -1239,186 +1233,13 @@ ww_devpor <= devpor;
 \port_map_ual|portMap_multiplexador|ALT_INV_Add0~1_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add0~1_sumout\;
 \port_map_ual|portMap_adicionador|ALT_INV_Add0~1_sumout\ <= NOT \port_map_ual|portMap_adicionador|Add0~1_sumout\;
 \port_map_ual|portMap_subtrair|ALT_INV_Add0~1_sumout\ <= NOT \port_map_ual|portMap_subtrair|Add0~1_sumout\;
-\port_map_registradores|ALT_INV_registrador~58_combout\ <= NOT \port_map_registradores|registrador~58_combout\;
-\port_map_registradores|ALT_INV_registrador~57_combout\ <= NOT \port_map_registradores|registrador~57_combout\;
-\port_map_registradores|ALT_INV_registrador~56_combout\ <= NOT \port_map_registradores|registrador~56_combout\;
-\port_map_registradores|ALT_INV_registrador~55_combout\ <= NOT \port_map_registradores|registrador~55_combout\;
-\port_map_registradores|ALT_INV_registrador~54_combout\ <= NOT \port_map_registradores|registrador~54_combout\;
-\port_map_registradores|ALT_INV_registrador~53_combout\ <= NOT \port_map_registradores|registrador~53_combout\;
-\port_map_registradores|ALT_INV_registrador~52_combout\ <= NOT \port_map_registradores|registrador~52_combout\;
-\port_map_registradores|ALT_INV_registrador~51_combout\ <= NOT \port_map_registradores|registrador~51_combout\;
-\port_map_registradores|ALT_INV_registrador~50_combout\ <= NOT \port_map_registradores|registrador~50_combout\;
-\port_map_registradores|ALT_INV_registrador~42_q\ <= NOT \port_map_registradores|registrador~42_q\;
-\port_map_registradores|ALT_INV_registrador~34_q\ <= NOT \port_map_registradores|registrador~34_q\;
-\port_map_registradores|ALT_INV_registrador~26_q\ <= NOT \port_map_registradores|registrador~26_q\;
-\port_map_registradores|ALT_INV_registrador~18_q\ <= NOT \port_map_registradores|registrador~18_q\;
-\port_map_registradores|ALT_INV_registrador~49_combout\ <= NOT \port_map_registradores|registrador~49_combout\;
-\port_map_registradores|ALT_INV_registrador~41_q\ <= NOT \port_map_registradores|registrador~41_q\;
-\port_map_registradores|ALT_INV_registrador~33_q\ <= NOT \port_map_registradores|registrador~33_q\;
-\port_map_registradores|ALT_INV_registrador~25_q\ <= NOT \port_map_registradores|registrador~25_q\;
-\port_map_registradores|ALT_INV_registrador~17_q\ <= NOT \port_map_registradores|registrador~17_q\;
-\port_map_registradores|ALT_INV_registrador~48_combout\ <= NOT \port_map_registradores|registrador~48_combout\;
-\port_map_registradores|ALT_INV_registrador~40_q\ <= NOT \port_map_registradores|registrador~40_q\;
-\port_map_registradores|ALT_INV_registrador~32_q\ <= NOT \port_map_registradores|registrador~32_q\;
-\port_map_registradores|ALT_INV_registrador~24_q\ <= NOT \port_map_registradores|registrador~24_q\;
-\port_map_registradores|ALT_INV_registrador~16_q\ <= NOT \port_map_registradores|registrador~16_q\;
-\port_map_registradores|ALT_INV_registrador~47_combout\ <= NOT \port_map_registradores|registrador~47_combout\;
-\port_map_registradores|ALT_INV_registrador~39_q\ <= NOT \port_map_registradores|registrador~39_q\;
-\port_map_registradores|ALT_INV_registrador~31_q\ <= NOT \port_map_registradores|registrador~31_q\;
-\port_map_registradores|ALT_INV_registrador~23_q\ <= NOT \port_map_registradores|registrador~23_q\;
-\port_map_registradores|ALT_INV_registrador~15_q\ <= NOT \port_map_registradores|registrador~15_q\;
-\port_map_registradores|ALT_INV_registrador~46_combout\ <= NOT \port_map_registradores|registrador~46_combout\;
-\port_map_registradores|ALT_INV_registrador~38_q\ <= NOT \port_map_registradores|registrador~38_q\;
-\port_map_registradores|ALT_INV_registrador~30_q\ <= NOT \port_map_registradores|registrador~30_q\;
-\port_map_registradores|ALT_INV_registrador~22_q\ <= NOT \port_map_registradores|registrador~22_q\;
-\port_map_registradores|ALT_INV_registrador~14_q\ <= NOT \port_map_registradores|registrador~14_q\;
-\port_map_registradores|ALT_INV_registrador~45_combout\ <= NOT \port_map_registradores|registrador~45_combout\;
-\port_map_registradores|ALT_INV_registrador~37_q\ <= NOT \port_map_registradores|registrador~37_q\;
-\port_map_registradores|ALT_INV_registrador~29_q\ <= NOT \port_map_registradores|registrador~29_q\;
-\port_map_registradores|ALT_INV_registrador~21_q\ <= NOT \port_map_registradores|registrador~21_q\;
-\port_map_registradores|ALT_INV_registrador~13_q\ <= NOT \port_map_registradores|registrador~13_q\;
-\port_map_registradores|ALT_INV_registrador~44_combout\ <= NOT \port_map_registradores|registrador~44_combout\;
-\port_map_registradores|ALT_INV_registrador~36_q\ <= NOT \port_map_registradores|registrador~36_q\;
-\port_map_registradores|ALT_INV_registrador~28_q\ <= NOT \port_map_registradores|registrador~28_q\;
-\port_map_registradores|ALT_INV_registrador~20_q\ <= NOT \port_map_registradores|registrador~20_q\;
-\port_map_registradores|ALT_INV_registrador~12_q\ <= NOT \port_map_registradores|registrador~12_q\;
-\port_map_registradores|ALT_INV_registrador~43_combout\ <= NOT \port_map_registradores|registrador~43_combout\;
-\port_map_registradores|ALT_INV_registrador~35_q\ <= NOT \port_map_registradores|registrador~35_q\;
-\port_map_registradores|ALT_INV_registrador~27_q\ <= NOT \port_map_registradores|registrador~27_q\;
-\port_map_registradores|ALT_INV_registrador~19_q\ <= NOT \port_map_registradores|registrador~19_q\;
-\port_map_registradores|ALT_INV_registrador~11_q\ <= NOT \port_map_registradores|registrador~11_q\;
-\port_map_memoriaInst|ALT_INV_Mux1~1_combout\ <= NOT \port_map_memoriaInst|Mux1~1_combout\;
-\port_map_memoriaInst|ALT_INV_Mux1~0_combout\ <= NOT \port_map_memoriaInst|Mux1~0_combout\;
-\port_map_memoriaInst|ALT_INV_Mux2~0_combout\ <= NOT \port_map_memoriaInst|Mux2~0_combout\;
-\port_map_memoriaInst|ALT_INV_Mux3~1_combout\ <= NOT \port_map_memoriaInst|Mux3~1_combout\;
-\port_map_memoriaInst|ALT_INV_Mux4~1_combout\ <= NOT \port_map_memoriaInst|Mux4~1_combout\;
-\port_map_memoriaInst|ALT_INV_Mux4~0_combout\ <= NOT \port_map_memoriaInst|Mux4~0_combout\;
-\port_map_memoriaInst|ALT_INV_Mux5~1_combout\ <= NOT \port_map_memoriaInst|Mux5~1_combout\;
-\port_map_memoriaInst|ALT_INV_Mux3~0_combout\ <= NOT \port_map_memoriaInst|Mux3~0_combout\;
-\port_map_memoriaInst|ALT_INV_Mux5~0_combout\ <= NOT \port_map_memoriaInst|Mux5~0_combout\;
-\port_map_memoriaInst|ALT_INV_Mux6~1_combout\ <= NOT \port_map_memoriaInst|Mux6~1_combout\;
-\port_map_memoriaInst|ALT_INV_Mux6~0_combout\ <= NOT \port_map_memoriaInst|Mux6~0_combout\;
-\port_map_memoriaInst|ALT_INV_Mux7~3_combout\ <= NOT \port_map_memoriaInst|Mux7~3_combout\;
-\port_map_memoriaInst|ALT_INV_Mux7~2_combout\ <= NOT \port_map_memoriaInst|Mux7~2_combout\;
-\port_map_memoriaInst|ALT_INV_Mux7~1_combout\ <= NOT \port_map_memoriaInst|Mux7~1_combout\;
-\port_map_memoriaInst|ALT_INV_Mux7~0_combout\ <= NOT \port_map_memoriaInst|Mux7~0_combout\;
-\port_map_pc|ALT_INV_portOUT\(7) <= NOT \port_map_pc|portOUT\(7);
-\port_map_pc|ALT_INV_portOUT\(6) <= NOT \port_map_pc|portOUT\(6);
-\port_map_pc|ALT_INV_portOUT\(5) <= NOT \port_map_pc|portOUT\(5);
-\port_map_pc|ALT_INV_portOUT\(4) <= NOT \port_map_pc|portOUT\(4);
-\port_map_pc|ALT_INV_portOUT\(3) <= NOT \port_map_pc|portOUT\(3);
-\port_map_pc|ALT_INV_portOUT\(2) <= NOT \port_map_pc|portOUT\(2);
-\port_map_pc|ALT_INV_portOUT\(1) <= NOT \port_map_pc|portOUT\(1);
-\port_map_pc|ALT_INV_portOUT\(0) <= NOT \port_map_pc|portOUT\(0);
-\port_map_ual|portMap_multiplexador|ALT_INV_portOUT[3]~13_combout\ <= NOT \port_map_ual|portMap_multiplexador|portOUT[3]~13_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_portOUT[4]~9_combout\ <= NOT \port_map_ual|portMap_multiplexador|portOUT[4]~9_combout\;
-\port_map_ual|ALT_INV_Mux4~4_combout\ <= NOT \port_map_ual|Mux4~4_combout\;
-\port_map_ual|ALT_INV_Mux3~2_combout\ <= NOT \port_map_ual|Mux3~2_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_Add14~33_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add14~33_sumout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_Add14~29_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add14~29_sumout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_Add13~29_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add13~29_sumout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_Add13~25_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add13~25_sumout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_Add11~29_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add11~29_sumout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_Add11~25_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add11~25_sumout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_Add11~21_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add11~21_sumout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_Add11~17_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add11~17_sumout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_Add11~13_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add11~13_sumout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_Add9~29_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add9~29_sumout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_Add10~33_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add10~33_sumout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_Add8~33_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add8~33_sumout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_Add6~33_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add6~33_sumout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_Add5~29_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add5~29_sumout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_Add7~29_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add7~29_sumout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_Add12~33_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add12~33_sumout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_Add7~25_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add7~25_sumout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_Add8~29_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add8~29_sumout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_Add6~29_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add6~29_sumout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_Add4~33_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add4~33_sumout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_Add3~29_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add3~29_sumout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_Add5~25_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add5~25_sumout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_Add10~29_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add10~29_sumout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_Add9~25_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add9~25_sumout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_Add12~29_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add12~29_sumout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_Add12~25_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add12~25_sumout\;
-\port_map_ual|ALT_INV_process_0~4_combout\ <= NOT \port_map_ual|process_0~4_combout\;
-\port_map_ual|ALT_INV_process_0~3_combout\ <= NOT \port_map_ual|process_0~3_combout\;
-\port_map_ual|ALT_INV_process_0~2_combout\ <= NOT \port_map_ual|process_0~2_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_produto~40_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~40_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_produto~39_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~39_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_produto~38_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~38_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_produto~37_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~37_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_produto~36_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~36_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_produto~35_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~35_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_produto~34_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~34_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_produto~33_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~33_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_produto~32_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~32_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_produto~31_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~31_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_produto~30_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~30_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_produto~29_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~29_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_produto~28_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~28_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_produto~27_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~27_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_produto~26_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~26_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_portOUT[14]~8_combout\ <= NOT \port_map_ual|portMap_multiplexador|portOUT[14]~8_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_portOUT[14]~7_combout\ <= NOT \port_map_ual|portMap_multiplexador|portOUT[14]~7_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_produto~25_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~25_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_produto~24_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~24_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_produto~23_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~23_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_produto~22_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~22_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_produto~21_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~21_combout\;
-\port_map_ual|ALT_INV_process_0~1_combout\ <= NOT \port_map_ual|process_0~1_combout\;
-\port_map_ual|ALT_INV_process_0~0_combout\ <= NOT \port_map_ual|process_0~0_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_portOUT[13]~6_combout\ <= NOT \port_map_ual|portMap_multiplexador|portOUT[13]~6_combout\;
-\port_map_memoriaInst|ALT_INV_Mux6~2_combout\ <= NOT \port_map_memoriaInst|Mux6~2_combout\;
-\port_map_memoriaInst|ALT_INV_Mux7~4_combout\ <= NOT \port_map_memoriaInst|Mux7~4_combout\;
-\port_map_controle|ALT_INV_Mux8~0_combout\ <= NOT \port_map_controle|Mux8~0_combout\;
-\port_map_multiplexador_2X1_8bits_jump|ALT_INV_portOUT[3]~0_combout\ <= NOT \port_map_multiplexador_2X1_8bits_jump|portOUT[3]~0_combout\;
-\port_map_controle|ALT_INV_Mux3~0_combout\ <= NOT \port_map_controle|Mux3~0_combout\;
-\port_map_ual|ALT_INV_Mux3~0_combout\ <= NOT \port_map_ual|Mux3~0_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_portOUT[7]~5_combout\ <= NOT \port_map_ual|portMap_multiplexador|portOUT[7]~5_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_produto~20_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~20_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_produto~19_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~19_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_produto~18_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~18_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_produto~17_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~17_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_produto~16_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~16_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_produto~15_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~15_combout\;
-\port_map_ual|ALT_INV_Mux1~0_combout\ <= NOT \port_map_ual|Mux1~0_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_portOUT[7]~4_combout\ <= NOT \port_map_ual|portMap_multiplexador|portOUT[7]~4_combout\;
-\port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[7]~7_combout\ <= NOT \port_map_multiplexador_2X1_8bits_br_ula|portOUT[7]~7_combout\;
-\port_map_ual|ALT_INV_Mux4~3_combout\ <= NOT \port_map_ual|Mux4~3_combout\;
-\port_map_ual|ALT_INV_Mux4~2_combout\ <= NOT \port_map_ual|Mux4~2_combout\;
-\port_map_ual|ALT_INV_Mux4~1_combout\ <= NOT \port_map_ual|Mux4~1_combout\;
-\port_map_ual|ALT_INV_Mux4~0_combout\ <= NOT \port_map_ual|Mux4~0_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_process_0~9_combout\ <= NOT \port_map_ual|portMap_multiplexador|process_0~9_combout\;
-\port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[6]~6_combout\ <= NOT \port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_produto~14_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~14_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_produto~13_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~13_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_produto~12_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~12_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_produto~11_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~11_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_produto~10_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~10_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_process_0~8_combout\ <= NOT \port_map_ual|portMap_multiplexador|process_0~8_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_process_0~7_combout\ <= NOT \port_map_ual|portMap_multiplexador|process_0~7_combout\;
-\port_map_ual|ALT_INV_Mux5~1_combout\ <= NOT \port_map_ual|Mux5~1_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_portOUT[5]~3_combout\ <= NOT \port_map_ual|portMap_multiplexador|portOUT[5]~3_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_produto~9_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~9_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_produto~8_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~8_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_produto~7_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~7_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_produto~6_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~6_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_portOUT[5]~2_combout\ <= NOT \port_map_ual|portMap_multiplexador|portOUT[5]~2_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_process_0~6_combout\ <= NOT \port_map_ual|portMap_multiplexador|process_0~6_combout\;
-\port_map_ual|ALT_INV_Mux5~0_combout\ <= NOT \port_map_ual|Mux5~0_combout\;
-\port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[5]~5_combout\ <= NOT \port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\;
-\port_map_ual|ALT_INV_Mux6~2_combout\ <= NOT \port_map_ual|Mux6~2_combout\;
-\port_map_ual|ALT_INV_Mux6~1_combout\ <= NOT \port_map_ual|Mux6~1_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_process_0~5_combout\ <= NOT \port_map_ual|portMap_multiplexador|process_0~5_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_produto~5_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~5_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_produto~4_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~4_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_produto~3_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~3_combout\;
-\port_map_ual|portMap_multiplexador|ALT_INV_process_0~4_combout\ <= NOT \port_map_ual|portMap_multiplexador|process_0~4_combout\;
 \port_map_ual|portMap_multiplexador|ALT_INV_process_0~3_combout\ <= NOT \port_map_ual|portMap_multiplexador|process_0~3_combout\;
 \port_map_ual|ALT_INV_Mux6~0_combout\ <= NOT \port_map_ual|Mux6~0_combout\;
 \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[4]~4_combout\ <= NOT \port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\;
 \port_map_ual|ALT_INV_Mux7~2_combout\ <= NOT \port_map_ual|Mux7~2_combout\;
 \port_map_ual|ALT_INV_Mux7~1_combout\ <= NOT \port_map_ual|Mux7~1_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_portOUT[3]~3_combout\ <= NOT \port_map_ual|portMap_multiplexador|portOUT[3]~3_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_portOUT[3]~2_combout\ <= NOT \port_map_ual|portMap_multiplexador|portOUT[3]~2_combout\;
 \port_map_ual|portMap_multiplexador|ALT_INV_produto~2_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~2_combout\;
 \port_map_ual|portMap_multiplexador|ALT_INV_produto~1_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~1_combout\;
 \port_map_ual|portMap_multiplexador|ALT_INV_process_0~2_combout\ <= NOT \port_map_ual|portMap_multiplexador|process_0~2_combout\;
@@ -1438,17 +1259,99 @@ ww_devpor <= devpor;
 \port_map_ual|ALT_INV_Mux9~1_combout\ <= NOT \port_map_ual|Mux9~1_combout\;
 \port_map_ual|ALT_INV_Mux9~0_combout\ <= NOT \port_map_ual|Mux9~0_combout\;
 \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[1]~1_combout\ <= NOT \port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\;
+\port_map_controle|ALT_INV_Mux4~0_combout\ <= NOT \port_map_controle|Mux4~0_combout\;
 \port_map_ual|ALT_INV_Mux10~2_combout\ <= NOT \port_map_ual|Mux10~2_combout\;
 \port_map_ual|ALT_INV_Mux10~1_combout\ <= NOT \port_map_ual|Mux10~1_combout\;
 \port_map_ual|ALT_INV_Mux10~0_combout\ <= NOT \port_map_ual|Mux10~0_combout\;
 \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[0]~0_combout\ <= NOT \port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\;
 \port_map_controle|ALT_INV_Mux7~0_combout\ <= NOT \port_map_controle|Mux7~0_combout\;
 \port_map_controle|ALT_INV_Mux5~0_combout\ <= NOT \port_map_controle|Mux5~0_combout\;
-\port_map_controle|ALT_INV_Mux4~0_combout\ <= NOT \port_map_controle|Mux4~0_combout\;
+\port_map_registradores|ALT_INV_registrador~72_combout\ <= NOT \port_map_registradores|registrador~72_combout\;
+\port_map_registradores|ALT_INV_registrador~71_combout\ <= NOT \port_map_registradores|registrador~71_combout\;
+\port_map_registradores|ALT_INV_registrador~70_combout\ <= NOT \port_map_registradores|registrador~70_combout\;
+\port_map_registradores|ALT_INV_registrador~69_combout\ <= NOT \port_map_registradores|registrador~69_combout\;
+\port_map_registradores|ALT_INV_registrador~68_combout\ <= NOT \port_map_registradores|registrador~68_combout\;
+\port_map_registradores|ALT_INV_registrador~67_combout\ <= NOT \port_map_registradores|registrador~67_combout\;
+\port_map_registradores|ALT_INV_registrador~66_combout\ <= NOT \port_map_registradores|registrador~66_combout\;
+\port_map_registradores|ALT_INV_registrador~65_combout\ <= NOT \port_map_registradores|registrador~65_combout\;
+\port_map_registradores|ALT_INV_registrador~64_combout\ <= NOT \port_map_registradores|registrador~64_combout\;
+\port_map_registradores|ALT_INV_registrador~63_combout\ <= NOT \port_map_registradores|registrador~63_combout\;
+\port_map_registradores|ALT_INV_registrador~62_combout\ <= NOT \port_map_registradores|registrador~62_combout\;
+\port_map_registradores|ALT_INV_registrador~61_combout\ <= NOT \port_map_registradores|registrador~61_combout\;
+\port_map_registradores|ALT_INV_registrador~60_combout\ <= NOT \port_map_registradores|registrador~60_combout\;
+\port_map_registradores|ALT_INV_registrador~59_combout\ <= NOT \port_map_registradores|registrador~59_combout\;
+\port_map_registradores|ALT_INV_registrador~58_combout\ <= NOT \port_map_registradores|registrador~58_combout\;
+\port_map_registradores|ALT_INV_registrador~57_combout\ <= NOT \port_map_registradores|registrador~57_combout\;
+\port_map_registradores|ALT_INV_registrador~56_combout\ <= NOT \port_map_registradores|registrador~56_combout\;
+\port_map_registradores|ALT_INV_registrador~55_combout\ <= NOT \port_map_registradores|registrador~55_combout\;
+\port_map_registradores|ALT_INV_registrador~54_combout\ <= NOT \port_map_registradores|registrador~54_combout\;
+\port_map_registradores|ALT_INV_registrador~53_combout\ <= NOT \port_map_registradores|registrador~53_combout\;
+\port_map_registradores|ALT_INV_registrador~52_combout\ <= NOT \port_map_registradores|registrador~52_combout\;
+\port_map_registradores|ALT_INV_registrador~51_combout\ <= NOT \port_map_registradores|registrador~51_combout\;
+\port_map_registradores|ALT_INV_registrador~50_combout\ <= NOT \port_map_registradores|registrador~50_combout\;
+\port_map_registradores|ALT_INV_registrador~18_q\ <= NOT \port_map_registradores|registrador~18_q\;
+\port_map_registradores|ALT_INV_registrador~26_q\ <= NOT \port_map_registradores|registrador~26_q\;
+\port_map_registradores|ALT_INV_registrador~49_combout\ <= NOT \port_map_registradores|registrador~49_combout\;
+\port_map_registradores|ALT_INV_registrador~17_q\ <= NOT \port_map_registradores|registrador~17_q\;
+\port_map_registradores|ALT_INV_registrador~25_q\ <= NOT \port_map_registradores|registrador~25_q\;
+\port_map_registradores|ALT_INV_registrador~48_combout\ <= NOT \port_map_registradores|registrador~48_combout\;
+\port_map_registradores|ALT_INV_registrador~16_q\ <= NOT \port_map_registradores|registrador~16_q\;
+\port_map_registradores|ALT_INV_registrador~24_q\ <= NOT \port_map_registradores|registrador~24_q\;
+\port_map_registradores|ALT_INV_registrador~47_combout\ <= NOT \port_map_registradores|registrador~47_combout\;
+\port_map_registradores|ALT_INV_registrador~15_q\ <= NOT \port_map_registradores|registrador~15_q\;
+\port_map_registradores|ALT_INV_registrador~23_q\ <= NOT \port_map_registradores|registrador~23_q\;
+\port_map_registradores|ALT_INV_registrador~46_combout\ <= NOT \port_map_registradores|registrador~46_combout\;
+\port_map_registradores|ALT_INV_registrador~14_q\ <= NOT \port_map_registradores|registrador~14_q\;
+\port_map_registradores|ALT_INV_registrador~22_q\ <= NOT \port_map_registradores|registrador~22_q\;
+\port_map_registradores|ALT_INV_registrador~45_combout\ <= NOT \port_map_registradores|registrador~45_combout\;
+\port_map_registradores|ALT_INV_registrador~13_q\ <= NOT \port_map_registradores|registrador~13_q\;
+\port_map_registradores|ALT_INV_registrador~21_q\ <= NOT \port_map_registradores|registrador~21_q\;
+\port_map_registradores|ALT_INV_registrador~44_combout\ <= NOT \port_map_registradores|registrador~44_combout\;
+\port_map_registradores|ALT_INV_registrador~12_q\ <= NOT \port_map_registradores|registrador~12_q\;
+\port_map_registradores|ALT_INV_registrador~20_q\ <= NOT \port_map_registradores|registrador~20_q\;
+\port_map_registradores|ALT_INV_registrador~43_combout\ <= NOT \port_map_registradores|registrador~43_combout\;
+\port_map_registradores|ALT_INV_registrador~11_q\ <= NOT \port_map_registradores|registrador~11_q\;
+\port_map_registradores|ALT_INV_registrador~19_q\ <= NOT \port_map_registradores|registrador~19_q\;
+\port_map_memoriaInst|ALT_INV_Mux0~1_combout\ <= NOT \port_map_memoriaInst|Mux0~1_combout\;
+\port_map_memoriaInst|ALT_INV_Mux4~0_combout\ <= NOT \port_map_memoriaInst|Mux4~0_combout\;
+\port_map_memoriaInst|ALT_INV_Mux0~0_combout\ <= NOT \port_map_memoriaInst|Mux0~0_combout\;
+\port_map_memoriaInst|ALT_INV_Mux5~1_combout\ <= NOT \port_map_memoriaInst|Mux5~1_combout\;
+\port_map_memoriaInst|ALT_INV_Mux5~0_combout\ <= NOT \port_map_memoriaInst|Mux5~0_combout\;
+\port_map_memoriaInst|ALT_INV_Mux6~2_combout\ <= NOT \port_map_memoriaInst|Mux6~2_combout\;
+\port_map_memoriaInst|ALT_INV_Mux6~1_combout\ <= NOT \port_map_memoriaInst|Mux6~1_combout\;
+\port_map_memoriaInst|ALT_INV_Mux6~0_combout\ <= NOT \port_map_memoriaInst|Mux6~0_combout\;
+\port_map_pc|ALT_INV_portOUT\(7) <= NOT \port_map_pc|portOUT\(7);
+\port_map_pc|ALT_INV_portOUT\(6) <= NOT \port_map_pc|portOUT\(6);
+\port_map_pc|ALT_INV_portOUT\(5) <= NOT \port_map_pc|portOUT\(5);
+\port_map_pc|ALT_INV_portOUT\(4) <= NOT \port_map_pc|portOUT\(4);
+\port_map_pc|ALT_INV_portOUT\(3) <= NOT \port_map_pc|portOUT\(3);
+\port_map_pc|ALT_INV_portOUT\(2) <= NOT \port_map_pc|portOUT\(2);
+\port_map_pc|ALT_INV_portOUT\(1) <= NOT \port_map_pc|portOUT\(1);
+\port_map_pc|ALT_INV_portOUT\(0) <= NOT \port_map_pc|portOUT\(0);
+\port_map_ual|portMap_multiplexador|ALT_INV_portOUT[4]~12_combout\ <= NOT \port_map_ual|portMap_multiplexador|portOUT[4]~12_combout\;
+\port_map_ual|ALT_INV_Mux5~2_combout\ <= NOT \port_map_ual|Mux5~2_combout\;
+\port_map_ual|ALT_INV_Mux4~2_combout\ <= NOT \port_map_ual|Mux4~2_combout\;
+\port_map_ual|ALT_INV_Mux3~2_combout\ <= NOT \port_map_ual|Mux3~2_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_Add14~33_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add14~33_sumout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_Add14~29_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add14~29_sumout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_Add13~29_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add13~29_sumout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_Add13~25_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add13~25_sumout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_Add11~29_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add11~29_sumout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_Add11~25_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add11~25_sumout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_Add11~21_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add11~21_sumout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_Add11~17_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add11~17_sumout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_Add11~13_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add11~13_sumout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_Add9~29_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add9~29_sumout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_Add10~33_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add10~33_sumout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_Add8~33_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add8~33_sumout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_Add6~33_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add6~33_sumout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_Add5~29_sumout\ <= NOT \port_map_ual|portMap_multiplexador|Add5~29_sumout\;
 \port_map_ual|ALT_INV_in_tempZero~combout\ <= NOT \port_map_ual|in_tempZero~combout\;
 \port_map_ual|ALT_INV_zero~combout\ <= NOT \port_map_ual|zero~combout\;
 \port_map_ual|ALT_INV_overflow~combout\ <= NOT \port_map_ual|overflow~combout\;
-\port_map_memoriaInst|ALT_INV_Mux0~0_combout\ <= NOT \port_map_memoriaInst|Mux0~0_combout\;
+\port_map_memoriaInst|ALT_INV_Mux3~0_combout\ <= NOT \port_map_memoriaInst|Mux3~0_combout\;
+\port_map_memoriaInst|ALT_INV_Mux2~0_combout\ <= NOT \port_map_memoriaInst|Mux2~0_combout\;
+\port_map_memoriaInst|ALT_INV_Mux1~0_combout\ <= NOT \port_map_memoriaInst|Mux1~0_combout\;
 \port_map_ual|ALT_INV_Mux11~0_combout\ <= NOT \port_map_ual|Mux11~0_combout\;
 \port_map_ual|ALT_INV_Equal0~3_combout\ <= NOT \port_map_ual|Equal0~3_combout\;
 \port_map_ual|ALT_INV_Equal0~2_combout\ <= NOT \port_map_ual|Equal0~2_combout\;
@@ -1467,6 +1370,76 @@ ww_devpor <= devpor;
 \port_map_ual|ALT_INV_process_0~7_combout\ <= NOT \port_map_ual|process_0~7_combout\;
 \port_map_ual|ALT_INV_process_0~6_combout\ <= NOT \port_map_ual|process_0~6_combout\;
 \port_map_ual|ALT_INV_process_0~5_combout\ <= NOT \port_map_ual|process_0~5_combout\;
+\port_map_ual|ALT_INV_process_0~4_combout\ <= NOT \port_map_ual|process_0~4_combout\;
+\port_map_ual|ALT_INV_process_0~3_combout\ <= NOT \port_map_ual|process_0~3_combout\;
+\port_map_ual|ALT_INV_process_0~2_combout\ <= NOT \port_map_ual|process_0~2_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_produto~40_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~40_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_produto~39_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~39_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_produto~38_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~38_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_produto~37_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~37_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_produto~36_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~36_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_produto~35_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~35_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_produto~34_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~34_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_produto~33_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~33_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_produto~32_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~32_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_produto~31_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~31_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_produto~30_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~30_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_produto~29_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~29_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_produto~28_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~28_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_produto~27_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~27_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_produto~26_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~26_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_portOUT[14]~11_combout\ <= NOT \port_map_ual|portMap_multiplexador|portOUT[14]~11_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_portOUT[14]~10_combout\ <= NOT \port_map_ual|portMap_multiplexador|portOUT[14]~10_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_produto~25_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~25_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_produto~24_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~24_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_produto~23_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~23_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_produto~22_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~22_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_produto~21_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~21_combout\;
+\port_map_ual|ALT_INV_process_0~1_combout\ <= NOT \port_map_ual|process_0~1_combout\;
+\port_map_ual|ALT_INV_process_0~0_combout\ <= NOT \port_map_ual|process_0~0_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_portOUT[13]~9_combout\ <= NOT \port_map_ual|portMap_multiplexador|portOUT[13]~9_combout\;
+\port_map_memoriaInst|ALT_INV_Mux6~3_combout\ <= NOT \port_map_memoriaInst|Mux6~3_combout\;
+\port_map_controle|ALT_INV_Mux8~0_combout\ <= NOT \port_map_controle|Mux8~0_combout\;
+\port_map_multiplexador_2X1_8bits_jump|ALT_INV_portOUT[2]~0_combout\ <= NOT \port_map_multiplexador_2X1_8bits_jump|portOUT[2]~0_combout\;
+\port_map_controle|ALT_INV_Mux3~0_combout\ <= NOT \port_map_controle|Mux3~0_combout\;
+\port_map_ual|ALT_INV_Mux3~0_combout\ <= NOT \port_map_ual|Mux3~0_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_portOUT[7]~8_combout\ <= NOT \port_map_ual|portMap_multiplexador|portOUT[7]~8_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_produto~20_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~20_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_produto~19_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~19_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_produto~18_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~18_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_produto~17_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~17_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_produto~16_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~16_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_produto~15_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~15_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_process_0~9_combout\ <= NOT \port_map_ual|portMap_multiplexador|process_0~9_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_portOUT[7]~7_combout\ <= NOT \port_map_ual|portMap_multiplexador|portOUT[7]~7_combout\;
+\port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[7]~7_combout\ <= NOT \port_map_multiplexador_2X1_8bits_br_ula|portOUT[7]~7_combout\;
+\port_map_ual|ALT_INV_Mux4~0_combout\ <= NOT \port_map_ual|Mux4~0_combout\;
+\port_map_ual|ALT_INV_Mux1~0_combout\ <= NOT \port_map_ual|Mux1~0_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_portOUT[6]~6_combout\ <= NOT \port_map_ual|portMap_multiplexador|portOUT[6]~6_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_produto~14_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~14_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_produto~13_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~13_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_produto~12_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~12_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_produto~11_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~11_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_produto~10_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~10_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_process_0~8_combout\ <= NOT \port_map_ual|portMap_multiplexador|process_0~8_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_process_0~7_combout\ <= NOT \port_map_ual|portMap_multiplexador|process_0~7_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_portOUT[6]~5_combout\ <= NOT \port_map_ual|portMap_multiplexador|portOUT[6]~5_combout\;
+\port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[6]~6_combout\ <= NOT \port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_portOUT[5]~4_combout\ <= NOT \port_map_ual|portMap_multiplexador|portOUT[5]~4_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_produto~9_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~9_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_produto~8_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~8_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_produto~7_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~7_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_produto~6_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~6_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_process_0~6_combout\ <= NOT \port_map_ual|portMap_multiplexador|process_0~6_combout\;
+\port_map_ual|ALT_INV_Mux5~0_combout\ <= NOT \port_map_ual|Mux5~0_combout\;
+\port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[5]~5_combout\ <= NOT \port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\;
+\port_map_ual|ALT_INV_Mux6~2_combout\ <= NOT \port_map_ual|Mux6~2_combout\;
+\port_map_ual|ALT_INV_Mux6~1_combout\ <= NOT \port_map_ual|Mux6~1_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_process_0~5_combout\ <= NOT \port_map_ual|portMap_multiplexador|process_0~5_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_produto~5_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~5_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_produto~4_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~4_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_produto~3_combout\ <= NOT \port_map_ual|portMap_multiplexador|produto~3_combout\;
+\port_map_ual|portMap_multiplexador|ALT_INV_process_0~4_combout\ <= NOT \port_map_ual|portMap_multiplexador|process_0~4_combout\;
 
 \out_out_pc[0]~output\ : cyclonev_io_obuf
 -- pragma translate_off
@@ -1572,7 +1545,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \port_map_memoriaInst|Mux7~3_combout\,
+	i => \port_map_memoriaInst|ALT_INV_Mux6~2_combout\,
 	devoe => ww_devoe,
 	o => \out_out_rom[0]~output_o\);
 
@@ -1584,7 +1557,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \port_map_memoriaInst|Mux6~1_combout\,
+	i => \port_map_memoriaInst|Mux5~1_combout\,
 	devoe => ww_devoe,
 	o => \out_out_rom[1]~output_o\);
 
@@ -1596,7 +1569,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \port_map_memoriaInst|Mux5~1_combout\,
+	i => \port_map_memoriaInst|Mux4~0_combout\,
 	devoe => ww_devoe,
 	o => \out_out_rom[2]~output_o\);
 
@@ -1608,7 +1581,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \port_map_memoriaInst|Mux4~1_combout\,
+	i => GND,
 	devoe => ww_devoe,
 	o => \out_out_rom[3]~output_o\);
 
@@ -1620,7 +1593,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \port_map_memoriaInst|Mux3~1_combout\,
+	i => \port_map_memoriaInst|Mux3~0_combout\,
 	devoe => ww_devoe,
 	o => \out_out_rom[4]~output_o\);
 
@@ -1644,7 +1617,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \port_map_memoriaInst|Mux1~1_combout\,
+	i => \port_map_memoriaInst|Mux1~0_combout\,
 	devoe => ww_devoe,
 	o => \out_out_rom[6]~output_o\);
 
@@ -1656,7 +1629,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \port_map_memoriaInst|Mux0~0_combout\,
+	i => \port_map_memoriaInst|Mux0~1_combout\,
 	devoe => ww_devoe,
 	o => \out_out_rom[7]~output_o\);
 
@@ -1668,7 +1641,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \port_map_memoriaInst|Mux3~1_combout\,
+	i => \port_map_memoriaInst|Mux3~0_combout\,
 	devoe => ww_devoe,
 	o => \out_opcode[0]~output_o\);
 
@@ -1692,7 +1665,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \port_map_memoriaInst|Mux1~1_combout\,
+	i => \port_map_memoriaInst|Mux1~0_combout\,
 	devoe => ww_devoe,
 	o => \out_opcode[2]~output_o\);
 
@@ -1704,7 +1677,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \port_map_memoriaInst|Mux0~0_combout\,
+	i => \port_map_memoriaInst|Mux0~1_combout\,
 	devoe => ww_devoe,
 	o => \out_opcode[3]~output_o\);
 
@@ -1716,7 +1689,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \port_map_memoriaInst|Mux5~1_combout\,
+	i => \port_map_memoriaInst|Mux4~0_combout\,
 	devoe => ww_devoe,
 	o => \out_rs[0]~output_o\);
 
@@ -1728,7 +1701,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \port_map_memoriaInst|Mux4~1_combout\,
+	i => GND,
 	devoe => ww_devoe,
 	o => \out_rs[1]~output_o\);
 
@@ -1740,7 +1713,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \port_map_memoriaInst|Mux7~3_combout\,
+	i => \port_map_memoriaInst|ALT_INV_Mux6~2_combout\,
 	devoe => ww_devoe,
 	o => \out_rt[0]~output_o\);
 
@@ -1752,7 +1725,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \port_map_memoriaInst|Mux6~1_combout\,
+	i => \port_map_memoriaInst|Mux5~1_combout\,
 	devoe => ww_devoe,
 	o => \out_rt[1]~output_o\);
 
@@ -1764,7 +1737,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \port_map_memoriaInst|Mux7~3_combout\,
+	i => \port_map_memoriaInst|ALT_INV_Mux6~2_combout\,
 	devoe => ww_devoe,
 	o => \out_endereco[0]~output_o\);
 
@@ -1776,7 +1749,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \port_map_memoriaInst|Mux6~1_combout\,
+	i => \port_map_memoriaInst|Mux5~1_combout\,
 	devoe => ww_devoe,
 	o => \out_endereco[1]~output_o\);
 
@@ -1788,7 +1761,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \port_map_memoriaInst|Mux5~1_combout\,
+	i => \port_map_memoriaInst|Mux4~0_combout\,
 	devoe => ww_devoe,
 	o => \out_endereco[2]~output_o\);
 
@@ -1800,7 +1773,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \port_map_memoriaInst|Mux4~1_combout\,
+	i => GND,
 	devoe => ww_devoe,
 	o => \out_endereco[3]~output_o\);
 
@@ -1920,7 +1893,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \port_map_registradores|registrador~52_combout\,
+	i => \port_map_registradores|registrador~54_combout\,
 	devoe => ww_devoe,
 	o => \out_out_br_reg_B[1]~output_o\);
 
@@ -1932,7 +1905,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \port_map_registradores|registrador~53_combout\,
+	i => \port_map_registradores|registrador~57_combout\,
 	devoe => ww_devoe,
 	o => \out_out_br_reg_B[2]~output_o\);
 
@@ -1944,7 +1917,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \port_map_registradores|registrador~54_combout\,
+	i => \port_map_registradores|registrador~60_combout\,
 	devoe => ww_devoe,
 	o => \out_out_br_reg_B[3]~output_o\);
 
@@ -1956,7 +1929,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \port_map_registradores|registrador~55_combout\,
+	i => \port_map_registradores|registrador~63_combout\,
 	devoe => ww_devoe,
 	o => \out_out_br_reg_B[4]~output_o\);
 
@@ -1968,7 +1941,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \port_map_registradores|registrador~56_combout\,
+	i => \port_map_registradores|registrador~66_combout\,
 	devoe => ww_devoe,
 	o => \out_out_br_reg_B[5]~output_o\);
 
@@ -1980,7 +1953,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \port_map_registradores|registrador~57_combout\,
+	i => \port_map_registradores|registrador~69_combout\,
 	devoe => ww_devoe,
 	o => \out_out_br_reg_B[6]~output_o\);
 
@@ -1992,7 +1965,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \port_map_registradores|registrador~58_combout\,
+	i => \port_map_registradores|registrador~72_combout\,
 	devoe => ww_devoe,
 	o => \out_out_br_reg_B[7]~output_o\);
 
@@ -2064,7 +2037,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \port_map_ual|Mux5~2_combout\,
+	i => \port_map_ual|Mux5~1_combout\,
 	devoe => ww_devoe,
 	o => \out_out_ula_result[5]~output_o\);
 
@@ -2076,7 +2049,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \port_map_ual|Mux4~3_combout\,
+	i => \port_map_ual|Mux4~1_combout\,
 	devoe => ww_devoe,
 	o => \out_out_ula_result[6]~output_o\);
 
@@ -2306,40 +2279,6 @@ PORT MAP (
 	i => ww_clock,
 	o => \clock~input_o\);
 
-\port_map_memoriaInst|Mux5~0\ : cyclonev_lcell_comb
--- Equation(s):
--- \port_map_memoriaInst|Mux5~0_combout\ = ( \port_map_pc|portOUT\(4) & ( (!\port_map_pc|portOUT\(0) & (\port_map_pc|portOUT\(2) & !\port_map_pc|portOUT\(3))) ) ) # ( !\port_map_pc|portOUT\(4) & ( (!\port_map_pc|portOUT\(1) & (!\port_map_pc|portOUT\(3) $ 
--- (((\port_map_pc|portOUT\(0) & \port_map_pc|portOUT\(2)))))) # (\port_map_pc|portOUT\(1) & ((!\port_map_pc|portOUT\(3) & ((!\port_map_pc|portOUT\(2)))) # (\port_map_pc|portOUT\(3) & (\port_map_pc|portOUT\(0))))) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "1111100000010101000010100000000011111000000101010000101000000000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \port_map_pc|ALT_INV_portOUT\(0),
-	datab => \port_map_pc|ALT_INV_portOUT\(1),
-	datac => \port_map_pc|ALT_INV_portOUT\(2),
-	datad => \port_map_pc|ALT_INV_portOUT\(3),
-	datae => \port_map_pc|ALT_INV_portOUT\(4),
-	combout => \port_map_memoriaInst|Mux5~0_combout\);
-
-\port_map_memoriaInst|Mux5~1\ : cyclonev_lcell_comb
--- Equation(s):
--- \port_map_memoriaInst|Mux5~1_combout\ = (\port_map_memoriaInst|Mux5~0_combout\ & \port_map_memoriaInst|Mux3~0_combout\)
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \port_map_memoriaInst|ALT_INV_Mux5~0_combout\,
-	datab => \port_map_memoriaInst|ALT_INV_Mux3~0_combout\,
-	combout => \port_map_memoriaInst|Mux5~1_combout\);
-
 \port_map_addPC|Add0~1\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \port_map_addPC|Add0~1_sumout\ = SUM(( \port_map_pc|portOUT\(0) ) + ( VCC ) + ( !VCC ))
@@ -2374,6 +2313,34 @@ PORT MAP (
 	sumout => \port_map_addPC|Add0~5_sumout\,
 	cout => \port_map_addPC|Add0~6\);
 
+\port_map_multiplexador_2X1_8bits_jump|portOUT[1]~2\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \port_map_multiplexador_2X1_8bits_jump|portOUT[1]~2_combout\ = (!\port_map_multiplexador_2X1_8bits_jump|portOUT[2]~0_combout\ & \port_map_addPC|Add0~5_sumout\)
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0010001000100010001000100010001000100010001000100010001000100010",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \port_map_multiplexador_2X1_8bits_jump|ALT_INV_portOUT[2]~0_combout\,
+	datab => \port_map_addPC|ALT_INV_Add0~5_sumout\,
+	combout => \port_map_multiplexador_2X1_8bits_jump|portOUT[1]~2_combout\);
+
+\port_map_pc|portOUT[1]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \clock~input_o\,
+	d => \port_map_multiplexador_2X1_8bits_jump|portOUT[1]~2_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \port_map_pc|portOUT\(1));
+
 \port_map_addPC|Add0~9\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \port_map_addPC|Add0~9_sumout\ = SUM(( \port_map_pc|portOUT\(2) ) + ( GND ) + ( \port_map_addPC|Add0~6\ ))
@@ -2393,19 +2360,17 @@ PORT MAP (
 
 \port_map_multiplexador_2X1_8bits_jump|portOUT[2]~3\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_multiplexador_2X1_8bits_jump|portOUT[2]~3_combout\ = (!\port_map_multiplexador_2X1_8bits_jump|portOUT[3]~0_combout\ & ((\port_map_addPC|Add0~9_sumout\))) # (\port_map_multiplexador_2X1_8bits_jump|portOUT[3]~0_combout\ & 
--- (\port_map_memoriaInst|Mux5~1_combout\))
+-- \port_map_multiplexador_2X1_8bits_jump|portOUT[2]~3_combout\ = (!\port_map_multiplexador_2X1_8bits_jump|portOUT[2]~0_combout\ & \port_map_addPC|Add0~9_sumout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0001110100011101000111010001110100011101000111010001110100011101",
+	lut_mask => "0010001000100010001000100010001000100010001000100010001000100010",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_memoriaInst|ALT_INV_Mux5~1_combout\,
-	datab => \port_map_multiplexador_2X1_8bits_jump|ALT_INV_portOUT[3]~0_combout\,
-	datac => \port_map_addPC|ALT_INV_Add0~9_sumout\,
+	dataa => \port_map_multiplexador_2X1_8bits_jump|ALT_INV_portOUT[2]~0_combout\,
+	datab => \port_map_addPC|ALT_INV_Add0~9_sumout\,
 	combout => \port_map_multiplexador_2X1_8bits_jump|portOUT[2]~3_combout\);
 
 \port_map_pc|portOUT[2]\ : dffeas
@@ -2438,6 +2403,34 @@ PORT MAP (
 	sumout => \port_map_addPC|Add0~13_sumout\,
 	cout => \port_map_addPC|Add0~14\);
 
+\port_map_multiplexador_2X1_8bits_jump|portOUT[3]~4\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \port_map_multiplexador_2X1_8bits_jump|portOUT[3]~4_combout\ = (!\port_map_multiplexador_2X1_8bits_jump|portOUT[2]~0_combout\ & \port_map_addPC|Add0~13_sumout\)
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0010001000100010001000100010001000100010001000100010001000100010",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \port_map_multiplexador_2X1_8bits_jump|ALT_INV_portOUT[2]~0_combout\,
+	datab => \port_map_addPC|ALT_INV_Add0~13_sumout\,
+	combout => \port_map_multiplexador_2X1_8bits_jump|portOUT[3]~4_combout\);
+
+\port_map_pc|portOUT[3]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \clock~input_o\,
+	d => \port_map_multiplexador_2X1_8bits_jump|portOUT[3]~4_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \port_map_pc|portOUT\(3));
+
 \port_map_addPC|Add0~17\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \port_map_addPC|Add0~17_sumout\ = SUM(( \port_map_pc|portOUT\(4) ) + ( GND ) + ( \port_map_addPC|Add0~14\ ))
@@ -2457,7 +2450,7 @@ PORT MAP (
 
 \port_map_multiplexador_2X1_8bits_jump|portOUT[4]~5\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_multiplexador_2X1_8bits_jump|portOUT[4]~5_combout\ = (!\port_map_multiplexador_2X1_8bits_jump|portOUT[3]~0_combout\ & \port_map_addPC|Add0~17_sumout\)
+-- \port_map_multiplexador_2X1_8bits_jump|portOUT[4]~5_combout\ = (!\port_map_multiplexador_2X1_8bits_jump|portOUT[2]~0_combout\ & \port_map_addPC|Add0~17_sumout\)
 
 -- pragma translate_off
 GENERIC MAP (
@@ -2466,7 +2459,7 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_multiplexador_2X1_8bits_jump|ALT_INV_portOUT[3]~0_combout\,
+	dataa => \port_map_multiplexador_2X1_8bits_jump|ALT_INV_portOUT[2]~0_combout\,
 	datab => \port_map_addPC|ALT_INV_Add0~17_sumout\,
 	combout => \port_map_multiplexador_2X1_8bits_jump|portOUT[4]~5_combout\);
 
@@ -2500,6 +2493,34 @@ PORT MAP (
 	sumout => \port_map_addPC|Add0~21_sumout\,
 	cout => \port_map_addPC|Add0~22\);
 
+\port_map_multiplexador_2X1_8bits_jump|portOUT[5]~6\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \port_map_multiplexador_2X1_8bits_jump|portOUT[5]~6_combout\ = (!\port_map_multiplexador_2X1_8bits_jump|portOUT[2]~0_combout\ & \port_map_addPC|Add0~21_sumout\)
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0010001000100010001000100010001000100010001000100010001000100010",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \port_map_multiplexador_2X1_8bits_jump|ALT_INV_portOUT[2]~0_combout\,
+	datab => \port_map_addPC|ALT_INV_Add0~21_sumout\,
+	combout => \port_map_multiplexador_2X1_8bits_jump|portOUT[5]~6_combout\);
+
+\port_map_pc|portOUT[5]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \clock~input_o\,
+	d => \port_map_multiplexador_2X1_8bits_jump|portOUT[5]~6_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \port_map_pc|portOUT\(5));
+
 \port_map_addPC|Add0~25\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \port_map_addPC|Add0~25_sumout\ = SUM(( \port_map_pc|portOUT\(6) ) + ( GND ) + ( \port_map_addPC|Add0~22\ ))
@@ -2519,7 +2540,7 @@ PORT MAP (
 
 \port_map_multiplexador_2X1_8bits_jump|portOUT[6]~7\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_multiplexador_2X1_8bits_jump|portOUT[6]~7_combout\ = (!\port_map_multiplexador_2X1_8bits_jump|portOUT[3]~0_combout\ & \port_map_addPC|Add0~25_sumout\)
+-- \port_map_multiplexador_2X1_8bits_jump|portOUT[6]~7_combout\ = (!\port_map_multiplexador_2X1_8bits_jump|portOUT[2]~0_combout\ & \port_map_addPC|Add0~25_sumout\)
 
 -- pragma translate_off
 GENERIC MAP (
@@ -2528,7 +2549,7 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_multiplexador_2X1_8bits_jump|ALT_INV_portOUT[3]~0_combout\,
+	dataa => \port_map_multiplexador_2X1_8bits_jump|ALT_INV_portOUT[2]~0_combout\,
 	datab => \port_map_addPC|ALT_INV_Add0~25_sumout\,
 	combout => \port_map_multiplexador_2X1_8bits_jump|portOUT[6]~7_combout\);
 
@@ -2545,200 +2566,31 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \port_map_pc|portOUT\(6));
 
-\port_map_addPC|Add0~29\ : cyclonev_lcell_comb
--- Equation(s):
--- \port_map_addPC|Add0~29_sumout\ = SUM(( \port_map_pc|portOUT\(7) ) + ( GND ) + ( \port_map_addPC|Add0~26\ ))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000111111111111111100000000000000000000000011111111",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	datad => \port_map_pc|ALT_INV_portOUT\(7),
-	cin => \port_map_addPC|Add0~26\,
-	sumout => \port_map_addPC|Add0~29_sumout\);
-
-\port_map_multiplexador_2X1_8bits_jump|portOUT[7]~8\ : cyclonev_lcell_comb
--- Equation(s):
--- \port_map_multiplexador_2X1_8bits_jump|portOUT[7]~8_combout\ = (!\port_map_multiplexador_2X1_8bits_jump|portOUT[3]~0_combout\ & \port_map_addPC|Add0~29_sumout\)
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0010001000100010001000100010001000100010001000100010001000100010",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \port_map_multiplexador_2X1_8bits_jump|ALT_INV_portOUT[3]~0_combout\,
-	datab => \port_map_addPC|ALT_INV_Add0~29_sumout\,
-	combout => \port_map_multiplexador_2X1_8bits_jump|portOUT[7]~8_combout\);
-
-\port_map_pc|portOUT[7]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \clock~input_o\,
-	d => \port_map_multiplexador_2X1_8bits_jump|portOUT[7]~8_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \port_map_pc|portOUT\(7));
-
-\port_map_memoriaInst|Mux6~0\ : cyclonev_lcell_comb
--- Equation(s):
--- \port_map_memoriaInst|Mux6~0_combout\ = (!\port_map_pc|portOUT\(0) & ((!\port_map_pc|portOUT\(1) & ((!\port_map_pc|portOUT\(4)))) # (\port_map_pc|portOUT\(1) & (!\port_map_pc|portOUT\(2))))) # (\port_map_pc|portOUT\(0) & (!\port_map_pc|portOUT\(2) & 
--- ((!\port_map_pc|portOUT\(1)) # (!\port_map_pc|portOUT\(4)))))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "1111100001100000111110000110000011111000011000001111100001100000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \port_map_pc|ALT_INV_portOUT\(0),
-	datab => \port_map_pc|ALT_INV_portOUT\(1),
-	datac => \port_map_pc|ALT_INV_portOUT\(2),
-	datad => \port_map_pc|ALT_INV_portOUT\(4),
-	combout => \port_map_memoriaInst|Mux6~0_combout\);
-
 \port_map_memoriaInst|Mux6~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_memoriaInst|Mux6~1_combout\ = ( \port_map_memoriaInst|Mux6~0_combout\ & ( (!\port_map_pc|portOUT\(3) & (!\port_map_pc|portOUT\(5) & (!\port_map_pc|portOUT\(6) & !\port_map_pc|portOUT\(7)))) ) )
+-- \port_map_memoriaInst|Mux6~1_combout\ = (!\port_map_pc|portOUT\(4) & (!\port_map_pc|portOUT\(5) & !\port_map_pc|portOUT\(6)))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000100000000000000000000000000000001000000000000000",
+	lut_mask => "1000000010000000100000001000000010000000100000001000000010000000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_pc|ALT_INV_portOUT\(3),
+	dataa => \port_map_pc|ALT_INV_portOUT\(4),
 	datab => \port_map_pc|ALT_INV_portOUT\(5),
 	datac => \port_map_pc|ALT_INV_portOUT\(6),
-	datad => \port_map_pc|ALT_INV_portOUT\(7),
-	datae => \port_map_memoriaInst|ALT_INV_Mux6~0_combout\,
 	combout => \port_map_memoriaInst|Mux6~1_combout\);
 
-\port_map_multiplexador_2X1_8bits_jump|portOUT[1]~2\ : cyclonev_lcell_comb
+\port_map_memoriaInst|Mux3~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_multiplexador_2X1_8bits_jump|portOUT[1]~2_combout\ = (!\port_map_multiplexador_2X1_8bits_jump|portOUT[3]~0_combout\ & ((\port_map_addPC|Add0~5_sumout\))) # (\port_map_multiplexador_2X1_8bits_jump|portOUT[3]~0_combout\ & 
--- (\port_map_memoriaInst|Mux6~1_combout\))
+-- \port_map_memoriaInst|Mux3~0_combout\ = ( \port_map_memoriaInst|Mux6~1_combout\ & ( !\port_map_pc|portOUT\(7) & ( (!\port_map_pc|portOUT\(3) & ((!\port_map_pc|portOUT\(2)) # (!\port_map_pc|portOUT\(1) $ (\port_map_pc|portOUT\(0))))) # 
+-- (\port_map_pc|portOUT\(3) & (!\port_map_pc|portOUT\(2) & (!\port_map_pc|portOUT\(1) & !\port_map_pc|portOUT\(0)))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0001110100011101000111010001110100011101000111010001110100011101",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \port_map_memoriaInst|ALT_INV_Mux6~1_combout\,
-	datab => \port_map_multiplexador_2X1_8bits_jump|ALT_INV_portOUT[3]~0_combout\,
-	datac => \port_map_addPC|ALT_INV_Add0~5_sumout\,
-	combout => \port_map_multiplexador_2X1_8bits_jump|portOUT[1]~2_combout\);
-
-\port_map_pc|portOUT[1]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \clock~input_o\,
-	d => \port_map_multiplexador_2X1_8bits_jump|portOUT[1]~2_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \port_map_pc|portOUT\(1));
-
-\port_map_memoriaInst|Mux3~1\ : cyclonev_lcell_comb
--- Equation(s):
--- \port_map_memoriaInst|Mux3~1_combout\ = ( \port_map_pc|portOUT\(4) & ( \port_map_memoriaInst|Mux3~0_combout\ & ( (!\port_map_pc|portOUT\(3) & ((!\port_map_pc|portOUT\(0)) # (!\port_map_pc|portOUT\(1) $ (!\port_map_pc|portOUT\(2))))) ) ) ) # ( 
--- !\port_map_pc|portOUT\(4) & ( \port_map_memoriaInst|Mux3~0_combout\ & ( (!\port_map_pc|portOUT\(3) & ((!\port_map_pc|portOUT\(0)) # ((\port_map_pc|portOUT\(2)) # (\port_map_pc|portOUT\(1))))) # (\port_map_pc|portOUT\(3) & ((!\port_map_pc|portOUT\(1) $ 
--- (\port_map_pc|portOUT\(2))))) ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000000000000000000010111111110000111011111000000000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \port_map_pc|ALT_INV_portOUT\(0),
-	datab => \port_map_pc|ALT_INV_portOUT\(1),
-	datac => \port_map_pc|ALT_INV_portOUT\(2),
-	datad => \port_map_pc|ALT_INV_portOUT\(3),
-	datae => \port_map_pc|ALT_INV_portOUT\(4),
-	dataf => \port_map_memoriaInst|ALT_INV_Mux3~0_combout\,
-	combout => \port_map_memoriaInst|Mux3~1_combout\);
-
-\port_map_memoriaInst|Mux2~0\ : cyclonev_lcell_comb
--- Equation(s):
--- \port_map_memoriaInst|Mux2~0_combout\ = ( \port_map_pc|portOUT\(4) & ( \port_map_memoriaInst|Mux3~0_combout\ & ( (!\port_map_pc|portOUT\(1) & (!\port_map_pc|portOUT\(2) & !\port_map_pc|portOUT\(3))) ) ) ) # ( !\port_map_pc|portOUT\(4) & ( 
--- \port_map_memoriaInst|Mux3~0_combout\ & ( (!\port_map_pc|portOUT\(1) & (!\port_map_pc|portOUT\(0) $ ((!\port_map_pc|portOUT\(2))))) # (\port_map_pc|portOUT\(1) & ((!\port_map_pc|portOUT\(0) & ((!\port_map_pc|portOUT\(2)) # (\port_map_pc|portOUT\(3)))) # 
--- (\port_map_pc|portOUT\(0) & ((!\port_map_pc|portOUT\(3)) # (\port_map_pc|portOUT\(2)))))) ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000000000000000000001111001011010111100000000000000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \port_map_pc|ALT_INV_portOUT\(0),
-	datab => \port_map_pc|ALT_INV_portOUT\(1),
-	datac => \port_map_pc|ALT_INV_portOUT\(2),
-	datad => \port_map_pc|ALT_INV_portOUT\(3),
-	datae => \port_map_pc|ALT_INV_portOUT\(4),
-	dataf => \port_map_memoriaInst|ALT_INV_Mux3~0_combout\,
-	combout => \port_map_memoriaInst|Mux2~0_combout\);
-
-\port_map_memoriaInst|Mux1~0\ : cyclonev_lcell_comb
--- Equation(s):
--- \port_map_memoriaInst|Mux1~0_combout\ = ( \port_map_pc|portOUT\(2) & ( (!\port_map_pc|portOUT\(1) & (!\port_map_pc|portOUT\(3) $ (((!\port_map_pc|portOUT\(0) & !\port_map_pc|portOUT\(4)))))) # (\port_map_pc|portOUT\(1) & ((!\port_map_pc|portOUT\(4)) # 
--- ((!\port_map_pc|portOUT\(0) & !\port_map_pc|portOUT\(3))))) ) ) # ( !\port_map_pc|portOUT\(2) & ( (!\port_map_pc|portOUT\(0) & (!\port_map_pc|portOUT\(4) & ((!\port_map_pc|portOUT\(1)) # (\port_map_pc|portOUT\(3))))) # (\port_map_pc|portOUT\(0) & 
--- ((!\port_map_pc|portOUT\(1) & (\port_map_pc|portOUT\(3) & !\port_map_pc|portOUT\(4))) # (\port_map_pc|portOUT\(1) & (!\port_map_pc|portOUT\(3) & \port_map_pc|portOUT\(4))))) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "1000111000010000011110111110000010001110000100000111101111100000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \port_map_pc|ALT_INV_portOUT\(0),
-	datab => \port_map_pc|ALT_INV_portOUT\(1),
-	datac => \port_map_pc|ALT_INV_portOUT\(3),
-	datad => \port_map_pc|ALT_INV_portOUT\(4),
-	datae => \port_map_pc|ALT_INV_portOUT\(2),
-	combout => \port_map_memoriaInst|Mux1~0_combout\);
-
-\port_map_memoriaInst|Mux1~1\ : cyclonev_lcell_comb
--- Equation(s):
--- \port_map_memoriaInst|Mux1~1_combout\ = (\port_map_memoriaInst|Mux3~0_combout\ & \port_map_memoriaInst|Mux1~0_combout\)
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \port_map_memoriaInst|ALT_INV_Mux3~0_combout\,
-	datab => \port_map_memoriaInst|ALT_INV_Mux1~0_combout\,
-	combout => \port_map_memoriaInst|Mux1~1_combout\);
-
-\port_map_memoriaInst|Mux0~0\ : cyclonev_lcell_comb
--- Equation(s):
--- \port_map_memoriaInst|Mux0~0_combout\ = ( \port_map_memoriaInst|Mux3~0_combout\ & ( \port_map_pc|portOUT\(4) & ( (!\port_map_pc|portOUT\(3) & (!\port_map_pc|portOUT\(2) & (!\port_map_pc|portOUT\(1) $ (!\port_map_pc|portOUT\(0))))) ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000000000000000000000000000000000000000100010000000",
+	lut_mask => "0000000000000000111010001000101000000000000000000000000000000000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -2746,14 +2598,88 @@ PORT MAP (
 	datab => \port_map_pc|ALT_INV_portOUT\(2),
 	datac => \port_map_pc|ALT_INV_portOUT\(1),
 	datad => \port_map_pc|ALT_INV_portOUT\(0),
-	datae => \port_map_memoriaInst|ALT_INV_Mux3~0_combout\,
-	dataf => \port_map_pc|ALT_INV_portOUT\(4),
+	datae => \port_map_memoriaInst|ALT_INV_Mux6~1_combout\,
+	dataf => \port_map_pc|ALT_INV_portOUT\(7),
+	combout => \port_map_memoriaInst|Mux3~0_combout\);
+
+\port_map_memoriaInst|Mux2~0\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \port_map_memoriaInst|Mux2~0_combout\ = ( \port_map_memoriaInst|Mux6~1_combout\ & ( !\port_map_pc|portOUT\(7) & ( (!\port_map_pc|portOUT\(3) & (((\port_map_pc|portOUT\(0))))) # (\port_map_pc|portOUT\(3) & (!\port_map_pc|portOUT\(2) & 
+-- (!\port_map_pc|portOUT\(1) & !\port_map_pc|portOUT\(0)))) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000010000001010101000000000000000000000000000000000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \port_map_pc|ALT_INV_portOUT\(3),
+	datab => \port_map_pc|ALT_INV_portOUT\(2),
+	datac => \port_map_pc|ALT_INV_portOUT\(1),
+	datad => \port_map_pc|ALT_INV_portOUT\(0),
+	datae => \port_map_memoriaInst|ALT_INV_Mux6~1_combout\,
+	dataf => \port_map_pc|ALT_INV_portOUT\(7),
+	combout => \port_map_memoriaInst|Mux2~0_combout\);
+
+\port_map_memoriaInst|Mux1~0\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \port_map_memoriaInst|Mux1~0_combout\ = ( \port_map_memoriaInst|Mux6~1_combout\ & ( !\port_map_pc|portOUT\(7) & ( (!\port_map_pc|portOUT\(3) & ((!\port_map_pc|portOUT\(2)) # ((!\port_map_pc|portOUT\(1)) # (\port_map_pc|portOUT\(0))))) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000101010001010101000000000000000000000000000000000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \port_map_pc|ALT_INV_portOUT\(3),
+	datab => \port_map_pc|ALT_INV_portOUT\(2),
+	datac => \port_map_pc|ALT_INV_portOUT\(1),
+	datad => \port_map_pc|ALT_INV_portOUT\(0),
+	datae => \port_map_memoriaInst|ALT_INV_Mux6~1_combout\,
+	dataf => \port_map_pc|ALT_INV_portOUT\(7),
+	combout => \port_map_memoriaInst|Mux1~0_combout\);
+
+\port_map_memoriaInst|Mux0~0\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \port_map_memoriaInst|Mux0~0_combout\ = ( !\port_map_pc|portOUT\(6) & ( !\port_map_pc|portOUT\(7) & ( (!\port_map_pc|portOUT\(0) & (!\port_map_pc|portOUT\(1) & (!\port_map_pc|portOUT\(4) & !\port_map_pc|portOUT\(5)))) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "1000000000000000000000000000000000000000000000000000000000000000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \port_map_pc|ALT_INV_portOUT\(0),
+	datab => \port_map_pc|ALT_INV_portOUT\(1),
+	datac => \port_map_pc|ALT_INV_portOUT\(4),
+	datad => \port_map_pc|ALT_INV_portOUT\(5),
+	datae => \port_map_pc|ALT_INV_portOUT\(6),
+	dataf => \port_map_pc|ALT_INV_portOUT\(7),
 	combout => \port_map_memoriaInst|Mux0~0_combout\);
+
+\port_map_memoriaInst|Mux0~1\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \port_map_memoriaInst|Mux0~1_combout\ = (!\port_map_pc|portOUT\(2) & (\port_map_pc|portOUT\(3) & \port_map_memoriaInst|Mux0~0_combout\))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000001000000010000000100000001000000010000000100000001000000010",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \port_map_pc|ALT_INV_portOUT\(2),
+	datab => \port_map_pc|ALT_INV_portOUT\(3),
+	datac => \port_map_memoriaInst|ALT_INV_Mux0~0_combout\,
+	combout => \port_map_memoriaInst|Mux0~1_combout\);
 
 \port_map_controle|Mux5~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_controle|Mux5~0_combout\ = (!\port_map_memoriaInst|Mux0~0_combout\ & (\port_map_memoriaInst|Mux3~1_combout\)) # (\port_map_memoriaInst|Mux0~0_combout\ & (((\port_map_memoriaInst|Mux3~1_combout\ & !\port_map_memoriaInst|Mux2~0_combout\)) # 
--- (\port_map_memoriaInst|Mux1~1_combout\)))
+-- \port_map_controle|Mux5~0_combout\ = (!\port_map_memoriaInst|Mux0~1_combout\ & (\port_map_memoriaInst|Mux3~0_combout\)) # (\port_map_memoriaInst|Mux0~1_combout\ & (((\port_map_memoriaInst|Mux3~0_combout\ & !\port_map_memoriaInst|Mux2~0_combout\)) # 
+-- (\port_map_memoriaInst|Mux1~0_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -2762,32 +2688,32 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_memoriaInst|ALT_INV_Mux3~1_combout\,
+	dataa => \port_map_memoriaInst|ALT_INV_Mux3~0_combout\,
 	datab => \port_map_memoriaInst|ALT_INV_Mux2~0_combout\,
-	datac => \port_map_memoriaInst|ALT_INV_Mux1~1_combout\,
-	datad => \port_map_memoriaInst|ALT_INV_Mux0~0_combout\,
+	datac => \port_map_memoriaInst|ALT_INV_Mux1~0_combout\,
+	datad => \port_map_memoriaInst|ALT_INV_Mux0~1_combout\,
 	combout => \port_map_controle|Mux5~0_combout\);
 
 \port_map_controle|Mux4~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_controle|Mux4~0_combout\ = ((\port_map_memoriaInst|Mux1~0_combout\ & \port_map_memoriaInst|Mux0~0_combout\)) # (\port_map_memoriaInst|Mux2~0_combout\)
+-- \port_map_controle|Mux4~0_combout\ = (!\port_map_memoriaInst|Mux2~0_combout\ & ((!\port_map_memoriaInst|Mux1~0_combout\) # (!\port_map_memoriaInst|Mux0~1_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0101011101010111010101110101011101010111010101110101011101010111",
+	lut_mask => "1010100010101000101010001010100010101000101010001010100010101000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_memoriaInst|ALT_INV_Mux2~0_combout\,
 	datab => \port_map_memoriaInst|ALT_INV_Mux1~0_combout\,
-	datac => \port_map_memoriaInst|ALT_INV_Mux0~0_combout\,
+	datac => \port_map_memoriaInst|ALT_INV_Mux0~1_combout\,
 	combout => \port_map_controle|Mux4~0_combout\);
 
 \port_map_controle|Mux7~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_controle|Mux7~0_combout\ = (!\port_map_memoriaInst|Mux0~0_combout\ & ((!\port_map_memoriaInst|Mux2~0_combout\ & ((\port_map_memoriaInst|Mux1~1_combout\))) # (\port_map_memoriaInst|Mux2~0_combout\ & (\port_map_memoriaInst|Mux3~1_combout\ & 
--- !\port_map_memoriaInst|Mux1~1_combout\))))
+-- \port_map_controle|Mux7~0_combout\ = (!\port_map_memoriaInst|Mux0~1_combout\ & ((!\port_map_memoriaInst|Mux2~0_combout\ & ((\port_map_memoriaInst|Mux1~0_combout\))) # (\port_map_memoriaInst|Mux2~0_combout\ & (\port_map_memoriaInst|Mux3~0_combout\ & 
+-- !\port_map_memoriaInst|Mux1~0_combout\))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -2796,32 +2722,15 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_memoriaInst|ALT_INV_Mux3~1_combout\,
+	dataa => \port_map_memoriaInst|ALT_INV_Mux3~0_combout\,
 	datab => \port_map_memoriaInst|ALT_INV_Mux2~0_combout\,
-	datac => \port_map_memoriaInst|ALT_INV_Mux1~1_combout\,
-	datad => \port_map_memoriaInst|ALT_INV_Mux0~0_combout\,
+	datac => \port_map_memoriaInst|ALT_INV_Mux1~0_combout\,
+	datad => \port_map_memoriaInst|ALT_INV_Mux0~1_combout\,
 	combout => \port_map_controle|Mux7~0_combout\);
 
-\port_map_controle|Mux8~0\ : cyclonev_lcell_comb
+\port_map_memoriaInst|Mux4~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_controle|Mux8~0_combout\ = (!\port_map_memoriaInst|Mux0~0_combout\ & ((!\port_map_memoriaInst|Mux3~1_combout\) # ((!\port_map_memoriaInst|Mux2~0_combout\) # (!\port_map_memoriaInst|Mux1~1_combout\))))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "1111111000000000111111100000000011111110000000001111111000000000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \port_map_memoriaInst|ALT_INV_Mux3~1_combout\,
-	datab => \port_map_memoriaInst|ALT_INV_Mux2~0_combout\,
-	datac => \port_map_memoriaInst|ALT_INV_Mux1~1_combout\,
-	datad => \port_map_memoriaInst|ALT_INV_Mux0~0_combout\,
-	combout => \port_map_controle|Mux8~0_combout\);
-
-\port_map_registradores|registrador~60\ : cyclonev_lcell_comb
--- Equation(s):
--- \port_map_registradores|registrador~60_combout\ = (\port_map_memoriaInst|Mux5~1_combout\ & (!\port_map_memoriaInst|Mux4~1_combout\ & \port_map_controle|Mux8~0_combout\))
+-- \port_map_memoriaInst|Mux4~0_combout\ = (\port_map_pc|portOUT\(2) & (!\port_map_pc|portOUT\(3) & \port_map_memoriaInst|Mux0~0_combout\))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -2830,10 +2739,42 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_memoriaInst|ALT_INV_Mux5~1_combout\,
-	datab => \port_map_memoriaInst|ALT_INV_Mux4~1_combout\,
-	datac => \port_map_controle|ALT_INV_Mux8~0_combout\,
-	combout => \port_map_registradores|registrador~60_combout\);
+	dataa => \port_map_pc|ALT_INV_portOUT\(2),
+	datab => \port_map_pc|ALT_INV_portOUT\(3),
+	datac => \port_map_memoriaInst|ALT_INV_Mux0~0_combout\,
+	combout => \port_map_memoriaInst|Mux4~0_combout\);
+
+\port_map_controle|Mux8~0\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \port_map_controle|Mux8~0_combout\ = (!\port_map_memoriaInst|Mux0~1_combout\ & ((!\port_map_memoriaInst|Mux3~0_combout\) # ((!\port_map_memoriaInst|Mux2~0_combout\) # (!\port_map_memoriaInst|Mux1~0_combout\))))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "1111111000000000111111100000000011111110000000001111111000000000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \port_map_memoriaInst|ALT_INV_Mux3~0_combout\,
+	datab => \port_map_memoriaInst|ALT_INV_Mux2~0_combout\,
+	datac => \port_map_memoriaInst|ALT_INV_Mux1~0_combout\,
+	datad => \port_map_memoriaInst|ALT_INV_Mux0~1_combout\,
+	combout => \port_map_controle|Mux8~0_combout\);
+
+\port_map_registradores|registrador~73\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \port_map_registradores|registrador~73_combout\ = (\port_map_memoriaInst|Mux4~0_combout\ & \port_map_controle|Mux8~0_combout\)
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \port_map_memoriaInst|ALT_INV_Mux4~0_combout\,
+	datab => \port_map_controle|ALT_INV_Mux8~0_combout\,
+	combout => \port_map_registradores|registrador~73_combout\);
 
 \port_map_registradores|registrador~24\ : dffeas
 -- pragma translate_off
@@ -2844,554 +2785,486 @@ GENERIC MAP (
 PORT MAP (
 	clk => \clock~input_o\,
 	d => \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[5]~5_combout\,
-	ena => \port_map_registradores|registrador~60_combout\,
+	ena => \port_map_registradores|registrador~73_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \port_map_registradores|registrador~24_q\);
 
-\port_map_registradores|registrador~61\ : cyclonev_lcell_comb
+\port_map_memoriaInst|Mux5~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_registradores|registrador~61_combout\ = (!\port_map_memoriaInst|Mux5~1_combout\ & (\port_map_memoriaInst|Mux4~1_combout\ & \port_map_controle|Mux8~0_combout\))
+-- \port_map_memoriaInst|Mux5~0_combout\ = (!\port_map_pc|portOUT\(2) & !\port_map_pc|portOUT\(3))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000001000000010000000100000001000000010000000100000001000000010",
+	lut_mask => "1000100010001000100010001000100010001000100010001000100010001000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_memoriaInst|ALT_INV_Mux5~1_combout\,
-	datab => \port_map_memoriaInst|ALT_INV_Mux4~1_combout\,
-	datac => \port_map_controle|ALT_INV_Mux8~0_combout\,
-	combout => \port_map_registradores|registrador~61_combout\);
+	dataa => \port_map_pc|ALT_INV_portOUT\(2),
+	datab => \port_map_pc|ALT_INV_portOUT\(3),
+	combout => \port_map_memoriaInst|Mux5~0_combout\);
 
-\port_map_registradores|registrador~32\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \clock~input_o\,
-	d => \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[5]~5_combout\,
-	ena => \port_map_registradores|registrador~61_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \port_map_registradores|registrador~32_q\);
-
-\port_map_registradores|registrador~62\ : cyclonev_lcell_comb
+\port_map_memoriaInst|Mux5~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_registradores|registrador~62_combout\ = (\port_map_memoriaInst|Mux5~0_combout\ & (\port_map_memoriaInst|Mux4~1_combout\ & \port_map_controle|Mux8~0_combout\))
+-- \port_map_memoriaInst|Mux5~1_combout\ = (!\port_map_pc|portOUT\(0) & (!\port_map_pc|portOUT\(7) & (\port_map_memoriaInst|Mux6~1_combout\ & \port_map_memoriaInst|Mux5~0_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \port_map_memoriaInst|ALT_INV_Mux5~0_combout\,
-	datab => \port_map_memoriaInst|ALT_INV_Mux4~1_combout\,
-	datac => \port_map_controle|ALT_INV_Mux8~0_combout\,
-	combout => \port_map_registradores|registrador~62_combout\);
-
-\port_map_registradores|registrador~40\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \clock~input_o\,
-	d => \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[5]~5_combout\,
-	ena => \port_map_registradores|registrador~62_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \port_map_registradores|registrador~40_q\);
-
-\port_map_registradores|registrador~48\ : cyclonev_lcell_comb
--- Equation(s):
--- \port_map_registradores|registrador~48_combout\ = ( \port_map_memoriaInst|Mux5~1_combout\ & ( \port_map_memoriaInst|Mux4~1_combout\ & ( \port_map_registradores|registrador~40_q\ ) ) ) # ( !\port_map_memoriaInst|Mux5~1_combout\ & ( 
--- \port_map_memoriaInst|Mux4~1_combout\ & ( \port_map_registradores|registrador~32_q\ ) ) ) # ( \port_map_memoriaInst|Mux5~1_combout\ & ( !\port_map_memoriaInst|Mux4~1_combout\ & ( \port_map_registradores|registrador~24_q\ ) ) ) # ( 
--- !\port_map_memoriaInst|Mux5~1_combout\ & ( !\port_map_memoriaInst|Mux4~1_combout\ & ( \port_map_registradores|registrador~16_q\ ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0101010101010101001100110011001100001111000011110000000011111111",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \port_map_registradores|ALT_INV_registrador~16_q\,
-	datab => \port_map_registradores|ALT_INV_registrador~24_q\,
-	datac => \port_map_registradores|ALT_INV_registrador~32_q\,
-	datad => \port_map_registradores|ALT_INV_registrador~40_q\,
-	datae => \port_map_memoriaInst|ALT_INV_Mux5~1_combout\,
-	dataf => \port_map_memoriaInst|ALT_INV_Mux4~1_combout\,
-	combout => \port_map_registradores|registrador~48_combout\);
-
-\port_map_registradores|registrador~23\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \clock~input_o\,
-	d => \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[4]~4_combout\,
-	ena => \port_map_registradores|registrador~60_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \port_map_registradores|registrador~23_q\);
-
-\port_map_registradores|registrador~31\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \clock~input_o\,
-	d => \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[4]~4_combout\,
-	ena => \port_map_registradores|registrador~61_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \port_map_registradores|registrador~31_q\);
-
-\port_map_registradores|registrador~39\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \clock~input_o\,
-	d => \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[4]~4_combout\,
-	ena => \port_map_registradores|registrador~62_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \port_map_registradores|registrador~39_q\);
-
-\port_map_registradores|registrador~55\ : cyclonev_lcell_comb
--- Equation(s):
--- \port_map_registradores|registrador~55_combout\ = ( \port_map_memoriaInst|Mux7~3_combout\ & ( \port_map_memoriaInst|Mux6~1_combout\ & ( \port_map_registradores|registrador~39_q\ ) ) ) # ( !\port_map_memoriaInst|Mux7~3_combout\ & ( 
--- \port_map_memoriaInst|Mux6~1_combout\ & ( \port_map_registradores|registrador~31_q\ ) ) ) # ( \port_map_memoriaInst|Mux7~3_combout\ & ( !\port_map_memoriaInst|Mux6~1_combout\ & ( \port_map_registradores|registrador~23_q\ ) ) ) # ( 
--- !\port_map_memoriaInst|Mux7~3_combout\ & ( !\port_map_memoriaInst|Mux6~1_combout\ & ( \port_map_registradores|registrador~15_q\ ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0101010101010101001100110011001100001111000011110000000011111111",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \port_map_registradores|ALT_INV_registrador~15_q\,
-	datab => \port_map_registradores|ALT_INV_registrador~23_q\,
-	datac => \port_map_registradores|ALT_INV_registrador~31_q\,
-	datad => \port_map_registradores|ALT_INV_registrador~39_q\,
-	datae => \port_map_memoriaInst|ALT_INV_Mux7~3_combout\,
-	dataf => \port_map_memoriaInst|ALT_INV_Mux6~1_combout\,
-	combout => \port_map_registradores|registrador~55_combout\);
-
-\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4\ : cyclonev_lcell_comb
--- Equation(s):
--- \port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ = (\port_map_registradores|registrador~55_combout\ & !\port_map_controle|Mux7~0_combout\)
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0100010001000100010001000100010001000100010001000100010001000100",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \port_map_registradores|ALT_INV_registrador~55_combout\,
-	datab => \port_map_controle|ALT_INV_Mux7~0_combout\,
-	combout => \port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\);
-
-\port_map_registradores|registrador~22\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \clock~input_o\,
-	d => \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[3]~3_combout\,
-	ena => \port_map_registradores|registrador~60_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \port_map_registradores|registrador~22_q\);
-
-\port_map_registradores|registrador~30\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \clock~input_o\,
-	d => \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[3]~3_combout\,
-	ena => \port_map_registradores|registrador~61_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \port_map_registradores|registrador~30_q\);
-
-\port_map_registradores|registrador~38\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \clock~input_o\,
-	d => \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[3]~3_combout\,
-	ena => \port_map_registradores|registrador~62_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \port_map_registradores|registrador~38_q\);
-
-\port_map_registradores|registrador~54\ : cyclonev_lcell_comb
--- Equation(s):
--- \port_map_registradores|registrador~54_combout\ = ( \port_map_memoriaInst|Mux7~3_combout\ & ( \port_map_memoriaInst|Mux6~1_combout\ & ( \port_map_registradores|registrador~38_q\ ) ) ) # ( !\port_map_memoriaInst|Mux7~3_combout\ & ( 
--- \port_map_memoriaInst|Mux6~1_combout\ & ( \port_map_registradores|registrador~30_q\ ) ) ) # ( \port_map_memoriaInst|Mux7~3_combout\ & ( !\port_map_memoriaInst|Mux6~1_combout\ & ( \port_map_registradores|registrador~22_q\ ) ) ) # ( 
--- !\port_map_memoriaInst|Mux7~3_combout\ & ( !\port_map_memoriaInst|Mux6~1_combout\ & ( \port_map_registradores|registrador~14_q\ ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0101010101010101001100110011001100001111000011110000000011111111",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \port_map_registradores|ALT_INV_registrador~14_q\,
-	datab => \port_map_registradores|ALT_INV_registrador~22_q\,
-	datac => \port_map_registradores|ALT_INV_registrador~30_q\,
-	datad => \port_map_registradores|ALT_INV_registrador~38_q\,
-	datae => \port_map_memoriaInst|ALT_INV_Mux7~3_combout\,
-	dataf => \port_map_memoriaInst|ALT_INV_Mux6~1_combout\,
-	combout => \port_map_registradores|registrador~54_combout\);
-
-\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3\ : cyclonev_lcell_comb
--- Equation(s):
--- \port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ = (\port_map_registradores|registrador~54_combout\ & !\port_map_controle|Mux7~0_combout\)
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0100010001000100010001000100010001000100010001000100010001000100",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \port_map_registradores|ALT_INV_registrador~54_combout\,
-	datab => \port_map_controle|ALT_INV_Mux7~0_combout\,
-	combout => \port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\);
-
-\port_map_registradores|registrador~21\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \clock~input_o\,
-	d => \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[2]~2_combout\,
-	ena => \port_map_registradores|registrador~60_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \port_map_registradores|registrador~21_q\);
-
-\port_map_registradores|registrador~29\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \clock~input_o\,
-	d => \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[2]~2_combout\,
-	ena => \port_map_registradores|registrador~61_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \port_map_registradores|registrador~29_q\);
-
-\port_map_registradores|registrador~37\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \clock~input_o\,
-	d => \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[2]~2_combout\,
-	ena => \port_map_registradores|registrador~62_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \port_map_registradores|registrador~37_q\);
-
-\port_map_registradores|registrador~53\ : cyclonev_lcell_comb
--- Equation(s):
--- \port_map_registradores|registrador~53_combout\ = ( \port_map_memoriaInst|Mux7~3_combout\ & ( \port_map_memoriaInst|Mux6~1_combout\ & ( \port_map_registradores|registrador~37_q\ ) ) ) # ( !\port_map_memoriaInst|Mux7~3_combout\ & ( 
--- \port_map_memoriaInst|Mux6~1_combout\ & ( \port_map_registradores|registrador~29_q\ ) ) ) # ( \port_map_memoriaInst|Mux7~3_combout\ & ( !\port_map_memoriaInst|Mux6~1_combout\ & ( \port_map_registradores|registrador~21_q\ ) ) ) # ( 
--- !\port_map_memoriaInst|Mux7~3_combout\ & ( !\port_map_memoriaInst|Mux6~1_combout\ & ( \port_map_registradores|registrador~13_q\ ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0101010101010101001100110011001100001111000011110000000011111111",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \port_map_registradores|ALT_INV_registrador~13_q\,
-	datab => \port_map_registradores|ALT_INV_registrador~21_q\,
-	datac => \port_map_registradores|ALT_INV_registrador~29_q\,
-	datad => \port_map_registradores|ALT_INV_registrador~37_q\,
-	datae => \port_map_memoriaInst|ALT_INV_Mux7~3_combout\,
-	dataf => \port_map_memoriaInst|ALT_INV_Mux6~1_combout\,
-	combout => \port_map_registradores|registrador~53_combout\);
-
-\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2\ : cyclonev_lcell_comb
--- Equation(s):
--- \port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ = (\port_map_registradores|registrador~53_combout\ & !\port_map_controle|Mux7~0_combout\)
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0100010001000100010001000100010001000100010001000100010001000100",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \port_map_registradores|ALT_INV_registrador~53_combout\,
-	datab => \port_map_controle|ALT_INV_Mux7~0_combout\,
-	combout => \port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\);
-
-\port_map_registradores|registrador~20\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \clock~input_o\,
-	d => \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[1]~1_combout\,
-	ena => \port_map_registradores|registrador~60_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \port_map_registradores|registrador~20_q\);
-
-\port_map_registradores|registrador~28\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \clock~input_o\,
-	d => \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[1]~1_combout\,
-	ena => \port_map_registradores|registrador~61_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \port_map_registradores|registrador~28_q\);
-
-\port_map_registradores|registrador~36\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \clock~input_o\,
-	d => \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[1]~1_combout\,
-	ena => \port_map_registradores|registrador~62_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \port_map_registradores|registrador~36_q\);
-
-\port_map_registradores|registrador~44\ : cyclonev_lcell_comb
--- Equation(s):
--- \port_map_registradores|registrador~44_combout\ = ( \port_map_memoriaInst|Mux5~1_combout\ & ( \port_map_memoriaInst|Mux4~1_combout\ & ( \port_map_registradores|registrador~36_q\ ) ) ) # ( !\port_map_memoriaInst|Mux5~1_combout\ & ( 
--- \port_map_memoriaInst|Mux4~1_combout\ & ( \port_map_registradores|registrador~28_q\ ) ) ) # ( \port_map_memoriaInst|Mux5~1_combout\ & ( !\port_map_memoriaInst|Mux4~1_combout\ & ( \port_map_registradores|registrador~20_q\ ) ) ) # ( 
--- !\port_map_memoriaInst|Mux5~1_combout\ & ( !\port_map_memoriaInst|Mux4~1_combout\ & ( \port_map_registradores|registrador~12_q\ ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0101010101010101001100110011001100001111000011110000000011111111",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \port_map_registradores|ALT_INV_registrador~12_q\,
-	datab => \port_map_registradores|ALT_INV_registrador~20_q\,
-	datac => \port_map_registradores|ALT_INV_registrador~28_q\,
-	datad => \port_map_registradores|ALT_INV_registrador~36_q\,
-	datae => \port_map_memoriaInst|ALT_INV_Mux5~1_combout\,
-	dataf => \port_map_memoriaInst|ALT_INV_Mux4~1_combout\,
-	combout => \port_map_registradores|registrador~44_combout\);
-
-\port_map_memoriaInst|Mux6~2\ : cyclonev_lcell_comb
--- Equation(s):
--- \port_map_memoriaInst|Mux6~2_combout\ = (((!\port_map_memoriaInst|Mux6~0_combout\) # (\port_map_pc|portOUT\(6))) # (\port_map_pc|portOUT\(5))) # (\port_map_pc|portOUT\(3))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "1111111101111111111111110111111111111111011111111111111101111111",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \port_map_pc|ALT_INV_portOUT\(3),
-	datab => \port_map_pc|ALT_INV_portOUT\(5),
-	datac => \port_map_pc|ALT_INV_portOUT\(6),
-	datad => \port_map_memoriaInst|ALT_INV_Mux6~0_combout\,
-	combout => \port_map_memoriaInst|Mux6~2_combout\);
-
-\port_map_registradores|registrador~19\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \clock~input_o\,
-	d => \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[0]~0_combout\,
-	ena => \port_map_registradores|registrador~60_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \port_map_registradores|registrador~19_q\);
-
-\port_map_registradores|registrador~27\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \clock~input_o\,
-	d => \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[0]~0_combout\,
-	ena => \port_map_registradores|registrador~61_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \port_map_registradores|registrador~27_q\);
-
-\port_map_registradores|registrador~35\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \clock~input_o\,
-	d => \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[0]~0_combout\,
-	ena => \port_map_registradores|registrador~62_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \port_map_registradores|registrador~35_q\);
-
-\port_map_registradores|registrador~43\ : cyclonev_lcell_comb
--- Equation(s):
--- \port_map_registradores|registrador~43_combout\ = ( \port_map_memoriaInst|Mux5~1_combout\ & ( \port_map_memoriaInst|Mux4~1_combout\ & ( \port_map_registradores|registrador~35_q\ ) ) ) # ( !\port_map_memoriaInst|Mux5~1_combout\ & ( 
--- \port_map_memoriaInst|Mux4~1_combout\ & ( \port_map_registradores|registrador~27_q\ ) ) ) # ( \port_map_memoriaInst|Mux5~1_combout\ & ( !\port_map_memoriaInst|Mux4~1_combout\ & ( \port_map_registradores|registrador~19_q\ ) ) ) # ( 
--- !\port_map_memoriaInst|Mux5~1_combout\ & ( !\port_map_memoriaInst|Mux4~1_combout\ & ( \port_map_registradores|registrador~11_q\ ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0101010101010101001100110011001100001111000011110000000011111111",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \port_map_registradores|ALT_INV_registrador~11_q\,
-	datab => \port_map_registradores|ALT_INV_registrador~19_q\,
-	datac => \port_map_registradores|ALT_INV_registrador~27_q\,
-	datad => \port_map_registradores|ALT_INV_registrador~35_q\,
-	datae => \port_map_memoriaInst|ALT_INV_Mux5~1_combout\,
-	dataf => \port_map_memoriaInst|ALT_INV_Mux4~1_combout\,
-	combout => \port_map_registradores|registrador~43_combout\);
-
-\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0\ : cyclonev_lcell_comb
--- Equation(s):
--- \port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ = (!\port_map_controle|Mux7~0_combout\ & ((\port_map_registradores|registrador~51_combout\))) # (\port_map_controle|Mux7~0_combout\ & (\port_map_memoriaInst|Mux7~3_combout\))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0011010100110101001101010011010100110101001101010011010100110101",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \port_map_memoriaInst|ALT_INV_Mux7~3_combout\,
-	datab => \port_map_registradores|ALT_INV_registrador~51_combout\,
-	datac => \port_map_controle|ALT_INV_Mux7~0_combout\,
-	combout => \port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\);
-
-\port_map_memoriaInst|Mux7~0\ : cyclonev_lcell_comb
--- Equation(s):
--- \port_map_memoriaInst|Mux7~0_combout\ = (!\port_map_pc|portOUT\(1) & (((!\port_map_pc|portOUT\(3)) # (!\port_map_pc|portOUT\(4))))) # (\port_map_pc|portOUT\(1) & (!\port_map_pc|portOUT\(0) & (!\port_map_pc|portOUT\(3) & !\port_map_pc|portOUT\(4))))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "1110110011000000111011001100000011101100110000001110110011000000",
+	lut_mask => "0000000000001000000000000000100000000000000010000000000000001000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_pc|ALT_INV_portOUT\(0),
-	datab => \port_map_pc|ALT_INV_portOUT\(1),
-	datac => \port_map_pc|ALT_INV_portOUT\(3),
-	datad => \port_map_pc|ALT_INV_portOUT\(4),
-	combout => \port_map_memoriaInst|Mux7~0_combout\);
+	datab => \port_map_pc|ALT_INV_portOUT\(7),
+	datac => \port_map_memoriaInst|ALT_INV_Mux6~1_combout\,
+	datad => \port_map_memoriaInst|ALT_INV_Mux5~0_combout\,
+	combout => \port_map_memoriaInst|Mux5~1_combout\);
 
-\port_map_memoriaInst|Mux7~1\ : cyclonev_lcell_comb
+\port_map_registradores|registrador~65\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_memoriaInst|Mux7~1_combout\ = ( !\port_map_pc|portOUT\(6) & ( (\port_map_pc|portOUT\(2) & (!\port_map_pc|portOUT\(5) & (!\port_map_pc|portOUT\(0) $ (\port_map_pc|portOUT\(1))))) ) )
+-- \port_map_registradores|registrador~65_combout\ = (!\port_map_memoriaInst|Mux6~2_combout\ & (\port_map_registradores|registrador~24_q\ & !\port_map_memoriaInst|Mux5~1_combout\))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000100100000000000000000000000000001001000000000000000000000000",
+	lut_mask => "0010000000100000001000000010000000100000001000000010000000100000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \port_map_memoriaInst|ALT_INV_Mux6~2_combout\,
+	datab => \port_map_registradores|ALT_INV_registrador~24_q\,
+	datac => \port_map_memoriaInst|ALT_INV_Mux5~1_combout\,
+	combout => \port_map_registradores|registrador~65_combout\);
+
+\port_map_registradores|registrador~48\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \port_map_registradores|registrador~48_combout\ = ( \port_map_registradores|registrador~16_q\ & ( (!\port_map_pc|portOUT\(2)) # (((!\port_map_memoriaInst|Mux0~0_combout\) # (\port_map_registradores|registrador~24_q\)) # (\port_map_pc|portOUT\(3))) ) ) # ( 
+-- !\port_map_registradores|registrador~16_q\ & ( (\port_map_pc|portOUT\(2) & (!\port_map_pc|portOUT\(3) & (\port_map_memoriaInst|Mux0~0_combout\ & \port_map_registradores|registrador~24_q\))) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000100111110111111111100000000000001001111101111111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \port_map_pc|ALT_INV_portOUT\(2),
+	datab => \port_map_pc|ALT_INV_portOUT\(3),
+	datac => \port_map_memoriaInst|ALT_INV_Mux0~0_combout\,
+	datad => \port_map_registradores|ALT_INV_registrador~24_q\,
+	datae => \port_map_registradores|ALT_INV_registrador~16_q\,
+	combout => \port_map_registradores|registrador~48_combout\);
+
+\port_map_registradores|registrador~74\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \port_map_registradores|registrador~74_combout\ = (!\port_map_memoriaInst|Mux4~0_combout\ & \port_map_controle|Mux8~0_combout\)
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0010001000100010001000100010001000100010001000100010001000100010",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \port_map_memoriaInst|ALT_INV_Mux4~0_combout\,
+	datab => \port_map_controle|ALT_INV_Mux8~0_combout\,
+	combout => \port_map_registradores|registrador~74_combout\);
+
+\port_map_registradores|registrador~15\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \clock~input_o\,
+	d => \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[4]~4_combout\,
+	ena => \port_map_registradores|registrador~74_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \port_map_registradores|registrador~15_q\);
+
+\port_map_registradores|registrador~61\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \port_map_registradores|registrador~61_combout\ = (\port_map_memoriaInst|Mux6~2_combout\ & (\port_map_registradores|registrador~15_q\ & !\port_map_memoriaInst|Mux5~1_combout\))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0001000000010000000100000001000000010000000100000001000000010000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \port_map_memoriaInst|ALT_INV_Mux6~2_combout\,
+	datab => \port_map_registradores|ALT_INV_registrador~15_q\,
+	datac => \port_map_memoriaInst|ALT_INV_Mux5~1_combout\,
+	combout => \port_map_registradores|registrador~61_combout\);
+
+\port_map_registradores|registrador~63\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \port_map_registradores|registrador~63_combout\ = (\port_map_registradores|registrador~62_combout\) # (\port_map_registradores|registrador~61_combout\)
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0111011101110111011101110111011101110111011101110111011101110111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \port_map_registradores|ALT_INV_registrador~61_combout\,
+	datab => \port_map_registradores|ALT_INV_registrador~62_combout\,
+	combout => \port_map_registradores|registrador~63_combout\);
+
+\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ = (\port_map_registradores|registrador~63_combout\ & !\port_map_controle|Mux7~0_combout\)
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0100010001000100010001000100010001000100010001000100010001000100",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \port_map_registradores|ALT_INV_registrador~63_combout\,
+	datab => \port_map_controle|ALT_INV_Mux7~0_combout\,
+	combout => \port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\);
+
+\port_map_registradores|registrador~47\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \port_map_registradores|registrador~47_combout\ = ( \port_map_registradores|registrador~15_q\ & ( (!\port_map_pc|portOUT\(2)) # (((!\port_map_memoriaInst|Mux0~0_combout\) # (\port_map_registradores|registrador~23_q\)) # (\port_map_pc|portOUT\(3))) ) ) # ( 
+-- !\port_map_registradores|registrador~15_q\ & ( (\port_map_pc|portOUT\(2) & (!\port_map_pc|portOUT\(3) & (\port_map_memoriaInst|Mux0~0_combout\ & \port_map_registradores|registrador~23_q\))) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000100111110111111111100000000000001001111101111111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \port_map_pc|ALT_INV_portOUT\(2),
+	datab => \port_map_pc|ALT_INV_portOUT\(3),
+	datac => \port_map_memoriaInst|ALT_INV_Mux0~0_combout\,
+	datad => \port_map_registradores|ALT_INV_registrador~23_q\,
+	datae => \port_map_registradores|ALT_INV_registrador~15_q\,
+	combout => \port_map_registradores|registrador~47_combout\);
+
+\port_map_memoriaInst|Mux6~0\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \port_map_memoriaInst|Mux6~0_combout\ = (!\port_map_pc|portOUT\(3) & (!\port_map_pc|portOUT\(0) $ (((\port_map_pc|portOUT\(1) & !\port_map_pc|portOUT\(2))))))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "1001101000000000100110100000000010011010000000001001101000000000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_pc|ALT_INV_portOUT\(0),
 	datab => \port_map_pc|ALT_INV_portOUT\(1),
 	datac => \port_map_pc|ALT_INV_portOUT\(2),
-	datad => \port_map_pc|ALT_INV_portOUT\(5),
-	datae => \port_map_pc|ALT_INV_portOUT\(6),
-	combout => \port_map_memoriaInst|Mux7~1_combout\);
+	datad => \port_map_pc|ALT_INV_portOUT\(3),
+	combout => \port_map_memoriaInst|Mux6~0_combout\);
 
-\port_map_memoriaInst|Mux7~2\ : cyclonev_lcell_comb
+\port_map_registradores|registrador~14\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \clock~input_o\,
+	d => \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[3]~3_combout\,
+	ena => \port_map_registradores|registrador~74_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \port_map_registradores|registrador~14_q\);
+
+\port_map_registradores|registrador~58\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_memoriaInst|Mux7~2_combout\ = (!\port_map_pc|portOUT\(2) & (!\port_map_pc|portOUT\(5) & !\port_map_pc|portOUT\(6)))
+-- \port_map_registradores|registrador~58_combout\ = ( \port_map_registradores|registrador~14_q\ & ( \port_map_memoriaInst|Mux5~0_combout\ & ( ((!\port_map_memoriaInst|Mux6~1_combout\) # ((\port_map_pc|portOUT\(0) & !\port_map_memoriaInst|Mux6~0_combout\))) 
+-- # (\port_map_pc|portOUT\(7)) ) ) ) # ( \port_map_registradores|registrador~14_q\ & ( !\port_map_memoriaInst|Mux5~0_combout\ & ( ((!\port_map_memoriaInst|Mux6~0_combout\) # (!\port_map_memoriaInst|Mux6~1_combout\)) # (\port_map_pc|portOUT\(7)) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "1000000010000000100000001000000010000000100000001000000010000000",
+	lut_mask => "0000000000000000111111111111001100000000000000001111111101110011",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \port_map_pc|ALT_INV_portOUT\(0),
+	datab => \port_map_pc|ALT_INV_portOUT\(7),
+	datac => \port_map_memoriaInst|ALT_INV_Mux6~0_combout\,
+	datad => \port_map_memoriaInst|ALT_INV_Mux6~1_combout\,
+	datae => \port_map_registradores|ALT_INV_registrador~14_q\,
+	dataf => \port_map_memoriaInst|ALT_INV_Mux5~0_combout\,
+	combout => \port_map_registradores|registrador~58_combout\);
+
+\port_map_registradores|registrador~60\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \port_map_registradores|registrador~60_combout\ = (\port_map_registradores|registrador~59_combout\) # (\port_map_registradores|registrador~58_combout\)
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0111011101110111011101110111011101110111011101110111011101110111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \port_map_registradores|ALT_INV_registrador~58_combout\,
+	datab => \port_map_registradores|ALT_INV_registrador~59_combout\,
+	combout => \port_map_registradores|registrador~60_combout\);
+
+\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ = (\port_map_registradores|registrador~60_combout\ & !\port_map_controle|Mux7~0_combout\)
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0100010001000100010001000100010001000100010001000100010001000100",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \port_map_registradores|ALT_INV_registrador~60_combout\,
+	datab => \port_map_controle|ALT_INV_Mux7~0_combout\,
+	combout => \port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\);
+
+\port_map_registradores|registrador~46\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \port_map_registradores|registrador~46_combout\ = ( \port_map_registradores|registrador~14_q\ & ( (!\port_map_pc|portOUT\(2)) # (((!\port_map_memoriaInst|Mux0~0_combout\) # (\port_map_registradores|registrador~22_q\)) # (\port_map_pc|portOUT\(3))) ) ) # ( 
+-- !\port_map_registradores|registrador~14_q\ & ( (\port_map_pc|portOUT\(2) & (!\port_map_pc|portOUT\(3) & (\port_map_memoriaInst|Mux0~0_combout\ & \port_map_registradores|registrador~22_q\))) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000100111110111111111100000000000001001111101111111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_pc|ALT_INV_portOUT\(2),
-	datab => \port_map_pc|ALT_INV_portOUT\(5),
-	datac => \port_map_pc|ALT_INV_portOUT\(6),
-	combout => \port_map_memoriaInst|Mux7~2_combout\);
+	datab => \port_map_pc|ALT_INV_portOUT\(3),
+	datac => \port_map_memoriaInst|ALT_INV_Mux0~0_combout\,
+	datad => \port_map_registradores|ALT_INV_registrador~22_q\,
+	datae => \port_map_registradores|ALT_INV_registrador~14_q\,
+	combout => \port_map_registradores|registrador~46_combout\);
 
-\port_map_memoriaInst|Mux7~4\ : cyclonev_lcell_comb
+\port_map_registradores|registrador~13\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \clock~input_o\,
+	d => \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[2]~2_combout\,
+	ena => \port_map_registradores|registrador~74_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \port_map_registradores|registrador~13_q\);
+
+\port_map_registradores|registrador~55\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_memoriaInst|Mux7~4_combout\ = ( \port_map_memoriaInst|Mux7~2_combout\ & ( ((\port_map_pc|portOUT\(3) & (!\port_map_pc|portOUT\(4) & \port_map_memoriaInst|Mux7~1_combout\))) # (\port_map_memoriaInst|Mux7~0_combout\) ) ) # ( 
--- !\port_map_memoriaInst|Mux7~2_combout\ & ( (\port_map_pc|portOUT\(3) & (!\port_map_pc|portOUT\(4) & \port_map_memoriaInst|Mux7~1_combout\)) ) )
+-- \port_map_registradores|registrador~55_combout\ = ( \port_map_registradores|registrador~13_q\ & ( \port_map_memoriaInst|Mux5~0_combout\ & ( ((!\port_map_memoriaInst|Mux6~1_combout\) # ((\port_map_pc|portOUT\(0) & !\port_map_memoriaInst|Mux6~0_combout\))) 
+-- # (\port_map_pc|portOUT\(7)) ) ) ) # ( \port_map_registradores|registrador~13_q\ & ( !\port_map_memoriaInst|Mux5~0_combout\ & ( ((!\port_map_memoriaInst|Mux6~0_combout\) # (!\port_map_memoriaInst|Mux6~1_combout\)) # (\port_map_pc|portOUT\(7)) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000001000100000011110100111100000000010001000000111101001111",
+	lut_mask => "0000000000000000111111111111001100000000000000001111111101110011",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_pc|ALT_INV_portOUT\(3),
-	datab => \port_map_pc|ALT_INV_portOUT\(4),
-	datac => \port_map_memoriaInst|ALT_INV_Mux7~0_combout\,
-	datad => \port_map_memoriaInst|ALT_INV_Mux7~1_combout\,
-	datae => \port_map_memoriaInst|ALT_INV_Mux7~2_combout\,
-	combout => \port_map_memoriaInst|Mux7~4_combout\);
+	dataa => \port_map_pc|ALT_INV_portOUT\(0),
+	datab => \port_map_pc|ALT_INV_portOUT\(7),
+	datac => \port_map_memoriaInst|ALT_INV_Mux6~0_combout\,
+	datad => \port_map_memoriaInst|ALT_INV_Mux6~1_combout\,
+	datae => \port_map_registradores|ALT_INV_registrador~13_q\,
+	dataf => \port_map_memoriaInst|ALT_INV_Mux5~0_combout\,
+	combout => \port_map_registradores|registrador~55_combout\);
+
+\port_map_registradores|registrador~57\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \port_map_registradores|registrador~57_combout\ = (\port_map_registradores|registrador~56_combout\) # (\port_map_registradores|registrador~55_combout\)
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0111011101110111011101110111011101110111011101110111011101110111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \port_map_registradores|ALT_INV_registrador~55_combout\,
+	datab => \port_map_registradores|ALT_INV_registrador~56_combout\,
+	combout => \port_map_registradores|registrador~57_combout\);
+
+\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ = (\port_map_registradores|registrador~57_combout\ & !\port_map_controle|Mux7~0_combout\)
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0100010001000100010001000100010001000100010001000100010001000100",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \port_map_registradores|ALT_INV_registrador~57_combout\,
+	datab => \port_map_controle|ALT_INV_Mux7~0_combout\,
+	combout => \port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\);
+
+\port_map_registradores|registrador~45\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \port_map_registradores|registrador~45_combout\ = ( \port_map_registradores|registrador~13_q\ & ( (!\port_map_pc|portOUT\(2)) # (((!\port_map_memoriaInst|Mux0~0_combout\) # (\port_map_registradores|registrador~21_q\)) # (\port_map_pc|portOUT\(3))) ) ) # ( 
+-- !\port_map_registradores|registrador~13_q\ & ( (\port_map_pc|portOUT\(2) & (!\port_map_pc|portOUT\(3) & (\port_map_memoriaInst|Mux0~0_combout\ & \port_map_registradores|registrador~21_q\))) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000100111110111111111100000000000001001111101111111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \port_map_pc|ALT_INV_portOUT\(2),
+	datab => \port_map_pc|ALT_INV_portOUT\(3),
+	datac => \port_map_memoriaInst|ALT_INV_Mux0~0_combout\,
+	datad => \port_map_registradores|ALT_INV_registrador~21_q\,
+	datae => \port_map_registradores|ALT_INV_registrador~13_q\,
+	combout => \port_map_registradores|registrador~45_combout\);
+
+\port_map_registradores|registrador~12\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \clock~input_o\,
+	d => \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[1]~1_combout\,
+	ena => \port_map_registradores|registrador~74_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \port_map_registradores|registrador~12_q\);
+
+\port_map_registradores|registrador~44\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \port_map_registradores|registrador~44_combout\ = ( \port_map_registradores|registrador~12_q\ & ( (!\port_map_pc|portOUT\(2)) # (((!\port_map_memoriaInst|Mux0~0_combout\) # (\port_map_registradores|registrador~20_q\)) # (\port_map_pc|portOUT\(3))) ) ) # ( 
+-- !\port_map_registradores|registrador~12_q\ & ( (\port_map_pc|portOUT\(2) & (!\port_map_pc|portOUT\(3) & (\port_map_memoriaInst|Mux0~0_combout\ & \port_map_registradores|registrador~20_q\))) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000100111110111111111100000000000001001111101111111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \port_map_pc|ALT_INV_portOUT\(2),
+	datab => \port_map_pc|ALT_INV_portOUT\(3),
+	datac => \port_map_memoriaInst|ALT_INV_Mux0~0_combout\,
+	datad => \port_map_registradores|ALT_INV_registrador~20_q\,
+	datae => \port_map_registradores|ALT_INV_registrador~12_q\,
+	combout => \port_map_registradores|registrador~44_combout\);
+
+\port_map_registradores|registrador~52\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \port_map_registradores|registrador~52_combout\ = ( \port_map_registradores|registrador~12_q\ & ( \port_map_memoriaInst|Mux5~0_combout\ & ( ((!\port_map_memoriaInst|Mux6~1_combout\) # ((\port_map_pc|portOUT\(0) & !\port_map_memoriaInst|Mux6~0_combout\))) 
+-- # (\port_map_pc|portOUT\(7)) ) ) ) # ( \port_map_registradores|registrador~12_q\ & ( !\port_map_memoriaInst|Mux5~0_combout\ & ( ((!\port_map_memoriaInst|Mux6~0_combout\) # (!\port_map_memoriaInst|Mux6~1_combout\)) # (\port_map_pc|portOUT\(7)) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111111111111001100000000000000001111111101110011",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \port_map_pc|ALT_INV_portOUT\(0),
+	datab => \port_map_pc|ALT_INV_portOUT\(7),
+	datac => \port_map_memoriaInst|ALT_INV_Mux6~0_combout\,
+	datad => \port_map_memoriaInst|ALT_INV_Mux6~1_combout\,
+	datae => \port_map_registradores|ALT_INV_registrador~12_q\,
+	dataf => \port_map_memoriaInst|ALT_INV_Mux5~0_combout\,
+	combout => \port_map_registradores|registrador~52_combout\);
+
+\port_map_registradores|registrador~54\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \port_map_registradores|registrador~54_combout\ = (\port_map_registradores|registrador~53_combout\) # (\port_map_registradores|registrador~52_combout\)
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0111011101110111011101110111011101110111011101110111011101110111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \port_map_registradores|ALT_INV_registrador~52_combout\,
+	datab => \port_map_registradores|ALT_INV_registrador~53_combout\,
+	combout => \port_map_registradores|registrador~54_combout\);
+
+\port_map_registradores|registrador~11\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \clock~input_o\,
+	d => \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[0]~0_combout\,
+	ena => \port_map_registradores|registrador~74_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \port_map_registradores|registrador~11_q\);
+
+\port_map_registradores|registrador~43\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \port_map_registradores|registrador~43_combout\ = ( \port_map_registradores|registrador~11_q\ & ( (!\port_map_pc|portOUT\(2)) # (((!\port_map_memoriaInst|Mux0~0_combout\) # (\port_map_registradores|registrador~19_q\)) # (\port_map_pc|portOUT\(3))) ) ) # ( 
+-- !\port_map_registradores|registrador~11_q\ & ( (\port_map_pc|portOUT\(2) & (!\port_map_pc|portOUT\(3) & (\port_map_memoriaInst|Mux0~0_combout\ & \port_map_registradores|registrador~19_q\))) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000100111110111111111100000000000001001111101111111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \port_map_pc|ALT_INV_portOUT\(2),
+	datab => \port_map_pc|ALT_INV_portOUT\(3),
+	datac => \port_map_memoriaInst|ALT_INV_Mux0~0_combout\,
+	datad => \port_map_registradores|ALT_INV_registrador~19_q\,
+	datae => \port_map_registradores|ALT_INV_registrador~11_q\,
+	combout => \port_map_registradores|registrador~43_combout\);
+
+\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ = (!\port_map_controle|Mux7~0_combout\ & ((\port_map_registradores|registrador~51_combout\))) # (\port_map_controle|Mux7~0_combout\ & (!\port_map_memoriaInst|Mux6~2_combout\))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0011101000111010001110100011101000111010001110100011101000111010",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \port_map_memoriaInst|ALT_INV_Mux6~2_combout\,
+	datab => \port_map_registradores|ALT_INV_registrador~51_combout\,
+	datac => \port_map_controle|ALT_INV_Mux7~0_combout\,
+	combout => \port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\);
+
+\port_map_memoriaInst|Mux6~3\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \port_map_memoriaInst|Mux6~3_combout\ = (!\port_map_memoriaInst|Mux6~0_combout\) # (!\port_map_memoriaInst|Mux6~1_combout\)
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "1110111011101110111011101110111011101110111011101110111011101110",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \port_map_memoriaInst|ALT_INV_Mux6~0_combout\,
+	datab => \port_map_memoriaInst|ALT_INV_Mux6~1_combout\,
+	combout => \port_map_memoriaInst|Mux6~3_combout\);
 
 \port_map_ual|portMap_subtrair|Add0~34\ : cyclonev_lcell_comb
 -- Equation(s):
@@ -3410,14 +3283,14 @@ PORT MAP (
 \port_map_ual|portMap_subtrair|Add0~1\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \port_map_ual|portMap_subtrair|Add0~1_sumout\ = SUM(( \port_map_registradores|registrador~43_combout\ ) + ( (!\port_map_controle|Mux7~0_combout\ & (!\port_map_registradores|registrador~51_combout\)) # (\port_map_controle|Mux7~0_combout\ & 
--- (((!\port_map_memoriaInst|Mux7~4_combout\) # (\port_map_pc|portOUT\(7))))) ) + ( \port_map_ual|portMap_subtrair|Add0~34_cout\ ))
+-- (((\port_map_memoriaInst|Mux6~3_combout\) # (\port_map_pc|portOUT\(7))))) ) + ( \port_map_ual|portMap_subtrair|Add0~34_cout\ ))
 -- \port_map_ual|portMap_subtrair|Add0~2\ = CARRY(( \port_map_registradores|registrador~43_combout\ ) + ( (!\port_map_controle|Mux7~0_combout\ & (!\port_map_registradores|registrador~51_combout\)) # (\port_map_controle|Mux7~0_combout\ & 
--- (((!\port_map_memoriaInst|Mux7~4_combout\) # (\port_map_pc|portOUT\(7))))) ) + ( \port_map_ual|portMap_subtrair|Add0~34_cout\ ))
+-- (((\port_map_memoriaInst|Mux6~3_combout\) # (\port_map_pc|portOUT\(7))))) ) + ( \port_map_ual|portMap_subtrair|Add0~34_cout\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000001000100111001000000000000000000000000011111111",
+	lut_mask => "0000000000000000011100100010001000000000000000000000000011111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -3425,39 +3298,39 @@ PORT MAP (
 	datab => \port_map_registradores|ALT_INV_registrador~51_combout\,
 	datac => \port_map_pc|ALT_INV_portOUT\(7),
 	datad => \port_map_registradores|ALT_INV_registrador~43_combout\,
-	dataf => \port_map_memoriaInst|ALT_INV_Mux7~4_combout\,
+	dataf => \port_map_memoriaInst|ALT_INV_Mux6~3_combout\,
 	cin => \port_map_ual|portMap_subtrair|Add0~34_cout\,
 	sumout => \port_map_ual|portMap_subtrair|Add0~1_sumout\,
 	cout => \port_map_ual|portMap_subtrair|Add0~2\);
 
 \port_map_ual|portMap_adicionador|Add0~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_adicionador|Add0~1_sumout\ = SUM(( \port_map_registradores|registrador~43_combout\ ) + ( (!\port_map_controle|Mux7~0_combout\ & (((\port_map_registradores|registrador~51_combout\)))) # (\port_map_controle|Mux7~0_combout\ & 
--- (!\port_map_pc|portOUT\(7) & ((\port_map_memoriaInst|Mux7~4_combout\)))) ) + ( !VCC ))
--- \port_map_ual|portMap_adicionador|Add0~2\ = CARRY(( \port_map_registradores|registrador~43_combout\ ) + ( (!\port_map_controle|Mux7~0_combout\ & (((\port_map_registradores|registrador~51_combout\)))) # (\port_map_controle|Mux7~0_combout\ & 
--- (!\port_map_pc|portOUT\(7) & ((\port_map_memoriaInst|Mux7~4_combout\)))) ) + ( !VCC ))
+-- \port_map_ual|portMap_adicionador|Add0~1_sumout\ = SUM(( \port_map_registradores|registrador~43_combout\ ) + ( (!\port_map_controle|Mux7~0_combout\ & (\port_map_registradores|registrador~51_combout\)) # (\port_map_controle|Mux7~0_combout\ & 
+-- (((!\port_map_pc|portOUT\(7) & !\port_map_memoriaInst|Mux6~3_combout\)))) ) + ( !VCC ))
+-- \port_map_ual|portMap_adicionador|Add0~2\ = CARRY(( \port_map_registradores|registrador~43_combout\ ) + ( (!\port_map_controle|Mux7~0_combout\ & (\port_map_registradores|registrador~51_combout\)) # (\port_map_controle|Mux7~0_combout\ & 
+-- (((!\port_map_pc|portOUT\(7) & !\port_map_memoriaInst|Mux6~3_combout\)))) ) + ( !VCC ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111101011011000100000000000000000000000011111111",
+	lut_mask => "0000000000000000100011011101110100000000000000000000000011111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_controle|ALT_INV_Mux7~0_combout\,
-	datab => \port_map_pc|ALT_INV_portOUT\(7),
-	datac => \port_map_registradores|ALT_INV_registrador~51_combout\,
+	datab => \port_map_registradores|ALT_INV_registrador~51_combout\,
+	datac => \port_map_pc|ALT_INV_portOUT\(7),
 	datad => \port_map_registradores|ALT_INV_registrador~43_combout\,
-	dataf => \port_map_memoriaInst|ALT_INV_Mux7~4_combout\,
+	dataf => \port_map_memoriaInst|ALT_INV_Mux6~3_combout\,
 	cin => GND,
 	sumout => \port_map_ual|portMap_adicionador|Add0~1_sumout\,
 	cout => \port_map_ual|portMap_adicionador|Add0~2\);
 
 \port_map_ual|Mux10~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|Mux10~0_combout\ = ( \port_map_ual|portMap_adicionador|Add0~1_sumout\ & ( (!\port_map_memoriaInst|Mux1~1_combout\ & ((!\port_map_controle|Mux5~0_combout\) # ((\port_map_ual|portMap_subtrair|Add0~1_sumout\)))) # 
--- (\port_map_memoriaInst|Mux1~1_combout\ & ((!\port_map_controle|Mux5~0_combout\ & ((\port_map_ual|portMap_subtrair|Add0~1_sumout\))) # (\port_map_controle|Mux5~0_combout\ & (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\)))) ) ) # ( 
--- !\port_map_ual|portMap_adicionador|Add0~1_sumout\ & ( (!\port_map_memoriaInst|Mux1~1_combout\ & (\port_map_controle|Mux5~0_combout\ & ((\port_map_ual|portMap_subtrair|Add0~1_sumout\)))) # (\port_map_memoriaInst|Mux1~1_combout\ & 
+-- \port_map_ual|Mux10~0_combout\ = ( \port_map_ual|portMap_adicionador|Add0~1_sumout\ & ( (!\port_map_memoriaInst|Mux1~0_combout\ & ((!\port_map_controle|Mux5~0_combout\) # ((\port_map_ual|portMap_subtrair|Add0~1_sumout\)))) # 
+-- (\port_map_memoriaInst|Mux1~0_combout\ & ((!\port_map_controle|Mux5~0_combout\ & ((\port_map_ual|portMap_subtrair|Add0~1_sumout\))) # (\port_map_controle|Mux5~0_combout\ & (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\)))) ) ) # ( 
+-- !\port_map_ual|portMap_adicionador|Add0~1_sumout\ & ( (!\port_map_memoriaInst|Mux1~0_combout\ & (\port_map_controle|Mux5~0_combout\ & ((\port_map_ual|portMap_subtrair|Add0~1_sumout\)))) # (\port_map_memoriaInst|Mux1~0_combout\ & 
 -- ((!\port_map_controle|Mux5~0_combout\ & ((\port_map_ual|portMap_subtrair|Add0~1_sumout\))) # (\port_map_controle|Mux5~0_combout\ & (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\)))) ) )
 
 -- pragma translate_off
@@ -3467,7 +3340,7 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_memoriaInst|ALT_INV_Mux1~1_combout\,
+	dataa => \port_map_memoriaInst|ALT_INV_Mux1~0_combout\,
 	datab => \port_map_controle|ALT_INV_Mux5~0_combout\,
 	datac => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[0]~0_combout\,
 	datad => \port_map_ual|portMap_subtrair|ALT_INV_Add0~1_sumout\,
@@ -3476,17 +3349,21 @@ PORT MAP (
 
 \port_map_ual|portMap_multiplexador|Add0~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add0~1_sumout\ = SUM(( !\port_map_registradores|registrador~43_combout\ ) + ( VCC ) + ( !VCC ))
--- \port_map_ual|portMap_multiplexador|Add0~2\ = CARRY(( !\port_map_registradores|registrador~43_combout\ ) + ( VCC ) + ( !VCC ))
+-- \port_map_ual|portMap_multiplexador|Add0~1_sumout\ = SUM(( (!\port_map_memoriaInst|Mux4~0_combout\ & ((!\port_map_registradores|registrador~11_q\))) # (\port_map_memoriaInst|Mux4~0_combout\ & (!\port_map_registradores|registrador~19_q\)) ) + ( VCC ) + ( 
+-- !VCC ))
+-- \port_map_ual|portMap_multiplexador|Add0~2\ = CARRY(( (!\port_map_memoriaInst|Mux4~0_combout\ & ((!\port_map_registradores|registrador~11_q\))) # (\port_map_memoriaInst|Mux4~0_combout\ & (!\port_map_registradores|registrador~19_q\)) ) + ( VCC ) + ( !VCC 
+-- ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000000000000000000000000000000000001111111100000000",
+	lut_mask => "0000000000000000000000000000000000000000000000001111101001010000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datad => \port_map_registradores|ALT_INV_registrador~43_combout\,
+	dataa => \port_map_memoriaInst|ALT_INV_Mux4~0_combout\,
+	datac => \port_map_registradores|ALT_INV_registrador~19_q\,
+	datad => \port_map_registradores|ALT_INV_registrador~11_q\,
 	cin => GND,
 	sumout => \port_map_ual|portMap_multiplexador|Add0~1_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add0~2\);
@@ -3511,30 +3388,30 @@ PORT MAP (
 
 \port_map_ual|Mux10~2\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|Mux10~2_combout\ = ( \port_map_ual|Mux10~0_combout\ & ( \port_map_ual|Mux10~1_combout\ & ( (!\port_map_memoriaInst|Mux0~0_combout\ & ((!\port_map_memoriaInst|Mux1~1_combout\) # ((!\port_map_controle|Mux4~0_combout\) # 
--- (\port_map_registradores|registrador~43_combout\)))) ) ) ) # ( !\port_map_ual|Mux10~0_combout\ & ( \port_map_ual|Mux10~1_combout\ & ( (!\port_map_memoriaInst|Mux0~0_combout\ & (\port_map_controle|Mux4~0_combout\ & ((!\port_map_memoriaInst|Mux1~1_combout\) 
--- # (\port_map_registradores|registrador~43_combout\)))) ) ) ) # ( \port_map_ual|Mux10~0_combout\ & ( !\port_map_ual|Mux10~1_combout\ & ( (!\port_map_memoriaInst|Mux0~0_combout\ & ((!\port_map_controle|Mux4~0_combout\) # 
--- ((\port_map_memoriaInst|Mux1~1_combout\ & \port_map_registradores|registrador~43_combout\)))) ) ) ) # ( !\port_map_ual|Mux10~0_combout\ & ( !\port_map_ual|Mux10~1_combout\ & ( (\port_map_memoriaInst|Mux1~1_combout\ & 
--- (\port_map_registradores|registrador~43_combout\ & (!\port_map_memoriaInst|Mux0~0_combout\ & \port_map_controle|Mux4~0_combout\))) ) ) )
+-- \port_map_ual|Mux10~2_combout\ = ( \port_map_ual|Mux10~0_combout\ & ( \port_map_ual|Mux10~1_combout\ & ( (!\port_map_memoriaInst|Mux0~1_combout\ & ((!\port_map_memoriaInst|Mux2~0_combout\) # ((!\port_map_memoriaInst|Mux1~0_combout\) # 
+-- (\port_map_registradores|registrador~43_combout\)))) ) ) ) # ( !\port_map_ual|Mux10~0_combout\ & ( \port_map_ual|Mux10~1_combout\ & ( (\port_map_memoriaInst|Mux2~0_combout\ & (!\port_map_memoriaInst|Mux0~1_combout\ & 
+-- ((!\port_map_memoriaInst|Mux1~0_combout\) # (\port_map_registradores|registrador~43_combout\)))) ) ) ) # ( \port_map_ual|Mux10~0_combout\ & ( !\port_map_ual|Mux10~1_combout\ & ( (!\port_map_memoriaInst|Mux0~1_combout\ & 
+-- ((!\port_map_memoriaInst|Mux2~0_combout\) # ((\port_map_memoriaInst|Mux1~0_combout\ & \port_map_registradores|registrador~43_combout\)))) ) ) ) # ( !\port_map_ual|Mux10~0_combout\ & ( !\port_map_ual|Mux10~1_combout\ & ( 
+-- (\port_map_memoriaInst|Mux2~0_combout\ & (\port_map_memoriaInst|Mux1~0_combout\ & (\port_map_registradores|registrador~43_combout\ & !\port_map_memoriaInst|Mux0~1_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000010000111100000001000000000000101100001111000010110000",
+	lut_mask => "0000000100000000101010110000000001000101000000001110111100000000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_memoriaInst|ALT_INV_Mux1~1_combout\,
-	datab => \port_map_registradores|ALT_INV_registrador~43_combout\,
-	datac => \port_map_memoriaInst|ALT_INV_Mux0~0_combout\,
-	datad => \port_map_controle|ALT_INV_Mux4~0_combout\,
+	dataa => \port_map_memoriaInst|ALT_INV_Mux2~0_combout\,
+	datab => \port_map_memoriaInst|ALT_INV_Mux1~0_combout\,
+	datac => \port_map_registradores|ALT_INV_registrador~43_combout\,
+	datad => \port_map_memoriaInst|ALT_INV_Mux0~1_combout\,
 	datae => \port_map_ual|ALT_INV_Mux10~0_combout\,
 	dataf => \port_map_ual|ALT_INV_Mux10~1_combout\,
 	combout => \port_map_ual|Mux10~2_combout\);
 
 \port_map_controle|Mux6~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_controle|Mux6~0_combout\ = (\port_map_memoriaInst|Mux3~1_combout\ & (\port_map_memoriaInst|Mux2~0_combout\ & (\port_map_memoriaInst|Mux1~1_combout\ & !\port_map_memoriaInst|Mux0~0_combout\)))
+-- \port_map_controle|Mux6~0_combout\ = (\port_map_memoriaInst|Mux3~0_combout\ & (\port_map_memoriaInst|Mux2~0_combout\ & (\port_map_memoriaInst|Mux1~0_combout\ & !\port_map_memoriaInst|Mux0~1_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3543,15 +3420,15 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_memoriaInst|ALT_INV_Mux3~1_combout\,
+	dataa => \port_map_memoriaInst|ALT_INV_Mux3~0_combout\,
 	datab => \port_map_memoriaInst|ALT_INV_Mux2~0_combout\,
-	datac => \port_map_memoriaInst|ALT_INV_Mux1~1_combout\,
-	datad => \port_map_memoriaInst|ALT_INV_Mux0~0_combout\,
+	datac => \port_map_memoriaInst|ALT_INV_Mux1~0_combout\,
+	datad => \port_map_memoriaInst|ALT_INV_Mux0~1_combout\,
 	combout => \port_map_controle|Mux6~0_combout\);
 
 \port_map_controle|Mux3~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_controle|Mux3~0_combout\ = (!\port_map_memoriaInst|Mux3~1_combout\ & (\port_map_memoriaInst|Mux2~0_combout\ & (\port_map_memoriaInst|Mux1~1_combout\ & !\port_map_memoriaInst|Mux0~0_combout\)))
+-- \port_map_controle|Mux3~0_combout\ = (!\port_map_memoriaInst|Mux3~0_combout\ & (\port_map_memoriaInst|Mux2~0_combout\ & (\port_map_memoriaInst|Mux1~0_combout\ & !\port_map_memoriaInst|Mux0~1_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3560,11 +3437,25 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_memoriaInst|ALT_INV_Mux3~1_combout\,
+	dataa => \port_map_memoriaInst|ALT_INV_Mux3~0_combout\,
 	datab => \port_map_memoriaInst|ALT_INV_Mux2~0_combout\,
-	datac => \port_map_memoriaInst|ALT_INV_Mux1~1_combout\,
-	datad => \port_map_memoriaInst|ALT_INV_Mux0~0_combout\,
+	datac => \port_map_memoriaInst|ALT_INV_Mux1~0_combout\,
+	datad => \port_map_memoriaInst|ALT_INV_Mux0~1_combout\,
 	combout => \port_map_controle|Mux3~0_combout\);
+
+\port_map_memoriaInst|Mux6~2_wirecell\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \port_map_memoriaInst|Mux6~2_wirecell_combout\ = !\port_map_memoriaInst|Mux6~2_combout\
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "1010101010101010101010101010101010101010101010101010101010101010",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \port_map_memoriaInst|ALT_INV_Mux6~2_combout\,
+	combout => \port_map_memoriaInst|Mux6~2_wirecell_combout\);
 
 \port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a0\ : cyclonev_ram_block
 -- pragma translate_off
@@ -3632,43 +3523,7 @@ PORT MAP (
 	datac => \port_map_controle|ALT_INV_Mux3~0_combout\,
 	combout => \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[0]~0_combout\);
 
-\port_map_memoriaInst|Mux4~0\ : cyclonev_lcell_comb
--- Equation(s):
--- \port_map_memoriaInst|Mux4~0_combout\ = (!\port_map_pc|portOUT\(0) & (\port_map_pc|portOUT\(2) & (!\port_map_pc|portOUT\(1) $ (!\port_map_pc|portOUT\(4))))) # (\port_map_pc|portOUT\(0) & (\port_map_pc|portOUT\(1) & ((\port_map_pc|portOUT\(4)) # 
--- (\port_map_pc|portOUT\(2)))))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000001100011001000000110001100100000011000110010000001100011001",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \port_map_pc|ALT_INV_portOUT\(0),
-	datab => \port_map_pc|ALT_INV_portOUT\(1),
-	datac => \port_map_pc|ALT_INV_portOUT\(2),
-	datad => \port_map_pc|ALT_INV_portOUT\(4),
-	combout => \port_map_memoriaInst|Mux4~0_combout\);
-
-\port_map_registradores|registrador~59\ : cyclonev_lcell_comb
--- Equation(s):
--- \port_map_registradores|registrador~59_combout\ = ( \port_map_controle|Mux8~0_combout\ & ( (!\port_map_memoriaInst|Mux3~0_combout\) # ((!\port_map_memoriaInst|Mux5~0_combout\ & ((\port_map_memoriaInst|Mux4~0_combout\) # (\port_map_pc|portOUT\(3))))) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000111101001111110000000000000000001111010011111100",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \port_map_pc|ALT_INV_portOUT\(3),
-	datab => \port_map_memoriaInst|ALT_INV_Mux5~0_combout\,
-	datac => \port_map_memoriaInst|ALT_INV_Mux3~0_combout\,
-	datad => \port_map_memoriaInst|ALT_INV_Mux4~0_combout\,
-	datae => \port_map_controle|ALT_INV_Mux8~0_combout\,
-	combout => \port_map_registradores|registrador~59_combout\);
-
-\port_map_registradores|registrador~11\ : dffeas
+\port_map_registradores|registrador~19\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -3677,91 +3532,91 @@ GENERIC MAP (
 PORT MAP (
 	clk => \clock~input_o\,
 	d => \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[0]~0_combout\,
-	ena => \port_map_registradores|registrador~59_combout\,
+	ena => \port_map_registradores|registrador~73_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \port_map_registradores|registrador~11_q\);
+	q => \port_map_registradores|registrador~19_q\);
 
 \port_map_registradores|registrador~51\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_registradores|registrador~51_combout\ = ( \port_map_memoriaInst|Mux7~3_combout\ & ( \port_map_memoriaInst|Mux6~1_combout\ & ( \port_map_registradores|registrador~35_q\ ) ) ) # ( !\port_map_memoriaInst|Mux7~3_combout\ & ( 
--- \port_map_memoriaInst|Mux6~1_combout\ & ( \port_map_registradores|registrador~27_q\ ) ) ) # ( \port_map_memoriaInst|Mux7~3_combout\ & ( !\port_map_memoriaInst|Mux6~1_combout\ & ( \port_map_registradores|registrador~19_q\ ) ) ) # ( 
--- !\port_map_memoriaInst|Mux7~3_combout\ & ( !\port_map_memoriaInst|Mux6~1_combout\ & ( \port_map_registradores|registrador~11_q\ ) ) )
+-- \port_map_registradores|registrador~51_combout\ = (!\port_map_memoriaInst|Mux5~1_combout\ & ((!\port_map_memoriaInst|Mux6~2_combout\ & (\port_map_registradores|registrador~19_q\)) # (\port_map_memoriaInst|Mux6~2_combout\ & 
+-- ((\port_map_registradores|registrador~11_q\)))))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0101010101010101001100110011001100001111000011110000000011111111",
+	lut_mask => "0010011100000000001001110000000000100111000000000010011100000000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_registradores|ALT_INV_registrador~11_q\,
+	dataa => \port_map_memoriaInst|ALT_INV_Mux6~2_combout\,
 	datab => \port_map_registradores|ALT_INV_registrador~19_q\,
-	datac => \port_map_registradores|ALT_INV_registrador~27_q\,
-	datad => \port_map_registradores|ALT_INV_registrador~35_q\,
-	datae => \port_map_memoriaInst|ALT_INV_Mux7~3_combout\,
-	dataf => \port_map_memoriaInst|ALT_INV_Mux6~1_combout\,
+	datac => \port_map_registradores|ALT_INV_registrador~11_q\,
+	datad => \port_map_memoriaInst|ALT_INV_Mux5~1_combout\,
 	combout => \port_map_registradores|registrador~51_combout\);
 
 \port_map_ual|portMap_adicionador|Add0~5\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_adicionador|Add0~5_sumout\ = SUM(( \port_map_registradores|registrador~44_combout\ ) + ( (!\port_map_controle|Mux7~0_combout\ & (((\port_map_registradores|registrador~52_combout\)))) # (\port_map_controle|Mux7~0_combout\ & 
--- (!\port_map_pc|portOUT\(7) & ((!\port_map_memoriaInst|Mux6~2_combout\)))) ) + ( \port_map_ual|portMap_adicionador|Add0~2\ ))
--- \port_map_ual|portMap_adicionador|Add0~6\ = CARRY(( \port_map_registradores|registrador~44_combout\ ) + ( (!\port_map_controle|Mux7~0_combout\ & (((\port_map_registradores|registrador~52_combout\)))) # (\port_map_controle|Mux7~0_combout\ & 
--- (!\port_map_pc|portOUT\(7) & ((!\port_map_memoriaInst|Mux6~2_combout\)))) ) + ( \port_map_ual|portMap_adicionador|Add0~2\ ))
+-- \port_map_ual|portMap_adicionador|Add0~5_sumout\ = SUM(( \port_map_registradores|registrador~44_combout\ ) + ( (!\port_map_controle|Mux7~0_combout\ & ((\port_map_registradores|registrador~54_combout\))) # (\port_map_controle|Mux7~0_combout\ & 
+-- (\port_map_memoriaInst|Mux5~1_combout\)) ) + ( \port_map_ual|portMap_adicionador|Add0~2\ ))
+-- \port_map_ual|portMap_adicionador|Add0~6\ = CARRY(( \port_map_registradores|registrador~44_combout\ ) + ( (!\port_map_controle|Mux7~0_combout\ & ((\port_map_registradores|registrador~54_combout\))) # (\port_map_controle|Mux7~0_combout\ & 
+-- (\port_map_memoriaInst|Mux5~1_combout\)) ) + ( \port_map_ual|portMap_adicionador|Add0~2\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000101100011111010100000000000000000000000011111111",
+	lut_mask => "0000000000000000111110100101000000000000000000000000000011111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_controle|ALT_INV_Mux7~0_combout\,
-	datab => \port_map_pc|ALT_INV_portOUT\(7),
-	datac => \port_map_registradores|ALT_INV_registrador~52_combout\,
+	datac => \port_map_memoriaInst|ALT_INV_Mux5~1_combout\,
 	datad => \port_map_registradores|ALT_INV_registrador~44_combout\,
-	dataf => \port_map_memoriaInst|ALT_INV_Mux6~2_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~54_combout\,
 	cin => \port_map_ual|portMap_adicionador|Add0~2\,
 	sumout => \port_map_ual|portMap_adicionador|Add0~5_sumout\,
 	cout => \port_map_ual|portMap_adicionador|Add0~6\);
 
 \port_map_ual|portMap_subtrair|Add0~5\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_subtrair|Add0~5_sumout\ = SUM(( \port_map_registradores|registrador~44_combout\ ) + ( (!\port_map_controle|Mux7~0_combout\ & (!\port_map_registradores|registrador~52_combout\)) # (\port_map_controle|Mux7~0_combout\ & 
--- (((\port_map_memoriaInst|Mux6~2_combout\) # (\port_map_pc|portOUT\(7))))) ) + ( \port_map_ual|portMap_subtrair|Add0~2\ ))
--- \port_map_ual|portMap_subtrair|Add0~6\ = CARRY(( \port_map_registradores|registrador~44_combout\ ) + ( (!\port_map_controle|Mux7~0_combout\ & (!\port_map_registradores|registrador~52_combout\)) # (\port_map_controle|Mux7~0_combout\ & 
--- (((\port_map_memoriaInst|Mux6~2_combout\) # (\port_map_pc|portOUT\(7))))) ) + ( \port_map_ual|portMap_subtrair|Add0~2\ ))
+-- \port_map_ual|portMap_subtrair|Add0~5_sumout\ = SUM(( \port_map_registradores|registrador~44_combout\ ) + ( (!\port_map_controle|Mux7~0_combout\ & (!\port_map_registradores|registrador~53_combout\ & ((!\port_map_registradores|registrador~52_combout\)))) # 
+-- (\port_map_controle|Mux7~0_combout\ & (((!\port_map_memoriaInst|Mux5~1_combout\)))) ) + ( \port_map_ual|portMap_subtrair|Add0~2\ ))
+-- \port_map_ual|portMap_subtrair|Add0~6\ = CARRY(( \port_map_registradores|registrador~44_combout\ ) + ( (!\port_map_controle|Mux7~0_combout\ & (!\port_map_registradores|registrador~53_combout\ & ((!\port_map_registradores|registrador~52_combout\)))) # 
+-- (\port_map_controle|Mux7~0_combout\ & (((!\port_map_memoriaInst|Mux5~1_combout\)))) ) + ( \port_map_ual|portMap_subtrair|Add0~2\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000011100100010001000000000000000000000000011111111",
+	lut_mask => "0000000000000000001001111010111100000000000000000000000011111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_controle|ALT_INV_Mux7~0_combout\,
-	datab => \port_map_registradores|ALT_INV_registrador~52_combout\,
-	datac => \port_map_pc|ALT_INV_portOUT\(7),
+	datab => \port_map_registradores|ALT_INV_registrador~53_combout\,
+	datac => \port_map_memoriaInst|ALT_INV_Mux5~1_combout\,
 	datad => \port_map_registradores|ALT_INV_registrador~44_combout\,
-	dataf => \port_map_memoriaInst|ALT_INV_Mux6~2_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~52_combout\,
 	cin => \port_map_ual|portMap_subtrair|Add0~2\,
 	sumout => \port_map_ual|portMap_subtrair|Add0~5_sumout\,
 	cout => \port_map_ual|portMap_subtrair|Add0~6\);
 
 \port_map_ual|portMap_multiplexador|Add0~5\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add0~5_sumout\ = SUM(( !\port_map_registradores|registrador~44_combout\ ) + ( GND ) + ( \port_map_ual|portMap_multiplexador|Add0~2\ ))
--- \port_map_ual|portMap_multiplexador|Add0~6\ = CARRY(( !\port_map_registradores|registrador~44_combout\ ) + ( GND ) + ( \port_map_ual|portMap_multiplexador|Add0~2\ ))
+-- \port_map_ual|portMap_multiplexador|Add0~5_sumout\ = SUM(( (!\port_map_memoriaInst|Mux4~0_combout\ & ((!\port_map_registradores|registrador~12_q\))) # (\port_map_memoriaInst|Mux4~0_combout\ & (!\port_map_registradores|registrador~20_q\)) ) + ( GND ) + ( 
+-- \port_map_ual|portMap_multiplexador|Add0~2\ ))
+-- \port_map_ual|portMap_multiplexador|Add0~6\ = CARRY(( (!\port_map_memoriaInst|Mux4~0_combout\ & ((!\port_map_registradores|registrador~12_q\))) # (\port_map_memoriaInst|Mux4~0_combout\ & (!\port_map_registradores|registrador~20_q\)) ) + ( GND ) + ( 
+-- \port_map_ual|portMap_multiplexador|Add0~2\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111111111111100000000000000001111111100000000",
+	lut_mask => "0000000000000000111111111111111100000000000000001111101001010000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datad => \port_map_registradores|ALT_INV_registrador~44_combout\,
+	dataa => \port_map_memoriaInst|ALT_INV_Mux4~0_combout\,
+	datac => \port_map_registradores|ALT_INV_registrador~20_q\,
+	datad => \port_map_registradores|ALT_INV_registrador~12_q\,
 	cin => \port_map_ual|portMap_multiplexador|Add0~2\,
 	sumout => \port_map_ual|portMap_multiplexador|Add0~5_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add0~6\);
@@ -3783,20 +3638,20 @@ PORT MAP (
 \port_map_ual|portMap_multiplexador|Add2~1\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \port_map_ual|portMap_multiplexador|Add2~1_sumout\ = SUM(( !\port_map_registradores|registrador~43_combout\ ) + ( (\port_map_ual|portMap_multiplexador|Add0~5_sumout\ & ((!\port_map_controle|Mux7~0_combout\ & 
--- (\port_map_registradores|registrador~51_combout\)) # (\port_map_controle|Mux7~0_combout\ & ((\port_map_memoriaInst|Mux7~3_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add2~30_cout\ ))
+-- (\port_map_registradores|registrador~51_combout\)) # (\port_map_controle|Mux7~0_combout\ & ((!\port_map_memoriaInst|Mux6~2_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add2~30_cout\ ))
 -- \port_map_ual|portMap_multiplexador|Add2~2\ = CARRY(( !\port_map_registradores|registrador~43_combout\ ) + ( (\port_map_ual|portMap_multiplexador|Add0~5_sumout\ & ((!\port_map_controle|Mux7~0_combout\ & (\port_map_registradores|registrador~51_combout\)) # 
--- (\port_map_controle|Mux7~0_combout\ & ((\port_map_memoriaInst|Mux7~3_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add2~30_cout\ ))
+-- (\port_map_controle|Mux7~0_combout\ & ((!\port_map_memoriaInst|Mux6~2_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add2~30_cout\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111111101100000000000000000001111111100000000",
+	lut_mask => "0000000000000000111111111000110100000000000000001111111100000000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_controle|ALT_INV_Mux7~0_combout\,
 	datab => \port_map_registradores|ALT_INV_registrador~51_combout\,
-	datac => \port_map_memoriaInst|ALT_INV_Mux7~3_combout\,
+	datac => \port_map_memoriaInst|ALT_INV_Mux6~2_combout\,
 	datad => \port_map_registradores|ALT_INV_registrador~43_combout\,
 	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_Add0~5_sumout\,
 	cin => \port_map_ual|portMap_multiplexador|Add2~30_cout\,
@@ -3805,7 +3660,7 @@ PORT MAP (
 
 \port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ = (!\port_map_controle|Mux7~0_combout\ & ((\port_map_registradores|registrador~52_combout\))) # (\port_map_controle|Mux7~0_combout\ & (\port_map_memoriaInst|Mux6~1_combout\))
+-- \port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ = (!\port_map_controle|Mux7~0_combout\ & ((\port_map_registradores|registrador~54_combout\))) # (\port_map_controle|Mux7~0_combout\ & (\port_map_memoriaInst|Mux5~1_combout\))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3814,28 +3669,28 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_memoriaInst|ALT_INV_Mux6~1_combout\,
-	datab => \port_map_registradores|ALT_INV_registrador~52_combout\,
+	dataa => \port_map_memoriaInst|ALT_INV_Mux5~1_combout\,
+	datab => \port_map_registradores|ALT_INV_registrador~54_combout\,
 	datac => \port_map_controle|ALT_INV_Mux7~0_combout\,
 	combout => \port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\);
 
 \port_map_ual|portMap_multiplexador|Add1~1\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \port_map_ual|portMap_multiplexador|Add1~1_sumout\ = SUM(( \port_map_registradores|registrador~43_combout\ ) + ( (\port_map_ual|portMap_multiplexador|Add0~5_sumout\ & ((!\port_map_controle|Mux7~0_combout\ & 
--- (\port_map_registradores|registrador~51_combout\)) # (\port_map_controle|Mux7~0_combout\ & ((\port_map_memoriaInst|Mux7~3_combout\))))) ) + ( !VCC ))
+-- (\port_map_registradores|registrador~51_combout\)) # (\port_map_controle|Mux7~0_combout\ & ((!\port_map_memoriaInst|Mux6~2_combout\))))) ) + ( !VCC ))
 -- \port_map_ual|portMap_multiplexador|Add1~2\ = CARRY(( \port_map_registradores|registrador~43_combout\ ) + ( (\port_map_ual|portMap_multiplexador|Add0~5_sumout\ & ((!\port_map_controle|Mux7~0_combout\ & (\port_map_registradores|registrador~51_combout\)) # 
--- (\port_map_controle|Mux7~0_combout\ & ((\port_map_memoriaInst|Mux7~3_combout\))))) ) + ( !VCC ))
+-- (\port_map_controle|Mux7~0_combout\ & ((!\port_map_memoriaInst|Mux6~2_combout\))))) ) + ( !VCC ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111111101100000000000000000000000000011111111",
+	lut_mask => "0000000000000000111111111000110100000000000000000000000011111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_controle|ALT_INV_Mux7~0_combout\,
 	datab => \port_map_registradores|ALT_INV_registrador~51_combout\,
-	datac => \port_map_memoriaInst|ALT_INV_Mux7~3_combout\,
+	datac => \port_map_memoriaInst|ALT_INV_Mux6~2_combout\,
 	datad => \port_map_registradores|ALT_INV_registrador~43_combout\,
 	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_Add0~5_sumout\,
 	cin => GND,
@@ -3865,15 +3720,15 @@ PORT MAP (
 
 \port_map_ual|Mux9~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|Mux9~1_combout\ = ( \port_map_ual|Mux9~0_combout\ & ( (!\port_map_controle|Mux4~0_combout\ & ((!\port_map_controle|Mux5~0_combout\ & (\port_map_ual|portMap_adicionador|Add0~5_sumout\)) # (\port_map_controle|Mux5~0_combout\ & 
--- ((\port_map_ual|portMap_subtrair|Add0~5_sumout\))))) # (\port_map_controle|Mux4~0_combout\ & ((!\port_map_controle|Mux5~0_combout\) # ((\port_map_ual|portMap_adicionador|Add0~5_sumout\)))) ) ) # ( !\port_map_ual|Mux9~0_combout\ & ( 
--- (!\port_map_controle|Mux4~0_combout\ & ((!\port_map_controle|Mux5~0_combout\ & (\port_map_ual|portMap_adicionador|Add0~5_sumout\)) # (\port_map_controle|Mux5~0_combout\ & ((\port_map_ual|portMap_subtrair|Add0~5_sumout\))))) # 
--- (\port_map_controle|Mux4~0_combout\ & (\port_map_controle|Mux5~0_combout\ & (\port_map_ual|portMap_adicionador|Add0~5_sumout\))) ) )
+-- \port_map_ual|Mux9~1_combout\ = ( \port_map_ual|Mux9~0_combout\ & ( (!\port_map_controle|Mux4~0_combout\ & ((!\port_map_controle|Mux5~0_combout\) # ((\port_map_ual|portMap_adicionador|Add0~5_sumout\)))) # (\port_map_controle|Mux4~0_combout\ & 
+-- ((!\port_map_controle|Mux5~0_combout\ & (\port_map_ual|portMap_adicionador|Add0~5_sumout\)) # (\port_map_controle|Mux5~0_combout\ & ((\port_map_ual|portMap_subtrair|Add0~5_sumout\))))) ) ) # ( !\port_map_ual|Mux9~0_combout\ & ( 
+-- (!\port_map_controle|Mux4~0_combout\ & (\port_map_controle|Mux5~0_combout\ & (\port_map_ual|portMap_adicionador|Add0~5_sumout\))) # (\port_map_controle|Mux4~0_combout\ & ((!\port_map_controle|Mux5~0_combout\ & 
+-- (\port_map_ual|portMap_adicionador|Add0~5_sumout\)) # (\port_map_controle|Mux5~0_combout\ & ((\port_map_ual|portMap_subtrair|Add0~5_sumout\))))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000100100101011010011010110111100001001001010110100110101101111",
+	lut_mask => "0000011000010111100011101001111100000110000101111000111010011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -3886,14 +3741,14 @@ PORT MAP (
 
 \port_map_ual|Mux9~2\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|Mux9~2_combout\ = ( \port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ( (!\port_map_controle|Mux4~0_combout\ & (((\port_map_ual|portMap_subtrair|Add0~5_sumout\) # (\port_map_controle|Mux5~0_combout\)))) # 
--- (\port_map_controle|Mux4~0_combout\ & (\port_map_registradores|registrador~44_combout\)) ) ) # ( !\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ( (!\port_map_controle|Mux4~0_combout\ & (((!\port_map_controle|Mux5~0_combout\ & 
--- \port_map_ual|portMap_subtrair|Add0~5_sumout\)))) # (\port_map_controle|Mux4~0_combout\ & (\port_map_registradores|registrador~44_combout\)) ) )
+-- \port_map_ual|Mux9~2_combout\ = ( \port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ( (!\port_map_controle|Mux4~0_combout\ & (\port_map_registradores|registrador~44_combout\)) # (\port_map_controle|Mux4~0_combout\ & 
+-- (((\port_map_ual|portMap_subtrair|Add0~5_sumout\) # (\port_map_controle|Mux5~0_combout\)))) ) ) # ( !\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ( (!\port_map_controle|Mux4~0_combout\ & 
+-- (\port_map_registradores|registrador~44_combout\)) # (\port_map_controle|Mux4~0_combout\ & (((!\port_map_controle|Mux5~0_combout\ & \port_map_ual|portMap_subtrair|Add0~5_sumout\)))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0001000111010001000111011101110100010001110100010001110111011101",
+	lut_mask => "0100010001110100010001110111011101000100011101000100011101110111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -3906,7 +3761,7 @@ PORT MAP (
 
 \port_map_ual|Mux9~3\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|Mux9~3_combout\ = (!\port_map_memoriaInst|Mux0~0_combout\ & ((!\port_map_memoriaInst|Mux1~1_combout\ & (\port_map_ual|Mux9~1_combout\)) # (\port_map_memoriaInst|Mux1~1_combout\ & ((\port_map_ual|Mux9~2_combout\)))))
+-- \port_map_ual|Mux9~3_combout\ = (!\port_map_memoriaInst|Mux0~1_combout\ & ((!\port_map_memoriaInst|Mux1~0_combout\ & (\port_map_ual|Mux9~1_combout\)) # (\port_map_memoriaInst|Mux1~0_combout\ & ((\port_map_ual|Mux9~2_combout\)))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3915,8 +3770,8 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_memoriaInst|ALT_INV_Mux1~1_combout\,
-	datab => \port_map_memoriaInst|ALT_INV_Mux0~0_combout\,
+	dataa => \port_map_memoriaInst|ALT_INV_Mux1~0_combout\,
+	datab => \port_map_memoriaInst|ALT_INV_Mux0~1_combout\,
 	datac => \port_map_ual|ALT_INV_Mux9~1_combout\,
 	datad => \port_map_ual|ALT_INV_Mux9~2_combout\,
 	combout => \port_map_ual|Mux9~3_combout\);
@@ -3987,7 +3842,7 @@ PORT MAP (
 	datac => \port_map_controle|ALT_INV_Mux3~0_combout\,
 	combout => \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[1]~1_combout\);
 
-\port_map_registradores|registrador~12\ : dffeas
+\port_map_registradores|registrador~20\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -3996,75 +3851,80 @@ GENERIC MAP (
 PORT MAP (
 	clk => \clock~input_o\,
 	d => \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[1]~1_combout\,
-	ena => \port_map_registradores|registrador~59_combout\,
+	ena => \port_map_registradores|registrador~73_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \port_map_registradores|registrador~12_q\);
+	q => \port_map_registradores|registrador~20_q\);
 
-\port_map_registradores|registrador~52\ : cyclonev_lcell_comb
+\port_map_registradores|registrador~53\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_registradores|registrador~52_combout\ = ( \port_map_memoriaInst|Mux7~3_combout\ & ( \port_map_memoriaInst|Mux6~1_combout\ & ( \port_map_registradores|registrador~36_q\ ) ) ) # ( !\port_map_memoriaInst|Mux7~3_combout\ & ( 
--- \port_map_memoriaInst|Mux6~1_combout\ & ( \port_map_registradores|registrador~28_q\ ) ) ) # ( \port_map_memoriaInst|Mux7~3_combout\ & ( !\port_map_memoriaInst|Mux6~1_combout\ & ( \port_map_registradores|registrador~20_q\ ) ) ) # ( 
--- !\port_map_memoriaInst|Mux7~3_combout\ & ( !\port_map_memoriaInst|Mux6~1_combout\ & ( \port_map_registradores|registrador~12_q\ ) ) )
+-- \port_map_registradores|registrador~53_combout\ = ( \port_map_registradores|registrador~20_q\ & ( \port_map_memoriaInst|Mux5~0_combout\ & ( (\port_map_pc|portOUT\(0) & (!\port_map_pc|portOUT\(7) & (\port_map_memoriaInst|Mux6~0_combout\ & 
+-- \port_map_memoriaInst|Mux6~1_combout\))) ) ) ) # ( \port_map_registradores|registrador~20_q\ & ( !\port_map_memoriaInst|Mux5~0_combout\ & ( (!\port_map_pc|portOUT\(7) & (\port_map_memoriaInst|Mux6~0_combout\ & \port_map_memoriaInst|Mux6~1_combout\)) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0101010101010101001100110011001100001111000011110000000011111111",
+	lut_mask => "0000000000000000000000000000110000000000000000000000000000000100",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_registradores|ALT_INV_registrador~12_q\,
-	datab => \port_map_registradores|ALT_INV_registrador~20_q\,
-	datac => \port_map_registradores|ALT_INV_registrador~28_q\,
-	datad => \port_map_registradores|ALT_INV_registrador~36_q\,
-	datae => \port_map_memoriaInst|ALT_INV_Mux7~3_combout\,
-	dataf => \port_map_memoriaInst|ALT_INV_Mux6~1_combout\,
-	combout => \port_map_registradores|registrador~52_combout\);
+	dataa => \port_map_pc|ALT_INV_portOUT\(0),
+	datab => \port_map_pc|ALT_INV_portOUT\(7),
+	datac => \port_map_memoriaInst|ALT_INV_Mux6~0_combout\,
+	datad => \port_map_memoriaInst|ALT_INV_Mux6~1_combout\,
+	datae => \port_map_registradores|ALT_INV_registrador~20_q\,
+	dataf => \port_map_memoriaInst|ALT_INV_Mux5~0_combout\,
+	combout => \port_map_registradores|registrador~53_combout\);
 
 \port_map_ual|portMap_subtrair|Add0~9\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_subtrair|Add0~9_sumout\ = SUM(( \port_map_registradores|registrador~45_combout\ ) + ( (!\port_map_registradores|registrador~53_combout\) # (\port_map_controle|Mux7~0_combout\) ) + ( \port_map_ual|portMap_subtrair|Add0~6\ ))
--- \port_map_ual|portMap_subtrair|Add0~10\ = CARRY(( \port_map_registradores|registrador~45_combout\ ) + ( (!\port_map_registradores|registrador~53_combout\) # (\port_map_controle|Mux7~0_combout\) ) + ( \port_map_ual|portMap_subtrair|Add0~6\ ))
+-- \port_map_ual|portMap_subtrair|Add0~9_sumout\ = SUM(( \port_map_registradores|registrador~45_combout\ ) + ( ((!\port_map_registradores|registrador~56_combout\ & !\port_map_registradores|registrador~55_combout\)) # (\port_map_controle|Mux7~0_combout\) ) + 
+-- ( \port_map_ual|portMap_subtrair|Add0~6\ ))
+-- \port_map_ual|portMap_subtrair|Add0~10\ = CARRY(( \port_map_registradores|registrador~45_combout\ ) + ( ((!\port_map_registradores|registrador~56_combout\ & !\port_map_registradores|registrador~55_combout\)) # (\port_map_controle|Mux7~0_combout\) ) + ( 
+-- \port_map_ual|portMap_subtrair|Add0~6\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000000000001010101000000000000000000000000011111111",
+	lut_mask => "0000000000000000000010101010101000000000000000000000000011111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_controle|ALT_INV_Mux7~0_combout\,
+	datac => \port_map_registradores|ALT_INV_registrador~56_combout\,
 	datad => \port_map_registradores|ALT_INV_registrador~45_combout\,
-	dataf => \port_map_registradores|ALT_INV_registrador~53_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~55_combout\,
 	cin => \port_map_ual|portMap_subtrair|Add0~6\,
 	sumout => \port_map_ual|portMap_subtrair|Add0~9_sumout\,
 	cout => \port_map_ual|portMap_subtrair|Add0~10\);
 
 \port_map_ual|portMap_adicionador|Add0~9\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_adicionador|Add0~9_sumout\ = SUM(( \port_map_registradores|registrador~45_combout\ ) + ( (!\port_map_controle|Mux7~0_combout\ & \port_map_registradores|registrador~53_combout\) ) + ( \port_map_ual|portMap_adicionador|Add0~6\ ))
--- \port_map_ual|portMap_adicionador|Add0~10\ = CARRY(( \port_map_registradores|registrador~45_combout\ ) + ( (!\port_map_controle|Mux7~0_combout\ & \port_map_registradores|registrador~53_combout\) ) + ( \port_map_ual|portMap_adicionador|Add0~6\ ))
+-- \port_map_ual|portMap_adicionador|Add0~9_sumout\ = SUM(( \port_map_registradores|registrador~45_combout\ ) + ( (!\port_map_controle|Mux7~0_combout\ & ((\port_map_registradores|registrador~55_combout\) # (\port_map_registradores|registrador~56_combout\))) 
+-- ) + ( \port_map_ual|portMap_adicionador|Add0~6\ ))
+-- \port_map_ual|portMap_adicionador|Add0~10\ = CARRY(( \port_map_registradores|registrador~45_combout\ ) + ( (!\port_map_controle|Mux7~0_combout\ & ((\port_map_registradores|registrador~55_combout\) # (\port_map_registradores|registrador~56_combout\))) ) + 
+-- ( \port_map_ual|portMap_adicionador|Add0~6\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111110101010100000000000000000000000011111111",
+	lut_mask => "0000000000000000111101010101010100000000000000000000000011111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_controle|ALT_INV_Mux7~0_combout\,
+	datac => \port_map_registradores|ALT_INV_registrador~56_combout\,
 	datad => \port_map_registradores|ALT_INV_registrador~45_combout\,
-	dataf => \port_map_registradores|ALT_INV_registrador~53_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~55_combout\,
 	cin => \port_map_ual|portMap_adicionador|Add0~6\,
 	sumout => \port_map_ual|portMap_adicionador|Add0~9_sumout\,
 	cout => \port_map_ual|portMap_adicionador|Add0~10\);
 
 \port_map_ual|Mux8~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|Mux8~0_combout\ = ( \port_map_ual|portMap_adicionador|Add0~9_sumout\ & ( (!\port_map_memoriaInst|Mux1~1_combout\ & ((!\port_map_controle|Mux5~0_combout\) # ((\port_map_ual|portMap_subtrair|Add0~9_sumout\)))) # 
--- (\port_map_memoriaInst|Mux1~1_combout\ & ((!\port_map_controle|Mux5~0_combout\ & ((\port_map_ual|portMap_subtrair|Add0~9_sumout\))) # (\port_map_controle|Mux5~0_combout\ & (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\)))) ) ) # ( 
--- !\port_map_ual|portMap_adicionador|Add0~9_sumout\ & ( (!\port_map_memoriaInst|Mux1~1_combout\ & (\port_map_controle|Mux5~0_combout\ & ((\port_map_ual|portMap_subtrair|Add0~9_sumout\)))) # (\port_map_memoriaInst|Mux1~1_combout\ & 
+-- \port_map_ual|Mux8~0_combout\ = ( \port_map_ual|portMap_adicionador|Add0~9_sumout\ & ( (!\port_map_memoriaInst|Mux1~0_combout\ & ((!\port_map_controle|Mux5~0_combout\) # ((\port_map_ual|portMap_subtrair|Add0~9_sumout\)))) # 
+-- (\port_map_memoriaInst|Mux1~0_combout\ & ((!\port_map_controle|Mux5~0_combout\ & ((\port_map_ual|portMap_subtrair|Add0~9_sumout\))) # (\port_map_controle|Mux5~0_combout\ & (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\)))) ) ) # ( 
+-- !\port_map_ual|portMap_adicionador|Add0~9_sumout\ & ( (!\port_map_memoriaInst|Mux1~0_combout\ & (\port_map_controle|Mux5~0_combout\ & ((\port_map_ual|portMap_subtrair|Add0~9_sumout\)))) # (\port_map_memoriaInst|Mux1~0_combout\ & 
 -- ((!\port_map_controle|Mux5~0_combout\ & ((\port_map_ual|portMap_subtrair|Add0~9_sumout\))) # (\port_map_controle|Mux5~0_combout\ & (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\)))) ) )
 
 -- pragma translate_off
@@ -4074,7 +3934,7 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_memoriaInst|ALT_INV_Mux1~1_combout\,
+	dataa => \port_map_memoriaInst|ALT_INV_Mux1~0_combout\,
 	datab => \port_map_controle|ALT_INV_Mux5~0_combout\,
 	datac => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[2]~2_combout\,
 	datad => \port_map_ual|portMap_subtrair|ALT_INV_Add0~9_sumout\,
@@ -4083,17 +3943,21 @@ PORT MAP (
 
 \port_map_ual|portMap_multiplexador|Add0~9\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add0~9_sumout\ = SUM(( !\port_map_registradores|registrador~45_combout\ ) + ( GND ) + ( \port_map_ual|portMap_multiplexador|Add0~6\ ))
--- \port_map_ual|portMap_multiplexador|Add0~10\ = CARRY(( !\port_map_registradores|registrador~45_combout\ ) + ( GND ) + ( \port_map_ual|portMap_multiplexador|Add0~6\ ))
+-- \port_map_ual|portMap_multiplexador|Add0~9_sumout\ = SUM(( (!\port_map_memoriaInst|Mux4~0_combout\ & ((!\port_map_registradores|registrador~13_q\))) # (\port_map_memoriaInst|Mux4~0_combout\ & (!\port_map_registradores|registrador~21_q\)) ) + ( GND ) + ( 
+-- \port_map_ual|portMap_multiplexador|Add0~6\ ))
+-- \port_map_ual|portMap_multiplexador|Add0~10\ = CARRY(( (!\port_map_memoriaInst|Mux4~0_combout\ & ((!\port_map_registradores|registrador~13_q\))) # (\port_map_memoriaInst|Mux4~0_combout\ & (!\port_map_registradores|registrador~21_q\)) ) + ( GND ) + ( 
+-- \port_map_ual|portMap_multiplexador|Add0~6\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111111111111100000000000000001111111100000000",
+	lut_mask => "0000000000000000111111111111111100000000000000001111101001010000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datad => \port_map_registradores|ALT_INV_registrador~45_combout\,
+	dataa => \port_map_memoriaInst|ALT_INV_Mux4~0_combout\,
+	datac => \port_map_registradores|ALT_INV_registrador~21_q\,
+	datad => \port_map_registradores|ALT_INV_registrador~13_q\,
 	cin => \port_map_ual|portMap_multiplexador|Add0~6\,
 	sumout => \port_map_ual|portMap_multiplexador|Add0~9_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add0~10\);
@@ -4101,20 +3965,20 @@ PORT MAP (
 \port_map_ual|portMap_multiplexador|Add1~5\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \port_map_ual|portMap_multiplexador|Add1~5_sumout\ = SUM(( \port_map_registradores|registrador~44_combout\ ) + ( (\port_map_ual|portMap_multiplexador|Add0~9_sumout\ & ((!\port_map_controle|Mux7~0_combout\ & 
--- (\port_map_registradores|registrador~51_combout\)) # (\port_map_controle|Mux7~0_combout\ & ((\port_map_memoriaInst|Mux7~3_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add1~2\ ))
+-- (\port_map_registradores|registrador~51_combout\)) # (\port_map_controle|Mux7~0_combout\ & ((!\port_map_memoriaInst|Mux6~2_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add1~2\ ))
 -- \port_map_ual|portMap_multiplexador|Add1~6\ = CARRY(( \port_map_registradores|registrador~44_combout\ ) + ( (\port_map_ual|portMap_multiplexador|Add0~9_sumout\ & ((!\port_map_controle|Mux7~0_combout\ & (\port_map_registradores|registrador~51_combout\)) # 
--- (\port_map_controle|Mux7~0_combout\ & ((\port_map_memoriaInst|Mux7~3_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add1~2\ ))
+-- (\port_map_controle|Mux7~0_combout\ & ((!\port_map_memoriaInst|Mux6~2_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add1~2\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111111101100000000000000000000000000011111111",
+	lut_mask => "0000000000000000111111111000110100000000000000000000000011111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_controle|ALT_INV_Mux7~0_combout\,
 	datab => \port_map_registradores|ALT_INV_registrador~51_combout\,
-	datac => \port_map_memoriaInst|ALT_INV_Mux7~3_combout\,
+	datac => \port_map_memoriaInst|ALT_INV_Mux6~2_combout\,
 	datad => \port_map_registradores|ALT_INV_registrador~44_combout\,
 	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_Add0~9_sumout\,
 	cin => \port_map_ual|portMap_multiplexador|Add1~2\,
@@ -4124,20 +3988,20 @@ PORT MAP (
 \port_map_ual|portMap_multiplexador|Add2~5\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \port_map_ual|portMap_multiplexador|Add2~5_sumout\ = SUM(( !\port_map_registradores|registrador~44_combout\ ) + ( (\port_map_ual|portMap_multiplexador|Add0~9_sumout\ & ((!\port_map_controle|Mux7~0_combout\ & 
--- (\port_map_registradores|registrador~51_combout\)) # (\port_map_controle|Mux7~0_combout\ & ((\port_map_memoriaInst|Mux7~3_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add2~2\ ))
+-- (\port_map_registradores|registrador~51_combout\)) # (\port_map_controle|Mux7~0_combout\ & ((!\port_map_memoriaInst|Mux6~2_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add2~2\ ))
 -- \port_map_ual|portMap_multiplexador|Add2~6\ = CARRY(( !\port_map_registradores|registrador~44_combout\ ) + ( (\port_map_ual|portMap_multiplexador|Add0~9_sumout\ & ((!\port_map_controle|Mux7~0_combout\ & (\port_map_registradores|registrador~51_combout\)) # 
--- (\port_map_controle|Mux7~0_combout\ & ((\port_map_memoriaInst|Mux7~3_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add2~2\ ))
+-- (\port_map_controle|Mux7~0_combout\ & ((!\port_map_memoriaInst|Mux6~2_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add2~2\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111111101100000000000000000001111111100000000",
+	lut_mask => "0000000000000000111111111000110100000000000000001111111100000000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_controle|ALT_INV_Mux7~0_combout\,
 	datab => \port_map_registradores|ALT_INV_registrador~51_combout\,
-	datac => \port_map_memoriaInst|ALT_INV_Mux7~3_combout\,
+	datac => \port_map_memoriaInst|ALT_INV_Mux6~2_combout\,
 	datad => \port_map_registradores|ALT_INV_registrador~44_combout\,
 	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_Add0~9_sumout\,
 	cin => \port_map_ual|portMap_multiplexador|Add2~2\,
@@ -4164,25 +4028,25 @@ PORT MAP (
 
 \port_map_ual|portMap_multiplexador|Add3~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add3~1_sumout\ = SUM(( \port_map_registradores|registrador~43_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~0_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~5_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~0_combout\))))) ) + ( !VCC ))
--- \port_map_ual|portMap_multiplexador|Add3~2\ = CARRY(( \port_map_registradores|registrador~43_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~0_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~5_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~0_combout\))))) ) + ( !VCC ))
+-- \port_map_ual|portMap_multiplexador|Add3~1_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~0_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & 
+-- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~5_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((\port_map_ual|portMap_multiplexador|produto~0_combout\))))) ) + 
+-- ( \port_map_registradores|registrador~43_combout\ ) + ( !VCC ))
+-- \port_map_ual|portMap_multiplexador|Add3~2\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~0_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & 
+-- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~5_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((\port_map_ual|portMap_multiplexador|produto~0_combout\))))) ) + 
+-- ( \port_map_registradores|registrador~43_combout\ ) + ( !VCC ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111110110100000000000000000000000000000011111111",
+	lut_mask => "0000000000000000111111110000000000000000000000000000010010111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[0]~0_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[1]~1_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add1~5_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~43_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~0_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~0_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~43_combout\,
 	cin => GND,
 	sumout => \port_map_ual|portMap_multiplexador|Add3~1_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add3~2\);
@@ -4203,45 +4067,45 @@ PORT MAP (
 
 \port_map_ual|portMap_multiplexador|Add4~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add4~1_sumout\ = SUM(( !\port_map_registradores|registrador~43_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~0_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~5_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~0_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add4~26_cout\ ))
--- \port_map_ual|portMap_multiplexador|Add4~2\ = CARRY(( !\port_map_registradores|registrador~43_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~0_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~5_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~0_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add4~26_cout\ ))
+-- \port_map_ual|portMap_multiplexador|Add4~1_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~0_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & 
+-- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~5_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((\port_map_ual|portMap_multiplexador|produto~0_combout\))))) ) + 
+-- ( !\port_map_registradores|registrador~43_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add4~26_cout\ ))
+-- \port_map_ual|portMap_multiplexador|Add4~2\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~0_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & 
+-- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~5_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((\port_map_ual|portMap_multiplexador|produto~0_combout\))))) ) + 
+-- ( !\port_map_registradores|registrador~43_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add4~26_cout\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111110110100000000000000000000001111111100000000",
+	lut_mask => "0000000000000000000000001111111100000000000000000000010010111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[0]~0_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[1]~1_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add1~5_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~43_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~0_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~0_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~43_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add4~26_cout\,
 	sumout => \port_map_ual|portMap_multiplexador|Add4~1_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add4~2\);
 
 \port_map_ual|portMap_multiplexador|process_0~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|process_0~0_combout\ = ( \port_map_controle|Mux7~0_combout\ & ( (\port_map_memoriaInst|Mux7~3_combout\ & !\port_map_memoriaInst|Mux6~1_combout\) ) ) # ( !\port_map_controle|Mux7~0_combout\ & ( 
--- (\port_map_registradores|registrador~51_combout\ & !\port_map_registradores|registrador~52_combout\) ) )
+-- \port_map_ual|portMap_multiplexador|process_0~0_combout\ = ( \port_map_controle|Mux7~0_combout\ & ( (!\port_map_memoriaInst|Mux6~2_combout\ & !\port_map_memoriaInst|Mux5~1_combout\) ) ) # ( !\port_map_controle|Mux7~0_combout\ & ( 
+-- (\port_map_registradores|registrador~51_combout\ & !\port_map_registradores|registrador~54_combout\) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000111100000000010001000100010000001111000000000100010001000100",
+	lut_mask => "0000111100000000100010001000100000001111000000001000100010001000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_memoriaInst|ALT_INV_Mux7~3_combout\,
-	datab => \port_map_memoriaInst|ALT_INV_Mux6~1_combout\,
+	dataa => \port_map_memoriaInst|ALT_INV_Mux6~2_combout\,
+	datab => \port_map_memoriaInst|ALT_INV_Mux5~1_combout\,
 	datac => \port_map_registradores|ALT_INV_registrador~51_combout\,
-	datad => \port_map_registradores|ALT_INV_registrador~52_combout\,
+	datad => \port_map_registradores|ALT_INV_registrador~54_combout\,
 	datae => \port_map_controle|ALT_INV_Mux7~0_combout\,
 	combout => \port_map_ual|portMap_multiplexador|process_0~0_combout\);
 
@@ -4286,9 +4150,9 @@ PORT MAP (
 
 \port_map_ual|Mux8~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|Mux8~1_combout\ = ( \port_map_ual|portMap_multiplexador|portOUT[2]~1_combout\ & ( (!\port_map_memoriaInst|Mux1~1_combout\ & (((!\port_map_controle|Mux5~0_combout\) # (\port_map_ual|portMap_adicionador|Add0~9_sumout\)))) # 
--- (\port_map_memoriaInst|Mux1~1_combout\ & (\port_map_registradores|registrador~45_combout\)) ) ) # ( !\port_map_ual|portMap_multiplexador|portOUT[2]~1_combout\ & ( (!\port_map_memoriaInst|Mux1~1_combout\ & (((\port_map_controle|Mux5~0_combout\ & 
--- \port_map_ual|portMap_adicionador|Add0~9_sumout\)))) # (\port_map_memoriaInst|Mux1~1_combout\ & (\port_map_registradores|registrador~45_combout\)) ) )
+-- \port_map_ual|Mux8~1_combout\ = ( \port_map_ual|portMap_multiplexador|portOUT[2]~1_combout\ & ( (!\port_map_memoriaInst|Mux1~0_combout\ & (((!\port_map_controle|Mux5~0_combout\) # (\port_map_ual|portMap_adicionador|Add0~9_sumout\)))) # 
+-- (\port_map_memoriaInst|Mux1~0_combout\ & (\port_map_registradores|registrador~45_combout\)) ) ) # ( !\port_map_ual|portMap_multiplexador|portOUT[2]~1_combout\ & ( (!\port_map_memoriaInst|Mux1~0_combout\ & (((\port_map_controle|Mux5~0_combout\ & 
+-- \port_map_ual|portMap_adicionador|Add0~9_sumout\)))) # (\port_map_memoriaInst|Mux1~0_combout\ & (\port_map_registradores|registrador~45_combout\)) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4297,7 +4161,7 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_memoriaInst|ALT_INV_Mux1~1_combout\,
+	dataa => \port_map_memoriaInst|ALT_INV_Mux1~0_combout\,
 	datab => \port_map_registradores|ALT_INV_registrador~45_combout\,
 	datac => \port_map_controle|ALT_INV_Mux5~0_combout\,
 	datad => \port_map_ual|portMap_adicionador|ALT_INV_Add0~9_sumout\,
@@ -4306,16 +4170,16 @@ PORT MAP (
 
 \port_map_ual|Mux8~2\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|Mux8~2_combout\ = (!\port_map_memoriaInst|Mux0~0_combout\ & ((!\port_map_controle|Mux4~0_combout\ & (\port_map_ual|Mux8~0_combout\)) # (\port_map_controle|Mux4~0_combout\ & ((\port_map_ual|Mux8~1_combout\)))))
+-- \port_map_ual|Mux8~2_combout\ = (!\port_map_memoriaInst|Mux0~1_combout\ & ((!\port_map_controle|Mux4~0_combout\ & ((\port_map_ual|Mux8~1_combout\))) # (\port_map_controle|Mux4~0_combout\ & (\port_map_ual|Mux8~0_combout\))))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000100000101010000010000010101000001000001010100000100000101010",
+	lut_mask => "0000001010001010000000101000101000000010100010100000001010001010",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_memoriaInst|ALT_INV_Mux0~0_combout\,
+	dataa => \port_map_memoriaInst|ALT_INV_Mux0~1_combout\,
 	datab => \port_map_controle|ALT_INV_Mux4~0_combout\,
 	datac => \port_map_ual|ALT_INV_Mux8~0_combout\,
 	datad => \port_map_ual|ALT_INV_Mux8~1_combout\,
@@ -4387,7 +4251,7 @@ PORT MAP (
 	datac => \port_map_controle|ALT_INV_Mux3~0_combout\,
 	combout => \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[2]~2_combout\);
 
-\port_map_registradores|registrador~13\ : dffeas
+\port_map_registradores|registrador~21\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -4396,75 +4260,80 @@ GENERIC MAP (
 PORT MAP (
 	clk => \clock~input_o\,
 	d => \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[2]~2_combout\,
-	ena => \port_map_registradores|registrador~59_combout\,
+	ena => \port_map_registradores|registrador~73_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \port_map_registradores|registrador~13_q\);
+	q => \port_map_registradores|registrador~21_q\);
 
-\port_map_registradores|registrador~45\ : cyclonev_lcell_comb
+\port_map_registradores|registrador~56\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_registradores|registrador~45_combout\ = ( \port_map_memoriaInst|Mux5~1_combout\ & ( \port_map_memoriaInst|Mux4~1_combout\ & ( \port_map_registradores|registrador~37_q\ ) ) ) # ( !\port_map_memoriaInst|Mux5~1_combout\ & ( 
--- \port_map_memoriaInst|Mux4~1_combout\ & ( \port_map_registradores|registrador~29_q\ ) ) ) # ( \port_map_memoriaInst|Mux5~1_combout\ & ( !\port_map_memoriaInst|Mux4~1_combout\ & ( \port_map_registradores|registrador~21_q\ ) ) ) # ( 
--- !\port_map_memoriaInst|Mux5~1_combout\ & ( !\port_map_memoriaInst|Mux4~1_combout\ & ( \port_map_registradores|registrador~13_q\ ) ) )
+-- \port_map_registradores|registrador~56_combout\ = ( \port_map_registradores|registrador~21_q\ & ( \port_map_memoriaInst|Mux5~0_combout\ & ( (\port_map_pc|portOUT\(0) & (!\port_map_pc|portOUT\(7) & (\port_map_memoriaInst|Mux6~0_combout\ & 
+-- \port_map_memoriaInst|Mux6~1_combout\))) ) ) ) # ( \port_map_registradores|registrador~21_q\ & ( !\port_map_memoriaInst|Mux5~0_combout\ & ( (!\port_map_pc|portOUT\(7) & (\port_map_memoriaInst|Mux6~0_combout\ & \port_map_memoriaInst|Mux6~1_combout\)) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0101010101010101001100110011001100001111000011110000000011111111",
+	lut_mask => "0000000000000000000000000000110000000000000000000000000000000100",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_registradores|ALT_INV_registrador~13_q\,
-	datab => \port_map_registradores|ALT_INV_registrador~21_q\,
-	datac => \port_map_registradores|ALT_INV_registrador~29_q\,
-	datad => \port_map_registradores|ALT_INV_registrador~37_q\,
-	datae => \port_map_memoriaInst|ALT_INV_Mux5~1_combout\,
-	dataf => \port_map_memoriaInst|ALT_INV_Mux4~1_combout\,
-	combout => \port_map_registradores|registrador~45_combout\);
+	dataa => \port_map_pc|ALT_INV_portOUT\(0),
+	datab => \port_map_pc|ALT_INV_portOUT\(7),
+	datac => \port_map_memoriaInst|ALT_INV_Mux6~0_combout\,
+	datad => \port_map_memoriaInst|ALT_INV_Mux6~1_combout\,
+	datae => \port_map_registradores|ALT_INV_registrador~21_q\,
+	dataf => \port_map_memoriaInst|ALT_INV_Mux5~0_combout\,
+	combout => \port_map_registradores|registrador~56_combout\);
 
 \port_map_ual|portMap_subtrair|Add0~13\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_subtrair|Add0~13_sumout\ = SUM(( \port_map_registradores|registrador~46_combout\ ) + ( (!\port_map_registradores|registrador~54_combout\) # (\port_map_controle|Mux7~0_combout\) ) + ( \port_map_ual|portMap_subtrair|Add0~10\ ))
--- \port_map_ual|portMap_subtrair|Add0~14\ = CARRY(( \port_map_registradores|registrador~46_combout\ ) + ( (!\port_map_registradores|registrador~54_combout\) # (\port_map_controle|Mux7~0_combout\) ) + ( \port_map_ual|portMap_subtrair|Add0~10\ ))
+-- \port_map_ual|portMap_subtrair|Add0~13_sumout\ = SUM(( \port_map_registradores|registrador~46_combout\ ) + ( ((!\port_map_registradores|registrador~59_combout\ & !\port_map_registradores|registrador~58_combout\)) # (\port_map_controle|Mux7~0_combout\) ) + 
+-- ( \port_map_ual|portMap_subtrair|Add0~10\ ))
+-- \port_map_ual|portMap_subtrair|Add0~14\ = CARRY(( \port_map_registradores|registrador~46_combout\ ) + ( ((!\port_map_registradores|registrador~59_combout\ & !\port_map_registradores|registrador~58_combout\)) # (\port_map_controle|Mux7~0_combout\) ) + ( 
+-- \port_map_ual|portMap_subtrair|Add0~10\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000000000001010101000000000000000000000000011111111",
+	lut_mask => "0000000000000000000010101010101000000000000000000000000011111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_controle|ALT_INV_Mux7~0_combout\,
+	datac => \port_map_registradores|ALT_INV_registrador~59_combout\,
 	datad => \port_map_registradores|ALT_INV_registrador~46_combout\,
-	dataf => \port_map_registradores|ALT_INV_registrador~54_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~58_combout\,
 	cin => \port_map_ual|portMap_subtrair|Add0~10\,
 	sumout => \port_map_ual|portMap_subtrair|Add0~13_sumout\,
 	cout => \port_map_ual|portMap_subtrair|Add0~14\);
 
 \port_map_ual|portMap_adicionador|Add0~13\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_adicionador|Add0~13_sumout\ = SUM(( \port_map_registradores|registrador~46_combout\ ) + ( (!\port_map_controle|Mux7~0_combout\ & \port_map_registradores|registrador~54_combout\) ) + ( \port_map_ual|portMap_adicionador|Add0~10\ ))
--- \port_map_ual|portMap_adicionador|Add0~14\ = CARRY(( \port_map_registradores|registrador~46_combout\ ) + ( (!\port_map_controle|Mux7~0_combout\ & \port_map_registradores|registrador~54_combout\) ) + ( \port_map_ual|portMap_adicionador|Add0~10\ ))
+-- \port_map_ual|portMap_adicionador|Add0~13_sumout\ = SUM(( \port_map_registradores|registrador~46_combout\ ) + ( (!\port_map_controle|Mux7~0_combout\ & ((\port_map_registradores|registrador~58_combout\) # (\port_map_registradores|registrador~59_combout\))) 
+-- ) + ( \port_map_ual|portMap_adicionador|Add0~10\ ))
+-- \port_map_ual|portMap_adicionador|Add0~14\ = CARRY(( \port_map_registradores|registrador~46_combout\ ) + ( (!\port_map_controle|Mux7~0_combout\ & ((\port_map_registradores|registrador~58_combout\) # (\port_map_registradores|registrador~59_combout\))) ) + 
+-- ( \port_map_ual|portMap_adicionador|Add0~10\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111110101010100000000000000000000000011111111",
+	lut_mask => "0000000000000000111101010101010100000000000000000000000011111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_controle|ALT_INV_Mux7~0_combout\,
+	datac => \port_map_registradores|ALT_INV_registrador~59_combout\,
 	datad => \port_map_registradores|ALT_INV_registrador~46_combout\,
-	dataf => \port_map_registradores|ALT_INV_registrador~54_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~58_combout\,
 	cin => \port_map_ual|portMap_adicionador|Add0~10\,
 	sumout => \port_map_ual|portMap_adicionador|Add0~13_sumout\,
 	cout => \port_map_ual|portMap_adicionador|Add0~14\);
 
 \port_map_ual|Mux7~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|Mux7~0_combout\ = ( \port_map_ual|portMap_adicionador|Add0~13_sumout\ & ( (!\port_map_memoriaInst|Mux1~1_combout\ & ((!\port_map_controle|Mux5~0_combout\) # ((\port_map_ual|portMap_subtrair|Add0~13_sumout\)))) # 
--- (\port_map_memoriaInst|Mux1~1_combout\ & ((!\port_map_controle|Mux5~0_combout\ & ((\port_map_ual|portMap_subtrair|Add0~13_sumout\))) # (\port_map_controle|Mux5~0_combout\ & (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\)))) ) ) # ( 
--- !\port_map_ual|portMap_adicionador|Add0~13_sumout\ & ( (!\port_map_memoriaInst|Mux1~1_combout\ & (\port_map_controle|Mux5~0_combout\ & ((\port_map_ual|portMap_subtrair|Add0~13_sumout\)))) # (\port_map_memoriaInst|Mux1~1_combout\ & 
+-- \port_map_ual|Mux7~0_combout\ = ( \port_map_ual|portMap_adicionador|Add0~13_sumout\ & ( (!\port_map_memoriaInst|Mux1~0_combout\ & ((!\port_map_controle|Mux5~0_combout\) # ((\port_map_ual|portMap_subtrair|Add0~13_sumout\)))) # 
+-- (\port_map_memoriaInst|Mux1~0_combout\ & ((!\port_map_controle|Mux5~0_combout\ & ((\port_map_ual|portMap_subtrair|Add0~13_sumout\))) # (\port_map_controle|Mux5~0_combout\ & (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\)))) ) ) # ( 
+-- !\port_map_ual|portMap_adicionador|Add0~13_sumout\ & ( (!\port_map_memoriaInst|Mux1~0_combout\ & (\port_map_controle|Mux5~0_combout\ & ((\port_map_ual|portMap_subtrair|Add0~13_sumout\)))) # (\port_map_memoriaInst|Mux1~0_combout\ & 
 -- ((!\port_map_controle|Mux5~0_combout\ & ((\port_map_ual|portMap_subtrair|Add0~13_sumout\))) # (\port_map_controle|Mux5~0_combout\ & (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\)))) ) )
 
 -- pragma translate_off
@@ -4474,42 +4343,30 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_memoriaInst|ALT_INV_Mux1~1_combout\,
+	dataa => \port_map_memoriaInst|ALT_INV_Mux1~0_combout\,
 	datab => \port_map_controle|ALT_INV_Mux5~0_combout\,
 	datac => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[3]~3_combout\,
 	datad => \port_map_ual|portMap_subtrair|ALT_INV_Add0~13_sumout\,
 	datae => \port_map_ual|portMap_adicionador|ALT_INV_Add0~13_sumout\,
 	combout => \port_map_ual|Mux7~0_combout\);
 
-\port_map_ual|portMap_multiplexador|process_0~2\ : cyclonev_lcell_comb
--- Equation(s):
--- \port_map_ual|portMap_multiplexador|process_0~2_combout\ = (!\port_map_registradores|registrador~52_combout\ & (\port_map_registradores|registrador~53_combout\ & !\port_map_controle|Mux7~0_combout\))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000110000000000000011000000000000001100000000000000110000000000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	datab => \port_map_registradores|ALT_INV_registrador~52_combout\,
-	datac => \port_map_registradores|ALT_INV_registrador~53_combout\,
-	datad => \port_map_controle|ALT_INV_Mux7~0_combout\,
-	combout => \port_map_ual|portMap_multiplexador|process_0~2_combout\);
-
 \port_map_ual|portMap_multiplexador|Add0~13\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add0~13_sumout\ = SUM(( !\port_map_registradores|registrador~46_combout\ ) + ( GND ) + ( \port_map_ual|portMap_multiplexador|Add0~10\ ))
--- \port_map_ual|portMap_multiplexador|Add0~14\ = CARRY(( !\port_map_registradores|registrador~46_combout\ ) + ( GND ) + ( \port_map_ual|portMap_multiplexador|Add0~10\ ))
+-- \port_map_ual|portMap_multiplexador|Add0~13_sumout\ = SUM(( (!\port_map_memoriaInst|Mux4~0_combout\ & ((!\port_map_registradores|registrador~14_q\))) # (\port_map_memoriaInst|Mux4~0_combout\ & (!\port_map_registradores|registrador~22_q\)) ) + ( GND ) + ( 
+-- \port_map_ual|portMap_multiplexador|Add0~10\ ))
+-- \port_map_ual|portMap_multiplexador|Add0~14\ = CARRY(( (!\port_map_memoriaInst|Mux4~0_combout\ & ((!\port_map_registradores|registrador~14_q\))) # (\port_map_memoriaInst|Mux4~0_combout\ & (!\port_map_registradores|registrador~22_q\)) ) + ( GND ) + ( 
+-- \port_map_ual|portMap_multiplexador|Add0~10\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111111111111100000000000000001111111100000000",
+	lut_mask => "0000000000000000111111111111111100000000000000001111101001010000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datad => \port_map_registradores|ALT_INV_registrador~46_combout\,
+	dataa => \port_map_memoriaInst|ALT_INV_Mux4~0_combout\,
+	datac => \port_map_registradores|ALT_INV_registrador~22_q\,
+	datad => \port_map_registradores|ALT_INV_registrador~14_q\,
 	cin => \port_map_ual|portMap_multiplexador|Add0~10\,
 	sumout => \port_map_ual|portMap_multiplexador|Add0~13_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add0~14\);
@@ -4517,20 +4374,20 @@ PORT MAP (
 \port_map_ual|portMap_multiplexador|Add1~9\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \port_map_ual|portMap_multiplexador|Add1~9_sumout\ = SUM(( \port_map_registradores|registrador~45_combout\ ) + ( (\port_map_ual|portMap_multiplexador|Add0~13_sumout\ & ((!\port_map_controle|Mux7~0_combout\ & 
--- (\port_map_registradores|registrador~51_combout\)) # (\port_map_controle|Mux7~0_combout\ & ((\port_map_memoriaInst|Mux7~3_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add1~6\ ))
+-- (\port_map_registradores|registrador~51_combout\)) # (\port_map_controle|Mux7~0_combout\ & ((!\port_map_memoriaInst|Mux6~2_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add1~6\ ))
 -- \port_map_ual|portMap_multiplexador|Add1~10\ = CARRY(( \port_map_registradores|registrador~45_combout\ ) + ( (\port_map_ual|portMap_multiplexador|Add0~13_sumout\ & ((!\port_map_controle|Mux7~0_combout\ & (\port_map_registradores|registrador~51_combout\)) 
--- # (\port_map_controle|Mux7~0_combout\ & ((\port_map_memoriaInst|Mux7~3_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add1~6\ ))
+-- # (\port_map_controle|Mux7~0_combout\ & ((!\port_map_memoriaInst|Mux6~2_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add1~6\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111111101100000000000000000000000000011111111",
+	lut_mask => "0000000000000000111111111000110100000000000000000000000011111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_controle|ALT_INV_Mux7~0_combout\,
 	datab => \port_map_registradores|ALT_INV_registrador~51_combout\,
-	datac => \port_map_memoriaInst|ALT_INV_Mux7~3_combout\,
+	datac => \port_map_memoriaInst|ALT_INV_Mux6~2_combout\,
 	datad => \port_map_registradores|ALT_INV_registrador~45_combout\,
 	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_Add0~13_sumout\,
 	cin => \port_map_ual|portMap_multiplexador|Add1~6\,
@@ -4540,20 +4397,20 @@ PORT MAP (
 \port_map_ual|portMap_multiplexador|Add2~9\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \port_map_ual|portMap_multiplexador|Add2~9_sumout\ = SUM(( !\port_map_registradores|registrador~45_combout\ ) + ( (\port_map_ual|portMap_multiplexador|Add0~13_sumout\ & ((!\port_map_controle|Mux7~0_combout\ & 
--- (\port_map_registradores|registrador~51_combout\)) # (\port_map_controle|Mux7~0_combout\ & ((\port_map_memoriaInst|Mux7~3_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add2~6\ ))
+-- (\port_map_registradores|registrador~51_combout\)) # (\port_map_controle|Mux7~0_combout\ & ((!\port_map_memoriaInst|Mux6~2_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add2~6\ ))
 -- \port_map_ual|portMap_multiplexador|Add2~10\ = CARRY(( !\port_map_registradores|registrador~45_combout\ ) + ( (\port_map_ual|portMap_multiplexador|Add0~13_sumout\ & ((!\port_map_controle|Mux7~0_combout\ & (\port_map_registradores|registrador~51_combout\)) 
--- # (\port_map_controle|Mux7~0_combout\ & ((\port_map_memoriaInst|Mux7~3_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add2~6\ ))
+-- # (\port_map_controle|Mux7~0_combout\ & ((!\port_map_memoriaInst|Mux6~2_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add2~6\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111111101100000000000000000001111111100000000",
+	lut_mask => "0000000000000000111111111000110100000000000000001111111100000000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_controle|ALT_INV_Mux7~0_combout\,
 	datab => \port_map_registradores|ALT_INV_registrador~51_combout\,
-	datac => \port_map_memoriaInst|ALT_INV_Mux7~3_combout\,
+	datac => \port_map_memoriaInst|ALT_INV_Mux6~2_combout\,
 	datad => \port_map_registradores|ALT_INV_registrador~45_combout\,
 	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_Add0~13_sumout\,
 	cin => \port_map_ual|portMap_multiplexador|Add2~6\,
@@ -4578,27 +4435,68 @@ PORT MAP (
 	datad => \port_map_ual|portMap_multiplexador|ALT_INV_Add2~9_sumout\,
 	combout => \port_map_ual|portMap_multiplexador|produto~1_combout\);
 
-\port_map_ual|portMap_multiplexador|Add4~5\ : cyclonev_lcell_comb
+\port_map_ual|portMap_multiplexador|Add3~5\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add4~5_sumout\ = SUM(( !\port_map_registradores|registrador~44_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~1_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~9_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~1_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add4~2\ ))
--- \port_map_ual|portMap_multiplexador|Add4~6\ = CARRY(( !\port_map_registradores|registrador~44_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~1_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~9_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~1_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add4~2\ ))
+-- \port_map_ual|portMap_multiplexador|Add3~5_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~1_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & 
+-- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~9_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((\port_map_ual|portMap_multiplexador|produto~1_combout\))))) ) + 
+-- ( \port_map_registradores|registrador~44_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add3~2\ ))
+-- \port_map_ual|portMap_multiplexador|Add3~6\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~1_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & 
+-- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~9_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((\port_map_ual|portMap_multiplexador|produto~1_combout\))))) ) + 
+-- ( \port_map_registradores|registrador~44_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add3~2\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111110110100000000000000000000001111111100000000",
+	lut_mask => "0000000000000000111111110000000000000000000000000000010010111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[0]~0_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[1]~1_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add1~9_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~44_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~1_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~1_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~44_combout\,
+	cin => \port_map_ual|portMap_multiplexador|Add3~2\,
+	sumout => \port_map_ual|portMap_multiplexador|Add3~5_sumout\,
+	cout => \port_map_ual|portMap_multiplexador|Add3~6\);
+
+\port_map_ual|portMap_multiplexador|process_0~2\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \port_map_ual|portMap_multiplexador|process_0~2_combout\ = (!\port_map_registradores|registrador~54_combout\ & (\port_map_registradores|registrador~57_combout\ & !\port_map_controle|Mux7~0_combout\))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000110000000000000011000000000000001100000000000000110000000000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	datab => \port_map_registradores|ALT_INV_registrador~54_combout\,
+	datac => \port_map_registradores|ALT_INV_registrador~57_combout\,
+	datad => \port_map_controle|ALT_INV_Mux7~0_combout\,
+	combout => \port_map_ual|portMap_multiplexador|process_0~2_combout\);
+
+\port_map_ual|portMap_multiplexador|Add4~5\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \port_map_ual|portMap_multiplexador|Add4~5_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~1_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & 
+-- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~9_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((\port_map_ual|portMap_multiplexador|produto~1_combout\))))) ) + 
+-- ( !\port_map_registradores|registrador~44_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add4~2\ ))
+-- \port_map_ual|portMap_multiplexador|Add4~6\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~1_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & 
+-- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~9_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((\port_map_ual|portMap_multiplexador|produto~1_combout\))))) ) + 
+-- ( !\port_map_registradores|registrador~44_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add4~2\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000000000001111111100000000000000000000010010111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[0]~0_combout\,
+	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[1]~1_combout\,
+	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add1~9_sumout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~1_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~44_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add4~2\,
 	sumout => \port_map_ual|portMap_multiplexador|Add4~5_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add4~6\);
@@ -4624,30 +4522,30 @@ PORT MAP (
 	datae => \port_map_ual|portMap_multiplexador|ALT_INV_Add4~5_sumout\,
 	combout => \port_map_ual|portMap_multiplexador|produto~2_combout\);
 
-\port_map_ual|portMap_multiplexador|Add3~5\ : cyclonev_lcell_comb
+\port_map_ual|portMap_multiplexador|Add5~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add3~5_sumout\ = SUM(( \port_map_registradores|registrador~44_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~1_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~9_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~1_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add3~2\ ))
--- \port_map_ual|portMap_multiplexador|Add3~6\ = CARRY(( \port_map_registradores|registrador~44_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~1_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~9_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~1_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add3~2\ ))
+-- \port_map_ual|portMap_multiplexador|Add5~1_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~2_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & 
+-- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~5_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~2_combout\))))) ) + 
+-- ( \port_map_registradores|registrador~43_combout\ ) + ( !VCC ))
+-- \port_map_ual|portMap_multiplexador|Add5~2\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~2_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & 
+-- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~5_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~2_combout\))))) ) + 
+-- ( \port_map_registradores|registrador~43_combout\ ) + ( !VCC ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111110110100000000000000000000000000000011111111",
+	lut_mask => "0000000000000000111111110000000000000000000000000000010010111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[0]~0_combout\,
-	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[1]~1_combout\,
-	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add1~9_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~44_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~1_combout\,
-	cin => \port_map_ual|portMap_multiplexador|Add3~2\,
-	sumout => \port_map_ual|portMap_multiplexador|Add3~5_sumout\,
-	cout => \port_map_ual|portMap_multiplexador|Add3~6\);
+	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[1]~1_combout\,
+	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[2]~2_combout\,
+	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add3~5_sumout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~2_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~43_combout\,
+	cin => GND,
+	sumout => \port_map_ual|portMap_multiplexador|Add5~1_sumout\,
+	cout => \port_map_ual|portMap_multiplexador|Add5~2\);
 
 \port_map_ual|portMap_multiplexador|Add6~22\ : cyclonev_lcell_comb
 -- Equation(s):
@@ -4665,83 +4563,91 @@ PORT MAP (
 
 \port_map_ual|portMap_multiplexador|Add6~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add6~1_sumout\ = SUM(( !\port_map_registradores|registrador~43_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~2_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~5_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~2_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add6~22_cout\ ))
--- \port_map_ual|portMap_multiplexador|Add6~2\ = CARRY(( !\port_map_registradores|registrador~43_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~2_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~5_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~2_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add6~22_cout\ ))
+-- \port_map_ual|portMap_multiplexador|Add6~1_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~2_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & 
+-- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~5_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~2_combout\))))) ) + 
+-- ( !\port_map_registradores|registrador~43_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add6~22_cout\ ))
+-- \port_map_ual|portMap_multiplexador|Add6~2\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~2_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & 
+-- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~5_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~2_combout\))))) ) + 
+-- ( !\port_map_registradores|registrador~43_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add6~22_cout\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111110110100000000000000000000001111111100000000",
+	lut_mask => "0000000000000000000000001111111100000000000000000000010010111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[1]~1_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[2]~2_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add3~5_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~43_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~2_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~2_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~43_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add6~22_cout\,
 	sumout => \port_map_ual|portMap_multiplexador|Add6~1_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add6~2\);
 
-\port_map_ual|portMap_multiplexador|Add5~1\ : cyclonev_lcell_comb
+\port_map_ual|portMap_multiplexador|process_0~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add5~1_sumout\ = SUM(( \port_map_registradores|registrador~43_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~2_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~5_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~2_combout\))))) ) + ( !VCC ))
--- \port_map_ual|portMap_multiplexador|Add5~2\ = CARRY(( \port_map_registradores|registrador~43_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~2_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~5_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~2_combout\))))) ) + ( !VCC ))
+-- \port_map_ual|portMap_multiplexador|process_0~1_combout\ = (!\port_map_controle|Mux7~0_combout\ & (((\port_map_registradores|registrador~54_combout\ & !\port_map_registradores|registrador~57_combout\)))) # (\port_map_controle|Mux7~0_combout\ & 
+-- (\port_map_memoriaInst|Mux5~1_combout\))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111110110100000000000000000000000000000011111111",
+	lut_mask => "0011000001010101001100000101010100110000010101010011000001010101",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[1]~1_combout\,
-	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[2]~2_combout\,
-	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add3~5_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~43_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~2_combout\,
-	cin => GND,
-	sumout => \port_map_ual|portMap_multiplexador|Add5~1_sumout\,
-	cout => \port_map_ual|portMap_multiplexador|Add5~2\);
+	dataa => \port_map_memoriaInst|ALT_INV_Mux5~1_combout\,
+	datab => \port_map_registradores|ALT_INV_registrador~54_combout\,
+	datac => \port_map_registradores|ALT_INV_registrador~57_combout\,
+	datad => \port_map_controle|ALT_INV_Mux7~0_combout\,
+	combout => \port_map_ual|portMap_multiplexador|process_0~1_combout\);
 
-\port_map_ual|portMap_multiplexador|portOUT[3]~13\ : cyclonev_lcell_comb
+\port_map_ual|portMap_multiplexador|portOUT[3]~2\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|portOUT[3]~13_combout\ = ( !\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & 
--- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|produto~2_combout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|Add3~5_sumout\)))))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((((\port_map_ual|portMap_multiplexador|Add5~1_sumout\))))) ) ) # ( \port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ( 
--- (((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|Add6~1_sumout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|produto~2_combout\)))) ) 
--- )
+-- \port_map_ual|portMap_multiplexador|portOUT[3]~2_combout\ = (!\port_map_ual|portMap_multiplexador|process_0~1_combout\ & ((\port_map_ual|portMap_multiplexador|produto~2_combout\))) # (\port_map_ual|portMap_multiplexador|process_0~1_combout\ & 
+-- (\port_map_ual|portMap_multiplexador|Add3~5_sumout\))
 
 -- pragma translate_off
 GENERIC MAP (
-	extended_lut => "on",
-	lut_mask => "0010001001110111000011110000111100001111000011110011001100110011",
+	extended_lut => "off",
+	lut_mask => "0001101100011011000110110001101100011011000110110001101100011011",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[1]~1_combout\,
-	datab => \port_map_ual|portMap_multiplexador|ALT_INV_produto~2_combout\,
-	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add6~1_sumout\,
-	datad => \port_map_ual|portMap_multiplexador|ALT_INV_Add3~5_sumout\,
-	datae => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[3]~3_combout\,
-	dataf => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[2]~2_combout\,
-	datag => \port_map_ual|portMap_multiplexador|ALT_INV_Add5~1_sumout\,
-	combout => \port_map_ual|portMap_multiplexador|portOUT[3]~13_combout\);
+	dataa => \port_map_ual|portMap_multiplexador|ALT_INV_process_0~1_combout\,
+	datab => \port_map_ual|portMap_multiplexador|ALT_INV_Add3~5_sumout\,
+	datac => \port_map_ual|portMap_multiplexador|ALT_INV_produto~2_combout\,
+	combout => \port_map_ual|portMap_multiplexador|portOUT[3]~2_combout\);
+
+\port_map_ual|portMap_multiplexador|portOUT[3]~3\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \port_map_ual|portMap_multiplexador|portOUT[3]~3_combout\ = ( \port_map_ual|portMap_multiplexador|portOUT[3]~2_combout\ & ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & 
+-- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\) # ((\port_map_ual|portMap_multiplexador|Add6~1_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (((\port_map_ual|portMap_multiplexador|Add5~1_sumout\)) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\))) ) ) # ( !\port_map_ual|portMap_multiplexador|portOUT[3]~2_combout\ & ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((\port_map_ual|portMap_multiplexador|Add6~1_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ 
+-- & (\port_map_ual|portMap_multiplexador|Add5~1_sumout\))) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000010000100110100111011011111100000100001001101001110110111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[2]~2_combout\,
+	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[3]~3_combout\,
+	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add5~1_sumout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_Add6~1_sumout\,
+	datae => \port_map_ual|portMap_multiplexador|ALT_INV_portOUT[3]~2_combout\,
+	combout => \port_map_ual|portMap_multiplexador|portOUT[3]~3_combout\);
 
 \port_map_ual|Mux7~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|Mux7~1_combout\ = ( \port_map_ual|portMap_multiplexador|portOUT[3]~13_combout\ & ( (!\port_map_memoriaInst|Mux1~1_combout\ & (((!\port_map_controle|Mux5~0_combout\) # (\port_map_ual|portMap_adicionador|Add0~13_sumout\)))) # 
--- (\port_map_memoriaInst|Mux1~1_combout\ & (\port_map_registradores|registrador~46_combout\)) ) ) # ( !\port_map_ual|portMap_multiplexador|portOUT[3]~13_combout\ & ( (!\port_map_memoriaInst|Mux1~1_combout\ & (((\port_map_controle|Mux5~0_combout\ & 
--- \port_map_ual|portMap_adicionador|Add0~13_sumout\)))) # (\port_map_memoriaInst|Mux1~1_combout\ & (\port_map_registradores|registrador~46_combout\)) ) )
+-- \port_map_ual|Mux7~1_combout\ = ( \port_map_ual|portMap_multiplexador|portOUT[3]~3_combout\ & ( (!\port_map_memoriaInst|Mux1~0_combout\ & (((!\port_map_controle|Mux5~0_combout\) # (\port_map_ual|portMap_adicionador|Add0~13_sumout\)))) # 
+-- (\port_map_memoriaInst|Mux1~0_combout\ & (\port_map_registradores|registrador~46_combout\)) ) ) # ( !\port_map_ual|portMap_multiplexador|portOUT[3]~3_combout\ & ( (!\port_map_memoriaInst|Mux1~0_combout\ & (((\port_map_controle|Mux5~0_combout\ & 
+-- \port_map_ual|portMap_adicionador|Add0~13_sumout\)))) # (\port_map_memoriaInst|Mux1~0_combout\ & (\port_map_registradores|registrador~46_combout\)) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4750,25 +4656,25 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_memoriaInst|ALT_INV_Mux1~1_combout\,
+	dataa => \port_map_memoriaInst|ALT_INV_Mux1~0_combout\,
 	datab => \port_map_registradores|ALT_INV_registrador~46_combout\,
 	datac => \port_map_controle|ALT_INV_Mux5~0_combout\,
 	datad => \port_map_ual|portMap_adicionador|ALT_INV_Add0~13_sumout\,
-	datae => \port_map_ual|portMap_multiplexador|ALT_INV_portOUT[3]~13_combout\,
+	datae => \port_map_ual|portMap_multiplexador|ALT_INV_portOUT[3]~3_combout\,
 	combout => \port_map_ual|Mux7~1_combout\);
 
 \port_map_ual|Mux7~2\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|Mux7~2_combout\ = (!\port_map_memoriaInst|Mux0~0_combout\ & ((!\port_map_controle|Mux4~0_combout\ & (\port_map_ual|Mux7~0_combout\)) # (\port_map_controle|Mux4~0_combout\ & ((\port_map_ual|Mux7~1_combout\)))))
+-- \port_map_ual|Mux7~2_combout\ = (!\port_map_memoriaInst|Mux0~1_combout\ & ((!\port_map_controle|Mux4~0_combout\ & ((\port_map_ual|Mux7~1_combout\))) # (\port_map_controle|Mux4~0_combout\ & (\port_map_ual|Mux7~0_combout\))))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000100000101010000010000010101000001000001010100000100000101010",
+	lut_mask => "0000001010001010000000101000101000000010100010100000001010001010",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_memoriaInst|ALT_INV_Mux0~0_combout\,
+	dataa => \port_map_memoriaInst|ALT_INV_Mux0~1_combout\,
 	datab => \port_map_controle|ALT_INV_Mux4~0_combout\,
 	datac => \port_map_ual|ALT_INV_Mux7~0_combout\,
 	datad => \port_map_ual|ALT_INV_Mux7~1_combout\,
@@ -4840,7 +4746,7 @@ PORT MAP (
 	datac => \port_map_controle|ALT_INV_Mux3~0_combout\,
 	combout => \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[3]~3_combout\);
 
-\port_map_registradores|registrador~14\ : dffeas
+\port_map_registradores|registrador~22\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -4849,75 +4755,80 @@ GENERIC MAP (
 PORT MAP (
 	clk => \clock~input_o\,
 	d => \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[3]~3_combout\,
-	ena => \port_map_registradores|registrador~59_combout\,
+	ena => \port_map_registradores|registrador~73_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \port_map_registradores|registrador~14_q\);
+	q => \port_map_registradores|registrador~22_q\);
 
-\port_map_registradores|registrador~46\ : cyclonev_lcell_comb
+\port_map_registradores|registrador~59\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_registradores|registrador~46_combout\ = ( \port_map_memoriaInst|Mux5~1_combout\ & ( \port_map_memoriaInst|Mux4~1_combout\ & ( \port_map_registradores|registrador~38_q\ ) ) ) # ( !\port_map_memoriaInst|Mux5~1_combout\ & ( 
--- \port_map_memoriaInst|Mux4~1_combout\ & ( \port_map_registradores|registrador~30_q\ ) ) ) # ( \port_map_memoriaInst|Mux5~1_combout\ & ( !\port_map_memoriaInst|Mux4~1_combout\ & ( \port_map_registradores|registrador~22_q\ ) ) ) # ( 
--- !\port_map_memoriaInst|Mux5~1_combout\ & ( !\port_map_memoriaInst|Mux4~1_combout\ & ( \port_map_registradores|registrador~14_q\ ) ) )
+-- \port_map_registradores|registrador~59_combout\ = ( \port_map_registradores|registrador~22_q\ & ( \port_map_memoriaInst|Mux5~0_combout\ & ( (\port_map_pc|portOUT\(0) & (!\port_map_pc|portOUT\(7) & (\port_map_memoriaInst|Mux6~0_combout\ & 
+-- \port_map_memoriaInst|Mux6~1_combout\))) ) ) ) # ( \port_map_registradores|registrador~22_q\ & ( !\port_map_memoriaInst|Mux5~0_combout\ & ( (!\port_map_pc|portOUT\(7) & (\port_map_memoriaInst|Mux6~0_combout\ & \port_map_memoriaInst|Mux6~1_combout\)) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0101010101010101001100110011001100001111000011110000000011111111",
+	lut_mask => "0000000000000000000000000000110000000000000000000000000000000100",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_registradores|ALT_INV_registrador~14_q\,
-	datab => \port_map_registradores|ALT_INV_registrador~22_q\,
-	datac => \port_map_registradores|ALT_INV_registrador~30_q\,
-	datad => \port_map_registradores|ALT_INV_registrador~38_q\,
-	datae => \port_map_memoriaInst|ALT_INV_Mux5~1_combout\,
-	dataf => \port_map_memoriaInst|ALT_INV_Mux4~1_combout\,
-	combout => \port_map_registradores|registrador~46_combout\);
+	dataa => \port_map_pc|ALT_INV_portOUT\(0),
+	datab => \port_map_pc|ALT_INV_portOUT\(7),
+	datac => \port_map_memoriaInst|ALT_INV_Mux6~0_combout\,
+	datad => \port_map_memoriaInst|ALT_INV_Mux6~1_combout\,
+	datae => \port_map_registradores|ALT_INV_registrador~22_q\,
+	dataf => \port_map_memoriaInst|ALT_INV_Mux5~0_combout\,
+	combout => \port_map_registradores|registrador~59_combout\);
 
 \port_map_ual|portMap_subtrair|Add0~17\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_subtrair|Add0~17_sumout\ = SUM(( \port_map_registradores|registrador~47_combout\ ) + ( (!\port_map_registradores|registrador~55_combout\) # (\port_map_controle|Mux7~0_combout\) ) + ( \port_map_ual|portMap_subtrair|Add0~14\ ))
--- \port_map_ual|portMap_subtrair|Add0~18\ = CARRY(( \port_map_registradores|registrador~47_combout\ ) + ( (!\port_map_registradores|registrador~55_combout\) # (\port_map_controle|Mux7~0_combout\) ) + ( \port_map_ual|portMap_subtrair|Add0~14\ ))
+-- \port_map_ual|portMap_subtrair|Add0~17_sumout\ = SUM(( \port_map_registradores|registrador~47_combout\ ) + ( ((!\port_map_registradores|registrador~62_combout\ & !\port_map_registradores|registrador~61_combout\)) # (\port_map_controle|Mux7~0_combout\) ) + 
+-- ( \port_map_ual|portMap_subtrair|Add0~14\ ))
+-- \port_map_ual|portMap_subtrair|Add0~18\ = CARRY(( \port_map_registradores|registrador~47_combout\ ) + ( ((!\port_map_registradores|registrador~62_combout\ & !\port_map_registradores|registrador~61_combout\)) # (\port_map_controle|Mux7~0_combout\) ) + ( 
+-- \port_map_ual|portMap_subtrair|Add0~14\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000000000001010101000000000000000000000000011111111",
+	lut_mask => "0000000000000000000010101010101000000000000000000000000011111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_controle|ALT_INV_Mux7~0_combout\,
+	datac => \port_map_registradores|ALT_INV_registrador~62_combout\,
 	datad => \port_map_registradores|ALT_INV_registrador~47_combout\,
-	dataf => \port_map_registradores|ALT_INV_registrador~55_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~61_combout\,
 	cin => \port_map_ual|portMap_subtrair|Add0~14\,
 	sumout => \port_map_ual|portMap_subtrair|Add0~17_sumout\,
 	cout => \port_map_ual|portMap_subtrair|Add0~18\);
 
 \port_map_ual|portMap_adicionador|Add0~17\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_adicionador|Add0~17_sumout\ = SUM(( \port_map_registradores|registrador~47_combout\ ) + ( (!\port_map_controle|Mux7~0_combout\ & \port_map_registradores|registrador~55_combout\) ) + ( \port_map_ual|portMap_adicionador|Add0~14\ ))
--- \port_map_ual|portMap_adicionador|Add0~18\ = CARRY(( \port_map_registradores|registrador~47_combout\ ) + ( (!\port_map_controle|Mux7~0_combout\ & \port_map_registradores|registrador~55_combout\) ) + ( \port_map_ual|portMap_adicionador|Add0~14\ ))
+-- \port_map_ual|portMap_adicionador|Add0~17_sumout\ = SUM(( \port_map_registradores|registrador~47_combout\ ) + ( (!\port_map_controle|Mux7~0_combout\ & ((\port_map_registradores|registrador~61_combout\) # (\port_map_registradores|registrador~62_combout\))) 
+-- ) + ( \port_map_ual|portMap_adicionador|Add0~14\ ))
+-- \port_map_ual|portMap_adicionador|Add0~18\ = CARRY(( \port_map_registradores|registrador~47_combout\ ) + ( (!\port_map_controle|Mux7~0_combout\ & ((\port_map_registradores|registrador~61_combout\) # (\port_map_registradores|registrador~62_combout\))) ) + 
+-- ( \port_map_ual|portMap_adicionador|Add0~14\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111110101010100000000000000000000000011111111",
+	lut_mask => "0000000000000000111101010101010100000000000000000000000011111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_controle|ALT_INV_Mux7~0_combout\,
+	datac => \port_map_registradores|ALT_INV_registrador~62_combout\,
 	datad => \port_map_registradores|ALT_INV_registrador~47_combout\,
-	dataf => \port_map_registradores|ALT_INV_registrador~55_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~61_combout\,
 	cin => \port_map_ual|portMap_adicionador|Add0~14\,
 	sumout => \port_map_ual|portMap_adicionador|Add0~17_sumout\,
 	cout => \port_map_ual|portMap_adicionador|Add0~18\);
 
 \port_map_ual|Mux6~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|Mux6~0_combout\ = ( \port_map_ual|portMap_adicionador|Add0~17_sumout\ & ( (!\port_map_memoriaInst|Mux1~1_combout\ & ((!\port_map_controle|Mux5~0_combout\) # ((\port_map_ual|portMap_subtrair|Add0~17_sumout\)))) # 
--- (\port_map_memoriaInst|Mux1~1_combout\ & ((!\port_map_controle|Mux5~0_combout\ & ((\port_map_ual|portMap_subtrair|Add0~17_sumout\))) # (\port_map_controle|Mux5~0_combout\ & (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\)))) ) ) # ( 
--- !\port_map_ual|portMap_adicionador|Add0~17_sumout\ & ( (!\port_map_memoriaInst|Mux1~1_combout\ & (\port_map_controle|Mux5~0_combout\ & ((\port_map_ual|portMap_subtrair|Add0~17_sumout\)))) # (\port_map_memoriaInst|Mux1~1_combout\ & 
+-- \port_map_ual|Mux6~0_combout\ = ( \port_map_ual|portMap_adicionador|Add0~17_sumout\ & ( (!\port_map_memoriaInst|Mux1~0_combout\ & ((!\port_map_controle|Mux5~0_combout\) # ((\port_map_ual|portMap_subtrair|Add0~17_sumout\)))) # 
+-- (\port_map_memoriaInst|Mux1~0_combout\ & ((!\port_map_controle|Mux5~0_combout\ & ((\port_map_ual|portMap_subtrair|Add0~17_sumout\))) # (\port_map_controle|Mux5~0_combout\ & (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\)))) ) ) # ( 
+-- !\port_map_ual|portMap_adicionador|Add0~17_sumout\ & ( (!\port_map_memoriaInst|Mux1~0_combout\ & (\port_map_controle|Mux5~0_combout\ & ((\port_map_ual|portMap_subtrair|Add0~17_sumout\)))) # (\port_map_memoriaInst|Mux1~0_combout\ & 
 -- ((!\port_map_controle|Mux5~0_combout\ & ((\port_map_ual|portMap_subtrair|Add0~17_sumout\))) # (\port_map_controle|Mux5~0_combout\ & (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\)))) ) )
 
 -- pragma translate_off
@@ -4927,7 +4838,7 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_memoriaInst|ALT_INV_Mux1~1_combout\,
+	dataa => \port_map_memoriaInst|ALT_INV_Mux1~0_combout\,
 	datab => \port_map_controle|ALT_INV_Mux5~0_combout\,
 	datac => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[4]~4_combout\,
 	datad => \port_map_ual|portMap_subtrair|ALT_INV_Add0~17_sumout\,
@@ -4936,17 +4847,21 @@ PORT MAP (
 
 \port_map_ual|portMap_multiplexador|Add0~17\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add0~17_sumout\ = SUM(( !\port_map_registradores|registrador~47_combout\ ) + ( GND ) + ( \port_map_ual|portMap_multiplexador|Add0~14\ ))
--- \port_map_ual|portMap_multiplexador|Add0~18\ = CARRY(( !\port_map_registradores|registrador~47_combout\ ) + ( GND ) + ( \port_map_ual|portMap_multiplexador|Add0~14\ ))
+-- \port_map_ual|portMap_multiplexador|Add0~17_sumout\ = SUM(( (!\port_map_memoriaInst|Mux4~0_combout\ & ((!\port_map_registradores|registrador~15_q\))) # (\port_map_memoriaInst|Mux4~0_combout\ & (!\port_map_registradores|registrador~23_q\)) ) + ( GND ) + ( 
+-- \port_map_ual|portMap_multiplexador|Add0~14\ ))
+-- \port_map_ual|portMap_multiplexador|Add0~18\ = CARRY(( (!\port_map_memoriaInst|Mux4~0_combout\ & ((!\port_map_registradores|registrador~15_q\))) # (\port_map_memoriaInst|Mux4~0_combout\ & (!\port_map_registradores|registrador~23_q\)) ) + ( GND ) + ( 
+-- \port_map_ual|portMap_multiplexador|Add0~14\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111111111111100000000000000001111111100000000",
+	lut_mask => "0000000000000000111111111111111100000000000000001111101001010000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datad => \port_map_registradores|ALT_INV_registrador~47_combout\,
+	dataa => \port_map_memoriaInst|ALT_INV_Mux4~0_combout\,
+	datac => \port_map_registradores|ALT_INV_registrador~23_q\,
+	datad => \port_map_registradores|ALT_INV_registrador~15_q\,
 	cin => \port_map_ual|portMap_multiplexador|Add0~14\,
 	sumout => \port_map_ual|portMap_multiplexador|Add0~17_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add0~18\);
@@ -4954,20 +4869,20 @@ PORT MAP (
 \port_map_ual|portMap_multiplexador|Add1~13\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \port_map_ual|portMap_multiplexador|Add1~13_sumout\ = SUM(( \port_map_registradores|registrador~46_combout\ ) + ( (\port_map_ual|portMap_multiplexador|Add0~17_sumout\ & ((!\port_map_controle|Mux7~0_combout\ & 
--- (\port_map_registradores|registrador~51_combout\)) # (\port_map_controle|Mux7~0_combout\ & ((\port_map_memoriaInst|Mux7~3_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add1~10\ ))
+-- (\port_map_registradores|registrador~51_combout\)) # (\port_map_controle|Mux7~0_combout\ & ((!\port_map_memoriaInst|Mux6~2_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add1~10\ ))
 -- \port_map_ual|portMap_multiplexador|Add1~14\ = CARRY(( \port_map_registradores|registrador~46_combout\ ) + ( (\port_map_ual|portMap_multiplexador|Add0~17_sumout\ & ((!\port_map_controle|Mux7~0_combout\ & (\port_map_registradores|registrador~51_combout\)) 
--- # (\port_map_controle|Mux7~0_combout\ & ((\port_map_memoriaInst|Mux7~3_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add1~10\ ))
+-- # (\port_map_controle|Mux7~0_combout\ & ((!\port_map_memoriaInst|Mux6~2_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add1~10\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111111101100000000000000000000000000011111111",
+	lut_mask => "0000000000000000111111111000110100000000000000000000000011111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_controle|ALT_INV_Mux7~0_combout\,
 	datab => \port_map_registradores|ALT_INV_registrador~51_combout\,
-	datac => \port_map_memoriaInst|ALT_INV_Mux7~3_combout\,
+	datac => \port_map_memoriaInst|ALT_INV_Mux6~2_combout\,
 	datad => \port_map_registradores|ALT_INV_registrador~46_combout\,
 	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_Add0~17_sumout\,
 	cin => \port_map_ual|portMap_multiplexador|Add1~10\,
@@ -4977,20 +4892,20 @@ PORT MAP (
 \port_map_ual|portMap_multiplexador|Add2~13\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \port_map_ual|portMap_multiplexador|Add2~13_sumout\ = SUM(( !\port_map_registradores|registrador~46_combout\ ) + ( (\port_map_ual|portMap_multiplexador|Add0~17_sumout\ & ((!\port_map_controle|Mux7~0_combout\ & 
--- (\port_map_registradores|registrador~51_combout\)) # (\port_map_controle|Mux7~0_combout\ & ((\port_map_memoriaInst|Mux7~3_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add2~10\ ))
+-- (\port_map_registradores|registrador~51_combout\)) # (\port_map_controle|Mux7~0_combout\ & ((!\port_map_memoriaInst|Mux6~2_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add2~10\ ))
 -- \port_map_ual|portMap_multiplexador|Add2~14\ = CARRY(( !\port_map_registradores|registrador~46_combout\ ) + ( (\port_map_ual|portMap_multiplexador|Add0~17_sumout\ & ((!\port_map_controle|Mux7~0_combout\ & (\port_map_registradores|registrador~51_combout\)) 
--- # (\port_map_controle|Mux7~0_combout\ & ((\port_map_memoriaInst|Mux7~3_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add2~10\ ))
+-- # (\port_map_controle|Mux7~0_combout\ & ((!\port_map_memoriaInst|Mux6~2_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add2~10\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111111101100000000000000000001111111100000000",
+	lut_mask => "0000000000000000111111111000110100000000000000001111111100000000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_controle|ALT_INV_Mux7~0_combout\,
 	datab => \port_map_registradores|ALT_INV_registrador~51_combout\,
-	datac => \port_map_memoriaInst|ALT_INV_Mux7~3_combout\,
+	datac => \port_map_memoriaInst|ALT_INV_Mux6~2_combout\,
 	datad => \port_map_registradores|ALT_INV_registrador~46_combout\,
 	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_Add0~17_sumout\,
 	cin => \port_map_ual|portMap_multiplexador|Add2~10\,
@@ -5017,50 +4932,50 @@ PORT MAP (
 
 \port_map_ual|portMap_multiplexador|Add3~9\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add3~9_sumout\ = SUM(( \port_map_registradores|registrador~45_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~3_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~13_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ 
--- & ((\port_map_ual|portMap_multiplexador|produto~3_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add3~6\ ))
--- \port_map_ual|portMap_multiplexador|Add3~10\ = CARRY(( \port_map_registradores|registrador~45_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~3_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~13_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ 
--- & ((\port_map_ual|portMap_multiplexador|produto~3_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add3~6\ ))
+-- \port_map_ual|portMap_multiplexador|Add3~9_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~3_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & 
+-- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~13_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((\port_map_ual|portMap_multiplexador|produto~3_combout\))))) ) 
+-- + ( \port_map_registradores|registrador~45_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add3~6\ ))
+-- \port_map_ual|portMap_multiplexador|Add3~10\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~3_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & 
+-- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~13_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((\port_map_ual|portMap_multiplexador|produto~3_combout\))))) ) 
+-- + ( \port_map_registradores|registrador~45_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add3~6\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111110110100000000000000000000000000000011111111",
+	lut_mask => "0000000000000000111111110000000000000000000000000000010010111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[0]~0_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[1]~1_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add1~13_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~45_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~3_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~3_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~45_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add3~6\,
 	sumout => \port_map_ual|portMap_multiplexador|Add3~9_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add3~10\);
 
 \port_map_ual|portMap_multiplexador|Add4~9\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add4~9_sumout\ = SUM(( !\port_map_registradores|registrador~45_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~3_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~13_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ 
--- & ((\port_map_ual|portMap_multiplexador|produto~3_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add4~6\ ))
--- \port_map_ual|portMap_multiplexador|Add4~10\ = CARRY(( !\port_map_registradores|registrador~45_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~3_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~13_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ 
--- & ((\port_map_ual|portMap_multiplexador|produto~3_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add4~6\ ))
+-- \port_map_ual|portMap_multiplexador|Add4~9_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~3_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & 
+-- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~13_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((\port_map_ual|portMap_multiplexador|produto~3_combout\))))) ) 
+-- + ( !\port_map_registradores|registrador~45_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add4~6\ ))
+-- \port_map_ual|portMap_multiplexador|Add4~10\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~3_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & 
+-- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~13_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((\port_map_ual|portMap_multiplexador|produto~3_combout\))))) ) 
+-- + ( !\port_map_registradores|registrador~45_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add4~6\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111110110100000000000000000000001111111100000000",
+	lut_mask => "0000000000000000000000001111111100000000000000000000010010111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[0]~0_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[1]~1_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add1~13_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~45_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~3_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~3_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~45_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add4~6\,
 	sumout => \port_map_ual|portMap_multiplexador|Add4~9_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add4~10\);
@@ -5088,80 +5003,66 @@ PORT MAP (
 
 \port_map_ual|portMap_multiplexador|Add5~5\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add5~5_sumout\ = SUM(( \port_map_registradores|registrador~44_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~4_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~9_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~4_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add5~2\ ))
--- \port_map_ual|portMap_multiplexador|Add5~6\ = CARRY(( \port_map_registradores|registrador~44_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~4_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~9_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~4_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add5~2\ ))
+-- \port_map_ual|portMap_multiplexador|Add5~5_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~4_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & 
+-- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~9_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~4_combout\))))) ) + 
+-- ( \port_map_registradores|registrador~44_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add5~2\ ))
+-- \port_map_ual|portMap_multiplexador|Add5~6\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~4_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & 
+-- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~9_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~4_combout\))))) ) + 
+-- ( \port_map_registradores|registrador~44_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add5~2\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111110110100000000000000000000000000000011111111",
+	lut_mask => "0000000000000000111111110000000000000000000000000000010010111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[1]~1_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[2]~2_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add3~9_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~44_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~4_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~4_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~44_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add5~2\,
 	sumout => \port_map_ual|portMap_multiplexador|Add5~5_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add5~6\);
 
-\port_map_ual|portMap_multiplexador|process_0~1\ : cyclonev_lcell_comb
--- Equation(s):
--- \port_map_ual|portMap_multiplexador|process_0~1_combout\ = (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & !\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\)
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0100010001000100010001000100010001000100010001000100010001000100",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[1]~1_combout\,
-	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[2]~2_combout\,
-	combout => \port_map_ual|portMap_multiplexador|process_0~1_combout\);
-
 \port_map_ual|portMap_multiplexador|process_0~4\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|process_0~4_combout\ = (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & \port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\)
+-- \port_map_ual|portMap_multiplexador|process_0~4_combout\ = (!\port_map_registradores|registrador~57_combout\ & (\port_map_registradores|registrador~60_combout\ & !\port_map_controle|Mux7~0_combout\))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0010001000100010001000100010001000100010001000100010001000100010",
+	lut_mask => "0010000000100000001000000010000000100000001000000010000000100000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[2]~2_combout\,
-	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[3]~3_combout\,
+	dataa => \port_map_registradores|ALT_INV_registrador~57_combout\,
+	datab => \port_map_registradores|ALT_INV_registrador~60_combout\,
+	datac => \port_map_controle|ALT_INV_Mux7~0_combout\,
 	combout => \port_map_ual|portMap_multiplexador|process_0~4_combout\);
 
 \port_map_ual|portMap_multiplexador|Add6~5\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add6~5_sumout\ = SUM(( !\port_map_registradores|registrador~44_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~4_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~9_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~4_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add6~2\ ))
--- \port_map_ual|portMap_multiplexador|Add6~6\ = CARRY(( !\port_map_registradores|registrador~44_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~4_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~9_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~4_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add6~2\ ))
+-- \port_map_ual|portMap_multiplexador|Add6~5_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~4_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & 
+-- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~9_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~4_combout\))))) ) + 
+-- ( !\port_map_registradores|registrador~44_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add6~2\ ))
+-- \port_map_ual|portMap_multiplexador|Add6~6\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~4_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & 
+-- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~9_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~4_combout\))))) ) + 
+-- ( !\port_map_registradores|registrador~44_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add6~2\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111110110100000000000000000000001111111100000000",
+	lut_mask => "0000000000000000000000001111111100000000000000000000010010111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[1]~1_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[2]~2_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add3~9_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~44_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~4_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~4_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~44_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add6~2\,
 	sumout => \port_map_ual|portMap_multiplexador|Add6~5_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add6~6\);
@@ -5203,57 +5104,57 @@ PORT MAP (
 
 \port_map_ual|portMap_multiplexador|Add8~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add8~1_sumout\ = SUM(( !\port_map_registradores|registrador~43_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|produto~5_combout\)) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((\port_map_ual|portMap_multiplexador|Add5~5_sumout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ 
--- & (\port_map_ual|portMap_multiplexador|produto~5_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add8~18_cout\ ))
--- \port_map_ual|portMap_multiplexador|Add8~2\ = CARRY(( !\port_map_registradores|registrador~43_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|produto~5_combout\)) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((\port_map_ual|portMap_multiplexador|Add5~5_sumout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ 
--- & (\port_map_ual|portMap_multiplexador|produto~5_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add8~18_cout\ ))
+-- \port_map_ual|portMap_multiplexador|Add8~1_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|produto~5_combout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & 
+-- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((\port_map_ual|portMap_multiplexador|Add5~5_sumout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|produto~5_combout\)))) ) + 
+-- ( !\port_map_registradores|registrador~43_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add8~18_cout\ ))
+-- \port_map_ual|portMap_multiplexador|Add8~2\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|produto~5_combout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & 
+-- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((\port_map_ual|portMap_multiplexador|Add5~5_sumout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|produto~5_combout\)))) ) + 
+-- ( !\port_map_registradores|registrador~43_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add8~18_cout\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000110110001100110000000000000000001111111100000000",
+	lut_mask => "0000000000000000000000001111111100000000000000000010011100110011",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[2]~2_combout\,
 	datab => \port_map_ual|portMap_multiplexador|ALT_INV_produto~5_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add5~5_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~43_combout\,
-	dataf => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[3]~3_combout\,
+	datad => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[3]~3_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~43_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add8~18_cout\,
 	sumout => \port_map_ual|portMap_multiplexador|Add8~1_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add8~2\);
 
 \port_map_ual|portMap_multiplexador|Add7~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add7~1_sumout\ = SUM(( \port_map_registradores|registrador~43_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & 
--- (\port_map_ual|portMap_multiplexador|produto~5_combout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|Add5~5_sumout\))))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~5_combout\)))) ) + ( !VCC ))
--- \port_map_ual|portMap_multiplexador|Add7~2\ = CARRY(( \port_map_registradores|registrador~43_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & 
--- (\port_map_ual|portMap_multiplexador|produto~5_combout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|Add5~5_sumout\))))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~5_combout\)))) ) + ( !VCC ))
+-- \port_map_ual|portMap_multiplexador|Add7~1_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|produto~5_combout\)) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|Add5~5_sumout\))))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (((\port_map_ual|portMap_multiplexador|produto~5_combout\)))) ) 
+-- + ( \port_map_registradores|registrador~43_combout\ ) + ( !VCC ))
+-- \port_map_ual|portMap_multiplexador|Add7~2\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|produto~5_combout\)) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|Add5~5_sumout\))))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (((\port_map_ual|portMap_multiplexador|produto~5_combout\)))) ) 
+-- + ( \port_map_registradores|registrador~43_combout\ ) + ( !VCC ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111100101101000000000000000000000000000011111111",
+	lut_mask => "0000000000000000111111110000000000000000000000000000110100101111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[3]~3_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[2]~2_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_produto~5_combout\,
-	datad => \port_map_registradores|ALT_INV_registrador~43_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_Add5~5_sumout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_Add5~5_sumout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~43_combout\,
 	cin => GND,
 	sumout => \port_map_ual|portMap_multiplexador|Add7~1_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add7~2\);
 
-\port_map_ual|portMap_multiplexador|portOUT[4]~9\ : cyclonev_lcell_comb
+\port_map_ual|portMap_multiplexador|portOUT[4]~12\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|portOUT[4]~9_combout\ = ( !\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
+-- \port_map_ual|portMap_multiplexador|portOUT[4]~12_combout\ = ( !\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
 -- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (((\port_map_ual|portMap_multiplexador|produto~5_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~5_sumout\)))) # 
 -- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((((\port_map_ual|portMap_multiplexador|Add7~1_sumout\))))) ) ) # ( \port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ( 
 -- (((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|Add8~1_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((\port_map_ual|portMap_multiplexador|produto~5_combout\))))) ) 
@@ -5273,13 +5174,13 @@ PORT MAP (
 	datae => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[4]~4_combout\,
 	dataf => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[3]~3_combout\,
 	datag => \port_map_ual|portMap_multiplexador|ALT_INV_Add7~1_sumout\,
-	combout => \port_map_ual|portMap_multiplexador|portOUT[4]~9_combout\);
+	combout => \port_map_ual|portMap_multiplexador|portOUT[4]~12_combout\);
 
 \port_map_ual|Mux6~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|Mux6~1_combout\ = ( \port_map_ual|portMap_multiplexador|portOUT[4]~9_combout\ & ( (!\port_map_memoriaInst|Mux1~1_combout\ & (((!\port_map_controle|Mux5~0_combout\) # (\port_map_ual|portMap_adicionador|Add0~17_sumout\)))) # 
--- (\port_map_memoriaInst|Mux1~1_combout\ & (\port_map_registradores|registrador~47_combout\)) ) ) # ( !\port_map_ual|portMap_multiplexador|portOUT[4]~9_combout\ & ( (!\port_map_memoriaInst|Mux1~1_combout\ & (((\port_map_controle|Mux5~0_combout\ & 
--- \port_map_ual|portMap_adicionador|Add0~17_sumout\)))) # (\port_map_memoriaInst|Mux1~1_combout\ & (\port_map_registradores|registrador~47_combout\)) ) )
+-- \port_map_ual|Mux6~1_combout\ = ( \port_map_ual|portMap_multiplexador|portOUT[4]~12_combout\ & ( (!\port_map_memoriaInst|Mux1~0_combout\ & (((!\port_map_controle|Mux5~0_combout\) # (\port_map_ual|portMap_adicionador|Add0~17_sumout\)))) # 
+-- (\port_map_memoriaInst|Mux1~0_combout\ & (\port_map_registradores|registrador~47_combout\)) ) ) # ( !\port_map_ual|portMap_multiplexador|portOUT[4]~12_combout\ & ( (!\port_map_memoriaInst|Mux1~0_combout\ & (((\port_map_controle|Mux5~0_combout\ & 
+-- \port_map_ual|portMap_adicionador|Add0~17_sumout\)))) # (\port_map_memoriaInst|Mux1~0_combout\ & (\port_map_registradores|registrador~47_combout\)) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -5288,25 +5189,25 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_memoriaInst|ALT_INV_Mux1~1_combout\,
+	dataa => \port_map_memoriaInst|ALT_INV_Mux1~0_combout\,
 	datab => \port_map_registradores|ALT_INV_registrador~47_combout\,
 	datac => \port_map_controle|ALT_INV_Mux5~0_combout\,
 	datad => \port_map_ual|portMap_adicionador|ALT_INV_Add0~17_sumout\,
-	datae => \port_map_ual|portMap_multiplexador|ALT_INV_portOUT[4]~9_combout\,
+	datae => \port_map_ual|portMap_multiplexador|ALT_INV_portOUT[4]~12_combout\,
 	combout => \port_map_ual|Mux6~1_combout\);
 
 \port_map_ual|Mux6~2\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|Mux6~2_combout\ = (!\port_map_memoriaInst|Mux0~0_combout\ & ((!\port_map_controle|Mux4~0_combout\ & (\port_map_ual|Mux6~0_combout\)) # (\port_map_controle|Mux4~0_combout\ & ((\port_map_ual|Mux6~1_combout\)))))
+-- \port_map_ual|Mux6~2_combout\ = (!\port_map_memoriaInst|Mux0~1_combout\ & ((!\port_map_controle|Mux4~0_combout\ & ((\port_map_ual|Mux6~1_combout\))) # (\port_map_controle|Mux4~0_combout\ & (\port_map_ual|Mux6~0_combout\))))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000100000101010000010000010101000001000001010100000100000101010",
+	lut_mask => "0000001010001010000000101000101000000010100010100000001010001010",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_memoriaInst|ALT_INV_Mux0~0_combout\,
+	dataa => \port_map_memoriaInst|ALT_INV_Mux0~1_combout\,
 	datab => \port_map_controle|ALT_INV_Mux4~0_combout\,
 	datac => \port_map_ual|ALT_INV_Mux6~0_combout\,
 	datad => \port_map_ual|ALT_INV_Mux6~1_combout\,
@@ -5378,7 +5279,7 @@ PORT MAP (
 	datac => \port_map_controle|ALT_INV_Mux3~0_combout\,
 	combout => \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[4]~4_combout\);
 
-\port_map_registradores|registrador~15\ : dffeas
+\port_map_registradores|registrador~23\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -5387,75 +5288,76 @@ GENERIC MAP (
 PORT MAP (
 	clk => \clock~input_o\,
 	d => \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[4]~4_combout\,
-	ena => \port_map_registradores|registrador~59_combout\,
+	ena => \port_map_registradores|registrador~73_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \port_map_registradores|registrador~15_q\);
+	q => \port_map_registradores|registrador~23_q\);
 
-\port_map_registradores|registrador~47\ : cyclonev_lcell_comb
+\port_map_registradores|registrador~62\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_registradores|registrador~47_combout\ = ( \port_map_memoriaInst|Mux5~1_combout\ & ( \port_map_memoriaInst|Mux4~1_combout\ & ( \port_map_registradores|registrador~39_q\ ) ) ) # ( !\port_map_memoriaInst|Mux5~1_combout\ & ( 
--- \port_map_memoriaInst|Mux4~1_combout\ & ( \port_map_registradores|registrador~31_q\ ) ) ) # ( \port_map_memoriaInst|Mux5~1_combout\ & ( !\port_map_memoriaInst|Mux4~1_combout\ & ( \port_map_registradores|registrador~23_q\ ) ) ) # ( 
--- !\port_map_memoriaInst|Mux5~1_combout\ & ( !\port_map_memoriaInst|Mux4~1_combout\ & ( \port_map_registradores|registrador~15_q\ ) ) )
+-- \port_map_registradores|registrador~62_combout\ = (!\port_map_memoriaInst|Mux6~2_combout\ & (\port_map_registradores|registrador~23_q\ & !\port_map_memoriaInst|Mux5~1_combout\))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0101010101010101001100110011001100001111000011110000000011111111",
+	lut_mask => "0010000000100000001000000010000000100000001000000010000000100000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_registradores|ALT_INV_registrador~15_q\,
+	dataa => \port_map_memoriaInst|ALT_INV_Mux6~2_combout\,
 	datab => \port_map_registradores|ALT_INV_registrador~23_q\,
-	datac => \port_map_registradores|ALT_INV_registrador~31_q\,
-	datad => \port_map_registradores|ALT_INV_registrador~39_q\,
-	datae => \port_map_memoriaInst|ALT_INV_Mux5~1_combout\,
-	dataf => \port_map_memoriaInst|ALT_INV_Mux4~1_combout\,
-	combout => \port_map_registradores|registrador~47_combout\);
+	datac => \port_map_memoriaInst|ALT_INV_Mux5~1_combout\,
+	combout => \port_map_registradores|registrador~62_combout\);
 
 \port_map_ual|portMap_subtrair|Add0~21\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_subtrair|Add0~21_sumout\ = SUM(( \port_map_registradores|registrador~48_combout\ ) + ( (!\port_map_registradores|registrador~56_combout\) # (\port_map_controle|Mux7~0_combout\) ) + ( \port_map_ual|portMap_subtrair|Add0~18\ ))
--- \port_map_ual|portMap_subtrair|Add0~22\ = CARRY(( \port_map_registradores|registrador~48_combout\ ) + ( (!\port_map_registradores|registrador~56_combout\) # (\port_map_controle|Mux7~0_combout\) ) + ( \port_map_ual|portMap_subtrair|Add0~18\ ))
+-- \port_map_ual|portMap_subtrair|Add0~21_sumout\ = SUM(( \port_map_registradores|registrador~48_combout\ ) + ( ((!\port_map_registradores|registrador~65_combout\ & !\port_map_registradores|registrador~64_combout\)) # (\port_map_controle|Mux7~0_combout\) ) + 
+-- ( \port_map_ual|portMap_subtrair|Add0~18\ ))
+-- \port_map_ual|portMap_subtrair|Add0~22\ = CARRY(( \port_map_registradores|registrador~48_combout\ ) + ( ((!\port_map_registradores|registrador~65_combout\ & !\port_map_registradores|registrador~64_combout\)) # (\port_map_controle|Mux7~0_combout\) ) + ( 
+-- \port_map_ual|portMap_subtrair|Add0~18\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000000000001010101000000000000000000000000011111111",
+	lut_mask => "0000000000000000000010101010101000000000000000000000000011111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_controle|ALT_INV_Mux7~0_combout\,
+	datac => \port_map_registradores|ALT_INV_registrador~65_combout\,
 	datad => \port_map_registradores|ALT_INV_registrador~48_combout\,
-	dataf => \port_map_registradores|ALT_INV_registrador~56_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~64_combout\,
 	cin => \port_map_ual|portMap_subtrair|Add0~18\,
 	sumout => \port_map_ual|portMap_subtrair|Add0~21_sumout\,
 	cout => \port_map_ual|portMap_subtrair|Add0~22\);
 
 \port_map_ual|portMap_adicionador|Add0~21\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_adicionador|Add0~21_sumout\ = SUM(( \port_map_registradores|registrador~48_combout\ ) + ( (!\port_map_controle|Mux7~0_combout\ & \port_map_registradores|registrador~56_combout\) ) + ( \port_map_ual|portMap_adicionador|Add0~18\ ))
--- \port_map_ual|portMap_adicionador|Add0~22\ = CARRY(( \port_map_registradores|registrador~48_combout\ ) + ( (!\port_map_controle|Mux7~0_combout\ & \port_map_registradores|registrador~56_combout\) ) + ( \port_map_ual|portMap_adicionador|Add0~18\ ))
+-- \port_map_ual|portMap_adicionador|Add0~21_sumout\ = SUM(( \port_map_registradores|registrador~48_combout\ ) + ( (!\port_map_controle|Mux7~0_combout\ & ((\port_map_registradores|registrador~64_combout\) # (\port_map_registradores|registrador~65_combout\))) 
+-- ) + ( \port_map_ual|portMap_adicionador|Add0~18\ ))
+-- \port_map_ual|portMap_adicionador|Add0~22\ = CARRY(( \port_map_registradores|registrador~48_combout\ ) + ( (!\port_map_controle|Mux7~0_combout\ & ((\port_map_registradores|registrador~64_combout\) # (\port_map_registradores|registrador~65_combout\))) ) + 
+-- ( \port_map_ual|portMap_adicionador|Add0~18\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111110101010100000000000000000000000011111111",
+	lut_mask => "0000000000000000111101010101010100000000000000000000000011111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_controle|ALT_INV_Mux7~0_combout\,
+	datac => \port_map_registradores|ALT_INV_registrador~65_combout\,
 	datad => \port_map_registradores|ALT_INV_registrador~48_combout\,
-	dataf => \port_map_registradores|ALT_INV_registrador~56_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~64_combout\,
 	cin => \port_map_ual|portMap_adicionador|Add0~18\,
 	sumout => \port_map_ual|portMap_adicionador|Add0~21_sumout\,
 	cout => \port_map_ual|portMap_adicionador|Add0~22\);
 
 \port_map_ual|Mux5~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|Mux5~0_combout\ = ( \port_map_ual|portMap_adicionador|Add0~21_sumout\ & ( (!\port_map_memoriaInst|Mux1~1_combout\ & ((!\port_map_controle|Mux5~0_combout\) # ((\port_map_ual|portMap_subtrair|Add0~21_sumout\)))) # 
--- (\port_map_memoriaInst|Mux1~1_combout\ & ((!\port_map_controle|Mux5~0_combout\ & ((\port_map_ual|portMap_subtrair|Add0~21_sumout\))) # (\port_map_controle|Mux5~0_combout\ & (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\)))) ) ) # ( 
--- !\port_map_ual|portMap_adicionador|Add0~21_sumout\ & ( (!\port_map_memoriaInst|Mux1~1_combout\ & (\port_map_controle|Mux5~0_combout\ & ((\port_map_ual|portMap_subtrair|Add0~21_sumout\)))) # (\port_map_memoriaInst|Mux1~1_combout\ & 
+-- \port_map_ual|Mux5~0_combout\ = ( \port_map_ual|portMap_adicionador|Add0~21_sumout\ & ( (!\port_map_memoriaInst|Mux1~0_combout\ & ((!\port_map_controle|Mux5~0_combout\) # ((\port_map_ual|portMap_subtrair|Add0~21_sumout\)))) # 
+-- (\port_map_memoriaInst|Mux1~0_combout\ & ((!\port_map_controle|Mux5~0_combout\ & ((\port_map_ual|portMap_subtrair|Add0~21_sumout\))) # (\port_map_controle|Mux5~0_combout\ & (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\)))) ) ) # ( 
+-- !\port_map_ual|portMap_adicionador|Add0~21_sumout\ & ( (!\port_map_memoriaInst|Mux1~0_combout\ & (\port_map_controle|Mux5~0_combout\ & ((\port_map_ual|portMap_subtrair|Add0~21_sumout\)))) # (\port_map_memoriaInst|Mux1~0_combout\ & 
 -- ((!\port_map_controle|Mux5~0_combout\ & ((\port_map_ual|portMap_subtrair|Add0~21_sumout\))) # (\port_map_controle|Mux5~0_combout\ & (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\)))) ) )
 
 -- pragma translate_off
@@ -5465,27 +5367,12 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_memoriaInst|ALT_INV_Mux1~1_combout\,
+	dataa => \port_map_memoriaInst|ALT_INV_Mux1~0_combout\,
 	datab => \port_map_controle|ALT_INV_Mux5~0_combout\,
 	datac => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[5]~5_combout\,
 	datad => \port_map_ual|portMap_subtrair|ALT_INV_Add0~21_sumout\,
 	datae => \port_map_ual|portMap_adicionador|ALT_INV_Add0~21_sumout\,
 	combout => \port_map_ual|Mux5~0_combout\);
-
-\port_map_ual|portMap_multiplexador|process_0~6\ : cyclonev_lcell_comb
--- Equation(s):
--- \port_map_ual|portMap_multiplexador|process_0~6_combout\ = (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & !\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\)
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0100010001000100010001000100010001000100010001000100010001000100",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[4]~4_combout\,
-	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[5]~5_combout\,
-	combout => \port_map_ual|portMap_multiplexador|process_0~6_combout\);
 
 \port_map_ual|portMap_multiplexador|process_0~3\ : cyclonev_lcell_comb
 -- Equation(s):
@@ -5519,17 +5406,21 @@ PORT MAP (
 
 \port_map_ual|portMap_multiplexador|Add0~21\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add0~21_sumout\ = SUM(( !\port_map_registradores|registrador~48_combout\ ) + ( GND ) + ( \port_map_ual|portMap_multiplexador|Add0~18\ ))
--- \port_map_ual|portMap_multiplexador|Add0~22\ = CARRY(( !\port_map_registradores|registrador~48_combout\ ) + ( GND ) + ( \port_map_ual|portMap_multiplexador|Add0~18\ ))
+-- \port_map_ual|portMap_multiplexador|Add0~21_sumout\ = SUM(( (!\port_map_memoriaInst|Mux4~0_combout\ & ((!\port_map_registradores|registrador~16_q\))) # (\port_map_memoriaInst|Mux4~0_combout\ & (!\port_map_registradores|registrador~24_q\)) ) + ( GND ) + ( 
+-- \port_map_ual|portMap_multiplexador|Add0~18\ ))
+-- \port_map_ual|portMap_multiplexador|Add0~22\ = CARRY(( (!\port_map_memoriaInst|Mux4~0_combout\ & ((!\port_map_registradores|registrador~16_q\))) # (\port_map_memoriaInst|Mux4~0_combout\ & (!\port_map_registradores|registrador~24_q\)) ) + ( GND ) + ( 
+-- \port_map_ual|portMap_multiplexador|Add0~18\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111111111111100000000000000001111111100000000",
+	lut_mask => "0000000000000000111111111111111100000000000000001111101001010000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datad => \port_map_registradores|ALT_INV_registrador~48_combout\,
+	dataa => \port_map_memoriaInst|ALT_INV_Mux4~0_combout\,
+	datac => \port_map_registradores|ALT_INV_registrador~24_q\,
+	datad => \port_map_registradores|ALT_INV_registrador~16_q\,
 	cin => \port_map_ual|portMap_multiplexador|Add0~18\,
 	sumout => \port_map_ual|portMap_multiplexador|Add0~21_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add0~22\);
@@ -5537,20 +5428,20 @@ PORT MAP (
 \port_map_ual|portMap_multiplexador|Add1~17\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \port_map_ual|portMap_multiplexador|Add1~17_sumout\ = SUM(( \port_map_registradores|registrador~47_combout\ ) + ( (\port_map_ual|portMap_multiplexador|Add0~21_sumout\ & ((!\port_map_controle|Mux7~0_combout\ & 
--- (\port_map_registradores|registrador~51_combout\)) # (\port_map_controle|Mux7~0_combout\ & ((\port_map_memoriaInst|Mux7~3_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add1~14\ ))
+-- (\port_map_registradores|registrador~51_combout\)) # (\port_map_controle|Mux7~0_combout\ & ((!\port_map_memoriaInst|Mux6~2_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add1~14\ ))
 -- \port_map_ual|portMap_multiplexador|Add1~18\ = CARRY(( \port_map_registradores|registrador~47_combout\ ) + ( (\port_map_ual|portMap_multiplexador|Add0~21_sumout\ & ((!\port_map_controle|Mux7~0_combout\ & (\port_map_registradores|registrador~51_combout\)) 
--- # (\port_map_controle|Mux7~0_combout\ & ((\port_map_memoriaInst|Mux7~3_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add1~14\ ))
+-- # (\port_map_controle|Mux7~0_combout\ & ((!\port_map_memoriaInst|Mux6~2_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add1~14\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111111101100000000000000000000000000011111111",
+	lut_mask => "0000000000000000111111111000110100000000000000000000000011111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_controle|ALT_INV_Mux7~0_combout\,
 	datab => \port_map_registradores|ALT_INV_registrador~51_combout\,
-	datac => \port_map_memoriaInst|ALT_INV_Mux7~3_combout\,
+	datac => \port_map_memoriaInst|ALT_INV_Mux6~2_combout\,
 	datad => \port_map_registradores|ALT_INV_registrador~47_combout\,
 	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_Add0~21_sumout\,
 	cin => \port_map_ual|portMap_multiplexador|Add1~14\,
@@ -5560,20 +5451,20 @@ PORT MAP (
 \port_map_ual|portMap_multiplexador|Add2~17\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \port_map_ual|portMap_multiplexador|Add2~17_sumout\ = SUM(( !\port_map_registradores|registrador~47_combout\ ) + ( (\port_map_ual|portMap_multiplexador|Add0~21_sumout\ & ((!\port_map_controle|Mux7~0_combout\ & 
--- (\port_map_registradores|registrador~51_combout\)) # (\port_map_controle|Mux7~0_combout\ & ((\port_map_memoriaInst|Mux7~3_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add2~14\ ))
+-- (\port_map_registradores|registrador~51_combout\)) # (\port_map_controle|Mux7~0_combout\ & ((!\port_map_memoriaInst|Mux6~2_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add2~14\ ))
 -- \port_map_ual|portMap_multiplexador|Add2~18\ = CARRY(( !\port_map_registradores|registrador~47_combout\ ) + ( (\port_map_ual|portMap_multiplexador|Add0~21_sumout\ & ((!\port_map_controle|Mux7~0_combout\ & (\port_map_registradores|registrador~51_combout\)) 
--- # (\port_map_controle|Mux7~0_combout\ & ((\port_map_memoriaInst|Mux7~3_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add2~14\ ))
+-- # (\port_map_controle|Mux7~0_combout\ & ((!\port_map_memoriaInst|Mux6~2_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add2~14\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111111101100000000000000000001111111100000000",
+	lut_mask => "0000000000000000111111111000110100000000000000001111111100000000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_controle|ALT_INV_Mux7~0_combout\,
 	datab => \port_map_registradores|ALT_INV_registrador~51_combout\,
-	datac => \port_map_memoriaInst|ALT_INV_Mux7~3_combout\,
+	datac => \port_map_memoriaInst|ALT_INV_Mux6~2_combout\,
 	datad => \port_map_registradores|ALT_INV_registrador~47_combout\,
 	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_Add0~21_sumout\,
 	cin => \port_map_ual|portMap_multiplexador|Add2~14\,
@@ -5600,50 +5491,50 @@ PORT MAP (
 
 \port_map_ual|portMap_multiplexador|Add3~13\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add3~13_sumout\ = SUM(( \port_map_registradores|registrador~46_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~6_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~17_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ 
--- & ((\port_map_ual|portMap_multiplexador|produto~6_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add3~10\ ))
--- \port_map_ual|portMap_multiplexador|Add3~14\ = CARRY(( \port_map_registradores|registrador~46_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~6_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~17_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ 
--- & ((\port_map_ual|portMap_multiplexador|produto~6_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add3~10\ ))
+-- \port_map_ual|portMap_multiplexador|Add3~13_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~6_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ 
+-- & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~17_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((\port_map_ual|portMap_multiplexador|produto~6_combout\))))) 
+-- ) + ( \port_map_registradores|registrador~46_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add3~10\ ))
+-- \port_map_ual|portMap_multiplexador|Add3~14\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~6_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & 
+-- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~17_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((\port_map_ual|portMap_multiplexador|produto~6_combout\))))) ) 
+-- + ( \port_map_registradores|registrador~46_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add3~10\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111110110100000000000000000000000000000011111111",
+	lut_mask => "0000000000000000111111110000000000000000000000000000010010111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[0]~0_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[1]~1_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add1~17_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~46_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~6_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~6_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~46_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add3~10\,
 	sumout => \port_map_ual|portMap_multiplexador|Add3~13_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add3~14\);
 
 \port_map_ual|portMap_multiplexador|Add4~13\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add4~13_sumout\ = SUM(( !\port_map_registradores|registrador~46_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~6_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~17_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ 
--- & ((\port_map_ual|portMap_multiplexador|produto~6_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add4~10\ ))
--- \port_map_ual|portMap_multiplexador|Add4~14\ = CARRY(( !\port_map_registradores|registrador~46_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~6_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~17_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ 
--- & ((\port_map_ual|portMap_multiplexador|produto~6_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add4~10\ ))
+-- \port_map_ual|portMap_multiplexador|Add4~13_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~6_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ 
+-- & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~17_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((\port_map_ual|portMap_multiplexador|produto~6_combout\))))) 
+-- ) + ( !\port_map_registradores|registrador~46_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add4~10\ ))
+-- \port_map_ual|portMap_multiplexador|Add4~14\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~6_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & 
+-- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~17_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((\port_map_ual|portMap_multiplexador|produto~6_combout\))))) ) 
+-- + ( !\port_map_registradores|registrador~46_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add4~10\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111110110100000000000000000000001111111100000000",
+	lut_mask => "0000000000000000000000001111111100000000000000000000010010111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[0]~0_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[1]~1_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add1~17_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~46_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~6_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~6_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~46_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add4~10\,
 	sumout => \port_map_ual|portMap_multiplexador|Add4~13_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add4~14\);
@@ -5671,50 +5562,50 @@ PORT MAP (
 
 \port_map_ual|portMap_multiplexador|Add5~9\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add5~9_sumout\ = SUM(( \port_map_registradores|registrador~45_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~7_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~13_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ 
--- & ((\port_map_ual|portMap_multiplexador|produto~7_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add5~6\ ))
--- \port_map_ual|portMap_multiplexador|Add5~10\ = CARRY(( \port_map_registradores|registrador~45_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~7_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~13_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ 
--- & ((\port_map_ual|portMap_multiplexador|produto~7_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add5~6\ ))
+-- \port_map_ual|portMap_multiplexador|Add5~9_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~7_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & 
+-- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~13_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~7_combout\))))) ) 
+-- + ( \port_map_registradores|registrador~45_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add5~6\ ))
+-- \port_map_ual|portMap_multiplexador|Add5~10\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~7_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & 
+-- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~13_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~7_combout\))))) ) 
+-- + ( \port_map_registradores|registrador~45_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add5~6\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111110110100000000000000000000000000000011111111",
+	lut_mask => "0000000000000000111111110000000000000000000000000000010010111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[1]~1_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[2]~2_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add3~13_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~45_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~7_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~7_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~45_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add5~6\,
 	sumout => \port_map_ual|portMap_multiplexador|Add5~9_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add5~10\);
 
 \port_map_ual|portMap_multiplexador|Add6~9\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add6~9_sumout\ = SUM(( !\port_map_registradores|registrador~45_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~7_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~13_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ 
--- & ((\port_map_ual|portMap_multiplexador|produto~7_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add6~6\ ))
--- \port_map_ual|portMap_multiplexador|Add6~10\ = CARRY(( !\port_map_registradores|registrador~45_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~7_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~13_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ 
--- & ((\port_map_ual|portMap_multiplexador|produto~7_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add6~6\ ))
+-- \port_map_ual|portMap_multiplexador|Add6~9_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~7_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & 
+-- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~13_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~7_combout\))))) ) 
+-- + ( !\port_map_registradores|registrador~45_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add6~6\ ))
+-- \port_map_ual|portMap_multiplexador|Add6~10\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~7_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & 
+-- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~13_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~7_combout\))))) ) 
+-- + ( !\port_map_registradores|registrador~45_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add6~6\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111110110100000000000000000000001111111100000000",
+	lut_mask => "0000000000000000000000001111111100000000000000000000010010111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[1]~1_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[2]~2_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add3~13_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~45_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~7_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~7_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~45_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add6~6\,
 	sumout => \port_map_ual|portMap_multiplexador|Add6~9_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add6~10\);
@@ -5742,25 +5633,25 @@ PORT MAP (
 
 \port_map_ual|portMap_multiplexador|Add8~5\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add8~5_sumout\ = SUM(( !\port_map_registradores|registrador~44_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~8_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~9_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~8_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add8~2\ ))
--- \port_map_ual|portMap_multiplexador|Add8~6\ = CARRY(( !\port_map_registradores|registrador~44_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~8_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~9_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~8_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add8~2\ ))
+-- \port_map_ual|portMap_multiplexador|Add8~5_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~8_combout\))) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~9_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (((\port_map_ual|portMap_multiplexador|produto~8_combout\)))) ) + 
+-- ( !\port_map_registradores|registrador~44_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add8~2\ ))
+-- \port_map_ual|portMap_multiplexador|Add8~6\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~8_combout\))) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~9_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (((\port_map_ual|portMap_multiplexador|produto~8_combout\)))) ) + 
+-- ( !\port_map_registradores|registrador~44_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add8~2\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000001111111100000000",
+	lut_mask => "0000000000000000000000001111111100000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[3]~3_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[2]~2_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add5~9_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~44_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~8_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~8_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~44_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add8~2\,
 	sumout => \port_map_ual|portMap_multiplexador|Add8~5_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add8~6\);
@@ -5788,68 +5679,68 @@ PORT MAP (
 
 \port_map_ual|portMap_multiplexador|Add7~5\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add7~5_sumout\ = SUM(( \port_map_registradores|registrador~44_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~8_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~9_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~8_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add7~2\ ))
--- \port_map_ual|portMap_multiplexador|Add7~6\ = CARRY(( \port_map_registradores|registrador~44_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~8_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~9_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~8_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add7~2\ ))
+-- \port_map_ual|portMap_multiplexador|Add7~5_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~8_combout\))) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~9_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (((\port_map_ual|portMap_multiplexador|produto~8_combout\)))) ) + 
+-- ( \port_map_registradores|registrador~44_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add7~2\ ))
+-- \port_map_ual|portMap_multiplexador|Add7~6\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~8_combout\))) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~9_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (((\port_map_ual|portMap_multiplexador|produto~8_combout\)))) ) + 
+-- ( \port_map_registradores|registrador~44_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add7~2\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000000000000011111111",
+	lut_mask => "0000000000000000111111110000000000000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[3]~3_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[2]~2_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add5~9_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~44_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~8_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~8_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~44_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add7~2\,
 	sumout => \port_map_ual|portMap_multiplexador|Add7~5_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add7~6\);
 
 \port_map_ual|portMap_multiplexador|Add9~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add9~1_sumout\ = SUM(( \port_map_registradores|registrador~43_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
--- (\port_map_ual|portMap_multiplexador|produto~9_combout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((\port_map_ual|portMap_multiplexador|Add7~5_sumout\))))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~9_combout\)))) ) + ( !VCC ))
--- \port_map_ual|portMap_multiplexador|Add9~2\ = CARRY(( \port_map_registradores|registrador~43_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
--- (\port_map_ual|portMap_multiplexador|produto~9_combout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((\port_map_ual|portMap_multiplexador|Add7~5_sumout\))))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~9_combout\)))) ) + ( !VCC ))
+-- \port_map_ual|portMap_multiplexador|Add9~1_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|produto~9_combout\)) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((\port_map_ual|portMap_multiplexador|Add7~5_sumout\))))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (((\port_map_ual|portMap_multiplexador|produto~9_combout\)))) ) 
+-- + ( \port_map_registradores|registrador~43_combout\ ) + ( !VCC ))
+-- \port_map_ual|portMap_multiplexador|Add9~2\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|produto~9_combout\)) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((\port_map_ual|portMap_multiplexador|Add7~5_sumout\))))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (((\port_map_ual|portMap_multiplexador|produto~9_combout\)))) ) 
+-- + ( \port_map_registradores|registrador~43_combout\ ) + ( !VCC ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111100101101000000000000000000000000000011111111",
+	lut_mask => "0000000000000000111111110000000000000000000000000000110100101111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[4]~4_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[3]~3_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_produto~9_combout\,
-	datad => \port_map_registradores|ALT_INV_registrador~43_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_Add7~5_sumout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_Add7~5_sumout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~43_combout\,
 	cin => GND,
 	sumout => \port_map_ual|portMap_multiplexador|Add9~1_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add9~2\);
 
-\port_map_ual|portMap_multiplexador|portOUT[5]~2\ : cyclonev_lcell_comb
+\port_map_ual|portMap_multiplexador|process_0~6\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|portOUT[5]~2_combout\ = (\port_map_ual|portMap_multiplexador|process_0~6_combout\ & \port_map_ual|portMap_multiplexador|Add9~1_sumout\)
+-- \port_map_ual|portMap_multiplexador|process_0~6_combout\ = (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
+	lut_mask => "1011101110111011101110111011101110111011101110111011101110111011",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_ual|portMap_multiplexador|ALT_INV_process_0~6_combout\,
-	datab => \port_map_ual|portMap_multiplexador|ALT_INV_Add9~1_sumout\,
-	combout => \port_map_ual|portMap_multiplexador|portOUT[5]~2_combout\);
+	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[4]~4_combout\,
+	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[5]~5_combout\,
+	combout => \port_map_ual|portMap_multiplexador|process_0~6_combout\);
 
 \port_map_ual|portMap_multiplexador|Add10~14\ : cyclonev_lcell_comb
 -- Equation(s):
@@ -5867,32 +5758,32 @@ PORT MAP (
 
 \port_map_ual|portMap_multiplexador|Add10~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add10~1_sumout\ = SUM(( !\port_map_registradores|registrador~43_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|produto~9_combout\)) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((\port_map_ual|portMap_multiplexador|Add7~5_sumout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ 
--- & (\port_map_ual|portMap_multiplexador|produto~9_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add10~14_cout\ ))
--- \port_map_ual|portMap_multiplexador|Add10~2\ = CARRY(( !\port_map_registradores|registrador~43_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|produto~9_combout\)) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((\port_map_ual|portMap_multiplexador|Add7~5_sumout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ 
--- & (\port_map_ual|portMap_multiplexador|produto~9_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add10~14_cout\ ))
+-- \port_map_ual|portMap_multiplexador|Add10~1_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|produto~9_combout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
+-- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((\port_map_ual|portMap_multiplexador|Add7~5_sumout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (\port_map_ual|portMap_multiplexador|produto~9_combout\)))) ) + 
+-- ( !\port_map_registradores|registrador~43_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add10~14_cout\ ))
+-- \port_map_ual|portMap_multiplexador|Add10~2\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|produto~9_combout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
+-- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((\port_map_ual|portMap_multiplexador|Add7~5_sumout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (\port_map_ual|portMap_multiplexador|produto~9_combout\)))) ) + 
+-- ( !\port_map_registradores|registrador~43_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add10~14_cout\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000110110001100110000000000000000001111111100000000",
+	lut_mask => "0000000000000000000000001111111100000000000000000010011100110011",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[3]~3_combout\,
 	datab => \port_map_ual|portMap_multiplexador|ALT_INV_produto~9_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add7~5_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~43_combout\,
-	dataf => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[4]~4_combout\,
+	datad => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[4]~4_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~43_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add10~14_cout\,
 	sumout => \port_map_ual|portMap_multiplexador|Add10~1_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add10~2\);
 
-\port_map_ual|portMap_multiplexador|portOUT[5]~3\ : cyclonev_lcell_comb
+\port_map_ual|portMap_multiplexador|portOUT[5]~4\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|portOUT[5]~3_combout\ = ( \port_map_ual|portMap_multiplexador|Add7~5_sumout\ & ( \port_map_ual|portMap_multiplexador|Add10~1_sumout\ & ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
+-- \port_map_ual|portMap_multiplexador|portOUT[5]~4_combout\ = ( \port_map_ual|portMap_multiplexador|Add7~5_sumout\ & ( \port_map_ual|portMap_multiplexador|Add10~1_sumout\ & ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
 -- (((\port_map_ual|portMap_multiplexador|produto~9_combout\) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\))) # 
 -- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (((\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & \port_map_ual|portMap_multiplexador|produto~9_combout\)))) ) ) ) # ( !\port_map_ual|portMap_multiplexador|Add7~5_sumout\ 
 -- & ( \port_map_ual|portMap_multiplexador|Add10~1_sumout\ & ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & \port_map_ual|portMap_multiplexador|produto~9_combout\)) # 
@@ -5916,49 +5807,46 @@ PORT MAP (
 	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~9_combout\,
 	datae => \port_map_ual|portMap_multiplexador|ALT_INV_Add7~5_sumout\,
 	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_Add10~1_sumout\,
-	combout => \port_map_ual|portMap_multiplexador|portOUT[5]~3_combout\);
-
-\port_map_ual|Mux5~1\ : cyclonev_lcell_comb
--- Equation(s):
--- \port_map_ual|Mux5~1_combout\ = ( \port_map_ual|portMap_multiplexador|portOUT[5]~2_combout\ & ( \port_map_ual|portMap_multiplexador|portOUT[5]~3_combout\ & ( (!\port_map_memoriaInst|Mux1~1_combout\ & (((\port_map_controle|Mux5~0_combout\ & 
--- !\port_map_ual|portMap_adicionador|Add0~21_sumout\)))) # (\port_map_memoriaInst|Mux1~1_combout\ & (!\port_map_registradores|registrador~48_combout\)) ) ) ) # ( !\port_map_ual|portMap_multiplexador|portOUT[5]~2_combout\ & ( 
--- \port_map_ual|portMap_multiplexador|portOUT[5]~3_combout\ & ( (!\port_map_memoriaInst|Mux1~1_combout\ & (((\port_map_controle|Mux5~0_combout\ & !\port_map_ual|portMap_adicionador|Add0~21_sumout\)))) # (\port_map_memoriaInst|Mux1~1_combout\ & 
--- (!\port_map_registradores|registrador~48_combout\)) ) ) ) # ( \port_map_ual|portMap_multiplexador|portOUT[5]~2_combout\ & ( !\port_map_ual|portMap_multiplexador|portOUT[5]~3_combout\ & ( (!\port_map_memoriaInst|Mux1~1_combout\ & 
--- (((\port_map_controle|Mux5~0_combout\ & !\port_map_ual|portMap_adicionador|Add0~21_sumout\)))) # (\port_map_memoriaInst|Mux1~1_combout\ & (!\port_map_registradores|registrador~48_combout\)) ) ) ) # ( 
--- !\port_map_ual|portMap_multiplexador|portOUT[5]~2_combout\ & ( !\port_map_ual|portMap_multiplexador|portOUT[5]~3_combout\ & ( (!\port_map_memoriaInst|Mux1~1_combout\ & (((!\port_map_controle|Mux5~0_combout\) # 
--- (!\port_map_ual|portMap_adicionador|Add0~21_sumout\)))) # (\port_map_memoriaInst|Mux1~1_combout\ & (!\port_map_registradores|registrador~48_combout\)) ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "1110111011100100010011100100010001001110010001000100111001000100",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \port_map_memoriaInst|ALT_INV_Mux1~1_combout\,
-	datab => \port_map_registradores|ALT_INV_registrador~48_combout\,
-	datac => \port_map_controle|ALT_INV_Mux5~0_combout\,
-	datad => \port_map_ual|portMap_adicionador|ALT_INV_Add0~21_sumout\,
-	datae => \port_map_ual|portMap_multiplexador|ALT_INV_portOUT[5]~2_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_portOUT[5]~3_combout\,
-	combout => \port_map_ual|Mux5~1_combout\);
+	combout => \port_map_ual|portMap_multiplexador|portOUT[5]~4_combout\);
 
 \port_map_ual|Mux5~2\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|Mux5~2_combout\ = (!\port_map_memoriaInst|Mux0~0_combout\ & ((!\port_map_controle|Mux4~0_combout\ & (\port_map_ual|Mux5~0_combout\)) # (\port_map_controle|Mux4~0_combout\ & ((!\port_map_ual|Mux5~1_combout\)))))
+-- \port_map_ual|Mux5~2_combout\ = ( !\port_map_controle|Mux5~0_combout\ & ( (!\port_map_memoriaInst|Mux1~0_combout\ & (((\port_map_ual|portMap_multiplexador|Add9~1_sumout\ & (!\port_map_ual|portMap_multiplexador|process_0~6_combout\))) # 
+-- (\port_map_ual|portMap_multiplexador|portOUT[5]~4_combout\))) # (\port_map_memoriaInst|Mux1~0_combout\ & ((((\port_map_registradores|registrador~48_combout\))))) ) ) # ( \port_map_controle|Mux5~0_combout\ & ( (((!\port_map_memoriaInst|Mux1~0_combout\ & 
+-- (\port_map_ual|portMap_adicionador|Add0~21_sumout\)) # (\port_map_memoriaInst|Mux1~0_combout\ & ((\port_map_registradores|registrador~48_combout\))))) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "on",
+	lut_mask => "0100111101001111000011110000111100000000111111110000000011111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \port_map_ual|portMap_multiplexador|ALT_INV_Add9~1_sumout\,
+	datab => \port_map_ual|portMap_multiplexador|ALT_INV_process_0~6_combout\,
+	datac => \port_map_ual|portMap_adicionador|ALT_INV_Add0~21_sumout\,
+	datad => \port_map_registradores|ALT_INV_registrador~48_combout\,
+	datae => \port_map_controle|ALT_INV_Mux5~0_combout\,
+	dataf => \port_map_memoriaInst|ALT_INV_Mux1~0_combout\,
+	datag => \port_map_ual|portMap_multiplexador|ALT_INV_portOUT[5]~4_combout\,
+	combout => \port_map_ual|Mux5~2_combout\);
+
+\port_map_ual|Mux5~1\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \port_map_ual|Mux5~1_combout\ = (!\port_map_memoriaInst|Mux0~1_combout\ & ((!\port_map_controle|Mux4~0_combout\ & ((\port_map_ual|Mux5~2_combout\))) # (\port_map_controle|Mux4~0_combout\ & (\port_map_ual|Mux5~0_combout\))))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0010101000001000001010100000100000101010000010000010101000001000",
+	lut_mask => "0000001010001010000000101000101000000010100010100000001010001010",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_memoriaInst|ALT_INV_Mux0~0_combout\,
+	dataa => \port_map_memoriaInst|ALT_INV_Mux0~1_combout\,
 	datab => \port_map_controle|ALT_INV_Mux4~0_combout\,
 	datac => \port_map_ual|ALT_INV_Mux5~0_combout\,
-	datad => \port_map_ual|ALT_INV_Mux5~1_combout\,
-	combout => \port_map_ual|Mux5~2_combout\);
+	datad => \port_map_ual|ALT_INV_Mux5~2_combout\,
+	combout => \port_map_ual|Mux5~1_combout\);
 
 \port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a5\ : cyclonev_ram_block
 -- pragma translate_off
@@ -6012,21 +5900,21 @@ PORT MAP (
 \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[5]~5\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[5]~5_combout\ = ( \port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a5~portbdataout\ & ( \port_map_controle|Mux3~0_combout\ ) ) # ( 
--- \port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a5~portbdataout\ & ( !\port_map_controle|Mux3~0_combout\ & ( (!\port_map_memoriaInst|Mux0~0_combout\ & ((!\port_map_controle|Mux4~0_combout\ & (\port_map_ual|Mux5~0_combout\)) # 
--- (\port_map_controle|Mux4~0_combout\ & ((!\port_map_ual|Mux5~1_combout\))))) ) ) ) # ( !\port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a5~portbdataout\ & ( !\port_map_controle|Mux3~0_combout\ & ( (!\port_map_memoriaInst|Mux0~0_combout\ & 
--- ((!\port_map_controle|Mux4~0_combout\ & (\port_map_ual|Mux5~0_combout\)) # (\port_map_controle|Mux4~0_combout\ & ((!\port_map_ual|Mux5~1_combout\))))) ) ) )
+-- \port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a5~portbdataout\ & ( !\port_map_controle|Mux3~0_combout\ & ( (!\port_map_memoriaInst|Mux0~1_combout\ & ((!\port_map_controle|Mux4~0_combout\ & ((\port_map_ual|Mux5~2_combout\))) # 
+-- (\port_map_controle|Mux4~0_combout\ & (\port_map_ual|Mux5~0_combout\)))) ) ) ) # ( !\port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a5~portbdataout\ & ( !\port_map_controle|Mux3~0_combout\ & ( (!\port_map_memoriaInst|Mux0~1_combout\ & 
+-- ((!\port_map_controle|Mux4~0_combout\ & ((\port_map_ual|Mux5~2_combout\))) # (\port_map_controle|Mux4~0_combout\ & (\port_map_ual|Mux5~0_combout\)))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0010101000001000001010100000100000000000000000001111111111111111",
+	lut_mask => "0000001010001010000000101000101000000000000000001111111111111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_memoriaInst|ALT_INV_Mux0~0_combout\,
+	dataa => \port_map_memoriaInst|ALT_INV_Mux0~1_combout\,
 	datab => \port_map_controle|ALT_INV_Mux4~0_combout\,
 	datac => \port_map_ual|ALT_INV_Mux5~0_combout\,
-	datad => \port_map_ual|ALT_INV_Mux5~1_combout\,
+	datad => \port_map_ual|ALT_INV_Mux5~2_combout\,
 	datae => \port_map_memoriaAdress|ram_rtl_0|auto_generated|ALT_INV_ram_block1a5~portbdataout\,
 	dataf => \port_map_controle|ALT_INV_Mux3~0_combout\,
 	combout => \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[5]~5_combout\);
@@ -6040,35 +5928,45 @@ GENERIC MAP (
 PORT MAP (
 	clk => \clock~input_o\,
 	d => \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[5]~5_combout\,
-	ena => \port_map_registradores|registrador~59_combout\,
+	ena => \port_map_registradores|registrador~74_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \port_map_registradores|registrador~16_q\);
 
-\port_map_registradores|registrador~56\ : cyclonev_lcell_comb
+\port_map_registradores|registrador~64\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_registradores|registrador~56_combout\ = ( \port_map_memoriaInst|Mux7~3_combout\ & ( \port_map_memoriaInst|Mux6~1_combout\ & ( \port_map_registradores|registrador~40_q\ ) ) ) # ( !\port_map_memoriaInst|Mux7~3_combout\ & ( 
--- \port_map_memoriaInst|Mux6~1_combout\ & ( \port_map_registradores|registrador~32_q\ ) ) ) # ( \port_map_memoriaInst|Mux7~3_combout\ & ( !\port_map_memoriaInst|Mux6~1_combout\ & ( \port_map_registradores|registrador~24_q\ ) ) ) # ( 
--- !\port_map_memoriaInst|Mux7~3_combout\ & ( !\port_map_memoriaInst|Mux6~1_combout\ & ( \port_map_registradores|registrador~16_q\ ) ) )
+-- \port_map_registradores|registrador~64_combout\ = (\port_map_memoriaInst|Mux6~2_combout\ & (\port_map_registradores|registrador~16_q\ & !\port_map_memoriaInst|Mux5~1_combout\))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0101010101010101001100110011001100001111000011110000000011111111",
+	lut_mask => "0001000000010000000100000001000000010000000100000001000000010000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_registradores|ALT_INV_registrador~16_q\,
-	datab => \port_map_registradores|ALT_INV_registrador~24_q\,
-	datac => \port_map_registradores|ALT_INV_registrador~32_q\,
-	datad => \port_map_registradores|ALT_INV_registrador~40_q\,
-	datae => \port_map_memoriaInst|ALT_INV_Mux7~3_combout\,
-	dataf => \port_map_memoriaInst|ALT_INV_Mux6~1_combout\,
-	combout => \port_map_registradores|registrador~56_combout\);
+	dataa => \port_map_memoriaInst|ALT_INV_Mux6~2_combout\,
+	datab => \port_map_registradores|ALT_INV_registrador~16_q\,
+	datac => \port_map_memoriaInst|ALT_INV_Mux5~1_combout\,
+	combout => \port_map_registradores|registrador~64_combout\);
+
+\port_map_registradores|registrador~66\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \port_map_registradores|registrador~66_combout\ = (\port_map_registradores|registrador~65_combout\) # (\port_map_registradores|registrador~64_combout\)
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0111011101110111011101110111011101110111011101110111011101110111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \port_map_registradores|ALT_INV_registrador~64_combout\,
+	datab => \port_map_registradores|ALT_INV_registrador~65_combout\,
+	combout => \port_map_registradores|registrador~66_combout\);
 
 \port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ = (\port_map_registradores|registrador~56_combout\ & !\port_map_controle|Mux7~0_combout\)
+-- \port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ = (\port_map_registradores|registrador~66_combout\ & !\port_map_controle|Mux7~0_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
@@ -6077,9 +5975,85 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_registradores|ALT_INV_registrador~56_combout\,
+	dataa => \port_map_registradores|ALT_INV_registrador~66_combout\,
 	datab => \port_map_controle|ALT_INV_Mux7~0_combout\,
 	combout => \port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\);
+
+\port_map_registradores|registrador~17\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \clock~input_o\,
+	d => \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[6]~6_combout\,
+	ena => \port_map_registradores|registrador~74_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \port_map_registradores|registrador~17_q\);
+
+\port_map_registradores|registrador~67\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \port_map_registradores|registrador~67_combout\ = (\port_map_memoriaInst|Mux6~2_combout\ & (\port_map_registradores|registrador~17_q\ & !\port_map_memoriaInst|Mux5~1_combout\))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0001000000010000000100000001000000010000000100000001000000010000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \port_map_memoriaInst|ALT_INV_Mux6~2_combout\,
+	datab => \port_map_registradores|ALT_INV_registrador~17_q\,
+	datac => \port_map_memoriaInst|ALT_INV_Mux5~1_combout\,
+	combout => \port_map_registradores|registrador~67_combout\);
+
+\port_map_registradores|registrador~68\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \port_map_registradores|registrador~68_combout\ = (!\port_map_memoriaInst|Mux6~2_combout\ & (\port_map_registradores|registrador~25_q\ & !\port_map_memoriaInst|Mux5~1_combout\))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0010000000100000001000000010000000100000001000000010000000100000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \port_map_memoriaInst|ALT_INV_Mux6~2_combout\,
+	datab => \port_map_registradores|ALT_INV_registrador~25_q\,
+	datac => \port_map_memoriaInst|ALT_INV_Mux5~1_combout\,
+	combout => \port_map_registradores|registrador~68_combout\);
+
+\port_map_registradores|registrador~69\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \port_map_registradores|registrador~69_combout\ = (\port_map_registradores|registrador~68_combout\) # (\port_map_registradores|registrador~67_combout\)
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0111011101110111011101110111011101110111011101110111011101110111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \port_map_registradores|ALT_INV_registrador~67_combout\,
+	datab => \port_map_registradores|ALT_INV_registrador~68_combout\,
+	combout => \port_map_registradores|registrador~69_combout\);
+
+\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ = (\port_map_registradores|registrador~69_combout\ & !\port_map_controle|Mux7~0_combout\)
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0100010001000100010001000100010001000100010001000100010001000100",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \port_map_registradores|ALT_INV_registrador~69_combout\,
+	datab => \port_map_controle|ALT_INV_Mux7~0_combout\,
+	combout => \port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\);
 
 \port_map_ual|portMap_multiplexador|process_0~7\ : cyclonev_lcell_comb
 -- Equation(s):
@@ -6113,17 +6087,21 @@ PORT MAP (
 
 \port_map_ual|portMap_multiplexador|Add0~25\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add0~25_sumout\ = SUM(( !\port_map_registradores|registrador~49_combout\ ) + ( GND ) + ( \port_map_ual|portMap_multiplexador|Add0~22\ ))
--- \port_map_ual|portMap_multiplexador|Add0~26\ = CARRY(( !\port_map_registradores|registrador~49_combout\ ) + ( GND ) + ( \port_map_ual|portMap_multiplexador|Add0~22\ ))
+-- \port_map_ual|portMap_multiplexador|Add0~25_sumout\ = SUM(( (!\port_map_memoriaInst|Mux4~0_combout\ & ((!\port_map_registradores|registrador~17_q\))) # (\port_map_memoriaInst|Mux4~0_combout\ & (!\port_map_registradores|registrador~25_q\)) ) + ( GND ) + ( 
+-- \port_map_ual|portMap_multiplexador|Add0~22\ ))
+-- \port_map_ual|portMap_multiplexador|Add0~26\ = CARRY(( (!\port_map_memoriaInst|Mux4~0_combout\ & ((!\port_map_registradores|registrador~17_q\))) # (\port_map_memoriaInst|Mux4~0_combout\ & (!\port_map_registradores|registrador~25_q\)) ) + ( GND ) + ( 
+-- \port_map_ual|portMap_multiplexador|Add0~22\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111111111111100000000000000001111111100000000",
+	lut_mask => "0000000000000000111111111111111100000000000000001111101001010000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datad => \port_map_registradores|ALT_INV_registrador~49_combout\,
+	dataa => \port_map_memoriaInst|ALT_INV_Mux4~0_combout\,
+	datac => \port_map_registradores|ALT_INV_registrador~25_q\,
+	datad => \port_map_registradores|ALT_INV_registrador~17_q\,
 	cin => \port_map_ual|portMap_multiplexador|Add0~22\,
 	sumout => \port_map_ual|portMap_multiplexador|Add0~25_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add0~26\);
@@ -6131,20 +6109,20 @@ PORT MAP (
 \port_map_ual|portMap_multiplexador|Add1~21\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \port_map_ual|portMap_multiplexador|Add1~21_sumout\ = SUM(( \port_map_registradores|registrador~48_combout\ ) + ( (\port_map_ual|portMap_multiplexador|Add0~25_sumout\ & ((!\port_map_controle|Mux7~0_combout\ & 
--- (\port_map_registradores|registrador~51_combout\)) # (\port_map_controle|Mux7~0_combout\ & ((\port_map_memoriaInst|Mux7~3_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add1~18\ ))
+-- (\port_map_registradores|registrador~51_combout\)) # (\port_map_controle|Mux7~0_combout\ & ((!\port_map_memoriaInst|Mux6~2_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add1~18\ ))
 -- \port_map_ual|portMap_multiplexador|Add1~22\ = CARRY(( \port_map_registradores|registrador~48_combout\ ) + ( (\port_map_ual|portMap_multiplexador|Add0~25_sumout\ & ((!\port_map_controle|Mux7~0_combout\ & (\port_map_registradores|registrador~51_combout\)) 
--- # (\port_map_controle|Mux7~0_combout\ & ((\port_map_memoriaInst|Mux7~3_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add1~18\ ))
+-- # (\port_map_controle|Mux7~0_combout\ & ((!\port_map_memoriaInst|Mux6~2_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add1~18\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111111101100000000000000000000000000011111111",
+	lut_mask => "0000000000000000111111111000110100000000000000000000000011111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_controle|ALT_INV_Mux7~0_combout\,
 	datab => \port_map_registradores|ALT_INV_registrador~51_combout\,
-	datac => \port_map_memoriaInst|ALT_INV_Mux7~3_combout\,
+	datac => \port_map_memoriaInst|ALT_INV_Mux6~2_combout\,
 	datad => \port_map_registradores|ALT_INV_registrador~48_combout\,
 	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_Add0~25_sumout\,
 	cin => \port_map_ual|portMap_multiplexador|Add1~18\,
@@ -6154,20 +6132,20 @@ PORT MAP (
 \port_map_ual|portMap_multiplexador|Add2~21\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \port_map_ual|portMap_multiplexador|Add2~21_sumout\ = SUM(( !\port_map_registradores|registrador~48_combout\ ) + ( (\port_map_ual|portMap_multiplexador|Add0~25_sumout\ & ((!\port_map_controle|Mux7~0_combout\ & 
--- (\port_map_registradores|registrador~51_combout\)) # (\port_map_controle|Mux7~0_combout\ & ((\port_map_memoriaInst|Mux7~3_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add2~18\ ))
+-- (\port_map_registradores|registrador~51_combout\)) # (\port_map_controle|Mux7~0_combout\ & ((!\port_map_memoriaInst|Mux6~2_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add2~18\ ))
 -- \port_map_ual|portMap_multiplexador|Add2~22\ = CARRY(( !\port_map_registradores|registrador~48_combout\ ) + ( (\port_map_ual|portMap_multiplexador|Add0~25_sumout\ & ((!\port_map_controle|Mux7~0_combout\ & (\port_map_registradores|registrador~51_combout\)) 
--- # (\port_map_controle|Mux7~0_combout\ & ((\port_map_memoriaInst|Mux7~3_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add2~18\ ))
+-- # (\port_map_controle|Mux7~0_combout\ & ((!\port_map_memoriaInst|Mux6~2_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add2~18\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111111101100000000000000000001111111100000000",
+	lut_mask => "0000000000000000111111111000110100000000000000001111111100000000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_controle|ALT_INV_Mux7~0_combout\,
 	datab => \port_map_registradores|ALT_INV_registrador~51_combout\,
-	datac => \port_map_memoriaInst|ALT_INV_Mux7~3_combout\,
+	datac => \port_map_memoriaInst|ALT_INV_Mux6~2_combout\,
 	datad => \port_map_registradores|ALT_INV_registrador~48_combout\,
 	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_Add0~25_sumout\,
 	cin => \port_map_ual|portMap_multiplexador|Add2~18\,
@@ -6194,50 +6172,50 @@ PORT MAP (
 
 \port_map_ual|portMap_multiplexador|Add3~17\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add3~17_sumout\ = SUM(( \port_map_registradores|registrador~47_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~10_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~21_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ 
--- & ((\port_map_ual|portMap_multiplexador|produto~10_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add3~14\ ))
--- \port_map_ual|portMap_multiplexador|Add3~18\ = CARRY(( \port_map_registradores|registrador~47_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~10_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~21_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ 
--- & ((\port_map_ual|portMap_multiplexador|produto~10_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add3~14\ ))
+-- \port_map_ual|portMap_multiplexador|Add3~17_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~10_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ 
+-- & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~21_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((\port_map_ual|portMap_multiplexador|produto~10_combout\))))) 
+-- ) + ( \port_map_registradores|registrador~47_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add3~14\ ))
+-- \port_map_ual|portMap_multiplexador|Add3~18\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~10_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & 
+-- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~21_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((\port_map_ual|portMap_multiplexador|produto~10_combout\))))) ) 
+-- + ( \port_map_registradores|registrador~47_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add3~14\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111110110100000000000000000000000000000011111111",
+	lut_mask => "0000000000000000111111110000000000000000000000000000010010111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[0]~0_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[1]~1_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add1~21_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~47_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~10_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~10_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~47_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add3~14\,
 	sumout => \port_map_ual|portMap_multiplexador|Add3~17_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add3~18\);
 
 \port_map_ual|portMap_multiplexador|Add4~17\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add4~17_sumout\ = SUM(( !\port_map_registradores|registrador~47_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~10_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~21_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ 
--- & ((\port_map_ual|portMap_multiplexador|produto~10_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add4~14\ ))
--- \port_map_ual|portMap_multiplexador|Add4~18\ = CARRY(( !\port_map_registradores|registrador~47_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~10_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~21_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ 
--- & ((\port_map_ual|portMap_multiplexador|produto~10_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add4~14\ ))
+-- \port_map_ual|portMap_multiplexador|Add4~17_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~10_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ 
+-- & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~21_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((\port_map_ual|portMap_multiplexador|produto~10_combout\))))) 
+-- ) + ( !\port_map_registradores|registrador~47_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add4~14\ ))
+-- \port_map_ual|portMap_multiplexador|Add4~18\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~10_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & 
+-- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~21_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((\port_map_ual|portMap_multiplexador|produto~10_combout\))))) ) 
+-- + ( !\port_map_registradores|registrador~47_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add4~14\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111110110100000000000000000000001111111100000000",
+	lut_mask => "0000000000000000000000001111111100000000000000000000010010111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[0]~0_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[1]~1_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add1~21_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~47_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~10_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~10_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~47_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add4~14\,
 	sumout => \port_map_ual|portMap_multiplexador|Add4~17_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add4~18\);
@@ -6265,50 +6243,50 @@ PORT MAP (
 
 \port_map_ual|portMap_multiplexador|Add5~13\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add5~13_sumout\ = SUM(( \port_map_registradores|registrador~46_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~11_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~17_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ 
--- & ((\port_map_ual|portMap_multiplexador|produto~11_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add5~10\ ))
--- \port_map_ual|portMap_multiplexador|Add5~14\ = CARRY(( \port_map_registradores|registrador~46_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~11_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~17_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ 
--- & ((\port_map_ual|portMap_multiplexador|produto~11_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add5~10\ ))
+-- \port_map_ual|portMap_multiplexador|Add5~13_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~11_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ 
+-- & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~17_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~11_combout\))))) 
+-- ) + ( \port_map_registradores|registrador~46_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add5~10\ ))
+-- \port_map_ual|portMap_multiplexador|Add5~14\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~11_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & 
+-- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~17_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~11_combout\))))) ) 
+-- + ( \port_map_registradores|registrador~46_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add5~10\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111110110100000000000000000000000000000011111111",
+	lut_mask => "0000000000000000111111110000000000000000000000000000010010111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[1]~1_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[2]~2_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add3~17_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~46_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~11_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~11_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~46_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add5~10\,
 	sumout => \port_map_ual|portMap_multiplexador|Add5~13_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add5~14\);
 
 \port_map_ual|portMap_multiplexador|Add6~13\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add6~13_sumout\ = SUM(( !\port_map_registradores|registrador~46_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~11_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~17_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ 
--- & ((\port_map_ual|portMap_multiplexador|produto~11_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add6~10\ ))
--- \port_map_ual|portMap_multiplexador|Add6~14\ = CARRY(( !\port_map_registradores|registrador~46_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~11_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~17_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ 
--- & ((\port_map_ual|portMap_multiplexador|produto~11_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add6~10\ ))
+-- \port_map_ual|portMap_multiplexador|Add6~13_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~11_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ 
+-- & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~17_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~11_combout\))))) 
+-- ) + ( !\port_map_registradores|registrador~46_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add6~10\ ))
+-- \port_map_ual|portMap_multiplexador|Add6~14\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~11_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & 
+-- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~17_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~11_combout\))))) ) 
+-- + ( !\port_map_registradores|registrador~46_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add6~10\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111110110100000000000000000000001111111100000000",
+	lut_mask => "0000000000000000000000001111111100000000000000000000010010111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[1]~1_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[2]~2_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add3~17_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~46_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~11_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~11_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~46_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add6~10\,
 	sumout => \port_map_ual|portMap_multiplexador|Add6~13_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add6~14\);
@@ -6336,50 +6314,50 @@ PORT MAP (
 
 \port_map_ual|portMap_multiplexador|Add7~9\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add7~9_sumout\ = SUM(( \port_map_registradores|registrador~45_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~12_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~13_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~12_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add7~6\ ))
--- \port_map_ual|portMap_multiplexador|Add7~10\ = CARRY(( \port_map_registradores|registrador~45_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~12_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~13_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~12_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add7~6\ ))
+-- \port_map_ual|portMap_multiplexador|Add7~9_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~12_combout\))) 
+-- # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~13_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (((\port_map_ual|portMap_multiplexador|produto~12_combout\)))) 
+-- ) + ( \port_map_registradores|registrador~45_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add7~6\ ))
+-- \port_map_ual|portMap_multiplexador|Add7~10\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~12_combout\))) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~13_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (((\port_map_ual|portMap_multiplexador|produto~12_combout\)))) ) 
+-- + ( \port_map_registradores|registrador~45_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add7~6\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000000000000011111111",
+	lut_mask => "0000000000000000111111110000000000000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[3]~3_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[2]~2_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add5~13_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~45_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~12_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~12_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~45_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add7~6\,
 	sumout => \port_map_ual|portMap_multiplexador|Add7~9_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add7~10\);
 
 \port_map_ual|portMap_multiplexador|Add8~9\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add8~9_sumout\ = SUM(( !\port_map_registradores|registrador~45_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~12_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~13_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~12_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add8~6\ ))
--- \port_map_ual|portMap_multiplexador|Add8~10\ = CARRY(( !\port_map_registradores|registrador~45_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~12_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~13_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~12_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add8~6\ ))
+-- \port_map_ual|portMap_multiplexador|Add8~9_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~12_combout\))) 
+-- # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~13_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (((\port_map_ual|portMap_multiplexador|produto~12_combout\)))) 
+-- ) + ( !\port_map_registradores|registrador~45_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add8~6\ ))
+-- \port_map_ual|portMap_multiplexador|Add8~10\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~12_combout\))) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~13_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (((\port_map_ual|portMap_multiplexador|produto~12_combout\)))) ) 
+-- + ( !\port_map_registradores|registrador~45_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add8~6\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000001111111100000000",
+	lut_mask => "0000000000000000000000001111111100000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[3]~3_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[2]~2_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add5~13_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~45_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~12_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~12_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~45_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add8~6\,
 	sumout => \port_map_ual|portMap_multiplexador|Add8~9_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add8~10\);
@@ -6407,25 +6385,25 @@ PORT MAP (
 
 \port_map_ual|portMap_multiplexador|Add10~5\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add10~5_sumout\ = SUM(( !\port_map_registradores|registrador~44_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~13_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|Add7~9_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~13_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add10~2\ ))
--- \port_map_ual|portMap_multiplexador|Add10~6\ = CARRY(( !\port_map_registradores|registrador~44_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~13_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|Add7~9_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~13_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add10~2\ ))
+-- \port_map_ual|portMap_multiplexador|Add10~5_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((\port_map_ual|portMap_multiplexador|produto~13_combout\))) 
+-- # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|Add7~9_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (((\port_map_ual|portMap_multiplexador|produto~13_combout\)))) 
+-- ) + ( !\port_map_registradores|registrador~44_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add10~2\ ))
+-- \port_map_ual|portMap_multiplexador|Add10~6\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((\port_map_ual|portMap_multiplexador|produto~13_combout\))) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|Add7~9_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (((\port_map_ual|portMap_multiplexador|produto~13_combout\)))) ) 
+-- + ( !\port_map_registradores|registrador~44_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add10~2\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000001111111100000000",
+	lut_mask => "0000000000000000000000001111111100000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[4]~4_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[3]~3_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add7~9_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~44_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~13_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~13_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~44_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add10~2\,
 	sumout => \port_map_ual|portMap_multiplexador|Add10~5_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add10~6\);
@@ -6453,28 +6431,69 @@ PORT MAP (
 
 \port_map_ual|portMap_multiplexador|Add9~5\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add9~5_sumout\ = SUM(( \port_map_registradores|registrador~44_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~13_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|Add7~9_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~13_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add9~2\ ))
--- \port_map_ual|portMap_multiplexador|Add9~6\ = CARRY(( \port_map_registradores|registrador~44_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~13_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|Add7~9_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~13_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add9~2\ ))
+-- \port_map_ual|portMap_multiplexador|Add9~5_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((\port_map_ual|portMap_multiplexador|produto~13_combout\))) 
+-- # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|Add7~9_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (((\port_map_ual|portMap_multiplexador|produto~13_combout\)))) 
+-- ) + ( \port_map_registradores|registrador~44_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add9~2\ ))
+-- \port_map_ual|portMap_multiplexador|Add9~6\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((\port_map_ual|portMap_multiplexador|produto~13_combout\))) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|Add7~9_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (((\port_map_ual|portMap_multiplexador|produto~13_combout\)))) ) 
+-- + ( \port_map_registradores|registrador~44_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add9~2\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000000000000011111111",
+	lut_mask => "0000000000000000111111110000000000000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[4]~4_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[3]~3_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add7~9_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~44_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~13_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~13_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~44_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add9~2\,
 	sumout => \port_map_ual|portMap_multiplexador|Add9~5_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add9~6\);
+
+\port_map_ual|portMap_multiplexador|Add11~1\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \port_map_ual|portMap_multiplexador|Add11~1_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (\port_map_ual|portMap_multiplexador|produto~14_combout\)) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((\port_map_ual|portMap_multiplexador|Add9~5_sumout\))))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (((\port_map_ual|portMap_multiplexador|produto~14_combout\)))) 
+-- ) + ( \port_map_registradores|registrador~43_combout\ ) + ( !VCC ))
+-- \port_map_ual|portMap_multiplexador|Add11~2\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (\port_map_ual|portMap_multiplexador|produto~14_combout\)) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((\port_map_ual|portMap_multiplexador|Add9~5_sumout\))))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (((\port_map_ual|portMap_multiplexador|produto~14_combout\)))) 
+-- ) + ( \port_map_registradores|registrador~43_combout\ ) + ( !VCC ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111111110000000000000000000000000000110100101111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[5]~5_combout\,
+	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[4]~4_combout\,
+	datac => \port_map_ual|portMap_multiplexador|ALT_INV_produto~14_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_Add9~5_sumout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~43_combout\,
+	cin => GND,
+	sumout => \port_map_ual|portMap_multiplexador|Add11~1_sumout\,
+	cout => \port_map_ual|portMap_multiplexador|Add11~2\);
+
+\port_map_ual|portMap_multiplexador|portOUT[6]~5\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \port_map_ual|portMap_multiplexador|portOUT[6]~5_combout\ = (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & \port_map_ual|portMap_multiplexador|Add11~1_sumout\))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000010000000100000001000000010000000100000001000000010000000100",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[5]~5_combout\,
+	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[6]~6_combout\,
+	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add11~1_sumout\,
+	combout => \port_map_ual|portMap_multiplexador|portOUT[6]~5_combout\);
 
 \port_map_ual|portMap_multiplexador|Add12~10\ : cyclonev_lcell_comb
 -- Equation(s):
@@ -6492,270 +6511,176 @@ PORT MAP (
 
 \port_map_ual|portMap_multiplexador|Add12~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add12~1_sumout\ = SUM(( !\port_map_registradores|registrador~43_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (\port_map_ual|portMap_multiplexador|produto~14_combout\)) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((\port_map_ual|portMap_multiplexador|Add9~5_sumout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ 
--- & (\port_map_ual|portMap_multiplexador|produto~14_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add12~10_cout\ ))
--- \port_map_ual|portMap_multiplexador|Add12~2\ = CARRY(( !\port_map_registradores|registrador~43_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (\port_map_ual|portMap_multiplexador|produto~14_combout\)) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((\port_map_ual|portMap_multiplexador|Add9~5_sumout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ 
--- & (\port_map_ual|portMap_multiplexador|produto~14_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add12~10_cout\ ))
+-- \port_map_ual|portMap_multiplexador|Add12~1_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (\port_map_ual|portMap_multiplexador|produto~14_combout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
+-- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((\port_map_ual|portMap_multiplexador|Add9~5_sumout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (\port_map_ual|portMap_multiplexador|produto~14_combout\)))) ) 
+-- + ( !\port_map_registradores|registrador~43_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add12~10_cout\ ))
+-- \port_map_ual|portMap_multiplexador|Add12~2\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (\port_map_ual|portMap_multiplexador|produto~14_combout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
+-- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((\port_map_ual|portMap_multiplexador|Add9~5_sumout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (\port_map_ual|portMap_multiplexador|produto~14_combout\)))) ) 
+-- + ( !\port_map_registradores|registrador~43_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add12~10_cout\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000110110001100110000000000000000001111111100000000",
+	lut_mask => "0000000000000000000000001111111100000000000000000010011100110011",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[4]~4_combout\,
 	datab => \port_map_ual|portMap_multiplexador|ALT_INV_produto~14_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add9~5_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~43_combout\,
-	dataf => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[5]~5_combout\,
+	datad => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[5]~5_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~43_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add12~10_cout\,
 	sumout => \port_map_ual|portMap_multiplexador|Add12~1_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add12~2\);
 
-\port_map_registradores|registrador~25\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \clock~input_o\,
-	d => \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[6]~6_combout\,
-	ena => \port_map_registradores|registrador~60_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \port_map_registradores|registrador~25_q\);
-
-\port_map_registradores|registrador~33\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \clock~input_o\,
-	d => \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[6]~6_combout\,
-	ena => \port_map_registradores|registrador~61_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \port_map_registradores|registrador~33_q\);
-
-\port_map_registradores|registrador~41\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \clock~input_o\,
-	d => \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[6]~6_combout\,
-	ena => \port_map_registradores|registrador~62_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \port_map_registradores|registrador~41_q\);
-
-\port_map_registradores|registrador~57\ : cyclonev_lcell_comb
+\port_map_ual|portMap_multiplexador|portOUT[6]~6\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_registradores|registrador~57_combout\ = ( \port_map_memoriaInst|Mux7~3_combout\ & ( \port_map_memoriaInst|Mux6~1_combout\ & ( \port_map_registradores|registrador~41_q\ ) ) ) # ( !\port_map_memoriaInst|Mux7~3_combout\ & ( 
--- \port_map_memoriaInst|Mux6~1_combout\ & ( \port_map_registradores|registrador~33_q\ ) ) ) # ( \port_map_memoriaInst|Mux7~3_combout\ & ( !\port_map_memoriaInst|Mux6~1_combout\ & ( \port_map_registradores|registrador~25_q\ ) ) ) # ( 
--- !\port_map_memoriaInst|Mux7~3_combout\ & ( !\port_map_memoriaInst|Mux6~1_combout\ & ( \port_map_registradores|registrador~17_q\ ) ) )
+-- \port_map_ual|portMap_multiplexador|portOUT[6]~6_combout\ = ( \port_map_ual|portMap_multiplexador|Add9~5_sumout\ & ( \port_map_ual|portMap_multiplexador|Add12~1_sumout\ & ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
+-- (((\port_map_ual|portMap_multiplexador|produto~14_combout\) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\))) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (((\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & \port_map_ual|portMap_multiplexador|produto~14_combout\)))) ) ) ) # ( !\port_map_ual|portMap_multiplexador|Add9~5_sumout\ 
+-- & ( \port_map_ual|portMap_multiplexador|Add12~1_sumout\ & ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & \port_map_ual|portMap_multiplexador|produto~14_combout\)) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (((\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & 
+-- \port_map_ual|portMap_multiplexador|produto~14_combout\)))) ) ) ) # ( \port_map_ual|portMap_multiplexador|Add9~5_sumout\ & ( !\port_map_ual|portMap_multiplexador|Add12~1_sumout\ & ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
+-- (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((\port_map_ual|portMap_multiplexador|produto~14_combout\) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\)))) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (((\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & \port_map_ual|portMap_multiplexador|produto~14_combout\)))) ) ) ) # ( !\port_map_ual|portMap_multiplexador|Add9~5_sumout\ 
+-- & ( !\port_map_ual|portMap_multiplexador|Add12~1_sumout\ & ( (\port_map_ual|portMap_multiplexador|produto~14_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
+-- !\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\))))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0101010101010101001100110011001100001111000011110000000011111111",
+	lut_mask => "0000000010000011010000001100001100001100100011110100110011001111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_registradores|ALT_INV_registrador~17_q\,
-	datab => \port_map_registradores|ALT_INV_registrador~25_q\,
-	datac => \port_map_registradores|ALT_INV_registrador~33_q\,
-	datad => \port_map_registradores|ALT_INV_registrador~41_q\,
-	datae => \port_map_memoriaInst|ALT_INV_Mux7~3_combout\,
-	dataf => \port_map_memoriaInst|ALT_INV_Mux6~1_combout\,
-	combout => \port_map_registradores|registrador~57_combout\);
-
-\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6\ : cyclonev_lcell_comb
--- Equation(s):
--- \port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ = (\port_map_registradores|registrador~57_combout\ & !\port_map_controle|Mux7~0_combout\)
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0100010001000100010001000100010001000100010001000100010001000100",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \port_map_registradores|ALT_INV_registrador~57_combout\,
-	datab => \port_map_controle|ALT_INV_Mux7~0_combout\,
-	combout => \port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\);
-
-\port_map_ual|Mux4~4\ : cyclonev_lcell_comb
--- Equation(s):
--- \port_map_ual|Mux4~4_combout\ = ( !\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ( (!\port_map_controle|Mux5~0_combout\ & (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
--- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((\port_map_ual|portMap_multiplexador|produto~14_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (\port_map_ual|portMap_multiplexador|Add9~5_sumout\))))) ) 
--- ) # ( \port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ( (!\port_map_controle|Mux5~0_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (\port_map_ual|portMap_multiplexador|Add12~1_sumout\)) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (((\port_map_ual|portMap_multiplexador|produto~14_combout\)))))) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "on",
-	lut_mask => "0000000000001000000010000000100010001000000010000010101000101010",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \port_map_controle|ALT_INV_Mux5~0_combout\,
+	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[4]~4_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[5]~5_combout\,
-	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add12~1_sumout\,
-	datad => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[4]~4_combout\,
-	datae => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[6]~6_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~14_combout\,
-	datag => \port_map_ual|portMap_multiplexador|ALT_INV_Add9~5_sumout\,
-	combout => \port_map_ual|Mux4~4_combout\);
+	datac => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[6]~6_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~14_combout\,
+	datae => \port_map_ual|portMap_multiplexador|ALT_INV_Add9~5_sumout\,
+	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_Add12~1_sumout\,
+	combout => \port_map_ual|portMap_multiplexador|portOUT[6]~6_combout\);
+
+\port_map_ual|Mux1~0\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \port_map_ual|Mux1~0_combout\ = (\port_map_memoriaInst|Mux2~0_combout\ & (!\port_map_memoriaInst|Mux1~0_combout\ & (!\port_map_memoriaInst|Mux0~1_combout\ & !\port_map_controle|Mux5~0_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0100000000000000010000000000000001000000000000000100000000000000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \port_map_memoriaInst|ALT_INV_Mux2~0_combout\,
+	datab => \port_map_memoriaInst|ALT_INV_Mux1~0_combout\,
+	datac => \port_map_memoriaInst|ALT_INV_Mux0~1_combout\,
+	datad => \port_map_controle|ALT_INV_Mux5~0_combout\,
+	combout => \port_map_ual|Mux1~0_combout\);
 
 \port_map_ual|portMap_adicionador|Add0~25\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_adicionador|Add0~25_sumout\ = SUM(( \port_map_registradores|registrador~49_combout\ ) + ( (!\port_map_controle|Mux7~0_combout\ & \port_map_registradores|registrador~57_combout\) ) + ( \port_map_ual|portMap_adicionador|Add0~22\ ))
--- \port_map_ual|portMap_adicionador|Add0~26\ = CARRY(( \port_map_registradores|registrador~49_combout\ ) + ( (!\port_map_controle|Mux7~0_combout\ & \port_map_registradores|registrador~57_combout\) ) + ( \port_map_ual|portMap_adicionador|Add0~22\ ))
+-- \port_map_ual|portMap_adicionador|Add0~25_sumout\ = SUM(( \port_map_registradores|registrador~49_combout\ ) + ( (!\port_map_controle|Mux7~0_combout\ & ((\port_map_registradores|registrador~67_combout\) # (\port_map_registradores|registrador~68_combout\))) 
+-- ) + ( \port_map_ual|portMap_adicionador|Add0~22\ ))
+-- \port_map_ual|portMap_adicionador|Add0~26\ = CARRY(( \port_map_registradores|registrador~49_combout\ ) + ( (!\port_map_controle|Mux7~0_combout\ & ((\port_map_registradores|registrador~67_combout\) # (\port_map_registradores|registrador~68_combout\))) ) + 
+-- ( \port_map_ual|portMap_adicionador|Add0~22\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111110101010100000000000000000000000011111111",
+	lut_mask => "0000000000000000111101010101010100000000000000000000000011111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_controle|ALT_INV_Mux7~0_combout\,
+	datac => \port_map_registradores|ALT_INV_registrador~68_combout\,
 	datad => \port_map_registradores|ALT_INV_registrador~49_combout\,
-	dataf => \port_map_registradores|ALT_INV_registrador~57_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~67_combout\,
 	cin => \port_map_ual|portMap_adicionador|Add0~22\,
 	sumout => \port_map_ual|portMap_adicionador|Add0~25_sumout\,
 	cout => \port_map_ual|portMap_adicionador|Add0~26\);
 
-\port_map_ual|portMap_multiplexador|Add11~1\ : cyclonev_lcell_comb
--- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add11~1_sumout\ = SUM(( \port_map_registradores|registrador~43_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
--- (\port_map_ual|portMap_multiplexador|produto~14_combout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((\port_map_ual|portMap_multiplexador|Add9~5_sumout\))))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~14_combout\)))) ) + ( !VCC ))
--- \port_map_ual|portMap_multiplexador|Add11~2\ = CARRY(( \port_map_registradores|registrador~43_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
--- (\port_map_ual|portMap_multiplexador|produto~14_combout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((\port_map_ual|portMap_multiplexador|Add9~5_sumout\))))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~14_combout\)))) ) + ( !VCC ))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000111100101101000000000000000000000000000011111111",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[5]~5_combout\,
-	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[4]~4_combout\,
-	datac => \port_map_ual|portMap_multiplexador|ALT_INV_produto~14_combout\,
-	datad => \port_map_registradores|ALT_INV_registrador~43_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_Add9~5_sumout\,
-	cin => GND,
-	sumout => \port_map_ual|portMap_multiplexador|Add11~1_sumout\,
-	cout => \port_map_ual|portMap_multiplexador|Add11~2\);
-
-\port_map_ual|Mux4~0\ : cyclonev_lcell_comb
--- Equation(s):
--- \port_map_ual|Mux4~0_combout\ = ( \port_map_ual|portMap_multiplexador|Add11~1_sumout\ & ( (!\port_map_controle|Mux5~0_combout\ & (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
--- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\)))) # (\port_map_controle|Mux5~0_combout\ & (((\port_map_ual|portMap_adicionador|Add0~25_sumout\)))) ) ) # ( !\port_map_ual|portMap_multiplexador|Add11~1_sumout\ & ( 
--- (\port_map_controle|Mux5~0_combout\ & \port_map_ual|portMap_adicionador|Add0~25_sumout\) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000010100000101001001110000010100000101000001010010011100000101",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \port_map_controle|ALT_INV_Mux5~0_combout\,
-	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[5]~5_combout\,
-	datac => \port_map_ual|portMap_adicionador|ALT_INV_Add0~25_sumout\,
-	datad => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[6]~6_combout\,
-	datae => \port_map_ual|portMap_multiplexador|ALT_INV_Add11~1_sumout\,
-	combout => \port_map_ual|Mux4~0_combout\);
-
 \port_map_ual|portMap_subtrair|Add0~25\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_subtrair|Add0~25_sumout\ = SUM(( \port_map_registradores|registrador~49_combout\ ) + ( (!\port_map_registradores|registrador~57_combout\) # (\port_map_controle|Mux7~0_combout\) ) + ( \port_map_ual|portMap_subtrair|Add0~22\ ))
--- \port_map_ual|portMap_subtrair|Add0~26\ = CARRY(( \port_map_registradores|registrador~49_combout\ ) + ( (!\port_map_registradores|registrador~57_combout\) # (\port_map_controle|Mux7~0_combout\) ) + ( \port_map_ual|portMap_subtrair|Add0~22\ ))
+-- \port_map_ual|portMap_subtrair|Add0~25_sumout\ = SUM(( \port_map_registradores|registrador~49_combout\ ) + ( ((!\port_map_registradores|registrador~68_combout\ & !\port_map_registradores|registrador~67_combout\)) # (\port_map_controle|Mux7~0_combout\) ) + 
+-- ( \port_map_ual|portMap_subtrair|Add0~22\ ))
+-- \port_map_ual|portMap_subtrair|Add0~26\ = CARRY(( \port_map_registradores|registrador~49_combout\ ) + ( ((!\port_map_registradores|registrador~68_combout\ & !\port_map_registradores|registrador~67_combout\)) # (\port_map_controle|Mux7~0_combout\) ) + ( 
+-- \port_map_ual|portMap_subtrair|Add0~22\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000000000001010101000000000000000000000000011111111",
+	lut_mask => "0000000000000000000010101010101000000000000000000000000011111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_controle|ALT_INV_Mux7~0_combout\,
+	datac => \port_map_registradores|ALT_INV_registrador~68_combout\,
 	datad => \port_map_registradores|ALT_INV_registrador~49_combout\,
-	dataf => \port_map_registradores|ALT_INV_registrador~57_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~67_combout\,
 	cin => \port_map_ual|portMap_subtrair|Add0~22\,
 	sumout => \port_map_ual|portMap_subtrair|Add0~25_sumout\,
 	cout => \port_map_ual|portMap_subtrair|Add0~26\);
 
-\port_map_ual|Mux4~1\ : cyclonev_lcell_comb
+\port_map_ual|Mux4~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|Mux4~1_combout\ = ( \port_map_ual|portMap_subtrair|Add0~25_sumout\ & ( (!\port_map_memoriaInst|Mux1~1_combout\ & (((\port_map_ual|portMap_adicionador|Add0~25_sumout\)) # (\port_map_controle|Mux5~0_combout\))) # 
--- (\port_map_memoriaInst|Mux1~1_combout\ & ((!\port_map_controle|Mux5~0_combout\) # ((\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\)))) ) ) # ( !\port_map_ual|portMap_subtrair|Add0~25_sumout\ & ( (!\port_map_memoriaInst|Mux1~1_combout\ & 
--- (!\port_map_controle|Mux5~0_combout\ & (\port_map_ual|portMap_adicionador|Add0~25_sumout\))) # (\port_map_memoriaInst|Mux1~1_combout\ & (\port_map_controle|Mux5~0_combout\ & ((\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\)))) ) )
+-- \port_map_ual|Mux4~0_combout\ = ( \port_map_ual|portMap_subtrair|Add0~25_sumout\ & ( (!\port_map_memoriaInst|Mux1~0_combout\ & (((\port_map_ual|portMap_adicionador|Add0~25_sumout\)) # (\port_map_controle|Mux5~0_combout\))) # 
+-- (\port_map_memoriaInst|Mux1~0_combout\ & ((!\port_map_controle|Mux5~0_combout\) # ((\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\)))) ) ) # ( !\port_map_ual|portMap_subtrair|Add0~25_sumout\ & ( (!\port_map_memoriaInst|Mux1~0_combout\ & 
+-- (!\port_map_controle|Mux5~0_combout\ & ((\port_map_ual|portMap_adicionador|Add0~25_sumout\)))) # (\port_map_memoriaInst|Mux1~0_combout\ & (\port_map_controle|Mux5~0_combout\ & (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000100000011001011011100111111100001000000110010110111001111111",
+	lut_mask => "0000000110001001011001111110111100000001100010010110011111101111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_memoriaInst|ALT_INV_Mux1~1_combout\,
+	dataa => \port_map_memoriaInst|ALT_INV_Mux1~0_combout\,
 	datab => \port_map_controle|ALT_INV_Mux5~0_combout\,
-	datac => \port_map_ual|portMap_adicionador|ALT_INV_Add0~25_sumout\,
-	datad => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[6]~6_combout\,
+	datac => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[6]~6_combout\,
+	datad => \port_map_ual|portMap_adicionador|ALT_INV_Add0~25_sumout\,
 	datae => \port_map_ual|portMap_subtrair|ALT_INV_Add0~25_sumout\,
-	combout => \port_map_ual|Mux4~1_combout\);
+	combout => \port_map_ual|Mux4~0_combout\);
 
 \port_map_ual|Mux4~2\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|Mux4~2_combout\ = (!\port_map_controle|Mux4~0_combout\ & (((\port_map_ual|Mux4~1_combout\)))) # (\port_map_controle|Mux4~0_combout\ & (\port_map_memoriaInst|Mux1~1_combout\ & (\port_map_registradores|registrador~49_combout\)))
+-- \port_map_ual|Mux4~2_combout\ = ( !\port_map_memoriaInst|Mux1~0_combout\ & ( (!\port_map_memoriaInst|Mux0~1_combout\ & ((!\port_map_memoriaInst|Mux2~0_combout\ & (((\port_map_ual|Mux4~0_combout\)))) # (\port_map_memoriaInst|Mux2~0_combout\ & 
+-- (\port_map_memoriaInst|Mux3~0_combout\ & (\port_map_ual|portMap_adicionador|Add0~25_sumout\))))) ) ) # ( \port_map_memoriaInst|Mux1~0_combout\ & ( ((!\port_map_memoriaInst|Mux0~1_combout\ & ((!\port_map_memoriaInst|Mux2~0_combout\ & 
+-- ((\port_map_ual|Mux4~0_combout\))) # (\port_map_memoriaInst|Mux2~0_combout\ & (\port_map_registradores|registrador~49_combout\))))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000111110001000000011111000100000001111100010000000111110001",
+	extended_lut => "on",
+	lut_mask => "0000000111001101000000111100111100000000000000000000000000000000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_memoriaInst|ALT_INV_Mux1~1_combout\,
-	datab => \port_map_registradores|ALT_INV_registrador~49_combout\,
-	datac => \port_map_controle|ALT_INV_Mux4~0_combout\,
-	datad => \port_map_ual|ALT_INV_Mux4~1_combout\,
+	dataa => \port_map_memoriaInst|ALT_INV_Mux3~0_combout\,
+	datab => \port_map_memoriaInst|ALT_INV_Mux2~0_combout\,
+	datac => \port_map_registradores|ALT_INV_registrador~49_combout\,
+	datad => \port_map_ual|ALT_INV_Mux4~0_combout\,
+	datae => \port_map_memoriaInst|ALT_INV_Mux1~0_combout\,
+	dataf => \port_map_memoriaInst|ALT_INV_Mux0~1_combout\,
+	datag => \port_map_ual|portMap_adicionador|ALT_INV_Add0~25_sumout\,
 	combout => \port_map_ual|Mux4~2_combout\);
 
-\port_map_ual|Mux4~3\ : cyclonev_lcell_comb
+\port_map_ual|Mux4~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|Mux4~3_combout\ = ( \port_map_ual|Mux4~0_combout\ & ( \port_map_ual|Mux4~2_combout\ & ( !\port_map_memoriaInst|Mux0~0_combout\ ) ) ) # ( !\port_map_ual|Mux4~0_combout\ & ( \port_map_ual|Mux4~2_combout\ & ( 
--- !\port_map_memoriaInst|Mux0~0_combout\ ) ) ) # ( \port_map_ual|Mux4~0_combout\ & ( !\port_map_ual|Mux4~2_combout\ & ( (!\port_map_memoriaInst|Mux1~1_combout\ & (!\port_map_memoriaInst|Mux0~0_combout\ & \port_map_controle|Mux4~0_combout\)) ) ) ) # ( 
--- !\port_map_ual|Mux4~0_combout\ & ( !\port_map_ual|Mux4~2_combout\ & ( (!\port_map_memoriaInst|Mux1~1_combout\ & (!\port_map_memoriaInst|Mux0~0_combout\ & (\port_map_controle|Mux4~0_combout\ & \port_map_ual|Mux4~4_combout\))) ) ) )
+-- \port_map_ual|Mux4~1_combout\ = ((\port_map_ual|Mux1~0_combout\ & ((\port_map_ual|portMap_multiplexador|portOUT[6]~6_combout\) # (\port_map_ual|portMap_multiplexador|portOUT[6]~5_combout\)))) # (\port_map_ual|Mux4~2_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000001000000010000000100011001100110011001100110011001100",
+	lut_mask => "0000011111111111000001111111111100000111111111110000011111111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_memoriaInst|ALT_INV_Mux1~1_combout\,
-	datab => \port_map_memoriaInst|ALT_INV_Mux0~0_combout\,
-	datac => \port_map_controle|ALT_INV_Mux4~0_combout\,
-	datad => \port_map_ual|ALT_INV_Mux4~4_combout\,
-	datae => \port_map_ual|ALT_INV_Mux4~0_combout\,
-	dataf => \port_map_ual|ALT_INV_Mux4~2_combout\,
-	combout => \port_map_ual|Mux4~3_combout\);
+	dataa => \port_map_ual|portMap_multiplexador|ALT_INV_portOUT[6]~5_combout\,
+	datab => \port_map_ual|portMap_multiplexador|ALT_INV_portOUT[6]~6_combout\,
+	datac => \port_map_ual|ALT_INV_Mux1~0_combout\,
+	datad => \port_map_ual|ALT_INV_Mux4~2_combout\,
+	combout => \port_map_ual|Mux4~1_combout\);
 
 \port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a6\ : cyclonev_ram_block
 -- pragma translate_off
@@ -6808,22 +6733,26 @@ PORT MAP (
 
 \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[6]~6\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[6]~6_combout\ = (!\port_map_controle|Mux3~0_combout\ & (\port_map_ual|Mux4~3_combout\)) # (\port_map_controle|Mux3~0_combout\ & 
--- ((\port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a6~portbdataout\)))
+-- \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[6]~6_combout\ = ( \port_map_controle|Mux3~0_combout\ & ( \port_map_ual|Mux4~2_combout\ & ( \port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a6~portbdataout\ ) ) ) # ( 
+-- !\port_map_controle|Mux3~0_combout\ & ( \port_map_ual|Mux4~2_combout\ ) ) # ( \port_map_controle|Mux3~0_combout\ & ( !\port_map_ual|Mux4~2_combout\ & ( \port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a6~portbdataout\ ) ) ) # ( 
+-- !\port_map_controle|Mux3~0_combout\ & ( !\port_map_ual|Mux4~2_combout\ & ( (\port_map_ual|Mux1~0_combout\ & ((\port_map_ual|portMap_multiplexador|portOUT[6]~6_combout\) # (\port_map_ual|portMap_multiplexador|portOUT[6]~5_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0101001101010011010100110101001101010011010100110101001101010011",
+	lut_mask => "0000011100000111000000001111111111111111111111110000000011111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_ual|ALT_INV_Mux4~3_combout\,
-	datab => \port_map_memoriaAdress|ram_rtl_0|auto_generated|ALT_INV_ram_block1a6~portbdataout\,
-	datac => \port_map_controle|ALT_INV_Mux3~0_combout\,
+	dataa => \port_map_ual|portMap_multiplexador|ALT_INV_portOUT[6]~5_combout\,
+	datab => \port_map_ual|portMap_multiplexador|ALT_INV_portOUT[6]~6_combout\,
+	datac => \port_map_ual|ALT_INV_Mux1~0_combout\,
+	datad => \port_map_memoriaAdress|ram_rtl_0|auto_generated|ALT_INV_ram_block1a6~portbdataout\,
+	datae => \port_map_controle|ALT_INV_Mux3~0_combout\,
+	dataf => \port_map_ual|ALT_INV_Mux4~2_combout\,
 	combout => \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[6]~6_combout\);
 
-\port_map_registradores|registrador~17\ : dffeas
+\port_map_registradores|registrador~25\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -6832,33 +6761,31 @@ GENERIC MAP (
 PORT MAP (
 	clk => \clock~input_o\,
 	d => \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[6]~6_combout\,
-	ena => \port_map_registradores|registrador~59_combout\,
+	ena => \port_map_registradores|registrador~73_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \port_map_registradores|registrador~17_q\);
+	q => \port_map_registradores|registrador~25_q\);
 
 \port_map_registradores|registrador~49\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_registradores|registrador~49_combout\ = ( \port_map_memoriaInst|Mux5~1_combout\ & ( \port_map_memoriaInst|Mux4~1_combout\ & ( \port_map_registradores|registrador~41_q\ ) ) ) # ( !\port_map_memoriaInst|Mux5~1_combout\ & ( 
--- \port_map_memoriaInst|Mux4~1_combout\ & ( \port_map_registradores|registrador~33_q\ ) ) ) # ( \port_map_memoriaInst|Mux5~1_combout\ & ( !\port_map_memoriaInst|Mux4~1_combout\ & ( \port_map_registradores|registrador~25_q\ ) ) ) # ( 
--- !\port_map_memoriaInst|Mux5~1_combout\ & ( !\port_map_memoriaInst|Mux4~1_combout\ & ( \port_map_registradores|registrador~17_q\ ) ) )
+-- \port_map_registradores|registrador~49_combout\ = ( \port_map_registradores|registrador~17_q\ & ( (!\port_map_pc|portOUT\(2)) # (((!\port_map_memoriaInst|Mux0~0_combout\) # (\port_map_registradores|registrador~25_q\)) # (\port_map_pc|portOUT\(3))) ) ) # ( 
+-- !\port_map_registradores|registrador~17_q\ & ( (\port_map_pc|portOUT\(2) & (!\port_map_pc|portOUT\(3) & (\port_map_memoriaInst|Mux0~0_combout\ & \port_map_registradores|registrador~25_q\))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0101010101010101001100110011001100001111000011110000000011111111",
+	lut_mask => "0000000000000100111110111111111100000000000001001111101111111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_registradores|ALT_INV_registrador~17_q\,
-	datab => \port_map_registradores|ALT_INV_registrador~25_q\,
-	datac => \port_map_registradores|ALT_INV_registrador~33_q\,
-	datad => \port_map_registradores|ALT_INV_registrador~41_q\,
-	datae => \port_map_memoriaInst|ALT_INV_Mux5~1_combout\,
-	dataf => \port_map_memoriaInst|ALT_INV_Mux4~1_combout\,
+	dataa => \port_map_pc|ALT_INV_portOUT\(2),
+	datab => \port_map_pc|ALT_INV_portOUT\(3),
+	datac => \port_map_memoriaInst|ALT_INV_Mux0~0_combout\,
+	datad => \port_map_registradores|ALT_INV_registrador~25_q\,
+	datae => \port_map_registradores|ALT_INV_registrador~17_q\,
 	combout => \port_map_registradores|registrador~49_combout\);
 
-\port_map_registradores|registrador~26\ : dffeas
+\port_map_registradores|registrador~18\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -6867,63 +6794,61 @@ GENERIC MAP (
 PORT MAP (
 	clk => \clock~input_o\,
 	d => \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[7]~7_combout\,
-	ena => \port_map_registradores|registrador~60_combout\,
+	ena => \port_map_registradores|registrador~74_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \port_map_registradores|registrador~26_q\);
+	q => \port_map_registradores|registrador~18_q\);
 
-\port_map_registradores|registrador~34\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \clock~input_o\,
-	d => \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[7]~7_combout\,
-	ena => \port_map_registradores|registrador~61_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \port_map_registradores|registrador~34_q\);
-
-\port_map_registradores|registrador~42\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \clock~input_o\,
-	d => \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[7]~7_combout\,
-	ena => \port_map_registradores|registrador~62_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \port_map_registradores|registrador~42_q\);
-
-\port_map_registradores|registrador~58\ : cyclonev_lcell_comb
+\port_map_registradores|registrador~70\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_registradores|registrador~58_combout\ = ( \port_map_memoriaInst|Mux7~3_combout\ & ( \port_map_memoriaInst|Mux6~1_combout\ & ( \port_map_registradores|registrador~42_q\ ) ) ) # ( !\port_map_memoriaInst|Mux7~3_combout\ & ( 
--- \port_map_memoriaInst|Mux6~1_combout\ & ( \port_map_registradores|registrador~34_q\ ) ) ) # ( \port_map_memoriaInst|Mux7~3_combout\ & ( !\port_map_memoriaInst|Mux6~1_combout\ & ( \port_map_registradores|registrador~26_q\ ) ) ) # ( 
--- !\port_map_memoriaInst|Mux7~3_combout\ & ( !\port_map_memoriaInst|Mux6~1_combout\ & ( \port_map_registradores|registrador~18_q\ ) ) )
+-- \port_map_registradores|registrador~70_combout\ = (\port_map_memoriaInst|Mux6~2_combout\ & (\port_map_registradores|registrador~18_q\ & !\port_map_memoriaInst|Mux5~1_combout\))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0101010101010101001100110011001100001111000011110000000011111111",
+	lut_mask => "0001000000010000000100000001000000010000000100000001000000010000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_registradores|ALT_INV_registrador~18_q\,
+	dataa => \port_map_memoriaInst|ALT_INV_Mux6~2_combout\,
+	datab => \port_map_registradores|ALT_INV_registrador~18_q\,
+	datac => \port_map_memoriaInst|ALT_INV_Mux5~1_combout\,
+	combout => \port_map_registradores|registrador~70_combout\);
+
+\port_map_registradores|registrador~71\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \port_map_registradores|registrador~71_combout\ = (!\port_map_memoriaInst|Mux6~2_combout\ & (\port_map_registradores|registrador~26_q\ & !\port_map_memoriaInst|Mux5~1_combout\))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0010000000100000001000000010000000100000001000000010000000100000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \port_map_memoriaInst|ALT_INV_Mux6~2_combout\,
 	datab => \port_map_registradores|ALT_INV_registrador~26_q\,
-	datac => \port_map_registradores|ALT_INV_registrador~34_q\,
-	datad => \port_map_registradores|ALT_INV_registrador~42_q\,
-	datae => \port_map_memoriaInst|ALT_INV_Mux7~3_combout\,
-	dataf => \port_map_memoriaInst|ALT_INV_Mux6~1_combout\,
-	combout => \port_map_registradores|registrador~58_combout\);
+	datac => \port_map_memoriaInst|ALT_INV_Mux5~1_combout\,
+	combout => \port_map_registradores|registrador~71_combout\);
+
+\port_map_registradores|registrador~72\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \port_map_registradores|registrador~72_combout\ = (\port_map_registradores|registrador~71_combout\) # (\port_map_registradores|registrador~70_combout\)
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0111011101110111011101110111011101110111011101110111011101110111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \port_map_registradores|ALT_INV_registrador~70_combout\,
+	datab => \port_map_registradores|ALT_INV_registrador~71_combout\,
+	combout => \port_map_registradores|registrador~72_combout\);
 
 \port_map_multiplexador_2X1_8bits_br_ula|portOUT[7]~7\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_multiplexador_2X1_8bits_br_ula|portOUT[7]~7_combout\ = (\port_map_registradores|registrador~58_combout\ & !\port_map_controle|Mux7~0_combout\)
+-- \port_map_multiplexador_2X1_8bits_br_ula|portOUT[7]~7_combout\ = (\port_map_registradores|registrador~72_combout\ & !\port_map_controle|Mux7~0_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
@@ -6932,7 +6857,7 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_registradores|ALT_INV_registrador~58_combout\,
+	dataa => \port_map_registradores|ALT_INV_registrador~72_combout\,
 	datab => \port_map_controle|ALT_INV_Mux7~0_combout\,
 	combout => \port_map_multiplexador_2X1_8bits_br_ula|portOUT[7]~7_combout\);
 
@@ -6953,36 +6878,39 @@ PORT MAP (
 
 \port_map_ual|portMap_multiplexador|Add0~29\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add0~29_sumout\ = SUM(( !\port_map_registradores|registrador~50_combout\ ) + ( GND ) + ( \port_map_ual|portMap_multiplexador|Add0~26\ ))
+-- \port_map_ual|portMap_multiplexador|Add0~29_sumout\ = SUM(( (!\port_map_memoriaInst|Mux4~0_combout\ & ((!\port_map_registradores|registrador~18_q\))) # (\port_map_memoriaInst|Mux4~0_combout\ & (!\port_map_registradores|registrador~26_q\)) ) + ( GND ) + ( 
+-- \port_map_ual|portMap_multiplexador|Add0~26\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111111111111100000000000000001111111100000000",
+	lut_mask => "0000000000000000111111111111111100000000000000001111101001010000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datad => \port_map_registradores|ALT_INV_registrador~50_combout\,
+	dataa => \port_map_memoriaInst|ALT_INV_Mux4~0_combout\,
+	datac => \port_map_registradores|ALT_INV_registrador~26_q\,
+	datad => \port_map_registradores|ALT_INV_registrador~18_q\,
 	cin => \port_map_ual|portMap_multiplexador|Add0~26\,
 	sumout => \port_map_ual|portMap_multiplexador|Add0~29_sumout\);
 
 \port_map_ual|portMap_multiplexador|Add1~25\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \port_map_ual|portMap_multiplexador|Add1~25_sumout\ = SUM(( \port_map_registradores|registrador~49_combout\ ) + ( (\port_map_ual|portMap_multiplexador|Add0~29_sumout\ & ((!\port_map_controle|Mux7~0_combout\ & 
--- (\port_map_registradores|registrador~51_combout\)) # (\port_map_controle|Mux7~0_combout\ & ((\port_map_memoriaInst|Mux7~3_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add1~22\ ))
+-- (\port_map_registradores|registrador~51_combout\)) # (\port_map_controle|Mux7~0_combout\ & ((!\port_map_memoriaInst|Mux6~2_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add1~22\ ))
 -- \port_map_ual|portMap_multiplexador|Add1~26\ = CARRY(( \port_map_registradores|registrador~49_combout\ ) + ( (\port_map_ual|portMap_multiplexador|Add0~29_sumout\ & ((!\port_map_controle|Mux7~0_combout\ & (\port_map_registradores|registrador~51_combout\)) 
--- # (\port_map_controle|Mux7~0_combout\ & ((\port_map_memoriaInst|Mux7~3_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add1~22\ ))
+-- # (\port_map_controle|Mux7~0_combout\ & ((!\port_map_memoriaInst|Mux6~2_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add1~22\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111011101111101000000000000000000000000011111111",
+	lut_mask => "0000000000000000111011101010111100000000000000000000000011111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_ual|portMap_multiplexador|ALT_INV_Add0~29_sumout\,
 	datab => \port_map_registradores|ALT_INV_registrador~51_combout\,
-	datac => \port_map_memoriaInst|ALT_INV_Mux7~3_combout\,
+	datac => \port_map_memoriaInst|ALT_INV_Mux6~2_combout\,
 	datad => \port_map_registradores|ALT_INV_registrador~49_combout\,
 	dataf => \port_map_controle|ALT_INV_Mux7~0_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add1~22\,
@@ -6992,20 +6920,20 @@ PORT MAP (
 \port_map_ual|portMap_multiplexador|Add2~25\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \port_map_ual|portMap_multiplexador|Add2~25_sumout\ = SUM(( !\port_map_registradores|registrador~49_combout\ ) + ( (\port_map_ual|portMap_multiplexador|Add0~29_sumout\ & ((!\port_map_controle|Mux7~0_combout\ & 
--- (\port_map_registradores|registrador~51_combout\)) # (\port_map_controle|Mux7~0_combout\ & ((\port_map_memoriaInst|Mux7~3_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add2~22\ ))
+-- (\port_map_registradores|registrador~51_combout\)) # (\port_map_controle|Mux7~0_combout\ & ((!\port_map_memoriaInst|Mux6~2_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add2~22\ ))
 -- \port_map_ual|portMap_multiplexador|Add2~26\ = CARRY(( !\port_map_registradores|registrador~49_combout\ ) + ( (\port_map_ual|portMap_multiplexador|Add0~29_sumout\ & ((!\port_map_controle|Mux7~0_combout\ & (\port_map_registradores|registrador~51_combout\)) 
--- # (\port_map_controle|Mux7~0_combout\ & ((\port_map_memoriaInst|Mux7~3_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add2~22\ ))
+-- # (\port_map_controle|Mux7~0_combout\ & ((!\port_map_memoriaInst|Mux6~2_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add2~22\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111111101100000000000000000001111111100000000",
+	lut_mask => "0000000000000000111111111000110100000000000000001111111100000000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_controle|ALT_INV_Mux7~0_combout\,
 	datab => \port_map_registradores|ALT_INV_registrador~51_combout\,
-	datac => \port_map_memoriaInst|ALT_INV_Mux7~3_combout\,
+	datac => \port_map_memoriaInst|ALT_INV_Mux6~2_combout\,
 	datad => \port_map_registradores|ALT_INV_registrador~49_combout\,
 	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_Add0~29_sumout\,
 	cin => \port_map_ual|portMap_multiplexador|Add2~22\,
@@ -7032,50 +6960,50 @@ PORT MAP (
 
 \port_map_ual|portMap_multiplexador|Add3~21\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add3~21_sumout\ = SUM(( \port_map_registradores|registrador~48_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~15_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~25_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ 
--- & ((\port_map_ual|portMap_multiplexador|produto~15_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add3~18\ ))
--- \port_map_ual|portMap_multiplexador|Add3~22\ = CARRY(( \port_map_registradores|registrador~48_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~15_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~25_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ 
--- & ((\port_map_ual|portMap_multiplexador|produto~15_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add3~18\ ))
+-- \port_map_ual|portMap_multiplexador|Add3~21_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~15_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ 
+-- & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~25_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((\port_map_ual|portMap_multiplexador|produto~15_combout\))))) 
+-- ) + ( \port_map_registradores|registrador~48_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add3~18\ ))
+-- \port_map_ual|portMap_multiplexador|Add3~22\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~15_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & 
+-- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~25_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((\port_map_ual|portMap_multiplexador|produto~15_combout\))))) ) 
+-- + ( \port_map_registradores|registrador~48_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add3~18\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111110110100000000000000000000000000000011111111",
+	lut_mask => "0000000000000000111111110000000000000000000000000000010010111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[0]~0_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[1]~1_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add1~25_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~48_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~15_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~15_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~48_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add3~18\,
 	sumout => \port_map_ual|portMap_multiplexador|Add3~21_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add3~22\);
 
 \port_map_ual|portMap_multiplexador|Add4~21\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add4~21_sumout\ = SUM(( !\port_map_registradores|registrador~48_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~15_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~25_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ 
--- & ((\port_map_ual|portMap_multiplexador|produto~15_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add4~18\ ))
--- \port_map_ual|portMap_multiplexador|Add4~22\ = CARRY(( !\port_map_registradores|registrador~48_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~15_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~25_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ 
--- & ((\port_map_ual|portMap_multiplexador|produto~15_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add4~18\ ))
+-- \port_map_ual|portMap_multiplexador|Add4~21_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~15_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ 
+-- & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~25_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((\port_map_ual|portMap_multiplexador|produto~15_combout\))))) 
+-- ) + ( !\port_map_registradores|registrador~48_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add4~18\ ))
+-- \port_map_ual|portMap_multiplexador|Add4~22\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~15_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & 
+-- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~25_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((\port_map_ual|portMap_multiplexador|produto~15_combout\))))) ) 
+-- + ( !\port_map_registradores|registrador~48_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add4~18\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111110110100000000000000000000001111111100000000",
+	lut_mask => "0000000000000000000000001111111100000000000000000000010010111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[0]~0_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[1]~1_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add1~25_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~48_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~15_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~15_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~48_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add4~18\,
 	sumout => \port_map_ual|portMap_multiplexador|Add4~21_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add4~22\);
@@ -7103,50 +7031,50 @@ PORT MAP (
 
 \port_map_ual|portMap_multiplexador|Add5~17\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add5~17_sumout\ = SUM(( \port_map_registradores|registrador~47_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~16_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~21_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ 
--- & ((\port_map_ual|portMap_multiplexador|produto~16_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add5~14\ ))
--- \port_map_ual|portMap_multiplexador|Add5~18\ = CARRY(( \port_map_registradores|registrador~47_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~16_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~21_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ 
--- & ((\port_map_ual|portMap_multiplexador|produto~16_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add5~14\ ))
+-- \port_map_ual|portMap_multiplexador|Add5~17_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~16_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ 
+-- & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~21_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~16_combout\))))) 
+-- ) + ( \port_map_registradores|registrador~47_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add5~14\ ))
+-- \port_map_ual|portMap_multiplexador|Add5~18\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~16_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & 
+-- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~21_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~16_combout\))))) ) 
+-- + ( \port_map_registradores|registrador~47_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add5~14\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111110110100000000000000000000000000000011111111",
+	lut_mask => "0000000000000000111111110000000000000000000000000000010010111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[1]~1_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[2]~2_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add3~21_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~47_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~16_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~16_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~47_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add5~14\,
 	sumout => \port_map_ual|portMap_multiplexador|Add5~17_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add5~18\);
 
 \port_map_ual|portMap_multiplexador|Add6~17\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add6~17_sumout\ = SUM(( !\port_map_registradores|registrador~47_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~16_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~21_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ 
--- & ((\port_map_ual|portMap_multiplexador|produto~16_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add6~14\ ))
--- \port_map_ual|portMap_multiplexador|Add6~18\ = CARRY(( !\port_map_registradores|registrador~47_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~16_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~21_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ 
--- & ((\port_map_ual|portMap_multiplexador|produto~16_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add6~14\ ))
+-- \port_map_ual|portMap_multiplexador|Add6~17_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~16_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ 
+-- & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~21_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~16_combout\))))) 
+-- ) + ( !\port_map_registradores|registrador~47_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add6~14\ ))
+-- \port_map_ual|portMap_multiplexador|Add6~18\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~16_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & 
+-- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~21_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~16_combout\))))) ) 
+-- + ( !\port_map_registradores|registrador~47_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add6~14\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111110110100000000000000000000001111111100000000",
+	lut_mask => "0000000000000000000000001111111100000000000000000000010010111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[1]~1_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[2]~2_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add3~21_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~47_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~16_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~16_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~47_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add6~14\,
 	sumout => \port_map_ual|portMap_multiplexador|Add6~17_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add6~18\);
@@ -7174,50 +7102,50 @@ PORT MAP (
 
 \port_map_ual|portMap_multiplexador|Add7~13\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add7~13_sumout\ = SUM(( \port_map_registradores|registrador~46_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~17_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~17_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~17_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add7~10\ ))
--- \port_map_ual|portMap_multiplexador|Add7~14\ = CARRY(( \port_map_registradores|registrador~46_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~17_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~17_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~17_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add7~10\ ))
+-- \port_map_ual|portMap_multiplexador|Add7~13_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~17_combout\))) 
+-- # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~17_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (((\port_map_ual|portMap_multiplexador|produto~17_combout\)))) 
+-- ) + ( \port_map_registradores|registrador~46_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add7~10\ ))
+-- \port_map_ual|portMap_multiplexador|Add7~14\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~17_combout\))) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~17_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (((\port_map_ual|portMap_multiplexador|produto~17_combout\)))) ) 
+-- + ( \port_map_registradores|registrador~46_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add7~10\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000000000000011111111",
+	lut_mask => "0000000000000000111111110000000000000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[3]~3_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[2]~2_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add5~17_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~46_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~17_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~17_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~46_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add7~10\,
 	sumout => \port_map_ual|portMap_multiplexador|Add7~13_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add7~14\);
 
 \port_map_ual|portMap_multiplexador|Add8~13\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add8~13_sumout\ = SUM(( !\port_map_registradores|registrador~46_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~17_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~17_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~17_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add8~10\ ))
--- \port_map_ual|portMap_multiplexador|Add8~14\ = CARRY(( !\port_map_registradores|registrador~46_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~17_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~17_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~17_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add8~10\ ))
+-- \port_map_ual|portMap_multiplexador|Add8~13_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~17_combout\))) 
+-- # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~17_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (((\port_map_ual|portMap_multiplexador|produto~17_combout\)))) 
+-- ) + ( !\port_map_registradores|registrador~46_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add8~10\ ))
+-- \port_map_ual|portMap_multiplexador|Add8~14\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~17_combout\))) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~17_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (((\port_map_ual|portMap_multiplexador|produto~17_combout\)))) ) 
+-- + ( !\port_map_registradores|registrador~46_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add8~10\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000001111111100000000",
+	lut_mask => "0000000000000000000000001111111100000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[3]~3_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[2]~2_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add5~17_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~46_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~17_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~17_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~46_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add8~10\,
 	sumout => \port_map_ual|portMap_multiplexador|Add8~13_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add8~14\);
@@ -7245,50 +7173,50 @@ PORT MAP (
 
 \port_map_ual|portMap_multiplexador|Add9~9\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add9~9_sumout\ = SUM(( \port_map_registradores|registrador~45_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~18_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|Add7~13_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~18_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add9~6\ ))
--- \port_map_ual|portMap_multiplexador|Add9~10\ = CARRY(( \port_map_registradores|registrador~45_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~18_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|Add7~13_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~18_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add9~6\ ))
+-- \port_map_ual|portMap_multiplexador|Add9~9_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((\port_map_ual|portMap_multiplexador|produto~18_combout\))) 
+-- # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|Add7~13_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (((\port_map_ual|portMap_multiplexador|produto~18_combout\)))) 
+-- ) + ( \port_map_registradores|registrador~45_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add9~6\ ))
+-- \port_map_ual|portMap_multiplexador|Add9~10\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((\port_map_ual|portMap_multiplexador|produto~18_combout\))) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|Add7~13_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (((\port_map_ual|portMap_multiplexador|produto~18_combout\)))) ) 
+-- + ( \port_map_registradores|registrador~45_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add9~6\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000000000000011111111",
+	lut_mask => "0000000000000000111111110000000000000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[4]~4_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[3]~3_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add7~13_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~45_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~18_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~18_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~45_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add9~6\,
 	sumout => \port_map_ual|portMap_multiplexador|Add9~9_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add9~10\);
 
 \port_map_ual|portMap_multiplexador|Add10~9\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add10~9_sumout\ = SUM(( !\port_map_registradores|registrador~45_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~18_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|Add7~13_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~18_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add10~6\ ))
--- \port_map_ual|portMap_multiplexador|Add10~10\ = CARRY(( !\port_map_registradores|registrador~45_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~18_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|Add7~13_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~18_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add10~6\ ))
+-- \port_map_ual|portMap_multiplexador|Add10~9_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((\port_map_ual|portMap_multiplexador|produto~18_combout\))) 
+-- # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|Add7~13_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (((\port_map_ual|portMap_multiplexador|produto~18_combout\)))) 
+-- ) + ( !\port_map_registradores|registrador~45_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add10~6\ ))
+-- \port_map_ual|portMap_multiplexador|Add10~10\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((\port_map_ual|portMap_multiplexador|produto~18_combout\))) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|Add7~13_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (((\port_map_ual|portMap_multiplexador|produto~18_combout\)))) ) 
+-- + ( !\port_map_registradores|registrador~45_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add10~6\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000001111111100000000",
+	lut_mask => "0000000000000000000000001111111100000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[4]~4_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[3]~3_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add7~13_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~45_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~18_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~18_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~45_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add10~6\,
 	sumout => \port_map_ual|portMap_multiplexador|Add10~9_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add10~10\);
@@ -7316,40 +7244,40 @@ PORT MAP (
 
 \port_map_ual|portMap_multiplexador|Add12~5\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add12~5_sumout\ = SUM(( !\port_map_registradores|registrador~44_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~19_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (\port_map_ual|portMap_multiplexador|Add9~9_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~19_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add12~2\ ))
--- \port_map_ual|portMap_multiplexador|Add12~6\ = CARRY(( !\port_map_registradores|registrador~44_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~19_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (\port_map_ual|portMap_multiplexador|Add9~9_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~19_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add12~2\ ))
+-- \port_map_ual|portMap_multiplexador|Add12~5_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((\port_map_ual|portMap_multiplexador|produto~19_combout\))) 
+-- # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (\port_map_ual|portMap_multiplexador|Add9~9_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (((\port_map_ual|portMap_multiplexador|produto~19_combout\)))) 
+-- ) + ( !\port_map_registradores|registrador~44_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add12~2\ ))
+-- \port_map_ual|portMap_multiplexador|Add12~6\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((\port_map_ual|portMap_multiplexador|produto~19_combout\))) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (\port_map_ual|portMap_multiplexador|Add9~9_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (((\port_map_ual|portMap_multiplexador|produto~19_combout\)))) ) 
+-- + ( !\port_map_registradores|registrador~44_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add12~2\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000001111111100000000",
+	lut_mask => "0000000000000000000000001111111100000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[5]~5_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[4]~4_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add9~9_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~44_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~19_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~19_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~44_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add12~2\,
 	sumout => \port_map_ual|portMap_multiplexador|Add12~5_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add12~6\);
 
 \port_map_ual|portMap_multiplexador|produto~20\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|produto~20_combout\ = ( \port_map_ual|portMap_multiplexador|Add12~5_sumout\ & ( ((!\port_map_ual|portMap_multiplexador|process_0~6_combout\ & ((\port_map_ual|portMap_multiplexador|produto~19_combout\))) # 
--- (\port_map_ual|portMap_multiplexador|process_0~6_combout\ & (\port_map_ual|portMap_multiplexador|Add9~9_sumout\))) # (\port_map_ual|portMap_multiplexador|process_0~9_combout\) ) ) # ( !\port_map_ual|portMap_multiplexador|Add12~5_sumout\ & ( 
--- (!\port_map_ual|portMap_multiplexador|process_0~9_combout\ & ((!\port_map_ual|portMap_multiplexador|process_0~6_combout\ & ((\port_map_ual|portMap_multiplexador|produto~19_combout\))) # (\port_map_ual|portMap_multiplexador|process_0~6_combout\ & 
--- (\port_map_ual|portMap_multiplexador|Add9~9_sumout\)))) ) )
+-- \port_map_ual|portMap_multiplexador|produto~20_combout\ = ( \port_map_ual|portMap_multiplexador|Add12~5_sumout\ & ( ((!\port_map_ual|portMap_multiplexador|process_0~6_combout\ & (\port_map_ual|portMap_multiplexador|Add9~9_sumout\)) # 
+-- (\port_map_ual|portMap_multiplexador|process_0~6_combout\ & ((\port_map_ual|portMap_multiplexador|produto~19_combout\)))) # (\port_map_ual|portMap_multiplexador|process_0~9_combout\) ) ) # ( !\port_map_ual|portMap_multiplexador|Add12~5_sumout\ & ( 
+-- (!\port_map_ual|portMap_multiplexador|process_0~9_combout\ & ((!\port_map_ual|portMap_multiplexador|process_0~6_combout\ & (\port_map_ual|portMap_multiplexador|Add9~9_sumout\)) # (\port_map_ual|portMap_multiplexador|process_0~6_combout\ & 
+-- ((\port_map_ual|portMap_multiplexador|produto~19_combout\))))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000010010001100001101111011111100000100100011000011011110111111",
+	lut_mask => "0000100001001100001110110111111100001000010011000011101101111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -7362,25 +7290,25 @@ PORT MAP (
 
 \port_map_ual|portMap_multiplexador|Add11~5\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add11~5_sumout\ = SUM(( \port_map_registradores|registrador~44_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~19_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (\port_map_ual|portMap_multiplexador|Add9~9_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~19_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add11~2\ ))
--- \port_map_ual|portMap_multiplexador|Add11~6\ = CARRY(( \port_map_registradores|registrador~44_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~19_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (\port_map_ual|portMap_multiplexador|Add9~9_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~19_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add11~2\ ))
+-- \port_map_ual|portMap_multiplexador|Add11~5_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((\port_map_ual|portMap_multiplexador|produto~19_combout\))) 
+-- # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (\port_map_ual|portMap_multiplexador|Add9~9_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (((\port_map_ual|portMap_multiplexador|produto~19_combout\)))) 
+-- ) + ( \port_map_registradores|registrador~44_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add11~2\ ))
+-- \port_map_ual|portMap_multiplexador|Add11~6\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((\port_map_ual|portMap_multiplexador|produto~19_combout\))) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (\port_map_ual|portMap_multiplexador|Add9~9_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (((\port_map_ual|portMap_multiplexador|produto~19_combout\)))) ) 
+-- + ( \port_map_registradores|registrador~44_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add11~2\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000000000000011111111",
+	lut_mask => "0000000000000000111111110000000000000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[5]~5_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[4]~4_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add9~9_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~44_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~19_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~19_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~44_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add11~2\,
 	sumout => \port_map_ual|portMap_multiplexador|Add11~5_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add11~6\);
@@ -7401,32 +7329,32 @@ PORT MAP (
 
 \port_map_ual|portMap_multiplexador|Add14~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add14~1_sumout\ = SUM(( !\port_map_registradores|registrador~43_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (\port_map_ual|portMap_multiplexador|produto~20_combout\)) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((\port_map_ual|portMap_multiplexador|Add11~5_sumout\))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & (\port_map_ual|portMap_multiplexador|produto~20_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add14~6_cout\ ))
--- \port_map_ual|portMap_multiplexador|Add14~2\ = CARRY(( !\port_map_registradores|registrador~43_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (\port_map_ual|portMap_multiplexador|produto~20_combout\)) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((\port_map_ual|portMap_multiplexador|Add11~5_sumout\))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & (\port_map_ual|portMap_multiplexador|produto~20_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add14~6_cout\ ))
+-- \port_map_ual|portMap_multiplexador|Add14~1_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (\port_map_ual|portMap_multiplexador|produto~20_combout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
+-- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((\port_map_ual|portMap_multiplexador|Add11~5_sumout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & (\port_map_ual|portMap_multiplexador|produto~20_combout\)))) ) 
+-- + ( !\port_map_registradores|registrador~43_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add14~6_cout\ ))
+-- \port_map_ual|portMap_multiplexador|Add14~2\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (\port_map_ual|portMap_multiplexador|produto~20_combout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
+-- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((\port_map_ual|portMap_multiplexador|Add11~5_sumout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & (\port_map_ual|portMap_multiplexador|produto~20_combout\)))) ) 
+-- + ( !\port_map_registradores|registrador~43_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add14~6_cout\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000110110001100110000000000000000001111111100000000",
+	lut_mask => "0000000000000000000000001111111100000000000000000010011100110011",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[5]~5_combout\,
 	datab => \port_map_ual|portMap_multiplexador|ALT_INV_produto~20_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add11~5_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~43_combout\,
-	dataf => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[6]~6_combout\,
+	datad => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[6]~6_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~43_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add14~6_cout\,
 	sumout => \port_map_ual|portMap_multiplexador|Add14~1_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add14~2\);
 
-\port_map_ual|portMap_multiplexador|portOUT[7]~4\ : cyclonev_lcell_comb
+\port_map_ual|portMap_multiplexador|portOUT[7]~7\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|portOUT[7]~4_combout\ = (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[7]~7_combout\ & \port_map_ual|portMap_multiplexador|Add14~1_sumout\))
+-- \port_map_ual|portMap_multiplexador|portOUT[7]~7_combout\ = (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[7]~7_combout\ & \port_map_ual|portMap_multiplexador|Add14~1_sumout\))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -7438,53 +7366,36 @@ PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[6]~6_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[7]~7_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add14~1_sumout\,
-	combout => \port_map_ual|portMap_multiplexador|portOUT[7]~4_combout\);
-
-\port_map_ual|Mux1~0\ : cyclonev_lcell_comb
--- Equation(s):
--- \port_map_ual|Mux1~0_combout\ = (!\port_map_memoriaInst|Mux1~1_combout\ & (!\port_map_memoriaInst|Mux0~0_combout\ & (\port_map_controle|Mux4~0_combout\ & !\port_map_controle|Mux5~0_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000100000000000000010000000000000001000000000000000100000000000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \port_map_memoriaInst|ALT_INV_Mux1~1_combout\,
-	datab => \port_map_memoriaInst|ALT_INV_Mux0~0_combout\,
-	datac => \port_map_controle|ALT_INV_Mux4~0_combout\,
-	datad => \port_map_controle|ALT_INV_Mux5~0_combout\,
-	combout => \port_map_ual|Mux1~0_combout\);
+	combout => \port_map_ual|portMap_multiplexador|portOUT[7]~7_combout\);
 
 \port_map_ual|portMap_multiplexador|Add13~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add13~1_sumout\ = SUM(( \port_map_registradores|registrador~43_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
--- (\port_map_ual|portMap_multiplexador|produto~20_combout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((\port_map_ual|portMap_multiplexador|Add11~5_sumout\))))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~20_combout\)))) ) + ( !VCC ))
--- \port_map_ual|portMap_multiplexador|Add13~2\ = CARRY(( \port_map_registradores|registrador~43_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
--- (\port_map_ual|portMap_multiplexador|produto~20_combout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((\port_map_ual|portMap_multiplexador|Add11~5_sumout\))))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~20_combout\)))) ) + ( !VCC ))
+-- \port_map_ual|portMap_multiplexador|Add13~1_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (\port_map_ual|portMap_multiplexador|produto~20_combout\)) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((\port_map_ual|portMap_multiplexador|Add11~5_sumout\))))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & (((\port_map_ual|portMap_multiplexador|produto~20_combout\)))) 
+-- ) + ( \port_map_registradores|registrador~43_combout\ ) + ( !VCC ))
+-- \port_map_ual|portMap_multiplexador|Add13~2\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (\port_map_ual|portMap_multiplexador|produto~20_combout\)) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((\port_map_ual|portMap_multiplexador|Add11~5_sumout\))))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & (((\port_map_ual|portMap_multiplexador|produto~20_combout\)))) 
+-- ) + ( \port_map_registradores|registrador~43_combout\ ) + ( !VCC ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111100101101000000000000000000000000000011111111",
+	lut_mask => "0000000000000000111111110000000000000000000000000000110100101111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[6]~6_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[5]~5_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_produto~20_combout\,
-	datad => \port_map_registradores|ALT_INV_registrador~43_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_Add11~5_sumout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_Add11~5_sumout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~43_combout\,
 	cin => GND,
 	sumout => \port_map_ual|portMap_multiplexador|Add13~1_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add13~2\);
 
-\port_map_ual|portMap_multiplexador|portOUT[7]~5\ : cyclonev_lcell_comb
+\port_map_ual|portMap_multiplexador|portOUT[7]~8\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|portOUT[7]~5_combout\ = ( \port_map_ual|portMap_multiplexador|Add11~5_sumout\ & ( \port_map_ual|portMap_multiplexador|Add13~1_sumout\ & ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & 
+-- \port_map_ual|portMap_multiplexador|portOUT[7]~8_combout\ = ( \port_map_ual|portMap_multiplexador|Add11~5_sumout\ & ( \port_map_ual|portMap_multiplexador|Add13~1_sumout\ & ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & 
 -- (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[7]~7_combout\ & ((\port_map_ual|portMap_multiplexador|produto~20_combout\) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\)))) # 
 -- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & (((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[7]~7_combout\) # (\port_map_ual|portMap_multiplexador|produto~20_combout\)))) ) ) ) # ( 
 -- !\port_map_ual|portMap_multiplexador|Add11~5_sumout\ & ( \port_map_ual|portMap_multiplexador|Add13~1_sumout\ & ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
@@ -7509,47 +7420,51 @@ PORT MAP (
 	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~20_combout\,
 	datae => \port_map_ual|portMap_multiplexador|ALT_INV_Add11~5_sumout\,
 	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_Add13~1_sumout\,
-	combout => \port_map_ual|portMap_multiplexador|portOUT[7]~5_combout\);
+	combout => \port_map_ual|portMap_multiplexador|portOUT[7]~8_combout\);
 
 \port_map_ual|portMap_adicionador|Add0~29\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_adicionador|Add0~29_sumout\ = SUM(( \port_map_registradores|registrador~50_combout\ ) + ( (!\port_map_controle|Mux7~0_combout\ & \port_map_registradores|registrador~58_combout\) ) + ( \port_map_ual|portMap_adicionador|Add0~26\ ))
+-- \port_map_ual|portMap_adicionador|Add0~29_sumout\ = SUM(( \port_map_registradores|registrador~50_combout\ ) + ( (!\port_map_controle|Mux7~0_combout\ & ((\port_map_registradores|registrador~70_combout\) # (\port_map_registradores|registrador~71_combout\))) 
+-- ) + ( \port_map_ual|portMap_adicionador|Add0~26\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111110101010100000000000000000000000011111111",
+	lut_mask => "0000000000000000111101010101010100000000000000000000000011111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_controle|ALT_INV_Mux7~0_combout\,
+	datac => \port_map_registradores|ALT_INV_registrador~71_combout\,
 	datad => \port_map_registradores|ALT_INV_registrador~50_combout\,
-	dataf => \port_map_registradores|ALT_INV_registrador~58_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~70_combout\,
 	cin => \port_map_ual|portMap_adicionador|Add0~26\,
 	sumout => \port_map_ual|portMap_adicionador|Add0~29_sumout\);
 
 \port_map_ual|portMap_subtrair|Add0~29\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_subtrair|Add0~29_sumout\ = SUM(( \port_map_registradores|registrador~50_combout\ ) + ( (!\port_map_registradores|registrador~58_combout\) # (\port_map_controle|Mux7~0_combout\) ) + ( \port_map_ual|portMap_subtrair|Add0~26\ ))
+-- \port_map_ual|portMap_subtrair|Add0~29_sumout\ = SUM(( \port_map_registradores|registrador~50_combout\ ) + ( ((!\port_map_registradores|registrador~71_combout\ & !\port_map_registradores|registrador~70_combout\)) # (\port_map_controle|Mux7~0_combout\) ) + 
+-- ( \port_map_ual|portMap_subtrair|Add0~26\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000000000001010101000000000000000000000000011111111",
+	lut_mask => "0000000000000000001000101010101000000000000000000000000011111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_controle|ALT_INV_Mux7~0_combout\,
+	datab => \port_map_registradores|ALT_INV_registrador~71_combout\,
 	datad => \port_map_registradores|ALT_INV_registrador~50_combout\,
-	dataf => \port_map_registradores|ALT_INV_registrador~58_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~70_combout\,
 	cin => \port_map_ual|portMap_subtrair|Add0~26\,
 	sumout => \port_map_ual|portMap_subtrair|Add0~29_sumout\);
 
 \port_map_ual|Mux3~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|Mux3~0_combout\ = ( \port_map_ual|portMap_subtrair|Add0~29_sumout\ & ( (!\port_map_memoriaInst|Mux1~1_combout\ & (((\port_map_ual|portMap_adicionador|Add0~29_sumout\)) # (\port_map_controle|Mux5~0_combout\))) # 
--- (\port_map_memoriaInst|Mux1~1_combout\ & ((!\port_map_controle|Mux5~0_combout\) # ((\port_map_multiplexador_2X1_8bits_br_ula|portOUT[7]~7_combout\)))) ) ) # ( !\port_map_ual|portMap_subtrair|Add0~29_sumout\ & ( (!\port_map_memoriaInst|Mux1~1_combout\ & 
--- (!\port_map_controle|Mux5~0_combout\ & ((\port_map_ual|portMap_adicionador|Add0~29_sumout\)))) # (\port_map_memoriaInst|Mux1~1_combout\ & (\port_map_controle|Mux5~0_combout\ & (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[7]~7_combout\))) ) )
+-- \port_map_ual|Mux3~0_combout\ = ( \port_map_ual|portMap_subtrair|Add0~29_sumout\ & ( (!\port_map_memoriaInst|Mux1~0_combout\ & (((\port_map_ual|portMap_adicionador|Add0~29_sumout\)) # (\port_map_controle|Mux5~0_combout\))) # 
+-- (\port_map_memoriaInst|Mux1~0_combout\ & ((!\port_map_controle|Mux5~0_combout\) # ((\port_map_multiplexador_2X1_8bits_br_ula|portOUT[7]~7_combout\)))) ) ) # ( !\port_map_ual|portMap_subtrair|Add0~29_sumout\ & ( (!\port_map_memoriaInst|Mux1~0_combout\ & 
+-- (!\port_map_controle|Mux5~0_combout\ & ((\port_map_ual|portMap_adicionador|Add0~29_sumout\)))) # (\port_map_memoriaInst|Mux1~0_combout\ & (\port_map_controle|Mux5~0_combout\ & (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[7]~7_combout\))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -7558,7 +7473,7 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_memoriaInst|ALT_INV_Mux1~1_combout\,
+	dataa => \port_map_memoriaInst|ALT_INV_Mux1~0_combout\,
 	datab => \port_map_controle|ALT_INV_Mux5~0_combout\,
 	datac => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[7]~7_combout\,
 	datad => \port_map_ual|portMap_adicionador|ALT_INV_Add0~29_sumout\,
@@ -7567,40 +7482,40 @@ PORT MAP (
 
 \port_map_ual|Mux3~2\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|Mux3~2_combout\ = ( !\port_map_memoriaInst|Mux1~1_combout\ & ( (!\port_map_memoriaInst|Mux0~0_combout\ & ((!\port_map_controle|Mux4~0_combout\ & (((\port_map_ual|Mux3~0_combout\)))) # (\port_map_controle|Mux4~0_combout\ & 
--- (\port_map_ual|portMap_adicionador|Add0~29_sumout\ & ((\port_map_controle|Mux5~0_combout\)))))) ) ) # ( \port_map_memoriaInst|Mux1~1_combout\ & ( ((!\port_map_memoriaInst|Mux0~0_combout\ & ((!\port_map_controle|Mux4~0_combout\ & 
--- (\port_map_ual|Mux3~0_combout\)) # (\port_map_controle|Mux4~0_combout\ & ((\port_map_registradores|registrador~50_combout\)))))) ) )
+-- \port_map_ual|Mux3~2_combout\ = ( !\port_map_memoriaInst|Mux1~0_combout\ & ( (!\port_map_memoriaInst|Mux0~1_combout\ & ((!\port_map_memoriaInst|Mux2~0_combout\ & (((\port_map_ual|Mux3~0_combout\)))) # (\port_map_memoriaInst|Mux2~0_combout\ & 
+-- (\port_map_memoriaInst|Mux3~0_combout\ & (\port_map_ual|portMap_adicionador|Add0~29_sumout\))))) ) ) # ( \port_map_memoriaInst|Mux1~0_combout\ & ( ((!\port_map_memoriaInst|Mux0~1_combout\ & ((!\port_map_memoriaInst|Mux2~0_combout\ & 
+-- ((\port_map_ual|Mux3~0_combout\))) # (\port_map_memoriaInst|Mux2~0_combout\ & (\port_map_registradores|registrador~50_combout\))))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "on",
-	lut_mask => "0011001100000101001100110000111100000000000000000000000000000000",
+	lut_mask => "0000000111001101000000111100111100000000000000000000000000000000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_ual|portMap_adicionador|ALT_INV_Add0~29_sumout\,
-	datab => \port_map_ual|ALT_INV_Mux3~0_combout\,
+	dataa => \port_map_memoriaInst|ALT_INV_Mux3~0_combout\,
+	datab => \port_map_memoriaInst|ALT_INV_Mux2~0_combout\,
 	datac => \port_map_registradores|ALT_INV_registrador~50_combout\,
-	datad => \port_map_controle|ALT_INV_Mux4~0_combout\,
-	datae => \port_map_memoriaInst|ALT_INV_Mux1~1_combout\,
-	dataf => \port_map_memoriaInst|ALT_INV_Mux0~0_combout\,
-	datag => \port_map_controle|ALT_INV_Mux5~0_combout\,
+	datad => \port_map_ual|ALT_INV_Mux3~0_combout\,
+	datae => \port_map_memoriaInst|ALT_INV_Mux1~0_combout\,
+	dataf => \port_map_memoriaInst|ALT_INV_Mux0~1_combout\,
+	datag => \port_map_ual|portMap_adicionador|ALT_INV_Add0~29_sumout\,
 	combout => \port_map_ual|Mux3~2_combout\);
 
 \port_map_ual|Mux3~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|Mux3~1_combout\ = ((\port_map_ual|Mux1~0_combout\ & ((\port_map_ual|portMap_multiplexador|portOUT[7]~5_combout\) # (\port_map_ual|portMap_multiplexador|portOUT[7]~4_combout\)))) # (\port_map_ual|Mux3~2_combout\)
+-- \port_map_ual|Mux3~1_combout\ = ((\port_map_ual|Mux1~0_combout\ & ((\port_map_ual|portMap_multiplexador|portOUT[7]~8_combout\) # (\port_map_ual|portMap_multiplexador|portOUT[7]~7_combout\)))) # (\port_map_ual|Mux3~2_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0001001111111111000100111111111100010011111111110001001111111111",
+	lut_mask => "0001010111111111000101011111111100010101111111110001010111111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_ual|portMap_multiplexador|ALT_INV_portOUT[7]~4_combout\,
-	datab => \port_map_ual|ALT_INV_Mux1~0_combout\,
-	datac => \port_map_ual|portMap_multiplexador|ALT_INV_portOUT[7]~5_combout\,
+	dataa => \port_map_ual|ALT_INV_Mux1~0_combout\,
+	datab => \port_map_ual|portMap_multiplexador|ALT_INV_portOUT[7]~7_combout\,
+	datac => \port_map_ual|portMap_multiplexador|ALT_INV_portOUT[7]~8_combout\,
 	datad => \port_map_ual|ALT_INV_Mux3~2_combout\,
 	combout => \port_map_ual|Mux3~1_combout\);
 
@@ -7657,24 +7572,24 @@ PORT MAP (
 -- Equation(s):
 -- \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[7]~7_combout\ = ( \port_map_controle|Mux3~0_combout\ & ( \port_map_ual|Mux3~2_combout\ & ( \port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a7~portbdataout\ ) ) ) # ( 
 -- !\port_map_controle|Mux3~0_combout\ & ( \port_map_ual|Mux3~2_combout\ ) ) # ( \port_map_controle|Mux3~0_combout\ & ( !\port_map_ual|Mux3~2_combout\ & ( \port_map_memoriaAdress|ram_rtl_0|auto_generated|ram_block1a7~portbdataout\ ) ) ) # ( 
--- !\port_map_controle|Mux3~0_combout\ & ( !\port_map_ual|Mux3~2_combout\ & ( (\port_map_ual|Mux1~0_combout\ & ((\port_map_ual|portMap_multiplexador|portOUT[7]~5_combout\) # (\port_map_ual|portMap_multiplexador|portOUT[7]~4_combout\))) ) ) )
+-- !\port_map_controle|Mux3~0_combout\ & ( !\port_map_ual|Mux3~2_combout\ & ( (\port_map_ual|Mux1~0_combout\ & ((\port_map_ual|portMap_multiplexador|portOUT[7]~8_combout\) # (\port_map_ual|portMap_multiplexador|portOUT[7]~7_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0001001100010011000000001111111111111111111111110000000011111111",
+	lut_mask => "0001010100010101000000001111111111111111111111110000000011111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_ual|portMap_multiplexador|ALT_INV_portOUT[7]~4_combout\,
-	datab => \port_map_ual|ALT_INV_Mux1~0_combout\,
-	datac => \port_map_ual|portMap_multiplexador|ALT_INV_portOUT[7]~5_combout\,
+	dataa => \port_map_ual|ALT_INV_Mux1~0_combout\,
+	datab => \port_map_ual|portMap_multiplexador|ALT_INV_portOUT[7]~7_combout\,
+	datac => \port_map_ual|portMap_multiplexador|ALT_INV_portOUT[7]~8_combout\,
 	datad => \port_map_memoriaAdress|ram_rtl_0|auto_generated|ALT_INV_ram_block1a7~portbdataout\,
 	datae => \port_map_controle|ALT_INV_Mux3~0_combout\,
 	dataf => \port_map_ual|ALT_INV_Mux3~2_combout\,
 	combout => \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[7]~7_combout\);
 
-\port_map_registradores|registrador~18\ : dffeas
+\port_map_registradores|registrador~26\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -7683,37 +7598,35 @@ GENERIC MAP (
 PORT MAP (
 	clk => \clock~input_o\,
 	d => \port_map_multiplexador_2X1_8bits_memAdress_ula|portOUT[7]~7_combout\,
-	ena => \port_map_registradores|registrador~59_combout\,
+	ena => \port_map_registradores|registrador~73_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \port_map_registradores|registrador~18_q\);
+	q => \port_map_registradores|registrador~26_q\);
 
 \port_map_registradores|registrador~50\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_registradores|registrador~50_combout\ = ( \port_map_memoriaInst|Mux5~1_combout\ & ( \port_map_memoriaInst|Mux4~1_combout\ & ( \port_map_registradores|registrador~42_q\ ) ) ) # ( !\port_map_memoriaInst|Mux5~1_combout\ & ( 
--- \port_map_memoriaInst|Mux4~1_combout\ & ( \port_map_registradores|registrador~34_q\ ) ) ) # ( \port_map_memoriaInst|Mux5~1_combout\ & ( !\port_map_memoriaInst|Mux4~1_combout\ & ( \port_map_registradores|registrador~26_q\ ) ) ) # ( 
--- !\port_map_memoriaInst|Mux5~1_combout\ & ( !\port_map_memoriaInst|Mux4~1_combout\ & ( \port_map_registradores|registrador~18_q\ ) ) )
+-- \port_map_registradores|registrador~50_combout\ = ( \port_map_registradores|registrador~18_q\ & ( (!\port_map_pc|portOUT\(2)) # (((!\port_map_memoriaInst|Mux0~0_combout\) # (\port_map_registradores|registrador~26_q\)) # (\port_map_pc|portOUT\(3))) ) ) # ( 
+-- !\port_map_registradores|registrador~18_q\ & ( (\port_map_pc|portOUT\(2) & (!\port_map_pc|portOUT\(3) & (\port_map_memoriaInst|Mux0~0_combout\ & \port_map_registradores|registrador~26_q\))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0101010101010101001100110011001100001111000011110000000011111111",
+	lut_mask => "0000000000000100111110111111111100000000000001001111101111111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_registradores|ALT_INV_registrador~18_q\,
-	datab => \port_map_registradores|ALT_INV_registrador~26_q\,
-	datac => \port_map_registradores|ALT_INV_registrador~34_q\,
-	datad => \port_map_registradores|ALT_INV_registrador~42_q\,
-	datae => \port_map_memoriaInst|ALT_INV_Mux5~1_combout\,
-	dataf => \port_map_memoriaInst|ALT_INV_Mux4~1_combout\,
+	dataa => \port_map_pc|ALT_INV_portOUT\(2),
+	datab => \port_map_pc|ALT_INV_portOUT\(3),
+	datac => \port_map_memoriaInst|ALT_INV_Mux0~0_combout\,
+	datad => \port_map_registradores|ALT_INV_registrador~26_q\,
+	datae => \port_map_registradores|ALT_INV_registrador~18_q\,
 	combout => \port_map_registradores|registrador~50_combout\);
 
 \port_map_ual|Equal0~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|Equal0~0_combout\ = (!\port_map_registradores|registrador~44_combout\ & (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (!\port_map_registradores|registrador~46_combout\ $ 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\)))) # (\port_map_registradores|registrador~44_combout\ & (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (!\port_map_registradores|registrador~46_combout\ $ 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\))))
+-- \port_map_ual|Equal0~0_combout\ = (!\port_map_registradores|registrador~43_combout\ & (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (!\port_map_registradores|registrador~45_combout\ $ 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\)))) # (\port_map_registradores|registrador~43_combout\ & (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (!\port_map_registradores|registrador~45_combout\ $ 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -7722,17 +7635,17 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_registradores|ALT_INV_registrador~44_combout\,
-	datab => \port_map_registradores|ALT_INV_registrador~46_combout\,
-	datac => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[1]~1_combout\,
-	datad => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[3]~3_combout\,
+	dataa => \port_map_registradores|ALT_INV_registrador~43_combout\,
+	datab => \port_map_registradores|ALT_INV_registrador~45_combout\,
+	datac => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[0]~0_combout\,
+	datad => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[2]~2_combout\,
 	combout => \port_map_ual|Equal0~0_combout\);
 
 \port_map_ual|Equal0~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|Equal0~1_combout\ = ( \port_map_ual|Equal0~0_combout\ & ( (!\port_map_registradores|registrador~43_combout\ & (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (!\port_map_registradores|registrador~45_combout\ $ 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\)))) # (\port_map_registradores|registrador~43_combout\ & (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (!\port_map_registradores|registrador~45_combout\ $ 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\)))) ) )
+-- \port_map_ual|Equal0~1_combout\ = ( \port_map_ual|Equal0~0_combout\ & ( (!\port_map_registradores|registrador~44_combout\ & (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (!\port_map_registradores|registrador~46_combout\ $ 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\)))) # (\port_map_registradores|registrador~44_combout\ & (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (!\port_map_registradores|registrador~46_combout\ $ 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\)))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -7741,10 +7654,10 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_registradores|ALT_INV_registrador~43_combout\,
-	datab => \port_map_registradores|ALT_INV_registrador~45_combout\,
-	datac => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[0]~0_combout\,
-	datad => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[2]~2_combout\,
+	dataa => \port_map_registradores|ALT_INV_registrador~44_combout\,
+	datab => \port_map_registradores|ALT_INV_registrador~46_combout\,
+	datac => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[1]~1_combout\,
+	datad => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[3]~3_combout\,
 	datae => \port_map_ual|ALT_INV_Equal0~0_combout\,
 	combout => \port_map_ual|Equal0~1_combout\);
 
@@ -7790,18 +7703,18 @@ PORT MAP (
 
 \port_map_ual|Mux11~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|Mux11~0_combout\ = (!\port_map_memoriaInst|Mux1~1_combout\ & (\port_map_memoriaInst|Mux0~0_combout\ & (\port_map_controle|Mux4~0_combout\ & !\port_map_controle|Mux5~0_combout\)))
+-- \port_map_ual|Mux11~0_combout\ = (\port_map_memoriaInst|Mux2~0_combout\ & (!\port_map_memoriaInst|Mux1~0_combout\ & (\port_map_memoriaInst|Mux0~1_combout\ & !\port_map_controle|Mux5~0_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000001000000000000000100000000000000010000000000000001000000000",
+	lut_mask => "0000010000000000000001000000000000000100000000000000010000000000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_memoriaInst|ALT_INV_Mux1~1_combout\,
-	datab => \port_map_memoriaInst|ALT_INV_Mux0~0_combout\,
-	datac => \port_map_controle|ALT_INV_Mux4~0_combout\,
+	dataa => \port_map_memoriaInst|ALT_INV_Mux2~0_combout\,
+	datab => \port_map_memoriaInst|ALT_INV_Mux1~0_combout\,
+	datac => \port_map_memoriaInst|ALT_INV_Mux0~1_combout\,
 	datad => \port_map_controle|ALT_INV_Mux5~0_combout\,
 	combout => \port_map_ual|Mux11~0_combout\);
 
@@ -7839,18 +7752,18 @@ PORT MAP (
 
 \port_map_ual|Mux13~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|Mux13~0_combout\ = (!\port_map_memoriaInst|Mux1~1_combout\ & (\port_map_memoriaInst|Mux0~0_combout\ & !\port_map_controle|Mux4~0_combout\))
+-- \port_map_ual|Mux13~0_combout\ = (!\port_map_memoriaInst|Mux2~0_combout\ & (!\port_map_memoriaInst|Mux1~0_combout\ & \port_map_memoriaInst|Mux0~1_combout\))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0010000000100000001000000010000000100000001000000010000000100000",
+	lut_mask => "0000100000001000000010000000100000001000000010000000100000001000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_memoriaInst|ALT_INV_Mux1~1_combout\,
-	datab => \port_map_memoriaInst|ALT_INV_Mux0~0_combout\,
-	datac => \port_map_controle|ALT_INV_Mux4~0_combout\,
+	dataa => \port_map_memoriaInst|ALT_INV_Mux2~0_combout\,
+	datab => \port_map_memoriaInst|ALT_INV_Mux1~0_combout\,
+	datac => \port_map_memoriaInst|ALT_INV_Mux0~1_combout\,
 	combout => \port_map_ual|Mux13~0_combout\);
 
 \port_map_ual|zero\ : cyclonev_lcell_comb
@@ -7870,10 +7783,10 @@ PORT MAP (
 	dataf => \port_map_ual|ALT_INV_Mux13~0_combout\,
 	combout => \port_map_ual|zero~combout\);
 
-\port_map_multiplexador_2X1_8bits_jump|portOUT[3]~0\ : cyclonev_lcell_comb
+\port_map_multiplexador_2X1_8bits_jump|portOUT[2]~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_multiplexador_2X1_8bits_jump|portOUT[3]~0_combout\ = ( \port_map_ual|zero~combout\ & ( (!\port_map_memoriaInst|Mux1~1_combout\ & (\port_map_memoriaInst|Mux0~0_combout\ & ((!\port_map_memoriaInst|Mux2~0_combout\) # 
--- (\port_map_memoriaInst|Mux3~1_combout\)))) ) ) # ( !\port_map_ual|zero~combout\ & ( (\port_map_memoriaInst|Mux3~1_combout\ & (\port_map_memoriaInst|Mux2~0_combout\ & (!\port_map_memoriaInst|Mux1~1_combout\ & \port_map_memoriaInst|Mux0~0_combout\))) ) )
+-- \port_map_multiplexador_2X1_8bits_jump|portOUT[2]~0_combout\ = ( \port_map_ual|zero~combout\ & ( (!\port_map_memoriaInst|Mux1~0_combout\ & (\port_map_memoriaInst|Mux0~1_combout\ & ((!\port_map_memoriaInst|Mux2~0_combout\) # 
+-- (\port_map_memoriaInst|Mux3~0_combout\)))) ) ) # ( !\port_map_ual|zero~combout\ & ( (\port_map_memoriaInst|Mux3~0_combout\ & (\port_map_memoriaInst|Mux2~0_combout\ & (!\port_map_memoriaInst|Mux1~0_combout\ & \port_map_memoriaInst|Mux0~1_combout\))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -7882,16 +7795,31 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_memoriaInst|ALT_INV_Mux3~1_combout\,
+	dataa => \port_map_memoriaInst|ALT_INV_Mux3~0_combout\,
 	datab => \port_map_memoriaInst|ALT_INV_Mux2~0_combout\,
-	datac => \port_map_memoriaInst|ALT_INV_Mux1~1_combout\,
-	datad => \port_map_memoriaInst|ALT_INV_Mux0~0_combout\,
+	datac => \port_map_memoriaInst|ALT_INV_Mux1~0_combout\,
+	datad => \port_map_memoriaInst|ALT_INV_Mux0~1_combout\,
 	datae => \port_map_ual|ALT_INV_zero~combout\,
-	combout => \port_map_multiplexador_2X1_8bits_jump|portOUT[3]~0_combout\);
+	combout => \port_map_multiplexador_2X1_8bits_jump|portOUT[2]~0_combout\);
 
-\port_map_multiplexador_2X1_8bits_jump|portOUT[5]~6\ : cyclonev_lcell_comb
+\port_map_addPC|Add0~29\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_multiplexador_2X1_8bits_jump|portOUT[5]~6_combout\ = (!\port_map_multiplexador_2X1_8bits_jump|portOUT[3]~0_combout\ & \port_map_addPC|Add0~21_sumout\)
+-- \port_map_addPC|Add0~29_sumout\ = SUM(( \port_map_pc|portOUT\(7) ) + ( GND ) + ( \port_map_addPC|Add0~26\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111111111111111100000000000000000000000011111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	datad => \port_map_pc|ALT_INV_portOUT\(7),
+	cin => \port_map_addPC|Add0~26\,
+	sumout => \port_map_addPC|Add0~29_sumout\);
+
+\port_map_multiplexador_2X1_8bits_jump|portOUT[7]~8\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \port_map_multiplexador_2X1_8bits_jump|portOUT[7]~8_combout\ = (!\port_map_multiplexador_2X1_8bits_jump|portOUT[2]~0_combout\ & \port_map_addPC|Add0~29_sumout\)
 
 -- pragma translate_off
 GENERIC MAP (
@@ -7900,11 +7828,11 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_multiplexador_2X1_8bits_jump|ALT_INV_portOUT[3]~0_combout\,
-	datab => \port_map_addPC|ALT_INV_Add0~21_sumout\,
-	combout => \port_map_multiplexador_2X1_8bits_jump|portOUT[5]~6_combout\);
+	dataa => \port_map_multiplexador_2X1_8bits_jump|ALT_INV_portOUT[2]~0_combout\,
+	datab => \port_map_addPC|ALT_INV_Add0~29_sumout\,
+	combout => \port_map_multiplexador_2X1_8bits_jump|portOUT[7]~8_combout\);
 
-\port_map_pc|portOUT[5]\ : dffeas
+\port_map_pc|portOUT[7]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -7912,108 +7840,41 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \clock~input_o\,
-	d => \port_map_multiplexador_2X1_8bits_jump|portOUT[5]~6_combout\,
+	d => \port_map_multiplexador_2X1_8bits_jump|portOUT[7]~8_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \port_map_pc|portOUT\(5));
+	q => \port_map_pc|portOUT\(7));
 
-\port_map_memoriaInst|Mux3~0\ : cyclonev_lcell_comb
+\port_map_memoriaInst|Mux6~2\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_memoriaInst|Mux3~0_combout\ = (!\port_map_pc|portOUT\(5) & (!\port_map_pc|portOUT\(6) & !\port_map_pc|portOUT\(7)))
+-- \port_map_memoriaInst|Mux6~2_combout\ = ((!\port_map_memoriaInst|Mux6~0_combout\) # (!\port_map_memoriaInst|Mux6~1_combout\)) # (\port_map_pc|portOUT\(7))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "1000000010000000100000001000000010000000100000001000000010000000",
+	lut_mask => "1111110111111101111111011111110111111101111111011111110111111101",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_pc|ALT_INV_portOUT\(5),
-	datab => \port_map_pc|ALT_INV_portOUT\(6),
-	datac => \port_map_pc|ALT_INV_portOUT\(7),
-	combout => \port_map_memoriaInst|Mux3~0_combout\);
-
-\port_map_memoriaInst|Mux4~1\ : cyclonev_lcell_comb
--- Equation(s):
--- \port_map_memoriaInst|Mux4~1_combout\ = (!\port_map_pc|portOUT\(3) & (\port_map_memoriaInst|Mux3~0_combout\ & !\port_map_memoriaInst|Mux4~0_combout\))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0010000000100000001000000010000000100000001000000010000000100000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \port_map_pc|ALT_INV_portOUT\(3),
-	datab => \port_map_memoriaInst|ALT_INV_Mux3~0_combout\,
-	datac => \port_map_memoriaInst|ALT_INV_Mux4~0_combout\,
-	combout => \port_map_memoriaInst|Mux4~1_combout\);
-
-\port_map_multiplexador_2X1_8bits_jump|portOUT[3]~4\ : cyclonev_lcell_comb
--- Equation(s):
--- \port_map_multiplexador_2X1_8bits_jump|portOUT[3]~4_combout\ = (!\port_map_multiplexador_2X1_8bits_jump|portOUT[3]~0_combout\ & ((\port_map_addPC|Add0~13_sumout\))) # (\port_map_multiplexador_2X1_8bits_jump|portOUT[3]~0_combout\ & 
--- (\port_map_memoriaInst|Mux4~1_combout\))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0001110100011101000111010001110100011101000111010001110100011101",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \port_map_memoriaInst|ALT_INV_Mux4~1_combout\,
-	datab => \port_map_multiplexador_2X1_8bits_jump|ALT_INV_portOUT[3]~0_combout\,
-	datac => \port_map_addPC|ALT_INV_Add0~13_sumout\,
-	combout => \port_map_multiplexador_2X1_8bits_jump|portOUT[3]~4_combout\);
-
-\port_map_pc|portOUT[3]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \clock~input_o\,
-	d => \port_map_multiplexador_2X1_8bits_jump|portOUT[3]~4_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \port_map_pc|portOUT\(3));
-
-\port_map_memoriaInst|Mux7~3\ : cyclonev_lcell_comb
--- Equation(s):
--- \port_map_memoriaInst|Mux7~3_combout\ = ( \port_map_memoriaInst|Mux7~1_combout\ & ( \port_map_memoriaInst|Mux7~2_combout\ & ( (!\port_map_pc|portOUT\(7) & (((\port_map_pc|portOUT\(3) & !\port_map_pc|portOUT\(4))) # 
--- (\port_map_memoriaInst|Mux7~0_combout\))) ) ) ) # ( !\port_map_memoriaInst|Mux7~1_combout\ & ( \port_map_memoriaInst|Mux7~2_combout\ & ( (!\port_map_pc|portOUT\(7) & \port_map_memoriaInst|Mux7~0_combout\) ) ) ) # ( \port_map_memoriaInst|Mux7~1_combout\ & 
--- ( !\port_map_memoriaInst|Mux7~2_combout\ & ( (\port_map_pc|portOUT\(3) & (!\port_map_pc|portOUT\(4) & !\port_map_pc|portOUT\(7))) ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000010000000100000000000000111100000100000011110000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \port_map_pc|ALT_INV_portOUT\(3),
-	datab => \port_map_pc|ALT_INV_portOUT\(4),
-	datac => \port_map_pc|ALT_INV_portOUT\(7),
-	datad => \port_map_memoriaInst|ALT_INV_Mux7~0_combout\,
-	datae => \port_map_memoriaInst|ALT_INV_Mux7~1_combout\,
-	dataf => \port_map_memoriaInst|ALT_INV_Mux7~2_combout\,
-	combout => \port_map_memoriaInst|Mux7~3_combout\);
+	dataa => \port_map_pc|ALT_INV_portOUT\(7),
+	datab => \port_map_memoriaInst|ALT_INV_Mux6~0_combout\,
+	datac => \port_map_memoriaInst|ALT_INV_Mux6~1_combout\,
+	combout => \port_map_memoriaInst|Mux6~2_combout\);
 
 \port_map_multiplexador_2X1_8bits_jump|portOUT[0]~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_multiplexador_2X1_8bits_jump|portOUT[0]~1_combout\ = (!\port_map_multiplexador_2X1_8bits_jump|portOUT[3]~0_combout\ & ((\port_map_addPC|Add0~1_sumout\))) # (\port_map_multiplexador_2X1_8bits_jump|portOUT[3]~0_combout\ & 
--- (\port_map_memoriaInst|Mux7~3_combout\))
+-- \port_map_multiplexador_2X1_8bits_jump|portOUT[0]~1_combout\ = (!\port_map_multiplexador_2X1_8bits_jump|portOUT[2]~0_combout\ & ((\port_map_addPC|Add0~1_sumout\))) # (\port_map_multiplexador_2X1_8bits_jump|portOUT[2]~0_combout\ & 
+-- (!\port_map_memoriaInst|Mux6~2_combout\))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0001110100011101000111010001110100011101000111010001110100011101",
+	lut_mask => "0010111000101110001011100010111000101110001011100010111000101110",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_memoriaInst|ALT_INV_Mux7~3_combout\,
-	datab => \port_map_multiplexador_2X1_8bits_jump|ALT_INV_portOUT[3]~0_combout\,
+	dataa => \port_map_memoriaInst|ALT_INV_Mux6~2_combout\,
+	datab => \port_map_multiplexador_2X1_8bits_jump|ALT_INV_portOUT[2]~0_combout\,
 	datac => \port_map_addPC|ALT_INV_Add0~1_sumout\,
 	combout => \port_map_multiplexador_2X1_8bits_jump|portOUT[0]~1_combout\);
 
@@ -8033,18 +7894,18 @@ PORT MAP (
 \port_map_ual|portMap_multiplexador|Add1~29\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \port_map_ual|portMap_multiplexador|Add1~29_sumout\ = SUM(( \port_map_registradores|registrador~50_combout\ ) + ( (\port_map_ual|portMap_multiplexador|Add0~29_sumout\ & ((!\port_map_controle|Mux7~0_combout\ & 
--- (\port_map_registradores|registrador~51_combout\)) # (\port_map_controle|Mux7~0_combout\ & ((\port_map_memoriaInst|Mux7~3_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add1~26\ ))
+-- (\port_map_registradores|registrador~51_combout\)) # (\port_map_controle|Mux7~0_combout\ & ((!\port_map_memoriaInst|Mux6~2_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add1~26\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111011101111101000000000000000000000000011111111",
+	lut_mask => "0000000000000000111011101010111100000000000000000000000011111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_ual|portMap_multiplexador|ALT_INV_Add0~29_sumout\,
 	datab => \port_map_registradores|ALT_INV_registrador~51_combout\,
-	datac => \port_map_memoriaInst|ALT_INV_Mux7~3_combout\,
+	datac => \port_map_memoriaInst|ALT_INV_Mux6~2_combout\,
 	datad => \port_map_registradores|ALT_INV_registrador~50_combout\,
 	dataf => \port_map_controle|ALT_INV_Mux7~0_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add1~26\,
@@ -8053,18 +7914,18 @@ PORT MAP (
 \port_map_ual|portMap_multiplexador|Add2~33\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \port_map_ual|portMap_multiplexador|Add2~33_sumout\ = SUM(( !\port_map_registradores|registrador~50_combout\ ) + ( (\port_map_ual|portMap_multiplexador|Add0~29_sumout\ & ((!\port_map_controle|Mux7~0_combout\ & 
--- (\port_map_registradores|registrador~51_combout\)) # (\port_map_controle|Mux7~0_combout\ & ((\port_map_memoriaInst|Mux7~3_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add2~26\ ))
+-- (\port_map_registradores|registrador~51_combout\)) # (\port_map_controle|Mux7~0_combout\ & ((!\port_map_memoriaInst|Mux6~2_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add2~26\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111111101100000000000000000001111111100000000",
+	lut_mask => "0000000000000000111111111000110100000000000000001111111100000000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_controle|ALT_INV_Mux7~0_combout\,
 	datab => \port_map_registradores|ALT_INV_registrador~51_combout\,
-	datac => \port_map_memoriaInst|ALT_INV_Mux7~3_combout\,
+	datac => \port_map_memoriaInst|ALT_INV_Mux6~2_combout\,
 	datad => \port_map_registradores|ALT_INV_registrador~50_combout\,
 	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_Add0~29_sumout\,
 	cin => \port_map_ual|portMap_multiplexador|Add2~26\,
@@ -8090,93 +7951,93 @@ PORT MAP (
 
 \port_map_ual|portMap_multiplexador|Add3~29\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add3~29_sumout\ = SUM(( \port_map_registradores|registrador~49_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~21_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~29_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ 
--- & ((\port_map_ual|portMap_multiplexador|produto~21_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add3~22\ ))
--- \port_map_ual|portMap_multiplexador|Add3~30\ = CARRY(( \port_map_registradores|registrador~49_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~21_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~29_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ 
--- & ((\port_map_ual|portMap_multiplexador|produto~21_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add3~22\ ))
+-- \port_map_ual|portMap_multiplexador|Add3~29_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~21_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ 
+-- & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~29_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((\port_map_ual|portMap_multiplexador|produto~21_combout\))))) 
+-- ) + ( \port_map_registradores|registrador~49_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add3~22\ ))
+-- \port_map_ual|portMap_multiplexador|Add3~30\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~21_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & 
+-- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~29_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((\port_map_ual|portMap_multiplexador|produto~21_combout\))))) ) 
+-- + ( \port_map_registradores|registrador~49_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add3~22\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111110110100000000000000000000000000000011111111",
+	lut_mask => "0000000000000000111111110000000000000000000000000000010010111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[0]~0_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[1]~1_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add1~29_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~49_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~21_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~21_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~49_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add3~22\,
 	sumout => \port_map_ual|portMap_multiplexador|Add3~29_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add3~30\);
 
 \port_map_ual|portMap_multiplexador|Add3~25\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add3~25_sumout\ = SUM(( \port_map_registradores|registrador~50_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~21_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~29_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ 
--- & ((\port_map_ual|portMap_multiplexador|produto~21_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add3~30\ ))
+-- \port_map_ual|portMap_multiplexador|Add3~25_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~21_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ 
+-- & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~29_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((\port_map_ual|portMap_multiplexador|produto~21_combout\))))) 
+-- ) + ( \port_map_registradores|registrador~50_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add3~30\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111110110100000000000000000000000000000011111111",
+	lut_mask => "0000000000000000111111110000000000000000000000000000010010111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[0]~0_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[1]~1_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add1~29_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~50_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~21_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~21_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~50_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add3~30\,
 	sumout => \port_map_ual|portMap_multiplexador|Add3~25_sumout\);
 
 \port_map_ual|portMap_multiplexador|Add4~33\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add4~33_sumout\ = SUM(( !\port_map_registradores|registrador~49_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~21_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~29_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ 
--- & ((\port_map_ual|portMap_multiplexador|produto~21_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add4~22\ ))
--- \port_map_ual|portMap_multiplexador|Add4~34\ = CARRY(( !\port_map_registradores|registrador~49_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~21_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~29_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ 
--- & ((\port_map_ual|portMap_multiplexador|produto~21_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add4~22\ ))
+-- \port_map_ual|portMap_multiplexador|Add4~33_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~21_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ 
+-- & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~29_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((\port_map_ual|portMap_multiplexador|produto~21_combout\))))) 
+-- ) + ( !\port_map_registradores|registrador~49_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add4~22\ ))
+-- \port_map_ual|portMap_multiplexador|Add4~34\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~21_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & 
+-- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~29_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((\port_map_ual|portMap_multiplexador|produto~21_combout\))))) ) 
+-- + ( !\port_map_registradores|registrador~49_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add4~22\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111110110100000000000000000000001111111100000000",
+	lut_mask => "0000000000000000000000001111111100000000000000000000010010111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[0]~0_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[1]~1_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add1~29_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~49_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~21_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~21_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~49_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add4~22\,
 	sumout => \port_map_ual|portMap_multiplexador|Add4~33_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add4~34\);
 
 \port_map_ual|portMap_multiplexador|Add4~29\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add4~29_sumout\ = SUM(( !\port_map_registradores|registrador~50_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~21_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~29_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ 
--- & ((\port_map_ual|portMap_multiplexador|produto~21_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add4~34\ ))
+-- \port_map_ual|portMap_multiplexador|Add4~29_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ & (((\port_map_ual|portMap_multiplexador|produto~21_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[0]~0_combout\ 
+-- & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (\port_map_ual|portMap_multiplexador|Add1~29_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((\port_map_ual|portMap_multiplexador|produto~21_combout\))))) 
+-- ) + ( !\port_map_registradores|registrador~50_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add4~34\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111110110100000000000000000000001111111100000000",
+	lut_mask => "0000000000000000000000001111111100000000000000000000010010111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[0]~0_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[1]~1_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add1~29_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~50_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~21_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~21_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~50_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add4~34\,
 	sumout => \port_map_ual|portMap_multiplexador|Add4~29_sumout\);
 
@@ -8224,143 +8085,143 @@ PORT MAP (
 
 \port_map_ual|portMap_multiplexador|Add5~25\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add5~25_sumout\ = SUM(( \port_map_registradores|registrador~48_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~32_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~29_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ 
--- & ((\port_map_ual|portMap_multiplexador|produto~32_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add5~18\ ))
--- \port_map_ual|portMap_multiplexador|Add5~26\ = CARRY(( \port_map_registradores|registrador~48_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~32_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~29_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ 
--- & ((\port_map_ual|portMap_multiplexador|produto~32_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add5~18\ ))
+-- \port_map_ual|portMap_multiplexador|Add5~25_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~32_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ 
+-- & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~29_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~32_combout\))))) 
+-- ) + ( \port_map_registradores|registrador~48_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add5~18\ ))
+-- \port_map_ual|portMap_multiplexador|Add5~26\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~32_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & 
+-- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~29_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~32_combout\))))) ) 
+-- + ( \port_map_registradores|registrador~48_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add5~18\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111110110100000000000000000000000000000011111111",
+	lut_mask => "0000000000000000111111110000000000000000000000000000010010111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[1]~1_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[2]~2_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add3~29_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~48_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~32_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~32_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~48_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add5~18\,
 	sumout => \port_map_ual|portMap_multiplexador|Add5~25_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add5~26\);
 
 \port_map_ual|portMap_multiplexador|Add5~29\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add5~29_sumout\ = SUM(( \port_map_registradores|registrador~49_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~22_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~25_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ 
--- & ((\port_map_ual|portMap_multiplexador|produto~22_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add5~26\ ))
--- \port_map_ual|portMap_multiplexador|Add5~30\ = CARRY(( \port_map_registradores|registrador~49_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~22_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~25_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ 
--- & ((\port_map_ual|portMap_multiplexador|produto~22_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add5~26\ ))
+-- \port_map_ual|portMap_multiplexador|Add5~29_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~22_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ 
+-- & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~25_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~22_combout\))))) 
+-- ) + ( \port_map_registradores|registrador~49_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add5~26\ ))
+-- \port_map_ual|portMap_multiplexador|Add5~30\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~22_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & 
+-- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~25_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~22_combout\))))) ) 
+-- + ( \port_map_registradores|registrador~49_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add5~26\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111110110100000000000000000000000000000011111111",
+	lut_mask => "0000000000000000111111110000000000000000000000000000010010111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[1]~1_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[2]~2_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add3~25_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~49_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~22_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~22_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~49_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add5~26\,
 	sumout => \port_map_ual|portMap_multiplexador|Add5~29_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add5~30\);
 
 \port_map_ual|portMap_multiplexador|Add5~21\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add5~21_sumout\ = SUM(( \port_map_registradores|registrador~50_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~22_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~25_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ 
--- & ((\port_map_ual|portMap_multiplexador|produto~22_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add5~30\ ))
+-- \port_map_ual|portMap_multiplexador|Add5~21_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~22_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ 
+-- & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~25_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~22_combout\))))) 
+-- ) + ( \port_map_registradores|registrador~50_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add5~30\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111110110100000000000000000000000000000011111111",
+	lut_mask => "0000000000000000111111110000000000000000000000000000010010111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[1]~1_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[2]~2_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add3~25_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~50_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~22_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~22_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~50_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add5~30\,
 	sumout => \port_map_ual|portMap_multiplexador|Add5~21_sumout\);
 
 \port_map_ual|portMap_multiplexador|Add6~29\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add6~29_sumout\ = SUM(( !\port_map_registradores|registrador~48_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~32_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~29_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ 
--- & ((\port_map_ual|portMap_multiplexador|produto~32_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add6~18\ ))
--- \port_map_ual|portMap_multiplexador|Add6~30\ = CARRY(( !\port_map_registradores|registrador~48_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~32_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~29_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ 
--- & ((\port_map_ual|portMap_multiplexador|produto~32_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add6~18\ ))
+-- \port_map_ual|portMap_multiplexador|Add6~29_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~32_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ 
+-- & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~29_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~32_combout\))))) 
+-- ) + ( !\port_map_registradores|registrador~48_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add6~18\ ))
+-- \port_map_ual|portMap_multiplexador|Add6~30\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~32_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & 
+-- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~29_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~32_combout\))))) ) 
+-- + ( !\port_map_registradores|registrador~48_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add6~18\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111110110100000000000000000000001111111100000000",
+	lut_mask => "0000000000000000000000001111111100000000000000000000010010111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[1]~1_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[2]~2_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add3~29_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~48_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~32_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~32_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~48_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add6~18\,
 	sumout => \port_map_ual|portMap_multiplexador|Add6~29_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add6~30\);
 
 \port_map_ual|portMap_multiplexador|Add6~33\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add6~33_sumout\ = SUM(( !\port_map_registradores|registrador~49_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~22_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~25_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ 
--- & ((\port_map_ual|portMap_multiplexador|produto~22_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add6~30\ ))
--- \port_map_ual|portMap_multiplexador|Add6~34\ = CARRY(( !\port_map_registradores|registrador~49_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~22_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~25_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ 
--- & ((\port_map_ual|portMap_multiplexador|produto~22_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add6~30\ ))
+-- \port_map_ual|portMap_multiplexador|Add6~33_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~22_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ 
+-- & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~25_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~22_combout\))))) 
+-- ) + ( !\port_map_registradores|registrador~49_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add6~30\ ))
+-- \port_map_ual|portMap_multiplexador|Add6~34\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~22_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & 
+-- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~25_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~22_combout\))))) ) 
+-- + ( !\port_map_registradores|registrador~49_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add6~30\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111110110100000000000000000000001111111100000000",
+	lut_mask => "0000000000000000000000001111111100000000000000000000010010111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[1]~1_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[2]~2_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add3~25_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~49_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~22_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~22_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~49_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add6~30\,
 	sumout => \port_map_ual|portMap_multiplexador|Add6~33_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add6~34\);
 
 \port_map_ual|portMap_multiplexador|Add6~25\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add6~25_sumout\ = SUM(( !\port_map_registradores|registrador~50_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~22_combout\)))) # 
--- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~25_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ 
--- & ((\port_map_ual|portMap_multiplexador|produto~22_combout\))))) ) + ( \port_map_ual|portMap_multiplexador|Add6~34\ ))
+-- \port_map_ual|portMap_multiplexador|Add6~25_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ & (((\port_map_ual|portMap_multiplexador|produto~22_combout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[1]~1_combout\ 
+-- & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add3~25_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~22_combout\))))) 
+-- ) + ( !\port_map_registradores|registrador~50_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add6~34\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111110110100000000000000000000001111111100000000",
+	lut_mask => "0000000000000000000000001111111100000000000000000000010010111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[1]~1_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[2]~2_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add3~25_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~50_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~22_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~22_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~50_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add6~34\,
 	sumout => \port_map_ual|portMap_multiplexador|Add6~25_sumout\);
 
@@ -8429,193 +8290,193 @@ PORT MAP (
 
 \port_map_ual|portMap_multiplexador|Add7~25\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add7~25_sumout\ = SUM(( \port_map_registradores|registrador~47_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~33_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~25_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~33_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add7~14\ ))
--- \port_map_ual|portMap_multiplexador|Add7~26\ = CARRY(( \port_map_registradores|registrador~47_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~33_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~25_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~33_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add7~14\ ))
+-- \port_map_ual|portMap_multiplexador|Add7~25_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~33_combout\))) 
+-- # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~25_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (((\port_map_ual|portMap_multiplexador|produto~33_combout\)))) 
+-- ) + ( \port_map_registradores|registrador~47_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add7~14\ ))
+-- \port_map_ual|portMap_multiplexador|Add7~26\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~33_combout\))) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~25_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (((\port_map_ual|portMap_multiplexador|produto~33_combout\)))) ) 
+-- + ( \port_map_registradores|registrador~47_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add7~14\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000000000000011111111",
+	lut_mask => "0000000000000000111111110000000000000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[3]~3_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[2]~2_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add5~25_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~47_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~33_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~33_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~47_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add7~14\,
 	sumout => \port_map_ual|portMap_multiplexador|Add7~25_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add7~26\);
 
 \port_map_ual|portMap_multiplexador|Add7~29\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add7~29_sumout\ = SUM(( \port_map_registradores|registrador~48_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~37_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~29_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~37_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add7~26\ ))
--- \port_map_ual|portMap_multiplexador|Add7~30\ = CARRY(( \port_map_registradores|registrador~48_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~37_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~29_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~37_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add7~26\ ))
+-- \port_map_ual|portMap_multiplexador|Add7~29_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~37_combout\))) 
+-- # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~29_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (((\port_map_ual|portMap_multiplexador|produto~37_combout\)))) 
+-- ) + ( \port_map_registradores|registrador~48_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add7~26\ ))
+-- \port_map_ual|portMap_multiplexador|Add7~30\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~37_combout\))) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~29_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (((\port_map_ual|portMap_multiplexador|produto~37_combout\)))) ) 
+-- + ( \port_map_registradores|registrador~48_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add7~26\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000000000000011111111",
+	lut_mask => "0000000000000000111111110000000000000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[3]~3_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[2]~2_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add5~29_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~48_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~37_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~37_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~48_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add7~26\,
 	sumout => \port_map_ual|portMap_multiplexador|Add7~29_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add7~30\);
 
 \port_map_ual|portMap_multiplexador|Add7~21\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add7~21_sumout\ = SUM(( \port_map_registradores|registrador~49_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~23_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~21_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~23_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add7~30\ ))
--- \port_map_ual|portMap_multiplexador|Add7~22\ = CARRY(( \port_map_registradores|registrador~49_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~23_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~21_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~23_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add7~30\ ))
+-- \port_map_ual|portMap_multiplexador|Add7~21_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~23_combout\))) 
+-- # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~21_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (((\port_map_ual|portMap_multiplexador|produto~23_combout\)))) 
+-- ) + ( \port_map_registradores|registrador~49_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add7~30\ ))
+-- \port_map_ual|portMap_multiplexador|Add7~22\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~23_combout\))) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~21_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (((\port_map_ual|portMap_multiplexador|produto~23_combout\)))) ) 
+-- + ( \port_map_registradores|registrador~49_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add7~30\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000000000000011111111",
+	lut_mask => "0000000000000000111111110000000000000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[3]~3_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[2]~2_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add5~21_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~49_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~23_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~23_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~49_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add7~30\,
 	sumout => \port_map_ual|portMap_multiplexador|Add7~21_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add7~22\);
 
 \port_map_ual|portMap_multiplexador|Add7~17\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add7~17_sumout\ = SUM(( \port_map_registradores|registrador~50_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~23_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~21_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~23_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add7~22\ ))
+-- \port_map_ual|portMap_multiplexador|Add7~17_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~23_combout\))) 
+-- # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~21_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (((\port_map_ual|portMap_multiplexador|produto~23_combout\)))) 
+-- ) + ( \port_map_registradores|registrador~50_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add7~22\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000000000000011111111",
+	lut_mask => "0000000000000000111111110000000000000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[3]~3_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[2]~2_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add5~21_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~50_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~23_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~23_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~50_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add7~22\,
 	sumout => \port_map_ual|portMap_multiplexador|Add7~17_sumout\);
 
 \port_map_ual|portMap_multiplexador|Add8~29\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add8~29_sumout\ = SUM(( !\port_map_registradores|registrador~47_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~33_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~25_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~33_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add8~14\ ))
--- \port_map_ual|portMap_multiplexador|Add8~30\ = CARRY(( !\port_map_registradores|registrador~47_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~33_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~25_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~33_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add8~14\ ))
+-- \port_map_ual|portMap_multiplexador|Add8~29_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~33_combout\))) 
+-- # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~25_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (((\port_map_ual|portMap_multiplexador|produto~33_combout\)))) 
+-- ) + ( !\port_map_registradores|registrador~47_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add8~14\ ))
+-- \port_map_ual|portMap_multiplexador|Add8~30\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~33_combout\))) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~25_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (((\port_map_ual|portMap_multiplexador|produto~33_combout\)))) ) 
+-- + ( !\port_map_registradores|registrador~47_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add8~14\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000001111111100000000",
+	lut_mask => "0000000000000000000000001111111100000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[3]~3_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[2]~2_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add5~25_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~47_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~33_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~33_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~47_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add8~14\,
 	sumout => \port_map_ual|portMap_multiplexador|Add8~29_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add8~30\);
 
 \port_map_ual|portMap_multiplexador|Add8~33\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add8~33_sumout\ = SUM(( !\port_map_registradores|registrador~48_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~37_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~29_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~37_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add8~30\ ))
--- \port_map_ual|portMap_multiplexador|Add8~34\ = CARRY(( !\port_map_registradores|registrador~48_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~37_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~29_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~37_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add8~30\ ))
+-- \port_map_ual|portMap_multiplexador|Add8~33_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~37_combout\))) 
+-- # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~29_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (((\port_map_ual|portMap_multiplexador|produto~37_combout\)))) 
+-- ) + ( !\port_map_registradores|registrador~48_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add8~30\ ))
+-- \port_map_ual|portMap_multiplexador|Add8~34\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~37_combout\))) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~29_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (((\port_map_ual|portMap_multiplexador|produto~37_combout\)))) ) 
+-- + ( !\port_map_registradores|registrador~48_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add8~30\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000001111111100000000",
+	lut_mask => "0000000000000000000000001111111100000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[3]~3_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[2]~2_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add5~29_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~48_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~37_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~37_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~48_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add8~30\,
 	sumout => \port_map_ual|portMap_multiplexador|Add8~33_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add8~34\);
 
 \port_map_ual|portMap_multiplexador|Add8~25\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add8~25_sumout\ = SUM(( !\port_map_registradores|registrador~49_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~23_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~21_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~23_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add8~34\ ))
--- \port_map_ual|portMap_multiplexador|Add8~26\ = CARRY(( !\port_map_registradores|registrador~49_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~23_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~21_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~23_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add8~34\ ))
+-- \port_map_ual|portMap_multiplexador|Add8~25_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~23_combout\))) 
+-- # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~21_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (((\port_map_ual|portMap_multiplexador|produto~23_combout\)))) 
+-- ) + ( !\port_map_registradores|registrador~49_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add8~34\ ))
+-- \port_map_ual|portMap_multiplexador|Add8~26\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~23_combout\))) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~21_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (((\port_map_ual|portMap_multiplexador|produto~23_combout\)))) ) 
+-- + ( !\port_map_registradores|registrador~49_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add8~34\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000001111111100000000",
+	lut_mask => "0000000000000000000000001111111100000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[3]~3_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[2]~2_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add5~21_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~49_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~23_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~23_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~49_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add8~34\,
 	sumout => \port_map_ual|portMap_multiplexador|Add8~25_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add8~26\);
 
 \port_map_ual|portMap_multiplexador|Add8~21\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add8~21_sumout\ = SUM(( !\port_map_registradores|registrador~50_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~23_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~21_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~23_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add8~26\ ))
+-- \port_map_ual|portMap_multiplexador|Add8~21_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & ((\port_map_ual|portMap_multiplexador|produto~23_combout\))) 
+-- # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[2]~2_combout\ & (\port_map_ual|portMap_multiplexador|Add5~21_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (((\port_map_ual|portMap_multiplexador|produto~23_combout\)))) 
+-- ) + ( !\port_map_registradores|registrador~50_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add8~26\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000001111111100000000",
+	lut_mask => "0000000000000000000000001111111100000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[3]~3_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[2]~2_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add5~21_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~50_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~23_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~23_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~50_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add8~26\,
 	sumout => \port_map_ual|portMap_multiplexador|Add8~21_sumout\);
 
@@ -8705,243 +8566,243 @@ PORT MAP (
 
 \port_map_ual|portMap_multiplexador|Add9~25\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add9~25_sumout\ = SUM(( \port_map_registradores|registrador~46_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~44_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|Add7~25_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~44_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add9~10\ ))
--- \port_map_ual|portMap_multiplexador|Add9~26\ = CARRY(( \port_map_registradores|registrador~46_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~44_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|Add7~25_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~44_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add9~10\ ))
+-- \port_map_ual|portMap_multiplexador|Add9~25_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((\port_map_ual|portMap_multiplexador|produto~44_combout\))) 
+-- # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|Add7~25_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (((\port_map_ual|portMap_multiplexador|produto~44_combout\)))) 
+-- ) + ( \port_map_registradores|registrador~46_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add9~10\ ))
+-- \port_map_ual|portMap_multiplexador|Add9~26\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((\port_map_ual|portMap_multiplexador|produto~44_combout\))) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|Add7~25_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (((\port_map_ual|portMap_multiplexador|produto~44_combout\)))) ) 
+-- + ( \port_map_registradores|registrador~46_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add9~10\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000000000000011111111",
+	lut_mask => "0000000000000000111111110000000000000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[4]~4_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[3]~3_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add7~25_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~46_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~44_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~44_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~46_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add9~10\,
 	sumout => \port_map_ual|portMap_multiplexador|Add9~25_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add9~26\);
 
 \port_map_ual|portMap_multiplexador|Add9~29\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add9~29_sumout\ = SUM(( \port_map_registradores|registrador~47_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~38_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|Add7~29_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~38_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add9~26\ ))
--- \port_map_ual|portMap_multiplexador|Add9~30\ = CARRY(( \port_map_registradores|registrador~47_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~38_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|Add7~29_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~38_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add9~26\ ))
+-- \port_map_ual|portMap_multiplexador|Add9~29_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((\port_map_ual|portMap_multiplexador|produto~38_combout\))) 
+-- # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|Add7~29_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (((\port_map_ual|portMap_multiplexador|produto~38_combout\)))) 
+-- ) + ( \port_map_registradores|registrador~47_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add9~26\ ))
+-- \port_map_ual|portMap_multiplexador|Add9~30\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((\port_map_ual|portMap_multiplexador|produto~38_combout\))) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|Add7~29_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (((\port_map_ual|portMap_multiplexador|produto~38_combout\)))) ) 
+-- + ( \port_map_registradores|registrador~47_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add9~26\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000000000000011111111",
+	lut_mask => "0000000000000000111111110000000000000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[4]~4_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[3]~3_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add7~29_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~47_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~38_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~38_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~47_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add9~26\,
 	sumout => \port_map_ual|portMap_multiplexador|Add9~29_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add9~30\);
 
 \port_map_ual|portMap_multiplexador|Add9~21\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add9~21_sumout\ = SUM(( \port_map_registradores|registrador~48_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~29_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|Add7~21_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~29_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add9~30\ ))
--- \port_map_ual|portMap_multiplexador|Add9~22\ = CARRY(( \port_map_registradores|registrador~48_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~29_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|Add7~21_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~29_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add9~30\ ))
+-- \port_map_ual|portMap_multiplexador|Add9~21_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((\port_map_ual|portMap_multiplexador|produto~29_combout\))) 
+-- # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|Add7~21_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (((\port_map_ual|portMap_multiplexador|produto~29_combout\)))) 
+-- ) + ( \port_map_registradores|registrador~48_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add9~30\ ))
+-- \port_map_ual|portMap_multiplexador|Add9~22\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((\port_map_ual|portMap_multiplexador|produto~29_combout\))) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|Add7~21_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (((\port_map_ual|portMap_multiplexador|produto~29_combout\)))) ) 
+-- + ( \port_map_registradores|registrador~48_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add9~30\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000000000000011111111",
+	lut_mask => "0000000000000000111111110000000000000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[4]~4_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[3]~3_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add7~21_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~48_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~29_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~29_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~48_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add9~30\,
 	sumout => \port_map_ual|portMap_multiplexador|Add9~21_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add9~22\);
 
 \port_map_ual|portMap_multiplexador|Add9~17\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add9~17_sumout\ = SUM(( \port_map_registradores|registrador~49_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~24_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|Add7~17_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~24_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add9~22\ ))
--- \port_map_ual|portMap_multiplexador|Add9~18\ = CARRY(( \port_map_registradores|registrador~49_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~24_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|Add7~17_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~24_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add9~22\ ))
+-- \port_map_ual|portMap_multiplexador|Add9~17_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((\port_map_ual|portMap_multiplexador|produto~24_combout\))) 
+-- # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|Add7~17_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (((\port_map_ual|portMap_multiplexador|produto~24_combout\)))) 
+-- ) + ( \port_map_registradores|registrador~49_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add9~22\ ))
+-- \port_map_ual|portMap_multiplexador|Add9~18\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((\port_map_ual|portMap_multiplexador|produto~24_combout\))) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|Add7~17_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (((\port_map_ual|portMap_multiplexador|produto~24_combout\)))) ) 
+-- + ( \port_map_registradores|registrador~49_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add9~22\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000000000000011111111",
+	lut_mask => "0000000000000000111111110000000000000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[4]~4_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[3]~3_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add7~17_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~49_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~24_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~24_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~49_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add9~22\,
 	sumout => \port_map_ual|portMap_multiplexador|Add9~17_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add9~18\);
 
 \port_map_ual|portMap_multiplexador|Add9~13\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add9~13_sumout\ = SUM(( \port_map_registradores|registrador~50_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~24_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|Add7~17_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~24_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add9~18\ ))
+-- \port_map_ual|portMap_multiplexador|Add9~13_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((\port_map_ual|portMap_multiplexador|produto~24_combout\))) 
+-- # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|Add7~17_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (((\port_map_ual|portMap_multiplexador|produto~24_combout\)))) 
+-- ) + ( \port_map_registradores|registrador~50_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add9~18\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000000000000011111111",
+	lut_mask => "0000000000000000111111110000000000000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[4]~4_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[3]~3_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add7~17_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~50_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~24_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~24_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~50_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add9~18\,
 	sumout => \port_map_ual|portMap_multiplexador|Add9~13_sumout\);
 
 \port_map_ual|portMap_multiplexador|Add10~29\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add10~29_sumout\ = SUM(( !\port_map_registradores|registrador~46_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
+-- \port_map_ual|portMap_multiplexador|Add10~29_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
 -- ((\port_map_ual|portMap_multiplexador|produto~44_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|Add7~25_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~44_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add10~10\ ))
--- \port_map_ual|portMap_multiplexador|Add10~30\ = CARRY(( !\port_map_registradores|registrador~46_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~44_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|Add7~25_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~44_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add10~10\ ))
+-- (((\port_map_ual|portMap_multiplexador|produto~44_combout\)))) ) + ( !\port_map_registradores|registrador~46_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add10~10\ ))
+-- \port_map_ual|portMap_multiplexador|Add10~30\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((\port_map_ual|portMap_multiplexador|produto~44_combout\))) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|Add7~25_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (((\port_map_ual|portMap_multiplexador|produto~44_combout\)))) ) 
+-- + ( !\port_map_registradores|registrador~46_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add10~10\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000001111111100000000",
+	lut_mask => "0000000000000000000000001111111100000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[4]~4_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[3]~3_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add7~25_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~46_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~44_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~44_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~46_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add10~10\,
 	sumout => \port_map_ual|portMap_multiplexador|Add10~29_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add10~30\);
 
 \port_map_ual|portMap_multiplexador|Add10~33\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add10~33_sumout\ = SUM(( !\port_map_registradores|registrador~47_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
+-- \port_map_ual|portMap_multiplexador|Add10~33_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
 -- ((\port_map_ual|portMap_multiplexador|produto~38_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|Add7~29_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~38_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add10~30\ ))
--- \port_map_ual|portMap_multiplexador|Add10~34\ = CARRY(( !\port_map_registradores|registrador~47_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~38_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|Add7~29_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~38_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add10~30\ ))
+-- (((\port_map_ual|portMap_multiplexador|produto~38_combout\)))) ) + ( !\port_map_registradores|registrador~47_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add10~30\ ))
+-- \port_map_ual|portMap_multiplexador|Add10~34\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((\port_map_ual|portMap_multiplexador|produto~38_combout\))) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|Add7~29_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (((\port_map_ual|portMap_multiplexador|produto~38_combout\)))) ) 
+-- + ( !\port_map_registradores|registrador~47_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add10~30\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000001111111100000000",
+	lut_mask => "0000000000000000000000001111111100000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[4]~4_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[3]~3_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add7~29_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~47_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~38_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~38_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~47_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add10~30\,
 	sumout => \port_map_ual|portMap_multiplexador|Add10~33_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add10~34\);
 
 \port_map_ual|portMap_multiplexador|Add10~25\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add10~25_sumout\ = SUM(( !\port_map_registradores|registrador~48_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
+-- \port_map_ual|portMap_multiplexador|Add10~25_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
 -- ((\port_map_ual|portMap_multiplexador|produto~29_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|Add7~21_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~29_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add10~34\ ))
--- \port_map_ual|portMap_multiplexador|Add10~26\ = CARRY(( !\port_map_registradores|registrador~48_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~29_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|Add7~21_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~29_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add10~34\ ))
+-- (((\port_map_ual|portMap_multiplexador|produto~29_combout\)))) ) + ( !\port_map_registradores|registrador~48_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add10~34\ ))
+-- \port_map_ual|portMap_multiplexador|Add10~26\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((\port_map_ual|portMap_multiplexador|produto~29_combout\))) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|Add7~21_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (((\port_map_ual|portMap_multiplexador|produto~29_combout\)))) ) 
+-- + ( !\port_map_registradores|registrador~48_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add10~34\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000001111111100000000",
+	lut_mask => "0000000000000000000000001111111100000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[4]~4_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[3]~3_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add7~21_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~48_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~29_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~29_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~48_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add10~34\,
 	sumout => \port_map_ual|portMap_multiplexador|Add10~25_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add10~26\);
 
 \port_map_ual|portMap_multiplexador|Add10~21\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add10~21_sumout\ = SUM(( !\port_map_registradores|registrador~49_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
+-- \port_map_ual|portMap_multiplexador|Add10~21_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
 -- ((\port_map_ual|portMap_multiplexador|produto~24_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|Add7~17_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~24_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add10~26\ ))
--- \port_map_ual|portMap_multiplexador|Add10~22\ = CARRY(( !\port_map_registradores|registrador~49_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~24_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|Add7~17_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~24_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add10~26\ ))
+-- (((\port_map_ual|portMap_multiplexador|produto~24_combout\)))) ) + ( !\port_map_registradores|registrador~49_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add10~26\ ))
+-- \port_map_ual|portMap_multiplexador|Add10~22\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & ((\port_map_ual|portMap_multiplexador|produto~24_combout\))) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|Add7~17_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (((\port_map_ual|portMap_multiplexador|produto~24_combout\)))) ) 
+-- + ( !\port_map_registradores|registrador~49_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add10~26\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000001111111100000000",
+	lut_mask => "0000000000000000000000001111111100000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[4]~4_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[3]~3_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add7~17_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~49_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~24_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~24_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~49_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add10~26\,
 	sumout => \port_map_ual|portMap_multiplexador|Add10~21_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add10~22\);
 
 \port_map_ual|portMap_multiplexador|Add10~17\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add10~17_sumout\ = SUM(( !\port_map_registradores|registrador~50_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
+-- \port_map_ual|portMap_multiplexador|Add10~17_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & 
 -- ((\port_map_ual|portMap_multiplexador|produto~24_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[3]~3_combout\ & (\port_map_ual|portMap_multiplexador|Add7~17_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~24_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add10~22\ ))
+-- (((\port_map_ual|portMap_multiplexador|produto~24_combout\)))) ) + ( !\port_map_registradores|registrador~50_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add10~22\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000001111111100000000",
+	lut_mask => "0000000000000000000000001111111100000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[4]~4_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[3]~3_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add7~17_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~50_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~24_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~24_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~50_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add10~22\,
 	sumout => \port_map_ual|portMap_multiplexador|Add10~17_sumout\);
 
@@ -9090,265 +8951,265 @@ PORT MAP (
 
 \port_map_ual|portMap_multiplexador|Add11~13\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add11~13_sumout\ = SUM(( \port_map_registradores|registrador~45_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
+-- \port_map_ual|portMap_multiplexador|Add11~13_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
 -- ((\port_map_ual|portMap_multiplexador|produto~43_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (\port_map_ual|portMap_multiplexador|Add9~25_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~43_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add11~6\ ))
--- \port_map_ual|portMap_multiplexador|Add11~14\ = CARRY(( \port_map_registradores|registrador~45_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~43_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (\port_map_ual|portMap_multiplexador|Add9~25_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~43_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add11~6\ ))
+-- (((\port_map_ual|portMap_multiplexador|produto~43_combout\)))) ) + ( \port_map_registradores|registrador~45_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add11~6\ ))
+-- \port_map_ual|portMap_multiplexador|Add11~14\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((\port_map_ual|portMap_multiplexador|produto~43_combout\))) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (\port_map_ual|portMap_multiplexador|Add9~25_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (((\port_map_ual|portMap_multiplexador|produto~43_combout\)))) ) 
+-- + ( \port_map_registradores|registrador~45_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add11~6\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000000000000011111111",
+	lut_mask => "0000000000000000111111110000000000000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[5]~5_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[4]~4_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add9~25_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~45_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~43_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~43_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~45_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add11~6\,
 	sumout => \port_map_ual|portMap_multiplexador|Add11~13_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add11~14\);
 
 \port_map_ual|portMap_multiplexador|Add11~17\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add11~17_sumout\ = SUM(( \port_map_registradores|registrador~46_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
+-- \port_map_ual|portMap_multiplexador|Add11~17_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
 -- ((\port_map_ual|portMap_multiplexador|produto~45_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (\port_map_ual|portMap_multiplexador|Add9~29_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~45_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add11~14\ ))
--- \port_map_ual|portMap_multiplexador|Add11~18\ = CARRY(( \port_map_registradores|registrador~46_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~45_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (\port_map_ual|portMap_multiplexador|Add9~29_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~45_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add11~14\ ))
+-- (((\port_map_ual|portMap_multiplexador|produto~45_combout\)))) ) + ( \port_map_registradores|registrador~46_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add11~14\ ))
+-- \port_map_ual|portMap_multiplexador|Add11~18\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((\port_map_ual|portMap_multiplexador|produto~45_combout\))) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (\port_map_ual|portMap_multiplexador|Add9~29_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (((\port_map_ual|portMap_multiplexador|produto~45_combout\)))) ) 
+-- + ( \port_map_registradores|registrador~46_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add11~14\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000000000000011111111",
+	lut_mask => "0000000000000000111111110000000000000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[5]~5_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[4]~4_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add9~29_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~46_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~45_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~45_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~46_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add11~14\,
 	sumout => \port_map_ual|portMap_multiplexador|Add11~17_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add11~18\);
 
 \port_map_ual|portMap_multiplexador|Add11~29\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add11~29_sumout\ = SUM(( \port_map_registradores|registrador~47_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
+-- \port_map_ual|portMap_multiplexador|Add11~29_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
 -- ((\port_map_ual|portMap_multiplexador|produto~30_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (\port_map_ual|portMap_multiplexador|Add9~21_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~30_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add11~18\ ))
--- \port_map_ual|portMap_multiplexador|Add11~30\ = CARRY(( \port_map_registradores|registrador~47_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~30_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (\port_map_ual|portMap_multiplexador|Add9~21_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~30_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add11~18\ ))
+-- (((\port_map_ual|portMap_multiplexador|produto~30_combout\)))) ) + ( \port_map_registradores|registrador~47_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add11~18\ ))
+-- \port_map_ual|portMap_multiplexador|Add11~30\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((\port_map_ual|portMap_multiplexador|produto~30_combout\))) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (\port_map_ual|portMap_multiplexador|Add9~21_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (((\port_map_ual|portMap_multiplexador|produto~30_combout\)))) ) 
+-- + ( \port_map_registradores|registrador~47_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add11~18\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000000000000011111111",
+	lut_mask => "0000000000000000111111110000000000000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[5]~5_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[4]~4_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add9~21_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~47_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~30_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~30_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~47_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add11~18\,
 	sumout => \port_map_ual|portMap_multiplexador|Add11~29_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add11~30\);
 
 \port_map_ual|portMap_multiplexador|Add11~25\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add11~25_sumout\ = SUM(( \port_map_registradores|registrador~48_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
+-- \port_map_ual|portMap_multiplexador|Add11~25_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
 -- ((\port_map_ual|portMap_multiplexador|produto~27_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (\port_map_ual|portMap_multiplexador|Add9~17_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~27_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add11~30\ ))
--- \port_map_ual|portMap_multiplexador|Add11~26\ = CARRY(( \port_map_registradores|registrador~48_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~27_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (\port_map_ual|portMap_multiplexador|Add9~17_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~27_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add11~30\ ))
+-- (((\port_map_ual|portMap_multiplexador|produto~27_combout\)))) ) + ( \port_map_registradores|registrador~48_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add11~30\ ))
+-- \port_map_ual|portMap_multiplexador|Add11~26\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((\port_map_ual|portMap_multiplexador|produto~27_combout\))) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (\port_map_ual|portMap_multiplexador|Add9~17_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (((\port_map_ual|portMap_multiplexador|produto~27_combout\)))) ) 
+-- + ( \port_map_registradores|registrador~48_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add11~30\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000000000000011111111",
+	lut_mask => "0000000000000000111111110000000000000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[5]~5_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[4]~4_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add9~17_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~48_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~27_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~27_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~48_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add11~30\,
 	sumout => \port_map_ual|portMap_multiplexador|Add11~25_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add11~26\);
 
 \port_map_ual|portMap_multiplexador|Add11~21\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add11~21_sumout\ = SUM(( \port_map_registradores|registrador~49_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
+-- \port_map_ual|portMap_multiplexador|Add11~21_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
 -- ((\port_map_ual|portMap_multiplexador|produto~25_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (\port_map_ual|portMap_multiplexador|Add9~13_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~25_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add11~26\ ))
--- \port_map_ual|portMap_multiplexador|Add11~22\ = CARRY(( \port_map_registradores|registrador~49_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~25_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (\port_map_ual|portMap_multiplexador|Add9~13_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~25_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add11~26\ ))
+-- (((\port_map_ual|portMap_multiplexador|produto~25_combout\)))) ) + ( \port_map_registradores|registrador~49_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add11~26\ ))
+-- \port_map_ual|portMap_multiplexador|Add11~22\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((\port_map_ual|portMap_multiplexador|produto~25_combout\))) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (\port_map_ual|portMap_multiplexador|Add9~13_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (((\port_map_ual|portMap_multiplexador|produto~25_combout\)))) ) 
+-- + ( \port_map_registradores|registrador~49_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add11~26\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000000000000011111111",
+	lut_mask => "0000000000000000111111110000000000000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[5]~5_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[4]~4_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add9~13_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~49_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~25_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~25_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~49_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add11~26\,
 	sumout => \port_map_ual|portMap_multiplexador|Add11~21_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add11~22\);
 
 \port_map_ual|portMap_multiplexador|Add12~29\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add12~29_sumout\ = SUM(( !\port_map_registradores|registrador~45_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
+-- \port_map_ual|portMap_multiplexador|Add12~29_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
 -- ((\port_map_ual|portMap_multiplexador|produto~43_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (\port_map_ual|portMap_multiplexador|Add9~25_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~43_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add12~6\ ))
--- \port_map_ual|portMap_multiplexador|Add12~30\ = CARRY(( !\port_map_registradores|registrador~45_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~43_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (\port_map_ual|portMap_multiplexador|Add9~25_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~43_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add12~6\ ))
+-- (((\port_map_ual|portMap_multiplexador|produto~43_combout\)))) ) + ( !\port_map_registradores|registrador~45_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add12~6\ ))
+-- \port_map_ual|portMap_multiplexador|Add12~30\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((\port_map_ual|portMap_multiplexador|produto~43_combout\))) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (\port_map_ual|portMap_multiplexador|Add9~25_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (((\port_map_ual|portMap_multiplexador|produto~43_combout\)))) ) 
+-- + ( !\port_map_registradores|registrador~45_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add12~6\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000001111111100000000",
+	lut_mask => "0000000000000000000000001111111100000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[5]~5_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[4]~4_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add9~25_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~45_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~43_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~43_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~45_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add12~6\,
 	sumout => \port_map_ual|portMap_multiplexador|Add12~29_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add12~30\);
 
 \port_map_ual|portMap_multiplexador|Add12~33\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add12~33_sumout\ = SUM(( !\port_map_registradores|registrador~46_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
+-- \port_map_ual|portMap_multiplexador|Add12~33_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
 -- ((\port_map_ual|portMap_multiplexador|produto~45_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (\port_map_ual|portMap_multiplexador|Add9~29_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~45_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add12~30\ ))
--- \port_map_ual|portMap_multiplexador|Add12~34\ = CARRY(( !\port_map_registradores|registrador~46_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~45_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (\port_map_ual|portMap_multiplexador|Add9~29_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~45_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add12~30\ ))
+-- (((\port_map_ual|portMap_multiplexador|produto~45_combout\)))) ) + ( !\port_map_registradores|registrador~46_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add12~30\ ))
+-- \port_map_ual|portMap_multiplexador|Add12~34\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((\port_map_ual|portMap_multiplexador|produto~45_combout\))) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (\port_map_ual|portMap_multiplexador|Add9~29_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (((\port_map_ual|portMap_multiplexador|produto~45_combout\)))) ) 
+-- + ( !\port_map_registradores|registrador~46_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add12~30\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000001111111100000000",
+	lut_mask => "0000000000000000000000001111111100000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[5]~5_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[4]~4_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add9~29_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~46_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~45_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~45_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~46_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add12~30\,
 	sumout => \port_map_ual|portMap_multiplexador|Add12~33_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add12~34\);
 
 \port_map_ual|portMap_multiplexador|Add12~25\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add12~25_sumout\ = SUM(( !\port_map_registradores|registrador~47_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
+-- \port_map_ual|portMap_multiplexador|Add12~25_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
 -- ((\port_map_ual|portMap_multiplexador|produto~30_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (\port_map_ual|portMap_multiplexador|Add9~21_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~30_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add12~34\ ))
--- \port_map_ual|portMap_multiplexador|Add12~26\ = CARRY(( !\port_map_registradores|registrador~47_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~30_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (\port_map_ual|portMap_multiplexador|Add9~21_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~30_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add12~34\ ))
+-- (((\port_map_ual|portMap_multiplexador|produto~30_combout\)))) ) + ( !\port_map_registradores|registrador~47_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add12~34\ ))
+-- \port_map_ual|portMap_multiplexador|Add12~26\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((\port_map_ual|portMap_multiplexador|produto~30_combout\))) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (\port_map_ual|portMap_multiplexador|Add9~21_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (((\port_map_ual|portMap_multiplexador|produto~30_combout\)))) ) 
+-- + ( !\port_map_registradores|registrador~47_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add12~34\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000001111111100000000",
+	lut_mask => "0000000000000000000000001111111100000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[5]~5_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[4]~4_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add9~21_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~47_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~30_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~30_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~47_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add12~34\,
 	sumout => \port_map_ual|portMap_multiplexador|Add12~25_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add12~26\);
 
 \port_map_ual|portMap_multiplexador|Add12~21\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add12~21_sumout\ = SUM(( !\port_map_registradores|registrador~48_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
+-- \port_map_ual|portMap_multiplexador|Add12~21_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
 -- ((\port_map_ual|portMap_multiplexador|produto~27_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (\port_map_ual|portMap_multiplexador|Add9~17_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~27_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add12~26\ ))
--- \port_map_ual|portMap_multiplexador|Add12~22\ = CARRY(( !\port_map_registradores|registrador~48_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~27_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (\port_map_ual|portMap_multiplexador|Add9~17_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~27_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add12~26\ ))
+-- (((\port_map_ual|portMap_multiplexador|produto~27_combout\)))) ) + ( !\port_map_registradores|registrador~48_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add12~26\ ))
+-- \port_map_ual|portMap_multiplexador|Add12~22\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((\port_map_ual|portMap_multiplexador|produto~27_combout\))) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (\port_map_ual|portMap_multiplexador|Add9~17_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (((\port_map_ual|portMap_multiplexador|produto~27_combout\)))) ) 
+-- + ( !\port_map_registradores|registrador~48_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add12~26\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000001111111100000000",
+	lut_mask => "0000000000000000000000001111111100000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[5]~5_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[4]~4_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add9~17_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~48_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~27_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~27_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~48_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add12~26\,
 	sumout => \port_map_ual|portMap_multiplexador|Add12~21_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add12~22\);
 
 \port_map_ual|portMap_multiplexador|Add12~17\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add12~17_sumout\ = SUM(( !\port_map_registradores|registrador~49_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
+-- \port_map_ual|portMap_multiplexador|Add12~17_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
 -- ((\port_map_ual|portMap_multiplexador|produto~25_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (\port_map_ual|portMap_multiplexador|Add9~13_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~25_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add12~22\ ))
--- \port_map_ual|portMap_multiplexador|Add12~18\ = CARRY(( !\port_map_registradores|registrador~49_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~25_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (\port_map_ual|portMap_multiplexador|Add9~13_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~25_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add12~22\ ))
+-- (((\port_map_ual|portMap_multiplexador|produto~25_combout\)))) ) + ( !\port_map_registradores|registrador~49_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add12~22\ ))
+-- \port_map_ual|portMap_multiplexador|Add12~18\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((\port_map_ual|portMap_multiplexador|produto~25_combout\))) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (\port_map_ual|portMap_multiplexador|Add9~13_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (((\port_map_ual|portMap_multiplexador|produto~25_combout\)))) ) 
+-- + ( !\port_map_registradores|registrador~49_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add12~22\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000001111111100000000",
+	lut_mask => "0000000000000000000000001111111100000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[5]~5_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[4]~4_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add9~13_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~49_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~25_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~25_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~49_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add12~22\,
 	sumout => \port_map_ual|portMap_multiplexador|Add12~17_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add12~18\);
 
 \port_map_ual|portMap_multiplexador|produto~26\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|produto~26_combout\ = ( \port_map_ual|portMap_multiplexador|Add12~17_sumout\ & ( ((!\port_map_ual|portMap_multiplexador|process_0~6_combout\ & ((\port_map_ual|portMap_multiplexador|produto~25_combout\))) # 
--- (\port_map_ual|portMap_multiplexador|process_0~6_combout\ & (\port_map_ual|portMap_multiplexador|Add9~13_sumout\))) # (\port_map_ual|portMap_multiplexador|process_0~9_combout\) ) ) # ( !\port_map_ual|portMap_multiplexador|Add12~17_sumout\ & ( 
--- (!\port_map_ual|portMap_multiplexador|process_0~9_combout\ & ((!\port_map_ual|portMap_multiplexador|process_0~6_combout\ & ((\port_map_ual|portMap_multiplexador|produto~25_combout\))) # (\port_map_ual|portMap_multiplexador|process_0~6_combout\ & 
--- (\port_map_ual|portMap_multiplexador|Add9~13_sumout\)))) ) )
+-- \port_map_ual|portMap_multiplexador|produto~26_combout\ = ( \port_map_ual|portMap_multiplexador|Add12~17_sumout\ & ( ((!\port_map_ual|portMap_multiplexador|process_0~6_combout\ & (\port_map_ual|portMap_multiplexador|Add9~13_sumout\)) # 
+-- (\port_map_ual|portMap_multiplexador|process_0~6_combout\ & ((\port_map_ual|portMap_multiplexador|produto~25_combout\)))) # (\port_map_ual|portMap_multiplexador|process_0~9_combout\) ) ) # ( !\port_map_ual|portMap_multiplexador|Add12~17_sumout\ & ( 
+-- (!\port_map_ual|portMap_multiplexador|process_0~9_combout\ & ((!\port_map_ual|portMap_multiplexador|process_0~6_combout\ & (\port_map_ual|portMap_multiplexador|Add9~13_sumout\)) # (\port_map_ual|portMap_multiplexador|process_0~6_combout\ & 
+-- ((\port_map_ual|portMap_multiplexador|produto~25_combout\))))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000010010001100001101111011111100000100100011000011011110111111",
+	lut_mask => "0000100001001100001110110111111100001000010011000011101101111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -9361,15 +9222,15 @@ PORT MAP (
 
 \port_map_ual|portMap_multiplexador|produto~28\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|produto~28_combout\ = ( \port_map_ual|portMap_multiplexador|Add12~21_sumout\ & ( ((!\port_map_ual|portMap_multiplexador|process_0~6_combout\ & ((\port_map_ual|portMap_multiplexador|produto~27_combout\))) # 
--- (\port_map_ual|portMap_multiplexador|process_0~6_combout\ & (\port_map_ual|portMap_multiplexador|Add9~17_sumout\))) # (\port_map_ual|portMap_multiplexador|process_0~9_combout\) ) ) # ( !\port_map_ual|portMap_multiplexador|Add12~21_sumout\ & ( 
--- (!\port_map_ual|portMap_multiplexador|process_0~9_combout\ & ((!\port_map_ual|portMap_multiplexador|process_0~6_combout\ & ((\port_map_ual|portMap_multiplexador|produto~27_combout\))) # (\port_map_ual|portMap_multiplexador|process_0~6_combout\ & 
--- (\port_map_ual|portMap_multiplexador|Add9~17_sumout\)))) ) )
+-- \port_map_ual|portMap_multiplexador|produto~28_combout\ = ( \port_map_ual|portMap_multiplexador|Add12~21_sumout\ & ( ((!\port_map_ual|portMap_multiplexador|process_0~6_combout\ & (\port_map_ual|portMap_multiplexador|Add9~17_sumout\)) # 
+-- (\port_map_ual|portMap_multiplexador|process_0~6_combout\ & ((\port_map_ual|portMap_multiplexador|produto~27_combout\)))) # (\port_map_ual|portMap_multiplexador|process_0~9_combout\) ) ) # ( !\port_map_ual|portMap_multiplexador|Add12~21_sumout\ & ( 
+-- (!\port_map_ual|portMap_multiplexador|process_0~9_combout\ & ((!\port_map_ual|portMap_multiplexador|process_0~6_combout\ & (\port_map_ual|portMap_multiplexador|Add9~17_sumout\)) # (\port_map_ual|portMap_multiplexador|process_0~6_combout\ & 
+-- ((\port_map_ual|portMap_multiplexador|produto~27_combout\))))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000010010001100001101111011111100000100100011000011011110111111",
+	lut_mask => "0000100001001100001110110111111100001000010011000011101101111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -9382,15 +9243,15 @@ PORT MAP (
 
 \port_map_ual|portMap_multiplexador|produto~31\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|produto~31_combout\ = ( \port_map_ual|portMap_multiplexador|Add12~25_sumout\ & ( ((!\port_map_ual|portMap_multiplexador|process_0~6_combout\ & ((\port_map_ual|portMap_multiplexador|produto~30_combout\))) # 
--- (\port_map_ual|portMap_multiplexador|process_0~6_combout\ & (\port_map_ual|portMap_multiplexador|Add9~21_sumout\))) # (\port_map_ual|portMap_multiplexador|process_0~9_combout\) ) ) # ( !\port_map_ual|portMap_multiplexador|Add12~25_sumout\ & ( 
--- (!\port_map_ual|portMap_multiplexador|process_0~9_combout\ & ((!\port_map_ual|portMap_multiplexador|process_0~6_combout\ & ((\port_map_ual|portMap_multiplexador|produto~30_combout\))) # (\port_map_ual|portMap_multiplexador|process_0~6_combout\ & 
--- (\port_map_ual|portMap_multiplexador|Add9~21_sumout\)))) ) )
+-- \port_map_ual|portMap_multiplexador|produto~31_combout\ = ( \port_map_ual|portMap_multiplexador|Add12~25_sumout\ & ( ((!\port_map_ual|portMap_multiplexador|process_0~6_combout\ & (\port_map_ual|portMap_multiplexador|Add9~21_sumout\)) # 
+-- (\port_map_ual|portMap_multiplexador|process_0~6_combout\ & ((\port_map_ual|portMap_multiplexador|produto~30_combout\)))) # (\port_map_ual|portMap_multiplexador|process_0~9_combout\) ) ) # ( !\port_map_ual|portMap_multiplexador|Add12~25_sumout\ & ( 
+-- (!\port_map_ual|portMap_multiplexador|process_0~9_combout\ & ((!\port_map_ual|portMap_multiplexador|process_0~6_combout\ & (\port_map_ual|portMap_multiplexador|Add9~21_sumout\)) # (\port_map_ual|portMap_multiplexador|process_0~6_combout\ & 
+-- ((\port_map_ual|portMap_multiplexador|produto~30_combout\))))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000010010001100001101111011111100000100100011000011011110111111",
+	lut_mask => "0000100001001100001110110111111100001000010011000011101101111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -9429,12 +9290,12 @@ PORT MAP (
 
 \port_map_ual|portMap_multiplexador|produto~40\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|produto~40_combout\ = (\port_map_ual|portMap_multiplexador|process_0~6_combout\ & \port_map_ual|portMap_multiplexador|Add9~29_sumout\)
+-- \port_map_ual|portMap_multiplexador|produto~40_combout\ = (!\port_map_ual|portMap_multiplexador|process_0~6_combout\ & \port_map_ual|portMap_multiplexador|Add9~29_sumout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
+	lut_mask => "0010001000100010001000100010001000100010001000100010001000100010",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -9507,132 +9368,132 @@ PORT MAP (
 
 \port_map_ual|portMap_multiplexador|Add14~13\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add14~13_sumout\ = SUM(( !\port_map_registradores|registrador~44_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
+-- \port_map_ual|portMap_multiplexador|Add14~13_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
 -- ((\port_map_ual|portMap_multiplexador|produto~41_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (\port_map_ual|portMap_multiplexador|Add11~13_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~41_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add14~2\ ))
--- \port_map_ual|portMap_multiplexador|Add14~14\ = CARRY(( !\port_map_registradores|registrador~44_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~41_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (\port_map_ual|portMap_multiplexador|Add11~13_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~41_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add14~2\ ))
+-- (((\port_map_ual|portMap_multiplexador|produto~41_combout\)))) ) + ( !\port_map_registradores|registrador~44_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add14~2\ ))
+-- \port_map_ual|portMap_multiplexador|Add14~14\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((\port_map_ual|portMap_multiplexador|produto~41_combout\))) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (\port_map_ual|portMap_multiplexador|Add11~13_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & (((\port_map_ual|portMap_multiplexador|produto~41_combout\)))) 
+-- ) + ( !\port_map_registradores|registrador~44_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add14~2\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000001111111100000000",
+	lut_mask => "0000000000000000000000001111111100000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[6]~6_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[5]~5_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add11~13_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~44_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~41_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~41_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~44_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add14~2\,
 	sumout => \port_map_ual|portMap_multiplexador|Add14~13_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add14~14\);
 
 \port_map_ual|portMap_multiplexador|Add14~17\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add14~17_sumout\ = SUM(( !\port_map_registradores|registrador~45_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
+-- \port_map_ual|portMap_multiplexador|Add14~17_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
 -- ((\port_map_ual|portMap_multiplexador|produto~42_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (\port_map_ual|portMap_multiplexador|Add11~17_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~42_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add14~14\ ))
--- \port_map_ual|portMap_multiplexador|Add14~18\ = CARRY(( !\port_map_registradores|registrador~45_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~42_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (\port_map_ual|portMap_multiplexador|Add11~17_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~42_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add14~14\ ))
+-- (((\port_map_ual|portMap_multiplexador|produto~42_combout\)))) ) + ( !\port_map_registradores|registrador~45_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add14~14\ ))
+-- \port_map_ual|portMap_multiplexador|Add14~18\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((\port_map_ual|portMap_multiplexador|produto~42_combout\))) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (\port_map_ual|portMap_multiplexador|Add11~17_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & (((\port_map_ual|portMap_multiplexador|produto~42_combout\)))) 
+-- ) + ( !\port_map_registradores|registrador~45_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add14~14\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000001111111100000000",
+	lut_mask => "0000000000000000000000001111111100000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[6]~6_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[5]~5_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add11~17_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~45_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~42_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~42_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~45_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add14~14\,
 	sumout => \port_map_ual|portMap_multiplexador|Add14~17_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add14~18\);
 
 \port_map_ual|portMap_multiplexador|Add14~25\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add14~25_sumout\ = SUM(( !\port_map_registradores|registrador~46_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
+-- \port_map_ual|portMap_multiplexador|Add14~25_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
 -- ((\port_map_ual|portMap_multiplexador|produto~31_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (\port_map_ual|portMap_multiplexador|Add11~29_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~31_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add14~18\ ))
--- \port_map_ual|portMap_multiplexador|Add14~26\ = CARRY(( !\port_map_registradores|registrador~46_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~31_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (\port_map_ual|portMap_multiplexador|Add11~29_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~31_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add14~18\ ))
+-- (((\port_map_ual|portMap_multiplexador|produto~31_combout\)))) ) + ( !\port_map_registradores|registrador~46_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add14~18\ ))
+-- \port_map_ual|portMap_multiplexador|Add14~26\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((\port_map_ual|portMap_multiplexador|produto~31_combout\))) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (\port_map_ual|portMap_multiplexador|Add11~29_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & (((\port_map_ual|portMap_multiplexador|produto~31_combout\)))) 
+-- ) + ( !\port_map_registradores|registrador~46_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add14~18\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000001111111100000000",
+	lut_mask => "0000000000000000000000001111111100000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[6]~6_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[5]~5_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add11~29_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~46_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~31_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~31_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~46_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add14~18\,
 	sumout => \port_map_ual|portMap_multiplexador|Add14~25_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add14~26\);
 
 \port_map_ual|portMap_multiplexador|Add14~21\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add14~21_sumout\ = SUM(( !\port_map_registradores|registrador~47_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
+-- \port_map_ual|portMap_multiplexador|Add14~21_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
 -- ((\port_map_ual|portMap_multiplexador|produto~28_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (\port_map_ual|portMap_multiplexador|Add11~25_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~28_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add14~26\ ))
--- \port_map_ual|portMap_multiplexador|Add14~22\ = CARRY(( !\port_map_registradores|registrador~47_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~28_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (\port_map_ual|portMap_multiplexador|Add11~25_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~28_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add14~26\ ))
+-- (((\port_map_ual|portMap_multiplexador|produto~28_combout\)))) ) + ( !\port_map_registradores|registrador~47_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add14~26\ ))
+-- \port_map_ual|portMap_multiplexador|Add14~22\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((\port_map_ual|portMap_multiplexador|produto~28_combout\))) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (\port_map_ual|portMap_multiplexador|Add11~25_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & (((\port_map_ual|portMap_multiplexador|produto~28_combout\)))) 
+-- ) + ( !\port_map_registradores|registrador~47_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add14~26\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000001111111100000000",
+	lut_mask => "0000000000000000000000001111111100000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[6]~6_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[5]~5_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add11~25_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~47_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~28_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~28_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~47_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add14~26\,
 	sumout => \port_map_ual|portMap_multiplexador|Add14~21_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add14~22\);
 
 \port_map_ual|portMap_multiplexador|Add14~9\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add14~9_sumout\ = SUM(( !\port_map_registradores|registrador~48_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~26_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (\port_map_ual|portMap_multiplexador|Add11~21_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~26_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add14~22\ ))
--- \port_map_ual|portMap_multiplexador|Add14~10\ = CARRY(( !\port_map_registradores|registrador~48_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~26_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (\port_map_ual|portMap_multiplexador|Add11~21_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~26_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add14~22\ ))
+-- \port_map_ual|portMap_multiplexador|Add14~9_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((\port_map_ual|portMap_multiplexador|produto~26_combout\))) 
+-- # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (\port_map_ual|portMap_multiplexador|Add11~21_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & 
+-- (((\port_map_ual|portMap_multiplexador|produto~26_combout\)))) ) + ( !\port_map_registradores|registrador~48_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add14~22\ ))
+-- \port_map_ual|portMap_multiplexador|Add14~10\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((\port_map_ual|portMap_multiplexador|produto~26_combout\))) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (\port_map_ual|portMap_multiplexador|Add11~21_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & (((\port_map_ual|portMap_multiplexador|produto~26_combout\)))) 
+-- ) + ( !\port_map_registradores|registrador~48_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add14~22\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000001111111100000000",
+	lut_mask => "0000000000000000000000001111111100000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[6]~6_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[5]~5_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add11~21_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~48_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~26_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~26_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~48_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add14~22\,
 	sumout => \port_map_ual|portMap_multiplexador|Add14~9_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add14~10\);
 
-\port_map_ual|portMap_multiplexador|portOUT[13]~6\ : cyclonev_lcell_comb
+\port_map_ual|portMap_multiplexador|portOUT[13]~9\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|portOUT[13]~6_combout\ = (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[7]~7_combout\ & \port_map_ual|portMap_multiplexador|Add14~9_sumout\))
+-- \port_map_ual|portMap_multiplexador|portOUT[13]~9_combout\ = (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[7]~7_combout\ & \port_map_ual|portMap_multiplexador|Add14~9_sumout\))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -9644,54 +9505,54 @@ PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[6]~6_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[7]~7_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add14~9_sumout\,
-	combout => \port_map_ual|portMap_multiplexador|portOUT[13]~6_combout\);
+	combout => \port_map_ual|portMap_multiplexador|portOUT[13]~9_combout\);
 
 \port_map_ual|portMap_multiplexador|Add13~5\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add13~5_sumout\ = SUM(( \port_map_registradores|registrador~44_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~41_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (\port_map_ual|portMap_multiplexador|Add11~13_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~41_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add13~2\ ))
--- \port_map_ual|portMap_multiplexador|Add13~6\ = CARRY(( \port_map_registradores|registrador~44_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~41_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (\port_map_ual|portMap_multiplexador|Add11~13_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~41_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add13~2\ ))
+-- \port_map_ual|portMap_multiplexador|Add13~5_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((\port_map_ual|portMap_multiplexador|produto~41_combout\))) 
+-- # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (\port_map_ual|portMap_multiplexador|Add11~13_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & 
+-- (((\port_map_ual|portMap_multiplexador|produto~41_combout\)))) ) + ( \port_map_registradores|registrador~44_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add13~2\ ))
+-- \port_map_ual|portMap_multiplexador|Add13~6\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((\port_map_ual|portMap_multiplexador|produto~41_combout\))) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (\port_map_ual|portMap_multiplexador|Add11~13_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & (((\port_map_ual|portMap_multiplexador|produto~41_combout\)))) 
+-- ) + ( \port_map_registradores|registrador~44_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add13~2\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000000000000011111111",
+	lut_mask => "0000000000000000111111110000000000000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[6]~6_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[5]~5_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add11~13_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~44_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~41_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~41_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~44_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add13~2\,
 	sumout => \port_map_ual|portMap_multiplexador|Add13~5_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add13~6\);
 
 \port_map_ual|portMap_multiplexador|Add13~9\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add13~9_sumout\ = SUM(( \port_map_registradores|registrador~45_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~42_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (\port_map_ual|portMap_multiplexador|Add11~17_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~42_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add13~6\ ))
--- \port_map_ual|portMap_multiplexador|Add13~10\ = CARRY(( \port_map_registradores|registrador~45_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~42_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (\port_map_ual|portMap_multiplexador|Add11~17_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~42_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add13~6\ ))
+-- \port_map_ual|portMap_multiplexador|Add13~9_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((\port_map_ual|portMap_multiplexador|produto~42_combout\))) 
+-- # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (\port_map_ual|portMap_multiplexador|Add11~17_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & 
+-- (((\port_map_ual|portMap_multiplexador|produto~42_combout\)))) ) + ( \port_map_registradores|registrador~45_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add13~6\ ))
+-- \port_map_ual|portMap_multiplexador|Add13~10\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((\port_map_ual|portMap_multiplexador|produto~42_combout\))) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (\port_map_ual|portMap_multiplexador|Add11~17_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & (((\port_map_ual|portMap_multiplexador|produto~42_combout\)))) 
+-- ) + ( \port_map_registradores|registrador~45_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add13~6\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000000000000011111111",
+	lut_mask => "0000000000000000111111110000000000000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[6]~6_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[5]~5_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add11~17_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~45_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~42_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~42_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~45_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add13~6\,
 	sumout => \port_map_ual|portMap_multiplexador|Add13~9_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add13~10\);
@@ -9724,50 +9585,50 @@ PORT MAP (
 
 \port_map_ual|portMap_multiplexador|Add13~17\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add13~17_sumout\ = SUM(( \port_map_registradores|registrador~46_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
+-- \port_map_ual|portMap_multiplexador|Add13~17_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
 -- ((\port_map_ual|portMap_multiplexador|produto~31_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (\port_map_ual|portMap_multiplexador|Add11~29_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~31_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add13~10\ ))
--- \port_map_ual|portMap_multiplexador|Add13~18\ = CARRY(( \port_map_registradores|registrador~46_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~31_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (\port_map_ual|portMap_multiplexador|Add11~29_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~31_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add13~10\ ))
+-- (((\port_map_ual|portMap_multiplexador|produto~31_combout\)))) ) + ( \port_map_registradores|registrador~46_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add13~10\ ))
+-- \port_map_ual|portMap_multiplexador|Add13~18\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((\port_map_ual|portMap_multiplexador|produto~31_combout\))) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (\port_map_ual|portMap_multiplexador|Add11~29_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & (((\port_map_ual|portMap_multiplexador|produto~31_combout\)))) 
+-- ) + ( \port_map_registradores|registrador~46_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add13~10\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000000000000011111111",
+	lut_mask => "0000000000000000111111110000000000000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[6]~6_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[5]~5_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add11~29_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~46_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~31_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~31_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~46_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add13~10\,
 	sumout => \port_map_ual|portMap_multiplexador|Add13~17_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add13~18\);
 
 \port_map_ual|portMap_multiplexador|Add13~13\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add13~13_sumout\ = SUM(( \port_map_registradores|registrador~47_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
+-- \port_map_ual|portMap_multiplexador|Add13~13_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
 -- ((\port_map_ual|portMap_multiplexador|produto~28_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (\port_map_ual|portMap_multiplexador|Add11~25_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~28_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add13~18\ ))
--- \port_map_ual|portMap_multiplexador|Add13~14\ = CARRY(( \port_map_registradores|registrador~47_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~28_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (\port_map_ual|portMap_multiplexador|Add11~25_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~28_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add13~18\ ))
+-- (((\port_map_ual|portMap_multiplexador|produto~28_combout\)))) ) + ( \port_map_registradores|registrador~47_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add13~18\ ))
+-- \port_map_ual|portMap_multiplexador|Add13~14\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((\port_map_ual|portMap_multiplexador|produto~28_combout\))) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (\port_map_ual|portMap_multiplexador|Add11~25_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & (((\port_map_ual|portMap_multiplexador|produto~28_combout\)))) 
+-- ) + ( \port_map_registradores|registrador~47_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add13~18\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000000000000011111111",
+	lut_mask => "0000000000000000111111110000000000000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[6]~6_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[5]~5_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add11~25_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~47_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~28_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~28_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~47_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add13~18\,
 	sumout => \port_map_ual|portMap_multiplexador|Add13~13_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add13~14\);
@@ -9801,53 +9662,53 @@ PORT MAP (
 
 \port_map_ual|portMap_multiplexador|Add13~21\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add13~21_sumout\ = SUM(( \port_map_registradores|registrador~48_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
+-- \port_map_ual|portMap_multiplexador|Add13~21_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
 -- ((\port_map_ual|portMap_multiplexador|produto~26_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (\port_map_ual|portMap_multiplexador|Add11~21_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~26_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add13~14\ ))
--- \port_map_ual|portMap_multiplexador|Add13~22\ = CARRY(( \port_map_registradores|registrador~48_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~26_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (\port_map_ual|portMap_multiplexador|Add11~21_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~26_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add13~14\ ))
+-- (((\port_map_ual|portMap_multiplexador|produto~26_combout\)))) ) + ( \port_map_registradores|registrador~48_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add13~14\ ))
+-- \port_map_ual|portMap_multiplexador|Add13~22\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((\port_map_ual|portMap_multiplexador|produto~26_combout\))) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (\port_map_ual|portMap_multiplexador|Add11~21_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & (((\port_map_ual|portMap_multiplexador|produto~26_combout\)))) 
+-- ) + ( \port_map_registradores|registrador~48_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add13~14\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000000000000011111111",
+	lut_mask => "0000000000000000111111110000000000000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[6]~6_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[5]~5_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add11~21_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~48_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~26_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~26_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~48_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add13~14\,
 	sumout => \port_map_ual|portMap_multiplexador|Add13~21_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add13~22\);
 
 \port_map_ual|portMap_multiplexador|Add12~13\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add12~13_sumout\ = SUM(( !\port_map_registradores|registrador~50_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
+-- \port_map_ual|portMap_multiplexador|Add12~13_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
 -- ((\port_map_ual|portMap_multiplexador|produto~25_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (\port_map_ual|portMap_multiplexador|Add9~13_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~25_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add12~18\ ))
+-- (((\port_map_ual|portMap_multiplexador|produto~25_combout\)))) ) + ( !\port_map_registradores|registrador~50_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add12~18\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000001111111100000000",
+	lut_mask => "0000000000000000000000001111111100000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[5]~5_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[4]~4_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add9~13_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~50_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~25_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~25_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~50_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add12~18\,
 	sumout => \port_map_ual|portMap_multiplexador|Add12~13_sumout\);
 
-\port_map_ual|portMap_multiplexador|portOUT[14]~7\ : cyclonev_lcell_comb
+\port_map_ual|portMap_multiplexador|portOUT[14]~10\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|portOUT[14]~7_combout\ = ( \port_map_ual|portMap_multiplexador|produto~25_combout\ & ( \port_map_ual|portMap_multiplexador|Add12~13_sumout\ & ( ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
+-- \port_map_ual|portMap_multiplexador|portOUT[14]~10_combout\ = ( \port_map_ual|portMap_multiplexador|produto~25_combout\ & ( \port_map_ual|portMap_multiplexador|Add12~13_sumout\ & ( ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
 -- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\) # (\port_map_ual|portMap_multiplexador|Add9~13_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\) ) ) ) # ( 
 -- !\port_map_ual|portMap_multiplexador|produto~25_combout\ & ( \port_map_ual|portMap_multiplexador|Add12~13_sumout\ & ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (((\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
 -- \port_map_ual|portMap_multiplexador|Add9~13_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\))) ) ) ) # ( \port_map_ual|portMap_multiplexador|produto~25_combout\ & ( !\port_map_ual|portMap_multiplexador|Add12~13_sumout\ & ( 
@@ -9869,32 +9730,32 @@ PORT MAP (
 	datad => \port_map_ual|portMap_multiplexador|ALT_INV_Add9~13_sumout\,
 	datae => \port_map_ual|portMap_multiplexador|ALT_INV_produto~25_combout\,
 	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_Add12~13_sumout\,
-	combout => \port_map_ual|portMap_multiplexador|portOUT[14]~7_combout\);
+	combout => \port_map_ual|portMap_multiplexador|portOUT[14]~10_combout\);
 
 \port_map_ual|portMap_multiplexador|Add11~9\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add11~9_sumout\ = SUM(( \port_map_registradores|registrador~50_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~25_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (\port_map_ual|portMap_multiplexador|Add9~13_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~25_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add11~22\ ))
+-- \port_map_ual|portMap_multiplexador|Add11~9_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & ((\port_map_ual|portMap_multiplexador|produto~25_combout\))) 
+-- # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[4]~4_combout\ & (\port_map_ual|portMap_multiplexador|Add9~13_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (((\port_map_ual|portMap_multiplexador|produto~25_combout\)))) 
+-- ) + ( \port_map_registradores|registrador~50_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add11~22\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000000000000011111111",
+	lut_mask => "0000000000000000111111110000000000000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[5]~5_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[4]~4_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add9~13_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~50_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~25_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~25_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~50_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add11~22\,
 	sumout => \port_map_ual|portMap_multiplexador|Add11~9_sumout\);
 
-\port_map_ual|portMap_multiplexador|portOUT[14]~8\ : cyclonev_lcell_comb
+\port_map_ual|portMap_multiplexador|portOUT[14]~11\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|portOUT[14]~8_combout\ = (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & \port_map_ual|portMap_multiplexador|Add11~9_sumout\))
+-- \port_map_ual|portMap_multiplexador|portOUT[14]~11_combout\ = (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & \port_map_ual|portMap_multiplexador|Add11~9_sumout\))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -9906,7 +9767,7 @@ PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[5]~5_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[6]~6_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add11~9_sumout\,
-	combout => \port_map_ual|portMap_multiplexador|portOUT[14]~8_combout\);
+	combout => \port_map_ual|portMap_multiplexador|portOUT[14]~11_combout\);
 
 \port_map_ual|process_0~2\ : cyclonev_lcell_comb
 -- Equation(s):
@@ -10007,12 +9868,12 @@ PORT MAP (
 
 \port_map_ual|process_0~7\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|process_0~7_combout\ = ( \port_map_ual|portMap_multiplexador|portOUT[14]~8_combout\ & ( \port_map_ual|process_0~6_combout\ & ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & 
+-- \port_map_ual|process_0~7_combout\ = ( \port_map_ual|portMap_multiplexador|portOUT[14]~11_combout\ & ( \port_map_ual|process_0~6_combout\ & ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & 
 -- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[7]~7_combout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[7]~7_combout\ & 
--- !\port_map_ual|portMap_multiplexador|Add13~21_sumout\)) ) ) ) # ( !\port_map_ual|portMap_multiplexador|portOUT[14]~8_combout\ & ( \port_map_ual|process_0~6_combout\ & ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & 
--- (((!\port_map_ual|portMap_multiplexador|portOUT[14]~7_combout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[7]~7_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & 
+-- !\port_map_ual|portMap_multiplexador|Add13~21_sumout\)) ) ) ) # ( !\port_map_ual|portMap_multiplexador|portOUT[14]~11_combout\ & ( \port_map_ual|process_0~6_combout\ & ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & 
+-- (((!\port_map_ual|portMap_multiplexador|portOUT[14]~10_combout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[7]~7_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & 
 -- ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[7]~7_combout\ & (!\port_map_ual|portMap_multiplexador|Add13~21_sumout\)) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[7]~7_combout\ & 
--- ((!\port_map_ual|portMap_multiplexador|portOUT[14]~7_combout\))))) ) ) )
+-- ((!\port_map_ual|portMap_multiplexador|portOUT[14]~10_combout\))))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -10024,22 +9885,22 @@ PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[6]~6_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[7]~7_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add13~21_sumout\,
-	datad => \port_map_ual|portMap_multiplexador|ALT_INV_portOUT[14]~7_combout\,
-	datae => \port_map_ual|portMap_multiplexador|ALT_INV_portOUT[14]~8_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_portOUT[14]~10_combout\,
+	datae => \port_map_ual|portMap_multiplexador|ALT_INV_portOUT[14]~11_combout\,
 	dataf => \port_map_ual|ALT_INV_process_0~6_combout\,
 	combout => \port_map_ual|process_0~7_combout\);
 
 \port_map_ual|portMap_multiplexador|produto~46\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|produto~46_combout\ = ( \port_map_ual|portMap_multiplexador|Add12~13_sumout\ & ( ((!\port_map_ual|portMap_multiplexador|process_0~6_combout\ & ((\port_map_ual|portMap_multiplexador|produto~25_combout\))) # 
--- (\port_map_ual|portMap_multiplexador|process_0~6_combout\ & (\port_map_ual|portMap_multiplexador|Add9~13_sumout\))) # (\port_map_ual|portMap_multiplexador|process_0~9_combout\) ) ) # ( !\port_map_ual|portMap_multiplexador|Add12~13_sumout\ & ( 
--- (!\port_map_ual|portMap_multiplexador|process_0~9_combout\ & ((!\port_map_ual|portMap_multiplexador|process_0~6_combout\ & ((\port_map_ual|portMap_multiplexador|produto~25_combout\))) # (\port_map_ual|portMap_multiplexador|process_0~6_combout\ & 
--- (\port_map_ual|portMap_multiplexador|Add9~13_sumout\)))) ) )
+-- \port_map_ual|portMap_multiplexador|produto~46_combout\ = ( \port_map_ual|portMap_multiplexador|Add12~13_sumout\ & ( ((!\port_map_ual|portMap_multiplexador|process_0~6_combout\ & (\port_map_ual|portMap_multiplexador|Add9~13_sumout\)) # 
+-- (\port_map_ual|portMap_multiplexador|process_0~6_combout\ & ((\port_map_ual|portMap_multiplexador|produto~25_combout\)))) # (\port_map_ual|portMap_multiplexador|process_0~9_combout\) ) ) # ( !\port_map_ual|portMap_multiplexador|Add12~13_sumout\ & ( 
+-- (!\port_map_ual|portMap_multiplexador|process_0~9_combout\ & ((!\port_map_ual|portMap_multiplexador|process_0~6_combout\ & (\port_map_ual|portMap_multiplexador|Add9~13_sumout\)) # (\port_map_ual|portMap_multiplexador|process_0~6_combout\ & 
+-- ((\port_map_ual|portMap_multiplexador|produto~25_combout\))))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000010010001100001101111011111100000100100011000011011110111111",
+	lut_mask => "0000100001001100001110110111111100001000010011000011101101111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -10052,93 +9913,93 @@ PORT MAP (
 
 \port_map_ual|portMap_multiplexador|Add13~29\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add13~29_sumout\ = SUM(( \port_map_registradores|registrador~49_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
+-- \port_map_ual|portMap_multiplexador|Add13~29_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
 -- ((\port_map_ual|portMap_multiplexador|produto~46_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (\port_map_ual|portMap_multiplexador|Add11~9_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~46_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add13~22\ ))
--- \port_map_ual|portMap_multiplexador|Add13~30\ = CARRY(( \port_map_registradores|registrador~49_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~46_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (\port_map_ual|portMap_multiplexador|Add11~9_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~46_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add13~22\ ))
+-- (((\port_map_ual|portMap_multiplexador|produto~46_combout\)))) ) + ( \port_map_registradores|registrador~49_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add13~22\ ))
+-- \port_map_ual|portMap_multiplexador|Add13~30\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((\port_map_ual|portMap_multiplexador|produto~46_combout\))) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (\port_map_ual|portMap_multiplexador|Add11~9_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & (((\port_map_ual|portMap_multiplexador|produto~46_combout\)))) ) 
+-- + ( \port_map_registradores|registrador~49_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add13~22\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000000000000011111111",
+	lut_mask => "0000000000000000111111110000000000000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[6]~6_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[5]~5_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add11~9_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~49_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~46_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~46_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~49_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add13~22\,
 	sumout => \port_map_ual|portMap_multiplexador|Add13~29_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add13~30\);
 
 \port_map_ual|portMap_multiplexador|Add13~25\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add13~25_sumout\ = SUM(( \port_map_registradores|registrador~50_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
+-- \port_map_ual|portMap_multiplexador|Add13~25_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
 -- ((\port_map_ual|portMap_multiplexador|produto~46_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (\port_map_ual|portMap_multiplexador|Add11~9_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~46_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add13~30\ ))
+-- (((\port_map_ual|portMap_multiplexador|produto~46_combout\)))) ) + ( \port_map_registradores|registrador~50_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add13~30\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000000000000011111111",
+	lut_mask => "0000000000000000111111110000000000000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[6]~6_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[5]~5_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add11~9_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~50_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~46_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~46_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~50_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add13~30\,
 	sumout => \port_map_ual|portMap_multiplexador|Add13~25_sumout\);
 
 \port_map_ual|portMap_multiplexador|Add14~33\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add14~33_sumout\ = SUM(( !\port_map_registradores|registrador~49_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
+-- \port_map_ual|portMap_multiplexador|Add14~33_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
 -- ((\port_map_ual|portMap_multiplexador|produto~46_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (\port_map_ual|portMap_multiplexador|Add11~9_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~46_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add14~10\ ))
--- \port_map_ual|portMap_multiplexador|Add14~34\ = CARRY(( !\port_map_registradores|registrador~49_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
--- ((\port_map_ual|portMap_multiplexador|produto~46_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (\port_map_ual|portMap_multiplexador|Add11~9_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~46_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add14~10\ ))
+-- (((\port_map_ual|portMap_multiplexador|produto~46_combout\)))) ) + ( !\port_map_registradores|registrador~49_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add14~10\ ))
+-- \port_map_ual|portMap_multiplexador|Add14~34\ = CARRY(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & ((\port_map_ual|portMap_multiplexador|produto~46_combout\))) # 
+-- (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (\port_map_ual|portMap_multiplexador|Add11~9_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & (((\port_map_ual|portMap_multiplexador|produto~46_combout\)))) ) 
+-- + ( !\port_map_registradores|registrador~49_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add14~10\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000001111111100000000",
+	lut_mask => "0000000000000000000000001111111100000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[6]~6_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[5]~5_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add11~9_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~49_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~46_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~46_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~49_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add14~10\,
 	sumout => \port_map_ual|portMap_multiplexador|Add14~33_sumout\,
 	cout => \port_map_ual|portMap_multiplexador|Add14~34\);
 
 \port_map_ual|portMap_multiplexador|Add14~29\ : cyclonev_lcell_comb
 -- Equation(s):
--- \port_map_ual|portMap_multiplexador|Add14~29_sumout\ = SUM(( !\port_map_registradores|registrador~50_combout\ ) + ( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
+-- \port_map_ual|portMap_multiplexador|Add14~29_sumout\ = SUM(( (!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & ((!\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & 
 -- ((\port_map_ual|portMap_multiplexador|produto~46_combout\))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5_combout\ & (\port_map_ual|portMap_multiplexador|Add11~9_sumout\)))) # (\port_map_multiplexador_2X1_8bits_br_ula|portOUT[6]~6_combout\ & 
--- (((\port_map_ual|portMap_multiplexador|produto~46_combout\)))) ) + ( \port_map_ual|portMap_multiplexador|Add14~34\ ))
+-- (((\port_map_ual|portMap_multiplexador|produto~46_combout\)))) ) + ( !\port_map_registradores|registrador~50_combout\ ) + ( \port_map_ual|portMap_multiplexador|Add14~34\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111010010000000000000000000001111111100000000",
+	lut_mask => "0000000000000000000000001111111100000000000000000000001011011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[6]~6_combout\,
 	datab => \port_map_multiplexador_2X1_8bits_br_ula|ALT_INV_portOUT[5]~5_combout\,
 	datac => \port_map_ual|portMap_multiplexador|ALT_INV_Add11~9_sumout\,
-	datad => \port_map_registradores|ALT_INV_registrador~50_combout\,
-	dataf => \port_map_ual|portMap_multiplexador|ALT_INV_produto~46_combout\,
+	datad => \port_map_ual|portMap_multiplexador|ALT_INV_produto~46_combout\,
+	dataf => \port_map_registradores|ALT_INV_registrador~50_combout\,
 	cin => \port_map_ual|portMap_multiplexador|Add14~34\,
 	sumout => \port_map_ual|portMap_multiplexador|Add14~29_sumout\);
 
@@ -10172,7 +10033,7 @@ PORT MAP (
 \port_map_ual|process_0~9\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \port_map_ual|process_0~9_combout\ = ( \port_map_ual|process_0~8_combout\ ) # ( !\port_map_ual|process_0~8_combout\ & ( (((!\port_map_ual|process_0~7_combout\) # (\port_map_ual|process_0~1_combout\)) # (\port_map_ual|process_0~0_combout\)) # 
--- (\port_map_ual|portMap_multiplexador|portOUT[13]~6_combout\) ) )
+-- (\port_map_ual|portMap_multiplexador|portOUT[13]~9_combout\) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -10181,7 +10042,7 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \port_map_ual|portMap_multiplexador|ALT_INV_portOUT[13]~6_combout\,
+	dataa => \port_map_ual|portMap_multiplexador|ALT_INV_portOUT[13]~9_combout\,
 	datab => \port_map_ual|ALT_INV_process_0~0_combout\,
 	datac => \port_map_ual|ALT_INV_process_0~1_combout\,
 	datad => \port_map_ual|ALT_INV_process_0~7_combout\,

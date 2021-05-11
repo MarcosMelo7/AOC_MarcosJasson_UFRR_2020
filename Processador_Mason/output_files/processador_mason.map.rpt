@@ -1,5 +1,5 @@
 Analysis & Synthesis report for processador_mason
-Mon May 10 14:58:40 2021
+Tue May 11 18:17:43 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -15,15 +15,16 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis RAM Summary
   9. User-Specified and Inferred Latches
- 10. General Register Statistics
- 11. Registers Packed Into Inferred Megafunctions
- 12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Source assignments for memoriaAdress:port_map_memoriaAdress|altsyncram:ram_rtl_0|altsyncram_c502:auto_generated
- 14. Parameter Settings for Inferred Entity Instance: memoriaAdress:port_map_memoriaAdress|altsyncram:ram_rtl_0
- 15. altsyncram Parameter Settings by Entity Instance
- 16. Post-Synthesis Netlist Statistics for Top Partition
- 17. Elapsed Time Per Partition
- 18. Analysis & Synthesis Messages
+ 10. Registers Removed During Synthesis
+ 11. General Register Statistics
+ 12. Registers Packed Into Inferred Megafunctions
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Source assignments for memoriaAdress:port_map_memoriaAdress|altsyncram:ram_rtl_0|altsyncram_c502:auto_generated
+ 15. Parameter Settings for Inferred Entity Instance: memoriaAdress:port_map_memoriaAdress|altsyncram:ram_rtl_0
+ 16. altsyncram Parameter Settings by Entity Instance
+ 17. Post-Synthesis Netlist Statistics for Top Partition
+ 18. Elapsed Time Per Partition
+ 19. Analysis & Synthesis Messages
 
 
 
@@ -50,13 +51,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon May 10 14:58:40 2021       ;
+; Analysis & Synthesis Status     ; Successful - Tue May 11 18:17:43 2021       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; processador_mason                           ;
 ; Top-level Entity Name           ; processador_mason                           ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 40                                          ;
+; Total registers                 ; 24                                          ;
 ; Total pins                      ; 70                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 32                                          ;
@@ -210,33 +211,33 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------+-----------------+-------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary               ;
-+---------------------------------------------+-------------+
-; Resource                                    ; Usage       ;
-+---------------------------------------------+-------------+
-; Estimate of Logic utilization (ALMs needed) ; 191         ;
-;                                             ;             ;
-; Combinational ALUT usage for logic          ; 337         ;
-;     -- 7 input functions                    ; 4           ;
-;     -- 6 input functions                    ; 38          ;
-;     -- 5 input functions                    ; 175         ;
-;     -- 4 input functions                    ; 29          ;
-;     -- <=3 input functions                  ; 91          ;
-;                                             ;             ;
-; Dedicated logic registers                   ; 40          ;
-;                                             ;             ;
-; I/O pins                                    ; 70          ;
-; Total MLAB memory bits                      ; 0           ;
-; Total block memory bits                     ; 32          ;
-;                                             ;             ;
-; Total DSP Blocks                            ; 0           ;
-;                                             ;             ;
-; Maximum fan-out node                        ; clock~input ;
-; Maximum fan-out                             ; 48          ;
-; Total fan-out                               ; 1873        ;
-; Average fan-out                             ; 3.57        ;
-+---------------------------------------------+-------------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                                                ;
++---------------------------------------------+------------------------------------------------------------------------------+
+; Resource                                    ; Usage                                                                        ;
++---------------------------------------------+------------------------------------------------------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 189                                                                          ;
+;                                             ;                                                                              ;
+; Combinational ALUT usage for logic          ; 344                                                                          ;
+;     -- 7 input functions                    ; 4                                                                            ;
+;     -- 6 input functions                    ; 28                                                                           ;
+;     -- 5 input functions                    ; 176                                                                          ;
+;     -- 4 input functions                    ; 42                                                                           ;
+;     -- <=3 input functions                  ; 94                                                                           ;
+;                                             ;                                                                              ;
+; Dedicated logic registers                   ; 24                                                                           ;
+;                                             ;                                                                              ;
+; I/O pins                                    ; 70                                                                           ;
+; Total MLAB memory bits                      ; 0                                                                            ;
+; Total block memory bits                     ; 32                                                                           ;
+;                                             ;                                                                              ;
+; Total DSP Blocks                            ; 0                                                                            ;
+;                                             ;                                                                              ;
+; Maximum fan-out node                        ; multiplexador_2X1_8bits:port_map_multiplexador_2X1_8bits_br_ula|portOUT[5]~5 ;
+; Maximum fan-out                             ; 47                                                                           ;
+; Total fan-out                               ; 1833                                                                         ;
+; Average fan-out                             ; 3.55                                                                         ;
++---------------------------------------------+------------------------------------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -244,21 +245,21 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------+-------------------------+--------------+
 ; Compilation Hierarchy Node                                                  ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                         ; Entity Name             ; Library Name ;
 +-----------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------+-------------------------+--------------+
-; |processador_mason                                                          ; 337 (0)             ; 40 (0)                    ; 32                ; 0          ; 70   ; 0            ; |processador_mason                                                                                          ; processador_mason       ; work         ;
+; |processador_mason                                                          ; 344 (0)             ; 24 (0)                    ; 32                ; 0          ; 70   ; 0            ; |processador_mason                                                                                          ; processador_mason       ; work         ;
 ;    |addPC:port_map_addPC|                                                   ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processador_mason|addPC:port_map_addPC                                                                     ; addPC                   ; work         ;
 ;    |controle:port_map_controle|                                             ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processador_mason|controle:port_map_controle                                                               ; controle                ; work         ;
 ;    |memoriaAdress:port_map_memoriaAdress|                                   ; 0 (0)               ; 0 (0)                     ; 32                ; 0          ; 0    ; 0            ; |processador_mason|memoriaAdress:port_map_memoriaAdress                                                     ; memoriaAdress           ; work         ;
 ;       |altsyncram:ram_rtl_0|                                                ; 0 (0)               ; 0 (0)                     ; 32                ; 0          ; 0    ; 0            ; |processador_mason|memoriaAdress:port_map_memoriaAdress|altsyncram:ram_rtl_0                                ; altsyncram              ; work         ;
 ;          |altsyncram_c502:auto_generated|                                   ; 0 (0)               ; 0 (0)                     ; 32                ; 0          ; 0    ; 0            ; |processador_mason|memoriaAdress:port_map_memoriaAdress|altsyncram:ram_rtl_0|altsyncram_c502:auto_generated ; altsyncram_c502         ; work         ;
-;    |memoriaInst:port_map_memoriaInst|                                       ; 18 (18)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processador_mason|memoriaInst:port_map_memoriaInst                                                         ; memoriaInst             ; work         ;
+;    |memoriaInst:port_map_memoriaInst|                                       ; 13 (13)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processador_mason|memoriaInst:port_map_memoriaInst                                                         ; memoriaInst             ; work         ;
 ;    |multiplexador_2X1_8bits:port_map_multiplexador_2X1_8bits_br_ula|        ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processador_mason|multiplexador_2X1_8bits:port_map_multiplexador_2X1_8bits_br_ula                          ; multiplexador_2X1_8bits ; work         ;
 ;    |multiplexador_2X1_8bits:port_map_multiplexador_2X1_8bits_jump|          ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processador_mason|multiplexador_2X1_8bits:port_map_multiplexador_2X1_8bits_jump                            ; multiplexador_2X1_8bits ; work         ;
 ;    |multiplexador_2X1_8bits:port_map_multiplexador_2X1_8bits_memAdress_ula| ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processador_mason|multiplexador_2X1_8bits:port_map_multiplexador_2X1_8bits_memAdress_ula                   ; multiplexador_2X1_8bits ; work         ;
 ;    |pc:port_map_pc|                                                         ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |processador_mason|pc:port_map_pc                                                                           ; pc                      ; work         ;
-;    |registradores:port_map_registradores|                                   ; 20 (20)             ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |processador_mason|registradores:port_map_registradores                                                     ; registradores           ; work         ;
-;    |ual:port_map_ual|                                                       ; 260 (48)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processador_mason|ual:port_map_ual                                                                         ; ual                     ; work         ;
+;    |registradores:port_map_registradores|                                   ; 32 (32)             ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |processador_mason|registradores:port_map_registradores                                                     ; registradores           ; work         ;
+;    |ual:port_map_ual|                                                       ; 260 (46)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processador_mason|ual:port_map_ual                                                                         ; ual                     ; work         ;
 ;       |adicionador:portMap_adicionador|                                     ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processador_mason|ual:port_map_ual|adicionador:portMap_adicionador                                         ; adicionador             ; work         ;
-;       |multiplexador:portMap_multiplexador|                                 ; 195 (195)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processador_mason|ual:port_map_ual|multiplexador:portMap_multiplexador                                     ; multiplexador           ; work         ;
+;       |multiplexador:portMap_multiplexador|                                 ; 197 (197)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processador_mason|ual:port_map_ual|multiplexador:portMap_multiplexador                                     ; multiplexador           ; work         ;
 ;       |subtrair:portMap_subtrair|                                           ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processador_mason|ual:port_map_ual|subtrair:portMap_subtrair                                               ; subtrair                ; work         ;
 +-----------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------+-------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -286,17 +287,42 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
++----------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                           ;
++-----------------------------------------------------+----------------------------------------+
+; Register name                                       ; Reason for Removal                     ;
++-----------------------------------------------------+----------------------------------------+
+; registradores:port_map_registradores|registrador~27 ; Stuck at GND due to stuck port data_in ;
+; registradores:port_map_registradores|registrador~35 ; Stuck at GND due to stuck port data_in ;
+; registradores:port_map_registradores|registrador~28 ; Stuck at GND due to stuck port data_in ;
+; registradores:port_map_registradores|registrador~36 ; Stuck at GND due to stuck port data_in ;
+; registradores:port_map_registradores|registrador~29 ; Stuck at GND due to stuck port data_in ;
+; registradores:port_map_registradores|registrador~37 ; Stuck at GND due to stuck port data_in ;
+; registradores:port_map_registradores|registrador~30 ; Stuck at GND due to stuck port data_in ;
+; registradores:port_map_registradores|registrador~38 ; Stuck at GND due to stuck port data_in ;
+; registradores:port_map_registradores|registrador~31 ; Stuck at GND due to stuck port data_in ;
+; registradores:port_map_registradores|registrador~39 ; Stuck at GND due to stuck port data_in ;
+; registradores:port_map_registradores|registrador~32 ; Stuck at GND due to stuck port data_in ;
+; registradores:port_map_registradores|registrador~40 ; Stuck at GND due to stuck port data_in ;
+; registradores:port_map_registradores|registrador~33 ; Stuck at GND due to stuck port data_in ;
+; registradores:port_map_registradores|registrador~41 ; Stuck at GND due to stuck port data_in ;
+; registradores:port_map_registradores|registrador~34 ; Stuck at GND due to stuck port data_in ;
+; registradores:port_map_registradores|registrador~42 ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 16              ;                                        ;
++-----------------------------------------------------+----------------------------------------+
+
+
 +------------------------------------------------------+
 ; General Register Statistics                          ;
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 40    ;
+; Total registers                              ; 24    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 32    ;
+; Number of registers using Clock Enable       ; 16    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -315,7 +341,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                         ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------+
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |processador_mason|pc:port_map_pc|portOUT[7]                                       ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |processador_mason|pc:port_map_pc|portOUT[3]                                       ;
 ; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |processador_mason|ual:port_map_ual|multiplexador:portMap_multiplexador|produto    ;
 ; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |processador_mason|ual:port_map_ual|multiplexador:portMap_multiplexador|produto    ;
 ; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |processador_mason|ual:port_map_ual|multiplexador:portMap_multiplexador|produto    ;
@@ -421,28 +447,31 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 40                          ;
-;     ENA               ; 32                          ;
+; arriav_ff             ; 24                          ;
+;     ENA               ; 16                          ;
 ;     plain             ; 8                           ;
-; arriav_lcell_comb     ; 337                         ;
+; arriav_lcell_comb     ; 345                         ;
 ;     arith             ; 152                         ;
 ;         0 data inputs ; 8                           ;
-;         1 data inputs ; 16                          ;
-;         3 data inputs ; 12                          ;
-;         5 data inputs ; 116                         ;
+;         1 data inputs ; 8                           ;
+;         3 data inputs ; 8                           ;
+;         4 data inputs ; 13                          ;
+;         5 data inputs ; 115                         ;
 ;     extend            ; 4                           ;
 ;         7 data inputs ; 4                           ;
-;     normal            ; 181                         ;
-;         2 data inputs ; 24                          ;
-;         3 data inputs ; 31                          ;
+;     normal            ; 189                         ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 33                          ;
+;         3 data inputs ; 36                          ;
 ;         4 data inputs ; 29                          ;
-;         5 data inputs ; 59                          ;
-;         6 data inputs ; 38                          ;
+;         5 data inputs ; 61                          ;
+;         6 data inputs ; 28                          ;
 ; boundary_port         ; 70                          ;
 ; stratixv_ram_block    ; 8                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 21.40                       ;
-; Average LUT depth     ; 16.81                       ;
+; Max LUT depth         ; 20.40                       ;
+; Average LUT depth     ; 15.93                       ;
 +-----------------------+-----------------------------+
 
 
@@ -461,7 +490,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon May 10 14:58:24 2021
+    Info: Processing started: Tue May 11 18:17:27 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off processador_mason -c processador_mason
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -521,7 +550,7 @@ Info (12128): Elaborating entity "addPC" for hierarchy "addPC:port_map_addPC" Fi
 Warning (10492): VHDL Process Statement warning at addPC.vhd(19): signal "portIN" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/thekr/Desktop/Processador_Mason_Marcos_Jason/componentes/addPC.vhd Line: 19
 Info (12128): Elaborating entity "pc" for hierarchy "pc:port_map_pc" File: C:/Users/thekr/Desktop/Processador_Mason_Marcos_Jason/processador_mason.vhd Line: 200
 Info (12128): Elaborating entity "memoriaInst" for hierarchy "memoriaInst:port_map_memoriaInst" File: C:/Users/thekr/Desktop/Processador_Mason_Marcos_Jason/processador_mason.vhd Line: 202
-Warning (10492): VHDL Process Statement warning at memoriaInst.vhd(100): signal "portIN" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/thekr/Desktop/Processador_Mason_Marcos_Jason/componentes/memoriaInst.vhd Line: 100
+Warning (10492): VHDL Process Statement warning at memoriaInst.vhd(99): signal "portIN" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/thekr/Desktop/Processador_Mason_Marcos_Jason/componentes/memoriaInst.vhd Line: 99
 Info (12128): Elaborating entity "divisaoDeInstr" for hierarchy "divisaoDeInstr:port_map_divisaoDeInstr" File: C:/Users/thekr/Desktop/Processador_Mason_Marcos_Jason/processador_mason.vhd Line: 204
 Info (12128): Elaborating entity "controle" for hierarchy "controle:port_map_controle" File: C:/Users/thekr/Desktop/Processador_Mason_Marcos_Jason/processador_mason.vhd Line: 206
 Warning (10492): VHDL Process Statement warning at controle.vhd(23): signal "OPcode" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/thekr/Desktop/Processador_Mason_Marcos_Jason/componentes/controle.vhd Line: 23
@@ -603,24 +632,28 @@ Info (12133): Instantiated megafunction "memoriaAdress:port_map_memoriaAdress|al
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_c502.tdf
     Info (12023): Found entity 1: altsyncram_c502 File: C:/Users/thekr/Desktop/Processador_Mason_Marcos_Jason/db/altsyncram_c502.tdf Line: 28
 Warning (13012): Latch ual:port_map_ual|overflow has unsafe behavior File: C:/Users/thekr/Desktop/Processador_Mason_Marcos_Jason/componentes/ual.vhd Line: 12
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal pc:port_map_pc|portOUT[5] File: C:/Users/thekr/Desktop/Processador_Mason_Marcos_Jason/componentes/pc.vhd Line: 16
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pc:port_map_pc|portOUT[4] File: C:/Users/thekr/Desktop/Processador_Mason_Marcos_Jason/componentes/pc.vhd Line: 16
 Warning (13012): Latch ual:port_map_ual|zero has unsafe behavior File: C:/Users/thekr/Desktop/Processador_Mason_Marcos_Jason/componentes/ual.vhd Line: 11
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal pc:port_map_pc|portOUT[5] File: C:/Users/thekr/Desktop/Processador_Mason_Marcos_Jason/componentes/pc.vhd Line: 16
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pc:port_map_pc|portOUT[4] File: C:/Users/thekr/Desktop/Processador_Mason_Marcos_Jason/componentes/pc.vhd Line: 16
 Warning (13012): Latch ual:port_map_ual|in_tempZero has unsafe behavior File: C:/Users/thekr/Desktop/Processador_Mason_Marcos_Jason/componentes/ual.vhd Line: 50
     Warning (13013): Ports D and ENA on the latch are fed by the same signal pc:port_map_pc|portOUT[7] File: C:/Users/thekr/Desktop/Processador_Mason_Marcos_Jason/componentes/pc.vhd Line: 16
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "out_out_rom[3]" is stuck at GND File: C:/Users/thekr/Desktop/Processador_Mason_Marcos_Jason/processador_mason.vhd Line: 8
+    Warning (13410): Pin "out_rs[1]" is stuck at GND File: C:/Users/thekr/Desktop/Processador_Mason_Marcos_Jason/processador_mason.vhd Line: 10
+    Warning (13410): Pin "out_endereco[3]" is stuck at GND File: C:/Users/thekr/Desktop/Processador_Mason_Marcos_Jason/processador_mason.vhd Line: 12
 Info (286030): Timing-Driven Synthesis is running
 Info (17036): Removed 1 MSB VCC or GND address nodes from RAM block "memoriaAdress:port_map_memoriaAdress|altsyncram:ram_rtl_0|altsyncram_c502:auto_generated|ALTSYNCRAM" File: C:/Users/thekr/Desktop/Processador_Mason_Marcos_Jason/db/altsyncram_c502.tdf Line: 39
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 447 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 438 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
     Info (21059): Implemented 69 output pins
-    Info (21061): Implemented 369 logic cells
+    Info (21061): Implemented 360 logic cells
     Info (21064): Implemented 8 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 31 warnings
-    Info: Peak virtual memory: 4847 megabytes
-    Info: Processing ended: Mon May 10 14:58:40 2021
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 35 warnings
+    Info: Peak virtual memory: 4848 megabytes
+    Info: Processing ended: Tue May 11 18:17:43 2021
     Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:31
+    Info: Total CPU time (on all processors): 00:00:30
 
 

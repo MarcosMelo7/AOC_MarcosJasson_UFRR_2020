@@ -26,7 +26,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Sun May 09 14:53:11 2021
+    Info: Processing started: Tue May 11 18:03:16 2021
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off processador_mason -c processador_mason --vector_source=C:/Users/thekr/Desktop/Processador_Mason_Marcos_Jason/Waveform.vwf --testbench_file=C:/Users/thekr/Desktop/Processador_Mason_Marcos_Jason/simulation/qsim/Waveform.vwf.vht
 Info (119006): Selected device 5CGXFC7C7F23C8 for design "processador_mason"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -56,14 +56,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Sun May 09 14:53:13 2021
+    Info: Processing started: Tue May 11 18:03:17 2021
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/thekr/Desktop/Processador_Mason_Marcos_Jason/simulation/qsim/ processador_mason -c processador_mason
 Info (119006): Selected device 5CGXFC7C7F23C8 for design "processador_mason"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file processador_mason.vho in folder "C:/Users/thekr/Desktop/Processador_Mason_Marcos_Jason/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4722 megabytes
-    Info: Processing ended: Sun May 09 14:53:14 2021
+    Info: Peak virtual memory: 4724 megabytes
+    Info: Processing ended: Tue May 11 18:03:18 2021
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -83,49 +83,44 @@ Reading pref.tcl
 
 # 2020.1
 
-# do processador_mason.do
 
+# do processador_mason.do
 # ** Warning: (vlib-34) Library already exists at "work".
 
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 14:53:28 on May 09,2021
+# Start time: 18:03:19 on May 11,2021
 # vcom -work work processador_mason.vho 
-
 # -- Loading package STANDARD
-
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package VITAL_Timing
+
 # -- Loading package VITAL_Primitives
 # -- Loading package dffeas_pack
 # -- Loading package altera_primitives_components
-
 # -- Loading package altera_lnsim_components
-
 # -- Loading package cyclonev_atom_pack
 # -- Loading package cyclonev_components
 # -- Compiling entity processador_mason
-
 # -- Compiling architecture structure of processador_mason
 
-# End time: 14:53:31 on May 09,2021, Elapsed time: 0:00:03
+# End time: 18:03:20 on May 11,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 14:53:32 on May 09,2021
+# Start time: 18:03:20 on May 11,2021
 # vcom -work work Waveform.vwf.vht 
-
 # -- Loading package STANDARD
+
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity processador_mason_vhd_vec_tst
 # -- Compiling architecture processador_mason_arch of processador_mason_vhd_vec_tst
-
-# End time: 14:53:33 on May 09,2021, Elapsed time: 0:00:01
+# End time: 18:03:20 on May 11,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.processador_mason_vhd_vec_tst 
-# Start time: 14:53:35 on May 09,2021
+# Start time: 18:03:20 on May 11,2021
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -150,15 +145,13 @@ Reading pref.tcl
 # Loading altera_lnsim.common_28nm_ram_block
 # Loading altera_lnsim.common_28nm_ram_register
 # Loading altera_lnsim.common_28nm_ram_pulse_generator
-# ** Warning: Design size of 85961 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# ** Warning: Design size of 84930 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
 # after#34
 
-# Simulation time: 240001 ps
+# Simulation time: 310000 ps
 
-# Simulation time: 240001 ps
-
-# End time: 14:53:44 on May 09,2021, Elapsed time: 0:00:09
+# End time: 18:03:24 on May 11,2021, Elapsed time: 0:00:04
 # Errors: 0, Warnings: 1
 
 Completed successfully. 
@@ -171,7 +164,7 @@ Reading C:/Users/thekr/Desktop/Processador_Mason_Marcos_Jason/simulation/qsim/pr
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Users/thekr/Desktop/Processador_Mason_Marcos_Jason/simulation/qsim/processador_mason_20210509145344.sim.vwf
+Writing the resulting VWF to C:/Users/thekr/Desktop/Processador_Mason_Marcos_Jason/simulation/qsim/processador_mason_20210511180325.sim.vwf
 
 Finished VCD to VWF conversion.
 

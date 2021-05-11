@@ -10,7 +10,7 @@ z2
 cModel Technology
 Z0 dC:/Users/thekr/Desktop/Processador_Mason_Marcos_Jason/simulation/qsim
 Eprocessador_mason
-Z1 w1620586394
+Z1 w1620770598
 Z2 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 3HQPc5MVbmOPN?>a5EBYj2
 Z3 DPx8 cyclonev 19 cyclonev_components 0 22 jZ]H46BQLgIP5mfRTO`3B1
 Z4 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 ^Ch;U@;bMk1;>A2B<UV`k2
@@ -20,7 +20,7 @@ Z7 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
 Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z9 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
 Z10 DPx6 altera 28 altera_primitives_components 0 22 ca:ehlQAg4;_gVV:^8MAg3
-!i122 50
+!i122 100
 R0
 Z11 8processador_mason.vho
 Z12 Fprocessador_mason.vho
@@ -30,9 +30,9 @@ VYU8O8[fVYHB[?X3f`o<VE1
 !s100 3W9bdL2b1Qb?37PLbFzo=0
 Z13 OV;C;2020.1;71
 32
-Z14 !s110 1620586411
+Z14 !s110 1620770599
 !i10b 1
-Z15 !s108 1620586408.000000
+Z15 !s108 1620770599.000000
 Z16 !s90 -work|work|processador_mason.vho|
 Z17 !s107 processador_mason.vho|
 !i113 1
@@ -49,11 +49,11 @@ R8
 R9
 R10
 DEx4 work 17 processador_mason 0 22 YU8O8[fVYHB[?X3f`o<VE1
-!i122 50
-l1034
-L57 10289
-VB^4J9@8;J2k`d@?`ffJ7a1
-!s100 zm[:UmboFN>ed02g@BHH20
+!i122 100
+l1016
+L57 10150
+VNS2_>PS4fN88WYTDSlYET0
+!s100 1XEW6E?]d3CJ:2OgOjIQ^3
 R13
 32
 R14
@@ -65,10 +65,10 @@ R17
 R18
 R19
 Eprocessador_mason_vhd_vec_tst
-Z20 w1620586392
+Z20 w1620770596
 R8
 R9
-!i122 51
+!i122 101
 R0
 Z21 8Waveform.vwf.vht
 Z22 FWaveform.vwf.vht
@@ -78,9 +78,9 @@ VokfU[a`U[i7aI=M^QEP[b0
 !s100 _J7?5]1jQg0V6@89@fKXg1
 R13
 32
-Z23 !s110 1620586412
+Z23 !s110 1620770600
 !i10b 1
-Z24 !s108 1620586412.000000
+Z24 !s108 1620770600.000000
 Z25 !s90 -work|work|Waveform.vwf.vht|
 Z26 !s107 Waveform.vwf.vht|
 !i113 1
@@ -90,11 +90,11 @@ Aprocessador_mason_arch
 R8
 R9
 Z27 DEx4 work 29 processador_mason_vhd_vec_tst 0 22 okfU[a`U[i7aI=M^QEP[b0
-!i122 51
+!i122 101
 l67
 Z28 L34 64
-VjRf`CZG[obWSzaHK[hdgR0
-!s100 WNij76V8ffHn^R1mP2F^l2
+Z29 V96Q0i<zWJ_2EN[NUD[nm41
+Z30 !s100 DZbfKmYeffW[Dd^bZFloo2
 R13
 32
 R23
