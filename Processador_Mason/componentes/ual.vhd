@@ -22,7 +22,7 @@ ARCHITECTURE behavior OF ual IS
         );
     END COMPONENT;
 
-    COMPONENT multiplexador IS
+    COMPONENT multiplicar IS
         PORT (
             portINA : IN std_logic_vector(7 DOWNTO 0);
             portINB : IN std_logic_vector(7 DOWNTO 0);
@@ -51,7 +51,7 @@ ARCHITECTURE behavior OF ual IS
     SIGNAL out_tempZero : std_logic;
 
     -- Usado no resultado da multiplicação
-    SIGNAL out_multiplexador : std_logic_vector(15 DOWNTO 0);
+    SIGNAL out_multiplicar : std_logic_vector(15 DOWNTO 0);
 
     --Usados nas operações de adição e subtração
     SIGNAL resultadoAdicionador : std_logic_vector(7 DOWNTO 0);
@@ -59,7 +59,7 @@ ARCHITECTURE behavior OF ual IS
 
 BEGIN
     portMap_tempZero : tempZero PORT MAP(in_tempZero, out_tempZero);
-    portMap_multiplexador : multiplexador PORT MAP(portINA, portINB, out_multiplexador);
+    portMap_multiplicar : multiplicar PORT MAP(portINA, portINB, out_multiplicar);
     portMap_adicionador : adicionador PORT MAP(portINA, portINB, resultadoAdicionador);
     portMap_subtrair : subtrair PORT MAP(portINA, portINB, resultadotSubtrair);
     PROCESS (clock)
@@ -115,8 +115,8 @@ BEGIN
 
             
             WHEN "0010" => -- multiplicar
-                outUlaResultado <= out_multiplexador(7 DOWNTO 0);
-                IF out_multiplexador(8) = '1' OR out_multiplexador(9) = '1' OR out_multiplexador(10) = '1' OR out_multiplexador(11) = '1' OR out_multiplexador(12) = '1' OR out_multiplexador(13) = '1' OR out_multiplexador(14) = '1' OR out_multiplexador(15) = '1' THEN
+                outUlaResultado <= out_multiplicar(7 DOWNTO 0);
+                IF out_multiplicar(8) = '1' OR out_multiplicar(9) = '1' OR out_multiplicar(10) = '1' OR out_multiplicar(11) = '1' OR out_multiplicar(12) = '1' OR out_multiplicar(13) = '1' OR out_multiplicar(14) = '1' OR out_multiplicar(15) = '1' THEN
                     overflow <= '1';
                 ELSE
                     overflow <= '0';

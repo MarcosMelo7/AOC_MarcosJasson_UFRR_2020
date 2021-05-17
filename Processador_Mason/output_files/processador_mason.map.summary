@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Tue May 11 18:17:43 2021
+Analysis & Synthesis Status : Successful - Sun May 16 16:27:01 2021
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : processador_mason
 Top-level Entity Name : processador_mason
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 24
+Total registers : 40
 Total pins : 70
 Total virtual pins : 0
 Total block memory bits : 32

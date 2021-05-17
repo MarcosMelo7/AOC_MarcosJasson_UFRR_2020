@@ -27,15 +27,15 @@ ARCHITECTURE behavior OF memoriaInst IS
 	
 	-- Teste storew e loadw
 	
-	 0 => "01010011", -- load_ime S0 3 
-	 1 => "01110000", -- storew S0 ram(00)  ==  3
-	 2 => "01010010", -- load_ime S0 2
-	 3 => "01110001", -- storew S0 ram(01)  ==  2
-	 4 => "01010101", -- load_ime S1 1
-	 5 => "01100000", -- loadw S0 ram(00) = 3
-	 6 => "00000001", -- adicionar S0 S1 = S0 == 4
-	 7 => "01110000", -- storew S0 ram(00)  ==  5	 
-	 8 => "10110000", -- jump 0000 
+	 --0 => "01010011", -- load_ime S0 3 
+	 --1 => "01110000", -- storew S0 ram(00)  ==  3
+	 --2 => "01010010", -- load_ime S0 2
+	 --3 => "01110001", -- storew S0 ram(01)  ==  2
+	 --4 => "01010101", -- load_ime S1 1
+	 --5 => "01100000", -- loadw S0 ram(00) = 3
+	 --6 => "00000001", -- adicionar S0 S1 = S0 == 4
+	 --7 => "01110000", -- storew S0 ram(00)  ==  5	 
+	-- 8 => "10110000", -- jump 0000 
 	
 	 --Teste beq
 	
@@ -65,32 +65,32 @@ ARCHITECTURE behavior OF memoriaInst IS
     -- b == memoria(01)
     -- S0 usado para loadw e storew
     -- S1 == aux
-    --0 => "01011111", -- load_ime S3 3
-    --1 => "00101111", -- multiplicar S3 S3 == 9
-    --2 => "00111111", -- add_ime S3 3  == 12
-    --3 => "00111110", -- add_ime S3 2  == 14
-    --4 => "00111110", -- add_ime S3 2  == 16
-   -- 5 => "01011000", -- load_ime S2 0
-    --6 => "01010000", -- load_ime S0 0 
-   -- 7 => "01110000", -- storew S0 ram(00)  ==  a = 0
-   -- 8 => "01010001", -- load_ime S0 1
-    --9 => "01110001", -- storew S0 ram(01) == b = 1
+    0 => "01011111", -- load_ime S3 3
+    1 => "00101111", -- multiplicar S3 S3 == 9
+    2 => "00111111", -- add_ime S3 3  == 12
+    3 => "00111110", -- add_ime S3 2  == 14
+    4 => "00111110", -- add_ime S3 2  == 16
+    5 => "01011000", -- load_ime S2 0
+    6 => "01010000", -- load_ime S0 0 
+    7 => "01110000", -- storew S0 ram(00)  ==  a = 0
+    8 => "01010001", -- load_ime S0 1
+    9 => "01110001", -- storew S0 ram(01) == b = 1
     
-   -- 10 => "01100000", -- loadw S0 ram(00)
-   -- 11 => "00000100", -- adicionar S1 S0
-   -- 12 => "01100001", -- loadw S0 ram(01)
-   -- 13 => "00000100", -- adicionar S1 S0
-   -- 14 => "01110000", -- storew S0 ram(00)  ==  a = b
-   -- 15 => "01110101", -- storew s1 ram(01) == b = aux
+    10 => "01100000", -- loadw S0 ram(00)
+    11 => "00000100", -- adicionar S1 S0
+    12 => "01100001", -- loadw S0 ram(01)
+    13 => "00000100", -- adicionar S1 S0
+    14 => "01110000", -- storew S0 ram(00)  ==  a = b
+    15 => "01110101", -- storew s1 ram(01) == b = aux
     
-   -- 16 => "00111001", -- add_ime s2 1
-   -- 17 => "10101011", -- if S2 == S3
-    --18 => "10011010", -- bne S2 != S3 jump 0101
+    16 => "00111001", -- add_ime s2 1
+    17 => "10101011", -- if S2 == S3
+    18 => "10011010", -- bne S2 != S3 jump 0101
 	 
-    --19 => "01010000", -- load_ime S0 0
-   -- 20 => "01010100", -- load_ime S1 0
-  --  21 => "01011000", -- load_ime S2 0
-    --22 => "01011100", -- load_ime S3 0	 
+    19 => "01010000", -- load_ime S0 0
+    20 => "01010100", -- load_ime S1 0
+    21 => "01011000", -- load_ime S2 0
+    22 => "01011100", -- load_ime S3 0	 
 	 OTHERS => "00000000");	 
 	 
 BEGIN

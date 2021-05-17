@@ -48,6 +48,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "out_out_rom[3]",
+					"strict" : false
+				},
+				{
 					"name" : "out_out_rom[4]",
 					"strict" : false
 				},
@@ -84,6 +88,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "out_rs[1]",
+					"strict" : false
+				},
+				{
 					"name" : "out_rt[0]",
 					"strict" : false
 				},
@@ -101,6 +109,10 @@
 				},
 				{
 					"name" : "out_endereco[2]",
+					"strict" : false
+				},
+				{
+					"name" : "out_endereco[3]",
 					"strict" : false
 				},
 				{
